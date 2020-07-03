@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2020-06-19 14:40+0300\n"
-"PO-Revision-Date: 2020-07-03 16:28+0300\n"
+"POT-Creation-Date: 2020-07-03 11:01-0300\n"
+"PO-Revision-Date: 2020-06-19 15:46+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
-"X-Generator: Poedit 2.3.1\n"
+"X-Generator: Poedit 2.3\n"
 
 #: data/download.py:15
 msgid "Документация"
@@ -29,7 +29,8 @@ msgid "Брошюры"
 msgstr "Datasheets"
 
 #: data/download.py:18
-msgid "Информация по продукту"
+#, fuzzy
+msgid "Информация по продукту."
 msgstr "Product documentation"
 
 #: data/download.py:19
@@ -57,9 +58,10 @@ msgid "Софт"
 msgstr "Software"
 
 #: data/download.py:25
+#, fuzzy
 msgid ""
 "Программное обеспечение для ПК для поиска неисправностей на печатных платах "
-"с использованием аналоговых сигнатурных анализаторов EyePoint.Для работы ПО "
+"с использованием аналоговых сигнатурных анализаторов EyePoint. Для работы ПО "
 "требуется Python 3.6.8 (win32) с набором необходимых библиотек, а также "
 "Распространяемые пакеты Microsoft Visual C++ для Visual Studio 2013 (win32). "
 "Их можно скачать на этой странице."
@@ -74,8 +76,9 @@ msgid "IVM debugger"
 msgstr "IVM debugger"
 
 #: data/download.py:31
+#, fuzzy
 msgid ""
-"Кроссплатформенно ПО для отладки сигнатурных анализаторов EyePoint и его "
+"Кроссплатформенное ПО для отладки сигнатурных анализаторов EyePoint и его "
 "исходные коды. Данное ПО позволяет вручную вызывать команды управления через "
 "автоматически сгенерированный интерфейс на библиотеке Qt и видеть "
 "распарсенные структуры ответов устройства."
@@ -136,6 +139,7 @@ msgid "Библиотека для программного управления
 msgstr "Library for software management"
 
 #: data/download.py:54
+#, fuzzy
 msgid ""
 "Кроссплатформенная библиотека для работы с измерителями ВАХ EyePoint. "
 "Библиотека написана на языке C, распространяется в виде бинарных файлов "
@@ -178,22 +182,23 @@ msgid "Скачать"
 msgstr "Download"
 
 #: data/other.py:4
+#, fuzzy
 msgid ""
 "<b>EyePoint</b> – системы для локализации неисправных электронных "
 "компонентов на печатных платах, а также для выявления контрафактных, "
 "перемаркерованных или поврежденных компонентов в BGA корпусах на основе "
 "метода аналогового сигнатурного анализа (АСА). В линейке <b>EyePoint</b> "
-"есть автоматические <b>(P10, B10, P10b)</b> и ручные <b>(S1, u2</b>х) "
+"есть автоматические <b>(P10, B10, P10b)</b> и ручные <b>(S1, u2х)</b> "
 "системы, а также ОЕМ модуль <b>а2</b>, который может быть встроен в уже "
 "используемые системы пользователя. Для работы с модулем поставляется API, "
 "которое позволяет без лишних проблем управлять каналом сигнатурного анализа."
 msgstr ""
-"EyePoint - systems for localizing faulty electronic components on PCB, as "
-"well as for identifying counterfeit, remarked or damaged components in BGA "
-"packages based on the analog signature analysis (ASA) method. The EyePoint "
-"products line includes automatic (P10, B10, P10b) systems, manual (S1, u2x) "
-"systems and OEM module  a2 with open API, which can be built into existing "
-"user systems."
+"<b>EyePoint</b> - systems for localizing faulty electronic components on "
+"PCB, as well as for identifying counterfeit, remarked or damaged components "
+"in BGA packages based on the analog signature analysis (ASA) method. The "
+"<b>EyePoint</b> products line includes automatic <b>(P10, B10, P10b)</b> "
+"systems, manual <b>(S1, u2</b>x) systems and OEM module <b> a2</b> with open "
+"API, which can be built into existing user systems."
 
 #: data/other.py:11
 msgid "Технические данные"
