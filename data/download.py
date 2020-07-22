@@ -13,10 +13,10 @@ class SoftwareCategory:
 
 
 categories = (SoftwareCategory(name="documentation", friendly_name=_("Документация"), icon="doc.png",
-                               description=_("Руководства пользователей, паспорт продукта и другая "
+                               description=_("Руководства пользователя, паспорт продукта и другая "
                                              "техническая документация.")),
               SoftwareCategory(name="datasheet", friendly_name=_("Брошюры"), icon="brochure.png",
-                               description=_("Информация по продукту.")),
+                               description=_("Информация о продукте.")),
               SoftwareCategory(name="driver", friendly_name=_("Драйвера"), icon="driver.png",
                                description=_("Драйвера для ОС Windows (для ОС Linux драйвер не нужен).")),
               SoftwareCategory(name="firmware", friendly_name=_("Прошивка"), icon="firmware.png",
@@ -59,7 +59,7 @@ categories = (SoftwareCategory(name="documentation", friendly_name=_("Докум
               SoftwareCategory(name="library", friendly_name=_("Библиотека для программного управления"),
                                icon="software.png",
                                description=_("Кроссплатформенная библиотека для работы с измерителями ВАХ EyePoint "
-                                             "IVM. (измеритель сигнатур, который используется в различных "
+                                             "IVM (измеритель сигнатур, который используется в различных "
                                              "устройствах линейки EyePoint). Библиотека написана на языке C, "
                                              "распространяется в виде бинарных файлов (win32, win64, debian) и в "
                                              "виде исходных кодов. Документацию к библиотеке можно скачать отдельно "
