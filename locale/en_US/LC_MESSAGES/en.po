@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2020-07-03 11:01-0300\n"
-"PO-Revision-Date: 2020-06-19 15:46+0300\n"
+"PO-Revision-Date: 2020-08-27 09:56+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
-"X-Generator: Poedit 2.3\n"
+"X-Generator: Poedit 2.3.1\n"
 
 #: data/download.py:15
 msgid "Документация"
@@ -29,9 +29,8 @@ msgid "Брошюры"
 msgstr "Datasheets"
 
 #: data/download.py:18
-#, fuzzy
 msgid "Информация по продукту."
-msgstr "Product documentation"
+msgstr "Product documentation."
 
 #: data/download.py:19
 msgid "Драйвера для Windows"
@@ -58,7 +57,6 @@ msgid "Софт"
 msgstr "Software"
 
 #: data/download.py:25
-#, fuzzy
 msgid ""
 "Программное обеспечение для ПК для поиска неисправностей на печатных платах "
 "с использованием аналоговых сигнатурных анализаторов EyePoint. Для работы ПО "
@@ -76,7 +74,6 @@ msgid "IVM debugger"
 msgstr "IVM debugger"
 
 #: data/download.py:31
-#, fuzzy
 msgid ""
 "Кроссплатформенное ПО для отладки сигнатурных анализаторов EyePoint и его "
 "исходные коды. Данное ПО позволяет вручную вызывать команды управления через "
@@ -139,7 +136,6 @@ msgid "Библиотека для программного управления
 msgstr "Library for software management"
 
 #: data/download.py:54
-#, fuzzy
 msgid ""
 "Кроссплатформенная библиотека для работы с измерителями ВАХ EyePoint. "
 "Библиотека написана на языке C, распространяется в виде бинарных файлов "
@@ -182,7 +178,6 @@ msgid "Скачать"
 msgstr "Download"
 
 #: data/other.py:4
-#, fuzzy
 msgid ""
 "<b>EyePoint</b> – системы для локализации неисправных электронных "
 "компонентов на печатных платах, а также для выявления контрафактных, "
