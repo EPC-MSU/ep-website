@@ -7,7 +7,7 @@ import ssl
 from os.path import isfile
 
 from data.products import products, product_by_name
-from data.other import intro, technical, address, more, epc
+from data.other import intro, technical, address, more, epc, description, tags
 import data.download as download_data
 from data.walker.walk import FileInfo, walk
 from translator.translator import translator, all_languages
@@ -34,6 +34,8 @@ def translatable_template(func):
         languages_links = {f"{lang}_link": posixpath.join("/"+lang, current_link_nolang) for lang in all_languages}
         return {"tr": tr,
                 "lang": language,
+                "description": description,
+                "tags": tags,
                 **languages_links,
                 **result}
     return handler
