@@ -9,10 +9,10 @@
         <img src="/static/images/{{ product.picture }}">
     </div>
 	<div class="epdescription">
-		<span>{{ tr(product.description) }}</span>
+		<span>{{ tr(product.description) | safe }}</span>
         <br>
         <br>
-        <span>{{ tr(product.extended_description) }}</span>
+        <span>{{ tr(product.extended_description) | safe }}</span>
 		<br>
 		<br>
         <div class="hilight-container">
@@ -33,7 +33,7 @@
 </div>
 {% if software_type(software_name).description %}
 <div class="download-text">
-    {{ tr(software_type(software_name).description) }}
+    {{ tr(software_type(software_name).description) | safe }}
 </div>
 {% endif %}
 

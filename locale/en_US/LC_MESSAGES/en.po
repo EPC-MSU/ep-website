@@ -95,12 +95,12 @@ msgstr "EPCBoot"
 #: data/download.py:40
 msgid ""
 "Кроссплатформенное ПО для обновления прошивок сигнатурных анализаторов "
-"EyePoint и его исходные коды. Репозиторий EPCBoot на GitHub: https://github."
-"com/EPC-MSU/EPCboot"
+"EyePoint и его исходные коды. Репозиторий EPCBoot на GitHub: "
+"<a href='https://github.com/EPC-MSU/EPCboot'>https://github.com/EPC-MSU/EPCboot</a>"
 msgstr ""
 "Cross-platform SOFTWARE for updating eyepoint signature analyzer firmware "
-"and its source codes. ETC Boot repository on GitHub: https://github.com/EPC-"
-"MSU/EPCboot"
+"and its source codes. ETC Boot repository on GitHub: "
+"<a href='https://github.com/EPC-MSU/EPCboot'>https://github.com/EPC-MSU/EPCboot</a>"
 
 #: data/download.py:43
 msgid "Прошивка встроенного компьютера"

@@ -23,14 +23,14 @@
 		<a href="product/{{ product.name }}/" class="index-h3">{{ tr(product.friendly_name) }}</a>
 		<br>
 
-		<span>{{ tr(product.description) }}</span>
+		<span>{{ tr(product.description) | safe }}</span>
 
 		<br>
 		<br>
 
 		<ul>
 			{% for tech in product.technical %}
-			<li>{{ tr(tech) }}</li>
+			<li>{{ tr(tech) | safe }}</li>
 			{% endfor %}
 		</ul>
 		<div class="button-container">
