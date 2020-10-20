@@ -5,6 +5,7 @@ from os import listdir
 from os.path import isdir, basename, join as join_path, getmtime, getsize, sep
 from distutils.version import LooseVersion
 from re import findall
+import urllib.parse as urllib
 
 
 @dataclass
@@ -34,7 +35,7 @@ class FileInfo:
         return FileInfo(version,
                         datetime.fromtimestamp(getmtime(path)).date(),
                         getsize(path),
-                        join_path(url_prefix, path_short),
+                        urllib.quote(join_path(url_prefix, path_short)),
                         basename=basename(path))
 
 
