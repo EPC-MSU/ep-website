@@ -7,7 +7,7 @@ import ssl
 from os.path import isfile
 
 from data.products import products, product_by_name
-from data.other import intro, technical, address, more, epc, description, tags
+import data.other as other_data
 import data.download as download_data
 from data.walker.walk import FileInfo, walk
 from translator.translator import translator, all_languages
@@ -34,8 +34,6 @@ def translatable_template(func):
         languages_links = {f"{lang}_link": posixpath.join("/"+lang, current_link_nolang) for lang in all_languages}
         return {"tr": tr,
                 "lang": language,
-                "description": description,
-                "tags": tags,
                 **languages_links,
                 **result}
     return handler
@@ -44,8 +42,11 @@ def translatable_template(func):
 def base_template(func):
     async def handler(request):
         result = await func(request)
-        return {"address": address,
-                "epc": epc,
+        return {"address": other_data.address,
+                "epc": other_data.epc,
+                "description": other_data.description,
+                "tags": other_data.tags,
+                "title": other_data.title,
                 **result}
     return translatable_template(handler)
 
@@ -59,10 +60,10 @@ async def index(request):
 @aiohttp_jinja2.template("index.html")
 @base_template
 async def index(request):
-    return {"intro": intro,
+    return {"intro": other_data.intro,
             "products": products,
-            "technical": technical,
-            "more": more
+            "technical": other_data.technical,
+            "more": other_data.more
             }
 
 

@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2020-08-27 04:40-0300\n"
-"PO-Revision-Date: 2020-08-28 15:19+0300\n"
+"POT-Creation-Date: 2020-10-20 22:55+0300\n"
+"PO-Revision-Date: 2020-10-20 23:08+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
-"X-Generator: Poedit 2.3.1\n"
+"X-Generator: Poedit 2.4.1\n"
 
 #: data/download.py:15
 msgid "Документация"
@@ -95,18 +95,19 @@ msgstr "EPCBoot"
 #: data/download.py:40
 msgid ""
 "Кроссплатформенное ПО для обновления прошивок сигнатурных анализаторов "
-"EyePoint и его исходные коды. Репозиторий EPCBoot на GitHub: "
-"<a href='https://github.com/EPC-MSU/EPCboot'>https://github.com/EPC-MSU/EPCboot</a>"
+"EyePoint и его исходные коды. Репозиторий EPCBoot на GitHub: <a "
+"href='https://github.com/EPC-MSU/EPCboot'>https://github.com/EPC-MSU/"
+"EPCboot</a>"
 msgstr ""
 "Cross-platform SOFTWARE for updating eyepoint signature analyzer firmware "
-"and its source codes. ETC Boot repository on GitHub: "
-"<a href='https://github.com/EPC-MSU/EPCboot'>https://github.com/EPC-MSU/EPCboot</a>"
+"and its source codes. ETC Boot repository on GitHub: <a href='https://github."
+"com/EPC-MSU/EPCboot'>https://github.com/EPC-MSU/EPCboot</a>"
 
-#: data/download.py:43
+#: data/download.py:44
 msgid "Прошивка встроенного компьютера"
 msgstr "Firmware of the embedded computer"
 
-#: data/download.py:44
+#: data/download.py:45
 msgid ""
 "Образы встроенной операционной системы для устройств серии EyePoint S. "
 "Обновление образа осуществляется посредством записи на SD карту. Более "
@@ -120,11 +121,11 @@ msgstr ""
 "Disk Imager (you can download it from the official website or from this "
 "page)."
 
-#: data/download.py:50
+#: data/download.py:51
 msgid "Описание библиотеки для программного управления"
 msgstr "Description of the software management library"
 
-#: data/download.py:52
+#: data/download.py:53
 msgid ""
 "Документация к библиотеке libivm, которая может быть использована для "
 "взаимодействия с измерителями ВАХ EyePoint IVM. Саму библиотеку можно "
@@ -133,11 +134,11 @@ msgstr ""
 "Documentation for the libivm library, that can be used to interact with "
 "EyePoint IVM VAC meters. The library itself can be downloaded on this page."
 
-#: data/download.py:55
+#: data/download.py:56
 msgid "Стороннее вспомогательное ПО"
 msgstr "Third-party support software"
 
-#: data/download.py:57
+#: data/download.py:58
 msgid ""
 "Дополнительное стороннее программное обеспечение, которое может "
 "потребоваться при работе с устройствами EyePoint."
@@ -145,11 +146,11 @@ msgstr ""
 "Additional third-party software that may be required when working with "
 "EyePoint devices."
 
-#: data/download.py:59
+#: data/download.py:60
 msgid "Библиотека для программного управления"
 msgstr "Library for software management"
 
-#: data/download.py:61
+#: data/download.py:62
 msgid ""
 "Кроссплатформенная библиотека для работы с измерителями ВАХ EyePoint IVM "
 "(измеритель сигнатур, который используется в различных устройствах линейки "
@@ -163,11 +164,11 @@ msgstr ""
 "and as source code. Library documentation can be downloaded separately on "
 "this page."
 
-#: data/download.py:67
+#: data/download.py:68
 msgid "Примеры использования API и биндинги для Python и C#"
 msgstr "Examples of using the API and bindings for Python and C#"
 
-#: data/download.py:70
+#: data/download.py:71
 msgid ""
 "Комплект примеров программного кода на языках C, C# и Python, реализующего "
 "простые измерения сигнатур с использованием EyePoint IVM (измеритель "
@@ -179,23 +180,23 @@ msgstr ""
 "in the EyePoint product line). You can also find bindings for Python and C# "
 "in this archive."
 
-#: data/download.py:86
+#: data/download.py:87
 msgid "Версия"
 msgstr "Version"
 
-#: data/download.py:87
+#: data/download.py:88
 msgid "Дата выпуска"
 msgstr "Release date"
 
-#: data/download.py:88
+#: data/download.py:89
 msgid "Размер"
 msgstr "Size"
 
-#: data/download.py:89
+#: data/download.py:90
 msgid "Ссылка"
 msgstr "Link"
 
-#: data/download.py:90
+#: data/download.py:91
 msgid "Скачать"
 msgstr "Download"
 
@@ -232,6 +233,24 @@ msgstr "More"
 #: data/other.py:17
 msgid "ООО «ЦИФ МГУ имени М.В. Ломоносова»"
 msgstr "Engineering Physics Center MSU"
+
+#: data/other.py:19
+msgid ""
+"EyePoint - линейка простого и функционального оборудования для локализации "
+"неисправных компонентов на платах, использующего метод аналогового "
+"сигнатурного анализа и частотный диапазон до 100 кГц."
+msgstr ""
+"EyePoint - a simple and powerful equipment for localizing faulty components "
+"on PCB using the analog signature analysis method and a frequency range of "
+"up to 100 kHz."
+
+#: data/other.py:22
+msgid "EyePoint, диагностика электронных схем, анализ неисправностей, ЦИФ МГУ"
+msgstr "EyePoint, localizing faulty components, EPC MSU"
+
+#: data/other.py:24
+msgid "EyePoint. Локализаторы неисправных компонентов"
+msgstr "EyePoint. Localizers of faulty components"
 
 #: data/products.py:19
 msgid "EyePoint P10"
