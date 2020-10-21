@@ -39,14 +39,15 @@ class FileInfo:
         # convert /foo/bar/spam/download/EyePointS1/firmware to download/EyePointS1/firmware
         path_short = join_path(*path.split(sep)[-3:])
 
-        return FileInfo(version,
-                        datetime.fromtimestamp(getmtime(path)).date(),
-                        getsize(path),
-                        urllib.quote(join_path(url_prefix, path_short)),
-                        basename(path),
-                        path,
-                        imohash.hashfile(path)
-                        )
+        return FileInfo(
+            version,
+            datetime.fromtimestamp(getmtime(path)).date(),
+            getsize(path),
+            urllib.quote(join_path(url_prefix, path_short)),
+            basename(path),
+            path,
+            imohash.hashfile(path),
+        )
 
 
 def _walk_software(path: str, url_prefix: str) -> List[FileInfo]:
@@ -101,7 +102,7 @@ def walk(path: str, url_prefix: str) -> Dict[str, Dict[str, List[FileInfo]]]:
     return result
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     #  Run example
     result = walk("../../view/static/download", "/static/download")
     print(result)

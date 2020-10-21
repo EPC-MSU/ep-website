@@ -14,7 +14,7 @@ def process_file(path: str, proc: Callable[[str], str]):
     print("Process " + path)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     for root, _, files in walk("."):
         for file in files:
             path = join_path(root, file)

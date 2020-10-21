@@ -28,8 +28,10 @@ class ArchiveInfo:
         # convert /foo/bar/spam/download/EyePointS1/all.zip to EyePointS1/all.zip
         path_short = join_path(*path.split(sep)[-2:])
 
-        return ArchiveInfo(date.fromtimestamp(getmtime(path)),
-                           urllib.quote(join_path(url_prefix, path_short)))
+        return ArchiveInfo(
+            date.fromtimestamp(getmtime(path)),
+            urllib.quote(join_path(url_prefix, path_short)),
+        )
 
 
 def archive(software: Dict[str, List[FileInfo]], zip_path: str):
@@ -55,7 +57,9 @@ def archive(software: Dict[str, List[FileInfo]], zip_path: str):
         z_file.write(file.full_path, join_path(category, file.basename))
 
 
-def compare_latest_software(old: Dict[str, List[FileInfo]], new: Dict[str, List[FileInfo]]) -> bool:
+def compare_latest_software(
+    old: Dict[str, List[FileInfo]], new: Dict[str, List[FileInfo]]
+) -> bool:
     """
     Compare software files (equal\not equal)
     :param old: old structure
@@ -127,13 +131,17 @@ class FileManager:
         """
         new_files = walk(self._directory, self._url_prefix)
         for product, software in new_files.items():
-            if not self._files or \
-               not self._files.get(product) or \
-               not compare_latest_software(self._files[product], new_files[product]):
+            if (
+                not self._files
+                or not self._files.get(product)
+                or not compare_latest_software(self._files[product], new_files[product])
+            ):
                 logging.debug("Update archive " + product)
                 archive_path = join_path(self._directory, product, self._archive_name)
                 archive(software, archive_path)
-                self._archives[product] = ArchiveInfo.fromfile(archive_path, self._url_prefix)
+                self._archives[product] = ArchiveInfo.fromfile(
+                    archive_path, self._url_prefix
+                )
         self._files = new_files
 
     async def _periodic_task(self):

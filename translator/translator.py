@@ -10,7 +10,7 @@ def _(x: str) -> str:  # dummy translator for .pot auto-generator
 
 _translators = {
     "ru": _,
-    "en": gettext.translation("en", localedir='locale', languages=["en"]).gettext
+    "en": gettext.translation("en", localedir="locale", languages=["en"]).gettext,
 }
 
 

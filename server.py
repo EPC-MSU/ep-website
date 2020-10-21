@@ -16,7 +16,9 @@ from data.products import product_by_name, products
 from filemanager import FileManager
 from translator.translator import all_languages, translator
 
-file_manager = FileManager(5, "view/static/download", "/static/download")  # Download page files
+file_manager = FileManager(
+    5, "view/static/download", "/static/download"
+)  # Download page files
 
 
 routes = web.RouteTableDef()
@@ -33,11 +35,12 @@ def translatable_template(func):
         current_link_nolang = posixpath.join(*request.path.split("/")[2:])
 
         # Links to ru, en, ... etc versions of current page
-        languages_links = {f"{lang}_link": posixpath.join("/"+lang, current_link_nolang) for lang in all_languages}
-        return {"tr": tr,
-                "lang": language,
-                **languages_links,
-                **result}
+        languages_links = {
+            f"{lang}_link": posixpath.join("/" + lang, current_link_nolang)
+            for lang in all_languages
+        }
+        return {"tr": tr, "lang": language, **languages_links, **result}
+
     return handler
 
 
@@ -45,12 +48,15 @@ def base_template(func):
     async def handler(request):
         result = await func(request)
         # TODO: clearer names
-        return {"address": other_data.address,
-                "epc": other_data.epc,
-                "description": other_data.description,
-                "tags": other_data.tags,
-                "title": other_data.title,
-                **result}
+        return {
+            "address": other_data.address,
+            "epc": other_data.epc,
+            "description": other_data.description,
+            "tags": other_data.tags,
+            "title": other_data.title,
+            **result,
+        }
+
     return translatable_template(handler)
 
 
@@ -64,11 +70,12 @@ async def index(request):
 @base_template
 async def index(request):
     # TODO: clearer names
-    return {"intro": other_data.intro,
-            "products": products,
-            "technical": other_data.technical,
-            "more": other_data.more
-            }
+    return {
+        "intro": other_data.intro,
+        "products": products,
+        "technical": other_data.technical,
+        "more": other_data.more,
+    }
 
 
 @routes.get("/{language}/product/{product}/")
@@ -78,33 +85,36 @@ async def download(request):
     product = product_by_name(request.match_info["product"])
 
     # TODO: clearer names
-    return {"product": product,
-            "all_software": file_manager.files[product.name],
-            "archive": file_manager.archives[product.name],
-            "archive_description": download_data.all_software,
-            "version": download_data.version,
-            "release_date": download_data.release_date,
-            "size": download_data.size,
-            "link": download_data.link,
-            "download": download_data.download,
-            "software_type": download_data.software_category_by_name
-            }
+    return {
+        "product": product,
+        "all_software": file_manager.files[product.name],
+        "archive": file_manager.archives[product.name],
+        "archive_description": download_data.all_software,
+        "version": download_data.version,
+        "release_date": download_data.release_date,
+        "size": download_data.size,
+        "link": download_data.link,
+        "download": download_data.download,
+        "software_type": download_data.software_category_by_name,
+    }
 
 
 # TODO: use nginx
-routes.static('/static', "view/static")
+routes.static("/static", "view/static")
 
 
 def _app_factory() -> web.Application:
     app = web.Application()
-    aiohttp_jinja2.setup(app, loader=jinja2.FileSystemLoader('view/templates'))
+    aiohttp_jinja2.setup(app, loader=jinja2.FileSystemLoader("view/templates"))
 
     app.router.add_routes(routes)
 
     return app
 
 
-async def _server_factory(keyfile: Optional[str] = None, certfile: Optional[str] = None) -> web.TCPSite:
+async def _server_factory(
+    keyfile: Optional[str] = None, certfile: Optional[str] = None
+) -> web.TCPSite:
     app = _app_factory()
     runner = web.AppRunner(app)
     await runner.setup()
