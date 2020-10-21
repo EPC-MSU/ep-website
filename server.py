@@ -1,21 +1,20 @@
-from aiohttp import web
-import aiohttp_jinja2
-import jinja2
 import asyncio
+import logging
 import posixpath
 import ssl
-from os.path import isfile
 from argparse import ArgumentParser
-import logging
-
-
-from data.products import products, product_by_name
-import data.other as other_data
-import data.download as download_data
-from filemanager import FileManager
-from translator.translator import translator, all_languages
-
+from os.path import isfile
 from typing import Optional
+
+import aiohttp_jinja2
+import jinja2
+from aiohttp import web
+
+import data.download as download_data
+import data.other as other_data
+from data.products import product_by_name, products
+from filemanager import FileManager
+from translator.translator import all_languages, translator
 
 file_manager = FileManager(5, "view/static/download", "/static/download")  # Download page files
 

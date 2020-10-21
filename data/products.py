@@ -1,6 +1,7 @@
-from functools import lru_cache
 from dataclasses import dataclass
+from functools import lru_cache
 from typing import List
+
 from translator.translator import _
 
 

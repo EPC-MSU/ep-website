@@ -1,12 +1,15 @@
-from filemanager.walker.walk import walk, FileInfo
-from typing import List, Dict, Optional
-import zipfile
-import logging
 import asyncio
+import logging
 import urllib.parse as urllib
-from os.path import join as join_path, sep, getmtime
+import zipfile
 from dataclasses import dataclass
 from datetime import date
+from os.path import getmtime
+from os.path import join as join_path
+from os.path import sep
+from typing import Dict, List, Optional
+
+from filemanager.walker.walk import FileInfo, walk
 
 
 @dataclass()

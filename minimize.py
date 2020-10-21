@@ -1,8 +1,9 @@
-from csscompressor import compress as compress_css
-from htmlmin import minify as compress_html
 from os import walk
 from os.path import join as join_path
 from typing import Callable
+
+from csscompressor import compress as compress_css
+from htmlmin import minify as compress_html
 
 
 def process_file(path: str, proc: Callable[[str], str]):

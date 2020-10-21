@@ -1,11 +1,14 @@
-from dataclasses import dataclass
-from datetime import datetime, date
-from typing import Dict, List
-from os import listdir
-from os.path import isdir, basename, join as join_path, getmtime, getsize, sep
-from distutils.version import LooseVersion
-from re import findall
 import urllib.parse as urllib
+from dataclasses import dataclass
+from datetime import date, datetime
+from distutils.version import LooseVersion
+from os import listdir
+from os.path import basename, getmtime, getsize, isdir
+from os.path import join as join_path
+from os.path import sep
+from re import findall
+from typing import Dict, List
+
 import imohash
 
 
