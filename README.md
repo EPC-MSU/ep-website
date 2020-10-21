@@ -241,6 +241,16 @@ sudo docker run --rm --volumes-from unpack -v $(pwd):/backup busybox tar xvf /ba
 docker container rm unpack
 ```
 
+## Для разработчиков
+
+Для "чистоты" кода используюся black https://github.com/psf/black и isort https://github.com/PyCQA/isort. 
+Их нужно запускать каждый раз перед новым комитом. Чтобы автоматически запускать их каждый раз перед новым комитом, 
+нужно установить зависимости из requirements-dev.txt и выполнить (в venv)
+```bash
+pre-commit install
+``` 
+
+
 ## Источники и дополнительная информация
 
 Иконки флагов взяты с  
