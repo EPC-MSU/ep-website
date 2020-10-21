@@ -1,0 +1,9 @@
+name: test-build-docker
+on: push
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Build Docker
+        run: docker build . -t epw
