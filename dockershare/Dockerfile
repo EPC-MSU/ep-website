@@ -1,3 +1,5 @@
+# Docker container for SSHFS access to server "download" directory
+
 FROM ubuntu:18.04
 
 RUN apt-get update

@@ -4,6 +4,8 @@
 
 <h3 class="index-h3">{{ tr(product.friendly_name) }}</h3>
 
+<!--Product description-->
+
 <div class="epmain" id="download-page-intro">
     <div class="epimage">
         <img src="/static/images/{{ product.picture }}">
@@ -24,6 +26,20 @@
 	</div>
 </div>
 
+<!--Full software kit-->
+
+
+<div class="download-header-block">
+    <a id="download-sdk" href="{{ archive.link }}">  {{ tr(archive_description.friendly_name) }} </a>
+</div>
+{% if archive_description.description %}
+<div class="download-text">
+    {{ tr(archive_description.description) | safe }}
+</div>
+{% endif %}
+
+
+<!--Software categories-->
 
 {% for software_name, software in all_software.items() %}
 

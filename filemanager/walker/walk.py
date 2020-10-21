@@ -6,6 +6,7 @@ from os.path import isdir, basename, join as join_path, getmtime, getsize, sep
 from distutils.version import LooseVersion
 from re import findall
 import urllib.parse as urllib
+import imohash
 
 
 @dataclass
@@ -15,6 +16,8 @@ class FileInfo:
     size: int
     link: str
     basename: str
+    full_path: str
+    code: str
 
     @classmethod
     def fromfile(cls, path: str, url_prefix: str) -> "FileInfo":
@@ -22,6 +25,7 @@ class FileInfo:
         File name must be in format name-v.v.v-platform
         :param url_prefix: url prefix, for example: /static
         :param path: path to file (relative!)
+        :param parse_version: parse version (True by default)
         :return: "FileInfo"
         """
         version_matches = findall(r"\d+\.\d+\.\d+", basename(path))
@@ -36,7 +40,10 @@ class FileInfo:
                         datetime.fromtimestamp(getmtime(path)).date(),
                         getsize(path),
                         urllib.quote(join_path(url_prefix, path_short)),
-                        basename=basename(path))
+                        basename(path),
+                        path,
+                        imohash.hashfile(path)
+                        )
 
 
 def _walk_software(path: str, url_prefix: str) -> List[FileInfo]:
@@ -93,5 +100,5 @@ def walk(path: str, url_prefix: str) -> Dict[str, Dict[str, List[FileInfo]]]:
 
 if __name__ == '__main__':
     #  Run example
-    result = walk("view/static/download", "/static/download")
+    result = walk("../../view/static/download", "/static/download")
     print(result)

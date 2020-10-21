@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2020-10-20 22:55+0300\n"
-"PO-Revision-Date: 2020-10-20 23:08+0300\n"
+"POT-Creation-Date: 2020-10-21 03:49+0300\n"
+"PO-Revision-Date: 2020-10-21 03:50+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -180,23 +180,31 @@ msgstr ""
 "in the EyePoint product line). You can also find bindings for Python and C# "
 "in this archive."
 
-#: data/download.py:87
+#: data/download.py:79
+msgid "Полный комплект программного обеспечения"
+msgstr "Full software package"
+
+#: data/download.py:81
+msgid "Архив со всем софтом и документацией для этого продукта"
+msgstr "Archive with all software and documentation for this product"
+
+#: data/download.py:92
 msgid "Версия"
 msgstr "Version"
 
-#: data/download.py:88
+#: data/download.py:93
 msgid "Дата выпуска"
 msgstr "Release date"
 
-#: data/download.py:89
+#: data/download.py:94
 msgid "Размер"
 msgstr "Size"
 
-#: data/download.py:90
+#: data/download.py:95
 msgid "Ссылка"
 msgstr "Link"
 
-#: data/download.py:91
+#: data/download.py:96
 msgid "Скачать"
 msgstr "Download"
 

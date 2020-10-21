@@ -76,6 +76,11 @@ categories = (SoftwareCategory(name="documentation", friendly_name=_("Докум
               )
 
 
+all_software = SoftwareCategory(name="all", friendly_name=_("Полный комплект программного обеспечения"),
+                                icon="software.png",
+                                description=_("Архив со всем софтом и документацией для этого продукта"))
+
+
 @lru_cache(maxsize=128)
 def software_category_by_name(name: str) -> SoftwareCategory:
     for category in categories:

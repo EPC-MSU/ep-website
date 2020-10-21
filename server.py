@@ -5,16 +5,19 @@ import asyncio
 import posixpath
 import ssl
 from os.path import isfile
+from argparse import ArgumentParser
+import logging
+
 
 from data.products import products, product_by_name
 import data.other as other_data
 import data.download as download_data
-from data.walker.walk import FileInfo, walk
+from filemanager import FileManager
 from translator.translator import translator, all_languages
 
-from typing import Dict, List, Optional
+from typing import Optional
 
-files: Dict[str, Dict[str, List[FileInfo]]] = {}  # Download page files, must be initialized
+file_manager = FileManager(5, "view/static/download", "/static/download")  # Download page files
 
 
 routes = web.RouteTableDef()
@@ -42,6 +45,7 @@ def translatable_template(func):
 def base_template(func):
     async def handler(request):
         result = await func(request)
+        # TODO: clearer names
         return {"address": other_data.address,
                 "epc": other_data.epc,
                 "description": other_data.description,
@@ -60,6 +64,7 @@ async def index(request):
 @aiohttp_jinja2.template("index.html")
 @base_template
 async def index(request):
+    # TODO: clearer names
     return {"intro": other_data.intro,
             "products": products,
             "technical": other_data.technical,
@@ -73,8 +78,11 @@ async def index(request):
 async def download(request):
     product = product_by_name(request.match_info["product"])
 
+    # TODO: clearer names
     return {"product": product,
-            "all_software": files[product.name],
+            "all_software": file_manager.files[product.name],
+            "archive": file_manager.archives[product.name],
+            "archive_description": download_data.all_software,
             "version": download_data.version,
             "release_date": download_data.release_date,
             "size": download_data.size,
@@ -86,13 +94,6 @@ async def download(request):
 
 # TODO: use nginx
 routes.static('/static', "view/static")
-
-
-async def walk_periodic(path: str, url_prefix: str):
-    global files
-    while True:
-        files = walk(path, url_prefix)
-        await asyncio.sleep(300)  # Update every 5 minutes
 
 
 def _app_factory() -> web.Application:
@@ -119,8 +120,7 @@ async def _server_factory(keyfile: Optional[str] = None, certfile: Optional[str]
 
 
 async def main():
-    walker_coro = walk_periodic("view/static/download", "/static/download")  # periodic run
-    asyncio.create_task(walker_coro)
+    file_manager.start_refresh()
 
     http_server_coro = (await _server_factory()).start()
     asyncio.create_task(http_server_coro)
@@ -132,6 +132,11 @@ async def main():
 
 
 if __name__ == "__main__":
+    parser = ArgumentParser("EyePoint server")
+    parser.add_argument("--debug", help="Run with debug logging", action="store_true")
+    if parser.parse_args().debug:
+        logging.basicConfig(level=logging.DEBUG)
+
     loop = asyncio.get_event_loop()
     loop.run_until_complete(main())
     loop.run_forever()
