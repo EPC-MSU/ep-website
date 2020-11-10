@@ -1,10 +1,7 @@
 import asyncio
 import logging
 import posixpath
-import ssl
 from argparse import ArgumentParser
-from os.path import isfile
-from typing import Optional
 
 import aiohttp_jinja2
 import jinja2
@@ -112,19 +109,12 @@ def _app_factory() -> web.Application:
     return app
 
 
-async def _server_factory(
-    keyfile: Optional[str] = None, certfile: Optional[str] = None
-) -> web.TCPSite:
+async def _server_factory() -> web.TCPSite:
     app = _app_factory()
     runner = web.AppRunner(app)
     await runner.setup()
 
-    ssl_ctx = None
-    if keyfile or certfile:
-        ssl_ctx = ssl.SSLContext(ssl.PROTOCOL_TLSv1_2)
-        ssl_ctx.load_cert_chain(certfile=certfile, keyfile=keyfile)
-
-    site = web.TCPSite(runner, ssl_context=ssl_ctx)
+    site = web.TCPSite(runner)
     return site
 
 
@@ -133,11 +123,6 @@ async def main():
 
     http_server_coro = (await _server_factory()).start()
     asyncio.create_task(http_server_coro)
-
-    cert, key = "fullchain.pem", "privkey.pem"
-    if isfile(cert) and isfile(key):
-        https_server_coro = (await _server_factory(keyfile=key, certfile=cert)).start()
-        asyncio.create_task(https_server_coro)
 
 
 if __name__ == "__main__":
