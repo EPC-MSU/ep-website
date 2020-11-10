@@ -6,21 +6,20 @@ https://ximc.ru/issues/37198
 https://ximc.ru/issues/38120  
 https://ximc.ru/issues/36703  
 
-# Как развернуть
+# Как развернуть (в релиз)
 ## Подготовка "чистой" машины
-На "чистом" linux нужно поставить все необходимые программы. Это docker и git (последний - чтобы скачать код сайта):
+На "чистом" linux нужно поставить все необходимые программы. Это docker, git (чтобы скачать код сайта), nginx (чтобы на хосте было несколько контейнеров):
 
 ```bash
 sudo apt update
-sudo apt install docker.io git
+sudo apt install docker.io git nginx
 ```
 
 Затем скачать репозиторий с исходным кодом сайта:
 ```bash
-git clone https://github.com/EPC-MSU/ep-website.git ~/epwebsite
+git clone https://github.com/EPC-MSU/ep-website.git /home/epwebsite/epwebsite
 cd ~/epwebsite/
 ```
-(скачать можно в любую папку)
 
 ## Сборка и запуск сайта
 
@@ -53,18 +52,20 @@ docker volume inspect download
 По этому пути должны были появиться файлы.
 
 ### Поддержка HTTPS
-Для поддержки HTTPS нужно положить файлы сертификата   
+Поддержка HTTPS реализована на уровне nginx. Контейнер разворачивает только HTTP сайт.
+nginx ищет файлы сертификата
 fullchain.pem (сертификат)  
 privkey.pem (приватный ключ сертификата)  
-в папку с проектом (там где Dockerfile). Без этих файлов рядом сайт будет работать без поддержки HTTPS  
-Подразумевается использовать letsencrypt. Пока вручную. Это можно сделать так:
+в папке с проектом (/home/epwebsite/epwebsite). Без этих файлов рядом сайт не будет работать (потому что nginx делает redirect с http на https)
+Подразумевается использование letsencrypt. Пока вручную. Это можно сделать так:
 ```
 sudo apt-get install certbot
-docker container stop epw
+systemctl stop nginx
 sudo certbot certonly --standalone
-cp /etc/letsencrypt/live/epwebtest.kea.su/fullchain.pem /root/epwebsite/
-cp /etc/letsencrypt/live/epwebtest.kea.su/privkey.pem /root/epwebsite/
-bash scripts/rebuild-docker.sh
+cp /etc/letsencrypt/live/<domain>/fullchain.pem /home/epwebsite/epwebsite
+cp /etc/letsencrypt/live/<domain>/privkey.pem /home/epwebsite/epwebsite
+bash scripts/rebuild-docker-release.sh
+systemctl nginx start
 ```
 То есть поставить на хост специального бота, остановить контейнер, чтобы освободить порт 80, запустить сервер
 сертификации в интерактивном режиме. Скопировать полученные сертификаты и ключи, пересобрать контейнер.
@@ -74,8 +75,7 @@ bash scripts/rebuild-docker.sh
 Внутри папки с исходным кодом лежит Docker container. Теперь, когда есть docker volume с файлами, можно собрать и 
 запустить контейнер: 
 ```bash
-sudo docker build . -t epw
-docker run --name epw --publish 80:8080 --publish 443:8443 --restart=always -d --mount source=download,target=/app/view/static/download epw
+bash scripts/rebuild-docker-release.sh
 ```
 
 Для тестов, без Docker, сайт можно просто запустить:
@@ -88,7 +88,7 @@ python server.py
 
 Для пересборки контейнера на сервере можно использовать скрипт:
 ```bash
-bash scripts/rebuild-docker.sh
+bash scripts/rebuild-docker-release.sh
 ```
 Он удалит существующий контейнер, соберёт новый и запустит
 
@@ -98,7 +98,7 @@ bash scripts/rebuild-docker.sh
 dockershare который разворачивает ssh сервер с доступом исключительно к Docker volume.  
 Скрипт для разворачивания\пересборки контейнера есть в папке scripts/rebuild-share.sh
 ```bash
-bash scripts/rebuild-share.sh
+bash scripts/rebuild-share-release.sh
 ```
 После запуска этого скрипта на хосте появится (помимо контейнера с сайтом) контейнер для доступа к папке скачиваемых 
 файлов по ssh    
@@ -250,6 +250,16 @@ docker container rm unpack
 pre-commit install
 ``` 
 
+## Stable и Unstable версии
+
+Благодаря nginx, который проксирует поддомены на разные порты, можно поднять несколько версий сайта на одном хосте.
+Например, для разработки удобно поднять стабилную и нестабильную версию:  
+unstable.eyepoint.physlab.ru  
+eyepoint.physlab.ru  
+Адреса стабильной и нестабильной версии прописаны в конфигурационном файле nginx. Стабильная и нестабильная версия  
+собираются скриптами scripts/rebuild-docker-stable и scripts/rebuild-docker-unstable. Аналогично для docker share серверов.
+Для использования unstable версии нужно поднять отдельный docker volume по инструкции выше, но вместо download 
+использовать имя download-unstable
 
 ## Источники и дополнительная информация
 
