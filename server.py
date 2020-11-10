@@ -127,6 +127,7 @@ async def main():
 
 if __name__ == "__main__":
     parser = ArgumentParser("EyePoint server")
+    # TODO: robots.txt for unstable version
     parser.add_argument("--debug", help="Run with debug logging", action="store_true")
     if parser.parse_args().debug:
         logging.basicConfig(level=logging.DEBUG)
