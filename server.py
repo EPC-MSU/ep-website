@@ -96,7 +96,6 @@ async def download(request):
     }
 
 
-# TODO: use nginx
 routes.static("/static", "view/static")
 
 

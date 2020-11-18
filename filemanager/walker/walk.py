@@ -7,9 +7,11 @@ from os.path import basename, getmtime, getsize, isdir
 from os.path import join as join_path
 from os.path import sep
 from re import findall
-from typing import Dict, List
+from typing import Dict, List, Optional
 
 import imohash
+
+from translator import all_languages
 
 
 @dataclass
@@ -21,6 +23,7 @@ class FileInfo:
     basename: str
     full_path: str
     code: str
+    language: Optional[str] = None
 
     @classmethod
     def fromfile(cls, path: str, url_prefix: str) -> "FileInfo":
@@ -28,15 +31,23 @@ class FileInfo:
         File name must be in format name-v.v.v-platform
         :param url_prefix: url prefix, for example: /static
         :param path: path to file (relative!)
-        :param parse_version: parse version (True by default)
         :return: "FileInfo"
         """
-        version_matches = findall(r"\d+\.\d+\.\d+", basename(path))
+        name = basename(path)
+
+        version_matches = findall(r"\d+\.\d+\.\d+", name)
         if not version_matches:
             raise ValueError("Unable to find file version")
         version = LooseVersion(version_matches[0])
 
-        # convert /foo/bar/spam/download/EyePointS1/firmware to download/EyePointS1/firmware
+        file_language = None
+        for language in all_languages:
+            if "-" + language + "." in name:
+                file_language = language
+                break
+
+        # convert /foo/bar/spam/download/EyePointS1/firm
+        # ware to download/EyePointS1/firmware
         path_short = join_path(*path.split(sep)[-3:])
 
         return FileInfo(
@@ -44,9 +55,10 @@ class FileInfo:
             datetime.fromtimestamp(getmtime(path)).date(),
             getsize(path),
             urllib.quote(join_path(url_prefix, path_short)),
-            basename(path),
+            name,
             path,
             imohash.hashfile(path),
+            language=file_language,
         )
 
 
