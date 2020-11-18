@@ -23,6 +23,8 @@ class FileInfo:
     basename: str
     full_path: str
     code: str
+    platform: str
+    name: str
     language: Optional[str] = None
 
     @classmethod
@@ -33,16 +35,20 @@ class FileInfo:
         :param path: path to file (relative!)
         :return: "FileInfo"
         """
-        name = basename(path)
+        file_name = basename(path)
 
-        version_matches = findall(r"\d+\.\d+\.\d+", name)
-        if not version_matches:
-            raise ValueError("Unable to find file version")
-        version = LooseVersion(version_matches[0])
+        # Example: libivm-1.0.2-src.zip driver-1.0.0.zip
+        format_matches = findall(
+            r"(?P<name>\w+)-(?P<version>\d+\.\d+\.\d+)-?(?P<platform>.+)", file_name
+        )
+        if not format_matches:
+            raise ValueError("File name " + file_name + " must be name-v.v.v-platform")
+        name, version, platform = format_matches[0]
 
         file_language = None
         for language in all_languages:
-            if "-" + language + "." in name:
+            # pattern en.pdf, ru.exe, etc
+            if platform.startswith(language + "."):
                 file_language = language
                 break
 
@@ -55,9 +61,11 @@ class FileInfo:
             datetime.fromtimestamp(getmtime(path)).date(),
             getsize(path),
             urllib.quote(join_path(url_prefix, path_short)),
-            name,
+            file_name,
             path,
             imohash.hashfile(path),
+            platform,
+            name,
             language=file_language,
         )
 

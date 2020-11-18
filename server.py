@@ -85,7 +85,7 @@ async def download(request):
     return {
         "product": product,
         "all_software": file_manager.files[product.name],
-        "archive": file_manager.archives[product.name],
+        "archive": file_manager.archives.get(product.name),
         "archive_description": download_data.all_software,
         "version": download_data.version,
         "release_date": download_data.release_date,

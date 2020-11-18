@@ -28,14 +28,15 @@
 
 <!--Full software kit-->
 
-
+{% if archive %}
 <div class="download-header-block">
     <a id="download-sdk" href="{{ archive.link }}">  {{ tr(archive_description.friendly_name) }} </a>
 </div>
-{% if archive_description.description %}
+    {% if archive_description.description %}
 <div class="download-text">
     {{ tr(archive_description.description) | safe }}
 </div>
+    {% endif %}
 {% endif %}
 
 
