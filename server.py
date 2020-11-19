@@ -92,7 +92,7 @@ async def download(request):
         "size": download_data.size,
         "link": download_data.link,
         "download": download_data.download,
-        "software_type": download_data.software_category_by_name,
+        "categories": download_data.categories,
     }
 
 
