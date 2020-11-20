@@ -1,10 +1,7 @@
 import asyncio
 import logging
 import posixpath
-import ssl
 from argparse import ArgumentParser
-from os.path import isfile
-from typing import Optional
 
 import aiohttp_jinja2
 import jinja2
@@ -88,18 +85,17 @@ async def download(request):
     return {
         "product": product,
         "all_software": file_manager.files[product.name],
-        "archive": file_manager.archives[product.name],
+        "archive": file_manager.archives.get(product.name),
         "archive_description": download_data.all_software,
         "version": download_data.version,
         "release_date": download_data.release_date,
         "size": download_data.size,
         "link": download_data.link,
         "download": download_data.download,
-        "software_type": download_data.software_category_by_name,
+        "categories": download_data.categories,
     }
 
 
-# TODO: use nginx
 routes.static("/static", "view/static")
 
 
@@ -112,19 +108,12 @@ def _app_factory() -> web.Application:
     return app
 
 
-async def _server_factory(
-    keyfile: Optional[str] = None, certfile: Optional[str] = None
-) -> web.TCPSite:
+async def _server_factory() -> web.TCPSite:
     app = _app_factory()
     runner = web.AppRunner(app)
     await runner.setup()
 
-    ssl_ctx = None
-    if keyfile or certfile:
-        ssl_ctx = ssl.SSLContext(ssl.PROTOCOL_TLSv1_2)
-        ssl_ctx.load_cert_chain(certfile=certfile, keyfile=keyfile)
-
-    site = web.TCPSite(runner, ssl_context=ssl_ctx)
+    site = web.TCPSite(runner)
     return site
 
 
@@ -134,14 +123,10 @@ async def main():
     http_server_coro = (await _server_factory()).start()
     asyncio.create_task(http_server_coro)
 
-    cert, key = "fullchain.pem", "privkey.pem"
-    if isfile(cert) and isfile(key):
-        https_server_coro = (await _server_factory(keyfile=key, certfile=cert)).start()
-        asyncio.create_task(https_server_coro)
-
 
 if __name__ == "__main__":
     parser = ArgumentParser("EyePoint server")
+    # TODO: robots.txt for unstable version
     parser.add_argument("--debug", help="Run with debug logging", action="store_true")
     if parser.parse_args().debug:
         logging.basicConfig(level=logging.DEBUG)

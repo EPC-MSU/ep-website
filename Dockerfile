@@ -12,5 +12,4 @@ RUN pip install -r requirements.txt && \
     msgfmt locale/en_US/LC_MESSAGES/en.po -o locale/en_US/LC_MESSAGES/en.mo --use-fuzzy
 
 EXPOSE 8080
-EXPOSE 8443
 cmd ["python", "server.py"]

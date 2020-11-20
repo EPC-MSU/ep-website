@@ -28,30 +28,31 @@
 
 <!--Full software kit-->
 
-
+{% if archive %}
 <div class="download-header-block">
     <a id="download-sdk" href="{{ archive.link }}">  {{ tr(archive_description.friendly_name) }} </a>
 </div>
-{% if archive_description.description %}
+    {% if archive_description.description %}
 <div class="download-text">
     {{ tr(archive_description.description) | safe }}
 </div>
+    {% endif %}
 {% endif %}
 
 
 <!--Software categories-->
 
-{% for software_name, software in all_software.items() %}
+{% for category in categories if category.name in all_software %}
 
 <div class="download-header-block">
-  <img src="/static/ico/{{ software_type(software_name).icon }}">
-  <h3 class="download-h3">  {{ tr(software_type(software_name).friendly_name) }}</h3>
+  <img src="/static/ico/{{ category.icon }}">
+  <h3 class="download-h3">  {{ tr(category.friendly_name) }}</h3>
 </div>
-{% if software_type(software_name).description %}
+    {% if category.description %}
 <div class="download-text">
-    {{ tr(software_type(software_name).description) | safe }}
+    {{ tr(category.description) | safe }}
 </div>
-{% endif %}
+    {% endif %}
 
 <table>
     <tbody>
@@ -61,7 +62,7 @@
         <th>{{ tr(release_date) }}</th>
         <th>{{ tr(size) }}</th>
       </tr>
-      {% for file in software %}
+      {% for file in all_software[category.name] if not file.language or file.language == lang %}
       <tr>
         <td class="td4"><a href="{{ file.link }}">{{ file.basename }}</a></td>
         <td class="td1">{{ file.version }}</td>

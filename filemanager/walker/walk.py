@@ -7,9 +7,11 @@ from os.path import basename, getmtime, getsize, isdir
 from os.path import join as join_path
 from os.path import sep
 from re import findall
-from typing import Dict, List
+from typing import Dict, List, Optional
 
 import imohash
+
+from translator import all_languages
 
 
 @dataclass
@@ -21,6 +23,9 @@ class FileInfo:
     basename: str
     full_path: str
     code: str
+    platform: str
+    name: str
+    language: Optional[str] = None
 
     @classmethod
     def fromfile(cls, path: str, url_prefix: str) -> "FileInfo":
@@ -28,15 +33,27 @@ class FileInfo:
         File name must be in format name-v.v.v-platform
         :param url_prefix: url prefix, for example: /static
         :param path: path to file (relative!)
-        :param parse_version: parse version (True by default)
         :return: "FileInfo"
         """
-        version_matches = findall(r"\d+\.\d+\.\d+", basename(path))
-        if not version_matches:
-            raise ValueError("Unable to find file version")
-        version = LooseVersion(version_matches[0])
+        file_name = basename(path)
 
-        # convert /foo/bar/spam/download/EyePointS1/firmware to download/EyePointS1/firmware
+        # Example: libivm-1.0.2-src.zip driver-1.0.0.zip
+        format_matches = findall(
+            r"(?P<name>\w+)-(?P<version>\d+\.\d+\.\d+)-?(?P<platform>.+)", file_name
+        )
+        if not format_matches:
+            raise ValueError("File name " + file_name + " must be name-v.v.v-platform")
+        name, version, platform = format_matches[0]
+
+        file_language = None
+        for language in all_languages:
+            # pattern en.pdf, ru.exe, etc
+            if platform.startswith(language + "."):
+                file_language = language
+                break
+
+        # convert /foo/bar/spam/download/EyePointS1/firm
+        # ware to download/EyePointS1/firmware
         path_short = join_path(*path.split(sep)[-3:])
 
         return FileInfo(
@@ -44,9 +61,12 @@ class FileInfo:
             datetime.fromtimestamp(getmtime(path)).date(),
             getsize(path),
             urllib.quote(join_path(url_prefix, path_short)),
-            basename(path),
+            file_name,
             path,
             imohash.hashfile(path),
+            platform,
+            name,
+            language=file_language,
         )
 
 

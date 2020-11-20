@@ -2,6 +2,7 @@ import asyncio
 import logging
 import urllib.parse as urllib
 import zipfile
+from concurrent.futures import ProcessPoolExecutor
 from dataclasses import dataclass
 from datetime import date
 from os.path import getmtime
@@ -53,8 +54,13 @@ def archive(software: Dict[str, List[FileInfo]], zip_path: str):
     for category, files in software.items():
         if not files:
             continue
-        file = files[0]  # newest version
-        z_file.write(file.full_path, join_path(category, file.basename))
+        prev_file = files[0]
+        z_file.write(prev_file.full_path, join_path(category, prev_file.basename))
+        for file in files:
+            # Files ordered by version. So, we skip all older versions  with same names and platforms
+            if file.name != prev_file.name or file.platform != prev_file.platform:
+                z_file.write(file.full_path, join_path(category, file.basename))
+            prev_file = file
 
 
 def compare_latest_software(
@@ -121,34 +127,42 @@ class FileManager:
         _loop = loop or asyncio.get_event_loop()
         if self._loop:
             raise RuntimeError("Already started")
-        self._loop = _loop
+        self._loop: asyncio.AbstractEventLoop = _loop
         self._loop.create_task(self._periodic_task())
 
-    def _refresh(self):
+    async def _refresh(self):
         """
         Update files structure
         :return:
         """
         new_files = walk(self._directory, self._url_prefix)
-        for product, software in new_files.items():
-            if (
-                not self._files
-                or not self._files.get(product)
-                or not compare_latest_software(self._files[product], new_files[product])
-            ):
-                logging.debug("Update archive " + product)
-                archive_path = join_path(self._directory, product, self._archive_name)
-                archive(software, archive_path)
-                self._archives[product] = ArchiveInfo.fromfile(
-                    archive_path, self._url_prefix
-                )
+        old_files = self._files
         self._files = new_files
+        with ProcessPoolExecutor() as executor:
+            for product, software in new_files.items():
+                if (
+                    not old_files
+                    or not old_files.get(product)
+                    or not compare_latest_software(
+                        old_files[product], new_files[product]
+                    )
+                ):
+                    logging.debug("Update archive " + product)
+                    archive_path = join_path(
+                        self._directory, product, self._archive_name
+                    )
+                    await self._loop.run_in_executor(
+                        executor, archive, software, archive_path
+                    )
+                    self._archives[product] = ArchiveInfo.fromfile(
+                        archive_path, self._url_prefix
+                    )
 
     async def _periodic_task(self):
         while True:
             try:
                 logging.debug("Refresh file list...")
-                self._refresh()
+                await self._refresh()
             except Exception as err:
                 logging.error("Exception caught during file refresh: " + str(err))
             await asyncio.sleep(self._timeout)
