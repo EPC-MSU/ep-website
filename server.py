@@ -2,6 +2,7 @@ import asyncio
 import logging
 import posixpath
 from argparse import ArgumentParser
+from textwrap import dedent
 
 import aiohttp_jinja2
 import jinja2
@@ -73,6 +74,23 @@ async def index(request):
         "technical": other_data.technical,
         "more": other_data.more,
     }
+
+
+@routes.get("/robots.txt")
+async def robots(request):
+    content = dedent(
+        """
+    User-Agent: *
+    Allow: /"""
+    )
+    return web.Response(
+        body=content,
+        headers={
+            "Content-Type": "text/plain",
+            "Content-Disposition": "attachment",
+            "filename": "robots.txt",
+        },
+    )
 
 
 @routes.get("/{language}/product/{product}/")

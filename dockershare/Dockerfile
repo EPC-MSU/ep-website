@@ -1,6 +1,7 @@
 # Docker container for SSHFS access to server "download" directory
 
-FROM ubuntu:18.04
+# Use the same platform as the main container
+FROM python:3.7-slim-buster
 
 RUN apt-get update && \
     apt-get install -y openssh-server && \
