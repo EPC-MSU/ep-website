@@ -56,20 +56,8 @@ docker volume inspect download
 nginx ищет файлы сертификата
 fullchain.pem (сертификат)  
 privkey.pem (приватный ключ сертификата)  
-в папке с проектом (/home/epwebsite/epwebsite). Без этих файлов рядом сайт не будет работать (потому что nginx делает redirect с http на https)
-Подразумевается использование letsencrypt. Пока вручную. Это можно сделать так:
-```
-sudo apt-get install certbot
-systemctl stop nginx
-sudo certbot certonly --standalone
-cp /etc/letsencrypt/live/<domain>/fullchain.pem /home/epwebsite/epwebsite
-cp /etc/letsencrypt/live/<domain>/privkey.pem /home/epwebsite/epwebsite
-bash scripts/rebuild-docker-release.sh
-systemctl nginx start
-```
-То есть поставить на хост специального бота, остановить контейнер, чтобы освободить порт 80, запустить сервер
-сертификации в интерактивном режиме. Скопировать полученные сертификаты и ключи, пересобрать контейнер.
-В интерактивном вводе спросят домен, который должен к этому моменту уже разрешаться в IP.
+в папке letsencrypt https://certbot.eff.org/lets-encrypt/debianbuster-nginx. Без этих файлов сайт не будет работать 
+(потому что nginx делает redirect с http на https)
 
 ### Запуск
 Внутри папки с исходным кодом лежит Docker container. Теперь, когда есть docker volume с файлами, можно собрать и 
