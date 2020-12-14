@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2020-12-14 16:15+0300\n"
-"PO-Revision-Date: 2020-12-14 16:21+0300\n"
+"POT-Creation-Date: 2020-12-14 17:22+0300\n"
+"PO-Revision-Date: 2020-12-14 17:23+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -208,25 +208,25 @@ msgstr "Download"
 msgid ""
 "<b>USBADC10</b> включает в себя 10 каналов 12-битного АЦП, выведенных на "
 "разъём, микроконтроллер STM32 и USB-интерфейс, по которому подаётся питание "
-"и осуществляется считывание оцифрованных данных."
+"и осуществляется считывание оцифрованных данных. "
 msgstr ""
 "<b> USBADC10</b> includes 10 channels of 12-bit ADC outputted to the "
 "connector, an STM32 microcontroller and a USB-interface through which power "
-"is supplied and the digitized data is read."
+"is supplied and the digitized data is read. "
 
-#: data\other.py:7
+#: data\other.py:6
 msgid "Технические данные"
 msgstr "Specifications"
 
-#: data\other.py:9
+#: data\other.py:8
 msgid "Россия, Москва, 119333<br>ул. Фотиевой, дом 5, строение 1"
 msgstr "Russia, Moscow, 119333<br>Fotievoy street 5, bldg. 1"
 
-#: data\other.py:11
+#: data\other.py:10
 msgid "Подробнее"
 msgstr "More"
 
-#: data\other.py:13 data\other.py:15
+#: data\other.py:12 data\other.py:14
 msgid ""
 "EyePoint - линейка простого и функционального оборудования для локализации "
 "неисправных компонентов на платах, использующего метод аналогового "
@@ -238,8 +238,9 @@ msgstr ""
 
 # msgid "EyePoint, диагностика электронных схем, анализ неисправностей, ЦИФ МГУ"
 # msgstr ""
-#: data\other.py:20 data\other.py:22
-msgid "usbadc10, аналогово-цифровой преобразователь"
+#: data\other.py:19 data\other.py:21
+#, fuzzy
+msgid "usbadc10, аналого-цифровой преобразователь"
 msgstr "usbadc10, analog to digital converter"
 
 #: data\products.py:22
@@ -267,43 +268,43 @@ msgstr ""
 "second, simultaneously on all channels. The device is supplied with software "
 "for taking measurements. The software is supported by Windows and Linux OS."
 
-#: data\products.py:29
+#: data\products.py:34
 msgid "10 каналов"
 msgstr "10 channels"
 
-#: data\products.py:30
+#: data\products.py:35
 msgid "кроссплатфор-менный GUI"
 msgstr "cross-platform GUI"
 
-#: data\products.py:32
+#: data\products.py:37
 msgid "USB Type-C"
 msgstr "USB Type-C"
 
-#: data\products.py:35
+#: data\products.py:40
 msgid "Диапазон входного напряжения - 0...3,3 В"
 msgstr "Input voltage range - 0...3,3 V"
 
-#: data\products.py:36
+#: data\products.py:41
 msgid "Разрешение - 0,8 мВ"
 msgstr "Resolution - 0,8 mV"
 
-#: data\products.py:37
+#: data\products.py:42
 msgid "Разрядность АЦП - 12-bit"
 msgstr "12-bit ADC"
 
-#: data\products.py:38
+#: data\products.py:43
 msgid "Поддержка ОС: Windows 7/8/10 (х64/х86), Linux"
 msgstr "OS support: Windows 7/8/10 (x64/x86), Linux"
 
-#: data\products.py:39
+#: data\products.py:44
 msgid "Разъем подключения - USB type C"
 msgstr "Connector - USB type C"
 
-#: data\products.py:40
+#: data\products.py:45
 msgid "Скорость передачи данных - USB Full-Speed"
 msgstr "Data transfer rate - USB Full-Speed"
 
-#: data\products.py:41
+#: data\products.py:46
 msgid "До 4000 выборок в секунду одновременно по всем каналам"
 msgstr "Up to 4000 samples per second simultaneously on all channels"
 

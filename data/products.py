@@ -47,10 +47,6 @@ products = (
 
         ],
     ),
-    
-    
-    
-
 )
 
 assert all([" " not in p.name for p in products])
