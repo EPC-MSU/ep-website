@@ -1,5 +1,5 @@
 # Rebuild docker container
-docker rm -f epw-stable
-docker rmi -f epw-stable
-docker build . -t epw-stable
-docker run --name epw-stable --publish 8000:8080 --restart=always -d --mount source=download,target=/app/view/static/download epw-stable
+docker rm -f usbadc10-stable
+docker rmi -f usbadc10-stable
+docker build . -t usbadc10-stable
+docker run --name usbadc10-stable --publish 8003:8080 --restart=always -d --mount source=download-usbadc10-stable,target=/app/view/static/download usbadc10-stable
