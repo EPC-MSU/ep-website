@@ -7,6 +7,7 @@ from textwrap import dedent
 import aiohttp_jinja2
 import jinja2
 from aiohttp import web
+from aiohttp.web_exceptions import HTTPNotFound
 
 import data.download as download_data
 import data.other as other_data
@@ -25,7 +26,10 @@ routes = web.RouteTableDef()
 def translatable_template(func):
     async def handler(request):
         language = request.match_info.get("language", "ru")
-        tr = translator(language)
+        try:
+            tr = translator(language)
+        except ValueError:  # No such language
+            raise HTTPNotFound()
 
         result = await func(request)
 
