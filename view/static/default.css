@@ -405,7 +405,15 @@
       color: rgb(132, 168, 105);
       font-size: 1.5em;
       font-weight: 300;
-      text-decoration: none;
+      text-decoration: underline;
+	}
+
+  #download-sdk:hover
+	{
+      color: #1cae5c;
+      font-size: 1.5em;
+      font-weight: 300;
+      text-decoration: underline;
 	}
 
 	#page p
