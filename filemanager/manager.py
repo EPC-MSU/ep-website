@@ -5,9 +5,7 @@ import zipfile
 from concurrent.futures import ProcessPoolExecutor
 from dataclasses import dataclass
 from datetime import date
-from os.path import getmtime
-from os.path import join as join_path
-from os.path import sep
+from os.path import getmtime, sep, join as join_path
 from typing import Dict, List, Optional
 
 from filemanager.walker.walk import FileInfo, walk
@@ -91,7 +89,12 @@ def compare_latest_software(
 
 
 class FileManager:
-    _archive_name = "FullSDK.zip"
+    _archive_name_format = "{product}_Full_software_package-{date}.zip"
+
+    @classmethod
+    def _archive_name(cls, product: str) -> str:
+        return cls._archive_name_format.format(product=product,
+                                               date=date.today().strftime("%Y.%m.%d"))
 
     def __init__(self, timeout: int, directory: str, url_prefix: str):
         """
@@ -149,7 +152,7 @@ class FileManager:
                 ):
                     logging.debug("Update archive " + product)
                     archive_path = join_path(
-                        self._directory, product, self._archive_name
+                        self._directory, product, self._archive_name(product)
                     )
                     await self._loop.run_in_executor(
                         executor, archive, software, archive_path
