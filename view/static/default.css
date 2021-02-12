@@ -101,6 +101,87 @@
         justify-content: space-between;
     }
 
+
+/*********************************************************************************/
+/* EyePoint parters 
+/*********************************************************************************/
+#our_partners_chipdip
+{
+	padding: 1.5em 5em 1em 2em;
+	float: left;
+	margin-top: 1em;
+    margin-bottom: 1em;
+	overflow: auto;
+	width: 300px;
+	height:80px;
+}
+
+#chipdip_mail
+{
+	color: rgba(6,6,6,6);
+	margin-top: 1em;
+    margin-bottom: 1em;
+	font-size: 1.5em;
+	
+}
+
+#chipdip_phone
+{
+	color: rgba(6,6,6,6);
+	margin-top: 1em;
+    margin-bottom: 1em;
+	font-size: 1.5em;	
+}
+	
+#our_partners_ostec
+{
+	padding: 0em 0em 0em 5em;
+	float: left;
+	margin-top: 1em;
+    margin-bottom: 1em;
+	margin-right: 30px;
+}
+
+#ostec_mail
+{
+	color: rgba(6,6,6,6);
+	margin-top: 1em;
+    margin-bottom: 1em;
+	font-size: 1.5em;
+	
+}
+
+#ostec_phone
+{
+	color: rgba(6,6,6,6);
+	margin-top: 1em;
+    margin-bottom: 1em;
+	font-size: 1.5em;
+}
+
+#our_partners_image
+{
+	width: 40%;
+	height:80px;
+}
+
+
+.parters{
+	overflow: hidden;
+	margin-bottom: 2em;
+}
+
+.chipdip{
+	width: 49%;
+	float: left;
+}
+
+
+.ostec{
+	width: 50%;
+	float: left;
+}
+
 /*********************************************************************************/
 /* EyePoint photo with comment style
 /*********************************************************************************/
