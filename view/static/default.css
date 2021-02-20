@@ -59,7 +59,7 @@
 
     #intro-text
     {
-        color: rgba(0,0,0,0.6);
+        color: rgba(0,0,0);
         text-align: justify;
     }
 
@@ -125,7 +125,7 @@
         display: flex;
 	    align-items: center;
         overflow: auto;
-        color: rgba(0,0,0,0.6);
+        color: rgba(0,0,0);
         margin-top: 1em;
         margin-bottom: 1em;
     }
@@ -135,7 +135,7 @@
 		display: flex;
 	    align-items: center;
         overflow: auto;
-        color: rgba(0,0,0,0.6);
+        color: rgba(0,0,0);
         margin-top: 1em;
         margin-bottom: 1em;
 	}
@@ -161,6 +161,7 @@
         text-align: justify;
         width: 60%;
         overflow: hidden;
+		color: rgb(0,0,0);
     }
 	
 	.about_us_msu_description
@@ -186,7 +187,7 @@
 		display: flex;
 	    align-items: center;
         overflow: auto;
-        color: rgba(0,0,0,0.6);
+        color: rgba(0,0,0);
         margin-top: 1em;
         margin-bottom: 1em;
 	}
@@ -205,7 +206,7 @@
 		display: flex;
 	    align-items: center;
         overflow: auto;
-        color: rgba(0,0,0,0.6);
+        color: rgba(0,0,0);
         margin-top: 1em;
         margin-bottom: 1em;
 	}
@@ -438,7 +439,7 @@
 		text-transform: uppercase;
 		font-size: 2.6em;
 		font-weight: 300;
-		color: rgba(0,0,0,0.9);
+		color: rgba(0,0,0);
 	}
 
 	#page ul
@@ -467,7 +468,7 @@
 	{
 		font-size: 1.3em;
 		font-weight: bolder;
-		color: rgba(0,0,0,0.9);
+		color: rgba(0,0,0);
 		text-decoration:none;
 		margin-bottom: 0.5em;
 		display: inline-block;
@@ -491,8 +492,8 @@
 
 	.download-text
 	{
-	    color: rgba(0,0,0,0.6);
-	    margin-bottom: 5px;
+	    color: rgba(0,0,0);
+	    margin-bottom: 2em;
 	}
 
 	#download-page-intro
@@ -519,7 +520,7 @@
 	}	
 	#page p
 	{
-		color: rgba(0,0,0,0.8);
+		color: rgba(0,0,0);
 	}
 
 /*********************************************************************************/

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2021-02-20 15:29+0300\n"
-"PO-Revision-Date: 2021-02-20 16:11+0300\n"
+"PO-Revision-Date: 2021-02-20 18:41+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -289,7 +289,7 @@ msgstr ""
 
 #: data/products.py:40
 msgid "<b>Сергей Запуниди</b> <br><b>Технический директор</b> "
-msgstr "<b>Sergey Zapunidi</b> <br><b>Technical Director</b> "
+msgstr "<b>Sergey Zapunidi</b> <br><b>Chief technical officer</b> "
 
 #: data/products.py:45
 msgid ""

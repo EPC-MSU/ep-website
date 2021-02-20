@@ -75,6 +75,9 @@ async def index(request):
         "products": products,
         "technical": other_data.technical,
         "more": other_data.more,
+        
+        "archive": file_manager.archives.get("USB_ADC"),
+        "archive_description": download_data.all_software
     }
 
 
