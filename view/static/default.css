@@ -163,6 +163,24 @@
         overflow: hidden;
     }
 	
+	.about_us_msu_description
+	{
+		flex-grow: 0;
+        flex-shrink: 0;
+        text-align: justify;
+        width: 60%;
+        overflow: hidden;
+	}
+	
+	.about_us_zap_description
+	{
+		flex-grow: 0;
+        flex-shrink: 0;
+        text-align: justify;
+        width: 60%;
+        overflow: hidden;
+	}
+	
 	.about_us_msu
 	{
 		display: flex;
