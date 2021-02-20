@@ -70,6 +70,20 @@
         margin-bottom: 30px;
         float: left;
     }
+	
+	.img_3in1
+	{
+		position: relative;
+		text-align: center;
+		width: 100%;
+		padding: 1em, 0em, 1em, 4em;
+		margin-bottom: 4em;
+	}
+	
+	#3in1
+	{ 
+		position: relative;
+	}
 
 /*********************************************************************************/
 /* Hilight
@@ -99,6 +113,7 @@
     {
         display: flex;
         justify-content: space-between;
+		margin-bottom: 2em;
     }
 
 /*********************************************************************************/
@@ -107,15 +122,37 @@
 
     .epmain
     {
-        display:         flex;
-
+        display: flex;
 	    align-items: center;
-
         overflow: auto;
         color: rgba(0,0,0,0.6);
         margin-top: 1em;
         margin-bottom: 1em;
     }
+	
+	.usbadc10_main
+	{
+		display: flex;
+	    align-items: center;
+        overflow: auto;
+        color: rgba(0,0,0,0.6);
+        margin-top: 1em;
+        margin-bottom: 1em;
+	}
+	
+	.usbadc10_main img
+	{
+		width: 30%;
+		text-align: center;
+		margin-right: 5em;
+		margin-left: 3em;
+	}
+	
+	.charts_img
+	{
+		width: 100%;
+		padding-bottom: 5em;
+	}
 
     .epdescription
     {
@@ -125,9 +162,49 @@
         width: 60%;
         overflow: hidden;
     }
+	
+	.about_us_msu
+	{
+		display: flex;
+	    align-items: center;
+        overflow: auto;
+        color: rgba(0,0,0,0.6);
+        margin-top: 1em;
+        margin-bottom: 1em;
+	}
+	
+	.about_us_msu img
+	{
+		width: 20%;
+		text-align: center;
+		margin-right: 5em;
+		margin-left: 3em;
+	}
 
-
-
+	
+	.about_us_zap
+	{
+		display: flex;
+	    align-items: center;
+        overflow: auto;
+        color: rgba(0,0,0,0.6);
+        margin-top: 1em;
+        margin-bottom: 1em;
+	}
+	
+	.about_us_zap img
+	{
+		width: 20%;
+		text-align: center;
+		margin-right: 5em;
+		margin-left: 3em;
+	}
+	
+	.parters img
+	{
+		text-align: center;
+		width: 100%;
+	}
 
 /*********************************************************************************/
 /* Image Style                                                                   */
@@ -225,9 +302,16 @@
 /*********************************************************************************/
 /* EPSystems                                                                     */
 /*********************************************************************************/
-    #epsystems
+    .epsystems
     {
         max-width: 600px;
+		
+    }
+	
+	.chapters
+    {
+		width: 30%;
+		
     }
 
 /*********************************************************************************/

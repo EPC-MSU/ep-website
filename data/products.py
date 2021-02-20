@@ -20,7 +20,7 @@ products = (
     Product(
         name="USB_ADC",
         friendly_name=_("USBADC10 v1.0.0"),
-        picture="1.jpg",
+        picture="2_1.png",
         description=_(
             " Аналого-цифровой преобразователь"
         ),

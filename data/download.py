@@ -73,8 +73,8 @@ categories = (
         icon="software.png",
         description=_(
             "Кроссплатформенное ПО для обновления прошивок USBADC10 и его исходные коды. "
-            "Репозиторий EPCBoot на GitHub: <a href='https://github.com/EPC-MSU/"
-            "EPCboot'>https://github.com/EPC-MSU/EPCboot</a>"
+            "Репозиторий EPCBoot GUI на GitHub: <a href='https://github.com/EPC-MSU/"
+            "EPCboot'>https://github.com/EPC-MSU/epcboot-gui</a>"
         ),
     ),
     SoftwareCategory(

@@ -3,21 +3,46 @@
 {% block content %}
 
 <div id="intro-container">
-	<img id="intro-image" src="/static/images/1.jpg"/>
+	<img id="intro-image" src="/static/images/usbadc10_main.jpg"/>
 	<div id="intro-text">
 		{{ tr(intro) | safe}}
 	</div>
 </div>
 
-<img id="epsystems" src="/static/images/EPsystems{{lang}}.png">
+<div class="img_3in1">
+	<img id="3in1" src="/static/images/usbadc10_3in1.png"/>
+</div>
+
+<img class="epsystems" src="/static/images/specifications{{lang}}.jpg"/>
 
 <div style="clear:both;"></div>
 
 {% for product in products %}
 <hr/>
+
+<div class="usbadc10_main">
+	<img src="/static/images/tech_settings.png"/>
+	
+	<div class="epdescription">
+		<span>{{ tr(product.description) | safe }}</span>
+        <br>
+        <br>
+        <span>{{ tr(product.extended_description) | safe }}</span>
+		<br>
+		<br>
+        <div class="hilight-container">
+            {% for hilight in product.hilights %}
+                <div class="hilight">{{ tr(hilight) }}</div>
+            {% endfor %}
+        </div>
+
+	</div>
+</div>
 <div class="epmain">
 	<a href="product/{{ product.name }}/" class="epimage">
-		<img src="/static/images/{{ product.picture }}">
+		<div class="charts_img">
+			<img src="/static/images/charts.png"/>
+		</div>
 	</a>
 	<div class="epdescription">
 		<a href="product/{{ product.name }}/" class="index-h3">{{ tr(product.friendly_name) }}</a>
@@ -35,11 +60,61 @@
 		</ul>
 		<div class="button-container">
 			<a href="product/{{ product.name }}/" class="button">{{ tr(more) }}</a>
-		</div>
+		</div>		
 	</div>
 </div>
 
+<!--Full software kit-->
+
+{% if archive %}
+<div class="download-header-block">
+    <a id="download-sdk" href="{{ archive.link }}">  {{ tr(archive_description.friendly_name) }} </a>
+</div>
+    {% if archive_description.description %}
+<div class="download-text">
+    {{ tr(archive_description.description) | safe }}
+</div>
+    {% endif %}
+{% endif %}
+
+<img class="chapters" src="/static/images/aboutus{{lang}}.jpg"/>
+<div style="clear:both;"></div>
+
+<hr/>
+
+<div class="about_us_msu">
+	<img src="/static/images/lab.jpg"/>
+	<div class="epdescription">
+		<span>{{ tr(product.description) | safe }}</span>
+        <br>
+        <br>
+        <span>{{ tr(product.extended_description) | safe }}</span>
+		<br>
+		<br>
+	</div>
+</div>
+
+<div class="about_us_zap">
+	<div class="epdescription">
+		<span>{{ tr(product.description) | safe }}</span>
+        <br>
+        <br>
+        <span>{{ tr(product.extended_description) | safe }}</span>
+		<br>
+		<br>
+	</div>
+	<img src="/static/images/zap.jpg"/>
+</div>
+
+<img class="chapters" src="/static/images/parters{{lang}}.jpg"/>
+<div style="clear:both;"></div>
+
+<hr/>
+
+<div class="parters">
+	<img src="/static/images/parters.jpg"/>
+</div>
+
+
 {% endfor %}
-
-
 {% endblock %}
