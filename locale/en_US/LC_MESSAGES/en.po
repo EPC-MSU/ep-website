@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2021-02-20 15:29+0300\n"
-"PO-Revision-Date: 2021-02-24 19:17+0300\n"
+"POT-Creation-Date: 2021-02-24 19:29+0300\n"
+"PO-Revision-Date: 2021-02-24 19:36+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -164,45 +164,45 @@ msgstr "Examples of using the API and bindings for Python and C#"
 #: data/download.py:128
 msgid ""
 "Комплект примеров программного кода на языках C, C# и Python, реализующего "
-"простые измерения сигнатур с использованием EyePoint IVM (измеритель "
-"сигнатур, который используется в различных устройствах линейки EyePoint). "
-"Также в данном архиве можно найти биндинги для языков Python и C#."
+"простые считывания оцифрованных данных с устройства USBADC10. Также в данном "
+"архиве можно найти биндинги для языков Python и C#."
 msgstr ""
 "A set of code examples in C, C#, and Python that implement simple reads of "
 "digitized data from a USBADC10 device. You can also find bindings for Python "
 "and C# in this archive."
 
-#: data/download.py:141
+#: data/download.py:140
 msgid "Полный комплект программного обеспечения"
 msgstr "Full software package"
 
-#: data/download.py:143
+#: data/download.py:142
 msgid "Архив со всем софтом и документацией для этого продукта"
 msgstr "Archive with all software and documentation for this product"
 
-#: data/download.py:155
+#: data/download.py:154
 msgid "Версия"
 msgstr "Version"
 
-#: data/download.py:156
+#: data/download.py:155
 msgid "Дата выпуска"
 msgstr "Release date"
 
-#: data/download.py:157
+#: data/download.py:156
 msgid "Размер"
 msgstr "Size"
 
-#: data/download.py:158
+#: data/download.py:157
 msgid "Ссылка"
 msgstr "Link"
 
-#: data/download.py:159
+#: data/download.py:158
 msgid "Скачать"
 msgstr "Download"
 
 #: data/other.py:3
 msgid ""
-"<b>USBADC10</b> включает в себя 10 каналов 12-битного АЦП, выведенных на "
+"<b>USBADC10</b> — устройство, преобразующее входной аналоговый сигнал в "
+"дискретный код, включает в себя 10 каналов 12-битного АЦП, выведенных на "
 "разъём, микроконтроллер STM32 и USB-интерфейс, по которому подаётся питание "
 "и осуществляется считывание оцифрованных данных. "
 msgstr ""
@@ -255,42 +255,40 @@ msgstr " Analog to digital converter"
 
 #: data/products.py:30
 msgid ""
-"<b>USBADC10</b> - устройство, преобразующее входной аналоговый сигнал в "
-"дискретный код, включает в себя 10 каналов 12-битного АЦП, выведенных на "
-"разъём, микроконтроллер STM32 и USB-интерфейс, по которому подаётся питание "
-"и осуществляется считывание оцифрованных данных. Частота преобразования "
-"USBADC10 - до 4000 отсчётов в секунду, одновременно по всем каналам. В "
-"комплекте с устройством поставляется программное обеспечение для получения "
-"измерений. ПО поддерживается ОС Windows и Linux."
+"Аналого-цифровой преобразователь USBADC10 имеет частоту до 4000 отсчётов в "
+"секунду, одновременно по всем каналам. В комплекте с устройством "
+"поставляется программное обеспечение для получения измерений. ПО "
+"поддерживается ОС Windows и Linux. Все необходимое <b>программное "
+"обеспечение</b> можно найти в свободном доступе. "
 msgstr ""
 "The USBADC10 analog-to-digital converter has a frequency of up to 4000 "
 "samples per second simultaneously on all channels. The device is equipped "
 "with software for obtaining measurements. The software is supported by "
-"Windows and Linux. All the necessary software can be found in the public "
-"domain."
+"Windows and Linux. All the necessary <b>software</b> can be found in the "
+"public domain. "
 
-#: data/products.py:37
+#: data/products.py:34
 msgid ""
-"Центр инженерной физики МГУ имени М.В. Ломоносова (кратко ООО ЦИФ МГУ имени "
-"М.В. Ломоносова) занимается разработкой и продажей сложной электроники и "
-"интеллектуального программного обеспечения, наукоемкими проектами в сфере "
+"Центр инженерной физики МГУ имени М.В. Ломоносова (сокращенно ООО ЦИФ МГУ "
+"имени М.В. Ломоносова) занимается разработкой и продажей сложной электроники "
+"и интеллектуального программного обеспечения, наукоемкими проектами в сфере "
 "робототехники и управления движением, автоматизацией экспериментальных "
 "установок в лазерной физике и физике высоких энергий, созданием систем "
 "автоматического тестирования и диагностики печатных плат и электронных "
 "компонентов. "
 msgstr ""
-"Engineering Physics Ctnter of Lomonosov Moscow State University (Engineering "
-"Physics Center of  MSU) is engaged in the development and sale of complex "
+"Engineering Physics Center of Lomonosov Moscow State University (Engineering "
+"Physics Center of MSU) is engaged in the development and sale of complex "
 "electronics and intelligent software, high-tech projects in the field of "
 "robotics and motion control, automation pilot plant in laser physics and "
 "high energy physics, the creation of automated testing and diagnostics "
 "printed circuit boards and electronic components. "
 
-#: data/products.py:40
+#: data/products.py:37
 msgid "<b>Сергей Запуниди</b> <br><b>Технический директор</b> "
 msgstr "<b>Sergey Zapunidi</b> <br><b>Chief technical officer</b> "
 
-#: data/products.py:45
+#: data/products.py:42
 msgid ""
 "Кандидат физико-математических наук, окончил физический факультет МГУ имени "
 "М.В. Ломоносова. Эксперт в области встраиваемых систем, алгоритмов "
@@ -310,45 +308,60 @@ msgstr ""
 "specialization in the company: management of the production department, "
 "development of technical solutions and introduction of new technologies. "
 
-#: data/products.py:54
+#: data/products.py:51
 msgid "10 каналов"
 msgstr "10 channels"
 
-#: data/products.py:55
+#: data/products.py:52
 msgid "кроссплатфор-менный GUI"
 msgstr "cross-platform GUI"
 
-#: data/products.py:57
+#: data/products.py:54
 msgid "USB Type-C"
 msgstr "USB Type-C"
 
-#: data/products.py:60
+#: data/products.py:57
 msgid "Диапазон входного напряжения - 0...3,3 В"
 msgstr "Input voltage range - 0...3,3 V"
 
-#: data/products.py:61
+#: data/products.py:58
 msgid "Разрешение - 0,8 мВ"
 msgstr "Resolution - 0,8 mV"
 
-#: data/products.py:62
+#: data/products.py:59
 msgid "Разрядность АЦП - 12-bit"
 msgstr "12-bit ADC"
 
-#: data/products.py:63
+#: data/products.py:60
 msgid "Поддержка ОС: Windows 7/8/10 (х64/х86), Linux"
 msgstr "OS support: Windows 7/8/10 (x64/x86), Linux"
 
-#: data/products.py:64
+#: data/products.py:61
 msgid "Разъем подключения - USB type C"
 msgstr "Connector - USB type C"
 
-#: data/products.py:65
+#: data/products.py:62
 msgid "Скорость передачи данных - USB Full-Speed"
 msgstr "Data transfer rate - USB Full-Speed"
 
-#: data/products.py:66
+#: data/products.py:63
 msgid "До 4000 выборок в секунду одновременно по всем каналам"
 msgstr "Up to 4000 samples per second simultaneously on all channels"
+
+#~ msgid ""
+#~ "<b>USBADC10</b> - устройство, преобразующее входной аналоговый сигнал в "
+#~ "дискретный код, включает в себя 10 каналов 12-битного АЦП, выведенных на "
+#~ "разъём, микроконтроллер STM32 и USB-интерфейс, по которому подаётся "
+#~ "питание и осуществляется считывание оцифрованных данных. Частота "
+#~ "преобразования USBADC10 - до 4000 отсчётов в секунду, одновременно по "
+#~ "всем каналам. В комплекте с устройством поставляется программное "
+#~ "обеспечение для получения измерений. ПО поддерживается ОС Windows и Linux."
+#~ msgstr ""
+#~ "The USBADC10 analog-to-digital converter has a frequency of up to 4000 "
+#~ "samples per second simultaneously on all channels. The device is equipped "
+#~ "with software for obtaining measurements. The software is supported by "
+#~ "Windows and Linux. All the necessary software can be found in the public "
+#~ "domain."
 
 #~ msgid ""
 #~ "Пользовательское программное обеспечение для поиска неисправностей на "
