@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2021-02-24 19:29+0300\n"
-"PO-Revision-Date: 2021-02-24 19:36+0300\n"
+"PO-Revision-Date: 2021-03-02 16:24+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -35,11 +35,11 @@ msgstr "Product documentation."
 
 #: data/download.py:34
 msgid "Драйвера"
-msgstr "Drivers"
+msgstr "Driver"
 
 #: data/download.py:36
 msgid "Драйвера для ОС Windows (для ОС Linux драйвер не нужен)."
-msgstr "Drivers for Windows (Linux does not need a driver)."
+msgstr "Driver for Windows (Linux does not need a driver)."
 
 #: data/download.py:40
 msgid "Прошивка"
@@ -70,7 +70,7 @@ msgstr ""
 
 #: data/download.py:59
 msgid "USBADC10 debugger"
-msgstr "USBADC10 debugger"
+msgstr "uRPC debugger"
 
 #: data/download.py:61
 msgid ""
@@ -154,7 +154,7 @@ msgid ""
 "можно скачать отдельно на этой странице."
 msgstr ""
 "Cross-platform library for working with multi-channel usbadc10. The library "
-"is written in C, distributed as binary files (win32, win64, debian) and as "
+"is written in C, distributed as binary files (win64 and debian) and as "
 "source code. Library documentation can be downloaded separately on this page."
 
 #: data/download.py:126
@@ -167,7 +167,7 @@ msgid ""
 "простые считывания оцифрованных данных с устройства USBADC10. Также в данном "
 "архиве можно найти биндинги для языков Python и C#."
 msgstr ""
-"A set of code examples in C, C#, and Python that implement simple reads of "
+"A set of code examples in C and Python that implement simple reads of "
 "digitized data from a USBADC10 device. You can also find bindings for Python "
 "and C# in this archive."
 
