@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2021-02-24 19:29+0300\n"
-"PO-Revision-Date: 2021-03-02 16:24+0300\n"
+"POT-Creation-Date: 2021-03-02 16:42+0300\n"
+"PO-Revision-Date: 2021-03-02 16:46+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -34,11 +34,11 @@ msgid "Информация о продукте."
 msgstr "Product documentation."
 
 #: data/download.py:34
-msgid "Драйвера"
+msgid "Драйвер"
 msgstr "Driver"
 
 #: data/download.py:36
-msgid "Драйвера для ОС Windows (для ОС Linux драйвер не нужен)."
+msgid "Драйвер для ОС Windows (для ОС Linux драйвер не нужен)."
 msgstr "Driver for Windows (Linux does not need a driver)."
 
 #: data/download.py:40
@@ -60,7 +60,7 @@ msgstr "Software for PC"
 #: data/download.py:51
 msgid ""
 "Пользовательское программное обеспечение для получения зависимостей "
-"напряжения от времени с помощью многоканальных АЦП USBADC10.Для работы ПО "
+"напряжения от времени с помощью многоканальных АЦП USBADC10. Для работы ПО "
 "потребуется драйвер. Его можно скачать на данной странице вместе с "
 "программой."
 msgstr ""
@@ -69,7 +69,7 @@ msgstr ""
 "can download it on this page along with the program."
 
 #: data/download.py:59
-msgid "USBADC10 debugger"
+msgid "uRPC debugger"
 msgstr "uRPC debugger"
 
 #: data/download.py:61
@@ -150,8 +150,8 @@ msgstr "Library for software management"
 msgid ""
 "Кроссплатформенная библиотека для работы с многоканальным usbadc10. "
 "Библиотека написана на языке C, распространяется в виде бинарных файлов "
-"(win32, win64, debian) и в виде исходных кодов. Документацию к библиотеке "
-"можно скачать отдельно на этой странице."
+"(win64 и debian) и в виде исходных кодов. Документацию к библиотеке можно "
+"скачать отдельно на этой странице."
 msgstr ""
 "Cross-platform library for working with multi-channel usbadc10. The library "
 "is written in C, distributed as binary files (win64 and debian) and as "
@@ -163,7 +163,7 @@ msgstr "Examples of using the API and bindings for Python and C#"
 
 #: data/download.py:128
 msgid ""
-"Комплект примеров программного кода на языках C, C# и Python, реализующего "
+"Комплект примеров программного кода на языках C и Python, реализующего "
 "простые считывания оцифрованных данных с устройства USBADC10. Также в данном "
 "архиве можно найти биндинги для языков Python и C#."
 msgstr ""
