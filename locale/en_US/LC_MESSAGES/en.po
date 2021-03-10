@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2021-03-02 16:42+0300\n"
-"PO-Revision-Date: 2021-03-02 16:46+0300\n"
+"PO-Revision-Date: 2021-03-10 13:42+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -70,7 +70,7 @@ msgstr ""
 
 #: data/download.py:59
 msgid "uRPC debugger"
-msgstr "uRPC debugger"
+msgstr "uRPC Debugger"
 
 #: data/download.py:61
 msgid ""

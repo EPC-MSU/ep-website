@@ -56,7 +56,7 @@ categories = (
     ),
     SoftwareCategory(
         name="debugger",
-        friendly_name=_("uRPC debugger"),
+        friendly_name=_("uRPC Debugger"),
         icon="software.png",
         description=_(
             "Кроссплатформенное ПО с графическим интерфейсом для отладки "
