@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2020-10-21 03:49+0300\n"
-"PO-Revision-Date: 2020-10-21 03:50+0300\n"
+"PO-Revision-Date: 2021-03-10 13:19+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
-"X-Generator: Poedit 2.4.1\n"
+"X-Generator: Poedit 2.3.1\n"
 
 #: data/download.py:15
 msgid "Документация"
@@ -72,7 +72,7 @@ msgstr ""
 
 #: data/download.py:32
 msgid "IVM debugger"
-msgstr "IVM debugger"
+msgstr "uRPC Debugger"
 
 #: data/download.py:33
 msgid ""
