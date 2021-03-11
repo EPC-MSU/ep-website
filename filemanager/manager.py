@@ -5,7 +5,8 @@ import zipfile
 from concurrent.futures import ProcessPoolExecutor
 from dataclasses import dataclass
 from datetime import date
-from os.path import getmtime, sep, join as join_path
+from os.path import getmtime, sep, join as join_path, basename, isfile
+from os import remove, listdir
 from typing import Dict, List, Optional
 
 from filemanager.walker.walk import FileInfo, walk
@@ -20,7 +21,7 @@ class ArchiveInfo:
     def fromfile(cls, path: str, url_prefix: str) -> "ArchiveInfo":
         """
         :param url_prefix: url prefix, for example: /static
-        :param path: path to file (relative!)
+        :param path: path to file
         :return: "Archive"
         """
 
@@ -108,7 +109,7 @@ class FileManager:
         self._directory = directory
         self._files = None
         self._loop = None
-        self._archives = dict()
+        self._archives: Dict[str, ArchiveInfo] = dict()
 
     @property
     def files(self):
@@ -143,20 +144,29 @@ class FileManager:
         self._files = new_files
         with ProcessPoolExecutor() as executor:
             for product, software in new_files.items():
+                archive_directory = join_path(self._directory, product)
+                archive_path = join_path(archive_directory, self._archive_name(product))
+
                 if (
                     not old_files
                     or not old_files.get(product)
+                    or not isfile(archive_path)
                     or not compare_latest_software(
                         old_files[product], new_files[product]
                     )
                 ):
                     logging.debug("Update archive " + product)
-                    archive_path = join_path(
-                        self._directory, product, self._archive_name(product)
-                    )
-                    await self._loop.run_in_executor(
-                        executor, archive, software, archive_path
-                    )
+                    await self._loop.run_in_executor(executor, archive, software, archive_path)
+
+                    # Remove other old archives
+                    for file in listdir(archive_directory):
+                        if file.endswith(".zip"):  # archive
+                            if basename(archive_path) != file:  # old archive
+                                try:
+                                    remove(join_path(archive_directory, file))
+                                except OSError as err:
+                                    logging.error(f"Unable to remove {file} {err}")
+
                     self._archives[product] = ArchiveInfo.fromfile(
                         archive_path, self._url_prefix
                     )

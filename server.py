@@ -16,7 +16,7 @@ from filemanager import FileManager
 from translator.translator import all_languages, translator
 
 file_manager = FileManager(
-    300, "view/static/download", "/static/download"
+    600, "view/static/download", "/static/download"
 )  # Download page files
 
 
