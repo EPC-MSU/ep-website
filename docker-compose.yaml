@@ -1,0 +1,23 @@
+# Server example
+
+# Webserver
+services:
+  epwebserver:
+    build: .
+    container_name: epwebserver
+    ports:
+      - "8080:8080"
+    volumes:
+      - epwebdrive:/app/view/static/download
+
+  # Share access container
+  epwebshare:
+    build: dockershare
+    container_name: epwebshare
+    ports:
+      - "5000:22"
+    volumes:
+      - epwebdrive:/drive
+
+volumes:
+  epwebdrive:
