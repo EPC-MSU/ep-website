@@ -31,7 +31,7 @@ categories = (
     ),
     SoftwareCategory(
         name="driver",
-        friendly_name=_("Драйвера"),
+        friendly_name=_("Драйвер"),
         icon="driver.png",
         description=_("Драйвера для ОС Windows (для ОС Linux драйвер не нужен)."),
     ),
