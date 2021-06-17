@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2021-03-11 12:19+0300\n"
-"PO-Revision-Date: 2021-03-11 12:24+0300\n"
+"PO-Revision-Date: 2021-06-17 13:39+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
-"X-Generator: Poedit 2.3\n"
+"X-Generator: Poedit 2.3.1\n"
 
 #: data/download.py:19
 msgid "Документация"
@@ -182,7 +182,7 @@ msgstr ""
 
 #: data/download.py:146
 msgid "Полный комплект программного обеспечения"
-msgstr "Full software package"
+msgstr "Download full software package"
 
 #: data/download.py:148
 msgid "Архив со всем софтом и документацией для этого продукта"
