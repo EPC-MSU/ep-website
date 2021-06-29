@@ -41,7 +41,7 @@ categories = (
         icon="firmware.png",
         description=_(
             "Обновление прошивки осуществляется с помощью кроссплатформенного "
-            "ПО EPCBoot (ссылка на скачивание на этой странице)."
+            "ПО EPCBootGUI (ссылка на скачивание на этой странице)."
         ),
     ),
     SoftwareCategory(
@@ -72,13 +72,13 @@ categories = (
     ),
     SoftwareCategory(
         name="epcboot",
-        friendly_name=_("EPCBoot"),
+        friendly_name=_("EPCBootGUI"),
         icon="software.png",
         description=_(
             "Кроссплатформенное ПО для обновления прошивок сигнатурных анализаторов "
             "EyePoint и его исходные коды. "
-            "Репозиторий EPCBoot на GitHub: <a href='https://github.com/EPC-MSU/"
-            "EPCboot'>https://github.com/EPC-MSU/EPCboot</a>"
+            "Репозиторий EPCBootGUI на GitHub: <a href='https://github.com/EPC-MSU/"
+            "EPCbootGUI'>https://github.com/EPC-MSU/epcboot-gui</a>"
         ),
     ),
     SoftwareCategory(
