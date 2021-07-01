@@ -143,7 +143,7 @@ categories = (
 
 all_software = SoftwareCategory(
     name="all",
-    friendly_name=_("Полный комплект программного обеспечения"),
+    friendly_name=_("Скачать полный комплект программного обеспечения"),
     icon="software.png",
     description=_("Архив со всем софтом и документацией для этого продукта"),
 )

@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-29 16:29+0300\n"
-"PO-Revision-Date: 2021-06-29 16:31+0300\n"
+"POT-Creation-Date: 2021-07-01 13:01+0300\n"
+"PO-Revision-Date: 2021-07-01 13:02+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -182,8 +182,8 @@ msgstr ""
 "in this archive."
 
 #: ../data/download.py:146
-msgid "Полный комплект программного обеспечения"
-msgstr "Full software package"
+msgid "Скачать полный комплект программного обеспечения"
+msgstr "Download full software package"
 
 #: ../data/download.py:148
 msgid "Архив со всем софтом и документацией для этого продукта"
