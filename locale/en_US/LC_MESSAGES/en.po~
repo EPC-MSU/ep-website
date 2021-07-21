@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-29 16:07+0300\n"
-"PO-Revision-Date: 2021-06-29 16:09+0300\n"
+"POT-Creation-Date: 2021-07-21 15:03+0300\n"
+"PO-Revision-Date: 2021-07-21 15:07+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -27,8 +27,8 @@ msgid ""
 msgstr "User manual, product passport, etc."
 
 #: ../data/download.py:28
-msgid "Брошюры"
-msgstr "Datasheets"
+msgid "Промо"
+msgstr "Promo"
 
 #: ../data/download.py:30
 msgid "Информация о продукте."
@@ -51,12 +51,12 @@ msgid ""
 "Обновление прошивки осуществляется с помощью кроссплатформенного ПО "
 "EPCBootGUI (ссылка на скачивание на этой странице)."
 msgstr ""
-"Firmware updates are performed using EPCBootGUI cross-platform SOFTWARE "
+"Firmware updates are performed using EPCBootGUI cross-platform software "
 "(download link on this page)."
 
 #: ../data/download.py:49
-msgid "Программное обеспечение"
-msgstr "Software for PC"
+msgid "Программное обеспечение EPLab"
+msgstr "EPLab software for PC"
 
 #: ../data/download.py:52
 msgid ""
@@ -67,15 +67,34 @@ msgid ""
 "Visual Studio 2013 (win32). Всё это можно скачать на данной странице."
 msgstr ""
 "PC software for Troubleshooting printed circuit boards using EyePoint analog "
-"signature analyzers.The SOFTWARE requires Python 3.6.8 (win32) with a set of "
-"necessary libraries, as well as Microsoft Visual C++ Redistributable "
+"signature analyzers. The software requires Python 3.6.8 (win32) with a set "
+"of necessary libraries, as well as Microsoft Visual C++ Redistributable "
 "packages for Visual Studio 2013 (win32). You can download them on this page."
 
 #: ../data/download.py:62
+msgid "Программное обеспечение EyePointS"
+msgstr "EyePointS software for PC"
+
+#: ../data/download.py:65
+msgid ""
+"Пользовательское программное обеспечение, аналогичное графическому "
+"интерфейсу на устройстве EyePoint S2, для поиска неисправностей на печатных "
+"платах с использованием аналоговых сигнатурных анализаторов EyePoint. Для "
+"работы ПО требуется Python 3.6.8 (win32) с набором необходимых библиотек, "
+"драйвер, а также Распространяемые пакеты Microsoft Visual C++ для Visual "
+"Studio 2013 (win32). Всё это можно скачать на данной странице."
+msgstr ""
+"PC software, similar to the graphical interface of the EyePoint S2 device, "
+"for Troubleshooting printed circuit boards using EyePoint analog signature "
+"analyzers. The software requires Python 3.6.8 (win32) with a set of "
+"necessary libraries, as well as Microsoft Visual C++ Redistributable "
+"packages for Visual Studio 2013 (win32). You can download them on this page."
+
+#: ../data/download.py:74
 msgid "uRPC Debugger"
 msgstr "uRPC Debugger"
 
-#: ../data/download.py:65
+#: ../data/download.py:77
 msgid ""
 "Кроссплатформенное ПО с графическим интерфейсом для отладки сигнатурных "
 "анализаторов EyePoint IVM. Данное ПО позволяет вручную вызывать команды "
@@ -84,31 +103,31 @@ msgid ""
 "кодов. Для работы на Windows требуется драйвер."
 msgstr ""
 "Cross-platform software with a graphical interface for debugging EyePoint "
-"IVM signature analyzers. This SOFTWARE allows you to manually call "
+"IVM signature analyzers. This software allows you to manually call "
 "management commands. Formation and analysis of fields of complex commands is "
-"done automatically. The SOFTWARE is distributed as binary files and as "
+"done automatically. The software is distributed as binary files and as "
 "source code. To run on Windows requires a driver."
 
-#: ../data/download.py:75
+#: ../data/download.py:87
 msgid "EPCBootGUI"
 msgstr "EPCBootGUI"
 
-#: ../data/download.py:78
+#: ../data/download.py:90
 msgid ""
 "Кроссплатформенное ПО для обновления прошивок сигнатурных анализаторов "
 "EyePoint и его исходные коды. Репозиторий EPCBootGUI на GitHub: <a "
-"href='https://github.com/EPC-MSU/EPCbootGUI'>https://github.com/EPC-MSU/"
+"href='https://github.com/EPC-MSU/epcboot-gui'>https://github.com/EPC-MSU/"
 "epcboot-gui</a>"
 msgstr ""
-"Cross-platform SOFTWARE for updating eyepoint signature analyzer firmware "
+"Cross-platform software for updating eyepoint signature analyzer firmware "
 "and its source codes. EPCBootGUI repository on GitHub: <a href='https://"
-"github.com/EPC-MSU/EPCbootGUI'>https://github.com/EPC-MSU/epcboot-gui</a>"
+"github.com/EPC-MSU/epcboot-gui'>https://github.com/EPC-MSU/epcboot-gui</a>"
 
-#: ../data/download.py:86
+#: ../data/download.py:98
 msgid "Прошивка встроенного компьютера"
 msgstr "Firmware of the embedded computer"
 
-#: ../data/download.py:89
+#: ../data/download.py:101
 msgid ""
 "Образы встроенной операционной системы для устройств серии EyePoint S. "
 "Обновление образа осуществляется посредством записи на SD карту. Более "
@@ -116,17 +135,17 @@ msgid ""
 "образа на SD карту в ОС Windows можно использовать Win32 Disk Imager (можно "
 "скачать с официального сайта или с данной страницы)."
 msgstr ""
-"Embedded operating system images for EyePoint S series devices. The image is "
+"Embedded operating system images for EyePointS series devices. The image is "
 "updated by writing to the SD card. For more information, see the user's "
 "guide. To write an image to an SD card in Windows, you can use the Win32 "
 "Disk Imager (you can download it from the official website or from this "
 "page)."
 
-#: ../data/download.py:99
+#: ../data/download.py:111
 msgid "Описание библиотеки для программного управления"
 msgstr "Description of the software management library"
 
-#: ../data/download.py:102
+#: ../data/download.py:114
 msgid ""
 "Документация к библиотеке libivm, которая может быть использована для "
 "взаимодействия с измерителями ВАХ EyePoint IVM. Саму библиотеку можно "
@@ -135,11 +154,11 @@ msgstr ""
 "Documentation for the libivm library, that can be used to interact with "
 "EyePoint IVM VAC meters. The library itself can be downloaded on this page."
 
-#: ../data/download.py:109
+#: ../data/download.py:121
 msgid "Стороннее вспомогательное ПО"
 msgstr "Third-party support software"
 
-#: ../data/download.py:112
+#: ../data/download.py:124
 msgid ""
 "Дополнительное стороннее программное обеспечение, которое может "
 "потребоваться при работе с устройствами EyePoint."
@@ -147,11 +166,11 @@ msgstr ""
 "Additional third-party software that may be required when working with "
 "EyePoint devices."
 
-#: ../data/download.py:118
+#: ../data/download.py:130
 msgid "Библиотека для программного управления"
 msgstr "Library for software management"
 
-#: ../data/download.py:121
+#: ../data/download.py:133
 msgid ""
 "Кроссплатформенная библиотека для работы с измерителями ВАХ EyePoint IVM "
 "(измеритель сигнатур, который используется в различных устройствах линейки "
@@ -165,11 +184,11 @@ msgstr ""
 "and as source code. Library documentation can be downloaded separately on "
 "this page."
 
-#: ../data/download.py:131
+#: ../data/download.py:143
 msgid "Примеры использования API и биндинги для Python и C#"
 msgstr "Examples of using the API and bindings for Python and C#"
 
-#: ../data/download.py:134
+#: ../data/download.py:146
 msgid ""
 "Комплект примеров программного кода на языках C, C# и Python, реализующего "
 "простые измерения сигнатур с использованием EyePoint IVM (измеритель "
@@ -181,31 +200,31 @@ msgstr ""
 "in the EyePoint product line). You can also find bindings for Python and C# "
 "in this archive."
 
-#: ../data/download.py:146
+#: ../data/download.py:158
 msgid "Скачать полный комплект программного обеспечения"
 msgstr "Download full software package"
 
-#: ../data/download.py:148
+#: ../data/download.py:160
 msgid "Архив со всем софтом и документацией для этого продукта"
 msgstr "Archive with all software and documentation for this product"
 
-#: ../data/download.py:160
+#: ../data/download.py:172
 msgid "Версия"
 msgstr "Version"
 
-#: ../data/download.py:161
+#: ../data/download.py:173
 msgid "Дата выпуска"
 msgstr "Release date"
 
-#: ../data/download.py:162
+#: ../data/download.py:174
 msgid "Размер"
 msgstr "Size"
 
-#: ../data/download.py:163
+#: ../data/download.py:175
 msgid "Ссылка"
 msgstr "Link"
 
-#: ../data/download.py:164
+#: ../data/download.py:176
 msgid "Скачать"
 msgstr "Download"
 
@@ -300,8 +319,8 @@ msgid "Метод тестирования: АСА"
 msgstr "Testing method: ASA"
 
 #: ../data/products.py:40 ../data/products.py:78
-msgid "Диапазон частот тестирующего сигнала: 10 Гц – 1 кГц"
-msgstr "Test signal frequency range: 10 Hz - 1 kHz"
+msgid "Диапазон частот тестирующего сигнала: 1 Гц – 1 кГц"
+msgstr "Test signal frequency range: 1 Hz - 1 kHz"
 
 #: ../data/products.py:41 ../data/products.py:79 ../data/products.py:120
 msgid "Рабочие напряжения: 1,2, 3,3, 5, 12 В"
@@ -657,6 +676,9 @@ msgstr "Dimensions: 60 х 40 х 5 mm"
 #: ../data/products.py:230
 msgid "Питание от USB разъема"
 msgstr "USB powered"
+
+#~ msgid "Брошюры"
+#~ msgstr "Datasheets"
 
 #~ msgid ""
 #~ "EyePoint u2 – миниатюрная система для поиска неисправных электронных "
