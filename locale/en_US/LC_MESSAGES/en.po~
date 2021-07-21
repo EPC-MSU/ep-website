@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-21 16:23+0300\n"
+"POT-Creation-Date: 2021-07-21 15:10+0300\n"
 "PO-Revision-Date: 2021-07-21 15:11+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -318,10 +318,9 @@ msgstr "Don't damage the PCB"
 msgid "Метод тестирования: АСА"
 msgstr "Testing method: ASA"
 
-#: ../data/products.py:40 ../data/products.py:78 ../data/products.py:119
-#: ../data/products.py:223
-msgid "Диапазон частот тестирующего сигнала: 1 Гц – 100 кГц"
-msgstr "Test signal frequency range: 1 Hz - 100 kHz"
+#: ../data/products.py:40 ../data/products.py:78
+msgid "Диапазон частот тестирующего сигнала: 1 Гц – 1 кГц"
+msgstr "Test signal frequency range: 1 Hz - 1 kHz"
 
 #: ../data/products.py:41 ../data/products.py:79 ../data/products.py:120
 msgid "Рабочие напряжения: 1,2, 3,3, 5, 12 В"
@@ -461,6 +460,10 @@ msgstr "Test signal frequency range: 1 Hz - 100 kHz"
 #: ../data/products.py:116
 msgid "Доступен план тестирования "
 msgstr "\"Test Plan\" mode: available "
+
+#: ../data/products.py:119 ../data/products.py:223
+msgid "Диапазон частот тестирующего сигнала: 1 Гц – 100 кГц"
+msgstr "Test signal frequency range: 1 Hz - 100 kHz"
 
 #: ../data/products.py:122
 msgid ""
@@ -673,9 +676,6 @@ msgstr "Dimensions: 60 х 40 х 5 mm"
 #: ../data/products.py:230
 msgid "Питание от USB разъема"
 msgstr "USB powered"
-
-#~ msgid "Диапазон частот тестирующего сигнала: 1 Гц – 1 кГц"
-#~ msgstr "Test signal frequency range: 1 Hz - 1 kHz"
 
 #~ msgid "Брошюры"
 #~ msgstr "Datasheets"

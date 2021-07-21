@@ -1,62 +1,60 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR ORGANIZATION
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-21 16:23+0300\n"
-"PO-Revision-Date: 2021-07-21 15:11+0300\n"
-"Last-Translator: \n"
-"Language-Team: \n"
-"Language: en\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: pygettext.py 1.5\n"
-"X-Generator: Poedit 2.3.1\n"
 
 #: ../data/download.py:19
 msgid "Документация"
-msgstr "Documentation"
+msgstr ""
 
 #: ../data/download.py:22
 msgid ""
 "Руководства пользователя, паспорт продукта и другая техническая документация."
-msgstr "User manual, product passport, etc."
+msgstr ""
 
 #: ../data/download.py:28
 msgid "Промо"
-msgstr "Promo"
+msgstr ""
 
 #: ../data/download.py:30
 msgid "Информация о продукте."
-msgstr "Product documentation."
+msgstr ""
 
 #: ../data/download.py:34
 msgid "Драйвер"
-msgstr "Driver"
+msgstr ""
 
 #: ../data/download.py:36
 msgid "Драйвера для ОС Windows (для ОС Linux драйвер не нужен)."
-msgstr "Drivers for Windows (Linux does not need a driver)."
+msgstr ""
 
 #: ../data/download.py:40
 msgid "Прошивка"
-msgstr "Firmware"
+msgstr ""
 
 #: ../data/download.py:43
 msgid ""
 "Обновление прошивки осуществляется с помощью кроссплатформенного ПО "
 "EPCBootGUI (ссылка на скачивание на этой странице)."
 msgstr ""
-"Firmware updates are performed using EPCBootGUI cross-platform software "
-"(download link on this page)."
 
 #: ../data/download.py:49
 msgid "Программное обеспечение EPLab"
-msgstr "EPLab software for PC"
+msgstr ""
 
 #: ../data/download.py:52
 msgid ""
@@ -66,14 +64,10 @@ msgid ""
 "библиотек, драйвер, а также распространяемые пакеты Microsoft Visual C++ для "
 "Visual Studio 2013 (win32). Всё это можно скачать на данной странице."
 msgstr ""
-"PC software for Troubleshooting printed circuit boards using EyePoint analog "
-"signature analyzers. The software requires Python 3.6.8 (win32) with a set "
-"of necessary libraries, as well as Microsoft Visual C++ Redistributable "
-"packages for Visual Studio 2013 (win32). You can download them on this page."
 
 #: ../data/download.py:62
 msgid "Программное обеспечение EyePointS"
-msgstr "EyePointS software for PC"
+msgstr ""
 
 #: ../data/download.py:65
 msgid ""
@@ -84,15 +78,10 @@ msgid ""
 "драйвер, а также распространяемые пакеты Microsoft Visual C++ для Visual "
 "Studio 2013 (win32). Всё это можно скачать на данной странице."
 msgstr ""
-"PC software, similar to the graphical interface of the EyePoint S2 device, "
-"for Troubleshooting printed circuit boards using EyePoint analog signature "
-"analyzers. The software requires Python 3.6.8 (win32) with a set of "
-"necessary libraries, as well as Microsoft Visual C++ Redistributable "
-"packages for Visual Studio 2013 (win32). You can download them on this page."
 
 #: ../data/download.py:74
 msgid "uRPC Debugger"
-msgstr "uRPC Debugger"
+msgstr ""
 
 #: ../data/download.py:77
 msgid ""
@@ -102,15 +91,10 @@ msgid ""
 "автоматически. ПО распространяется в виде бинарных файлов, и в виде исходных "
 "кодов. Для работы на Windows требуется драйвер."
 msgstr ""
-"Cross-platform software with a graphical interface for debugging EyePoint "
-"IVM signature analyzers. This software allows you to manually call "
-"management commands. Formation and analysis of fields of complex commands is "
-"done automatically. The software is distributed as binary files and as "
-"source code. To run on Windows requires a driver."
 
 #: ../data/download.py:87
 msgid "EPCBootGUI"
-msgstr "EPCBootGUI"
+msgstr ""
 
 #: ../data/download.py:90
 msgid ""
@@ -119,13 +103,10 @@ msgid ""
 "href='https://github.com/EPC-MSU/epcboot-gui'>https://github.com/EPC-MSU/"
 "epcboot-gui</a>"
 msgstr ""
-"Cross-platform software for updating eyepoint signature analyzer firmware "
-"and its source codes. EPCBootGUI repository on GitHub: <a href='https://"
-"github.com/EPC-MSU/epcboot-gui'>https://github.com/EPC-MSU/epcboot-gui</a>"
 
 #: ../data/download.py:98
 msgid "Прошивка встроенного компьютера"
-msgstr "Firmware of the embedded computer"
+msgstr ""
 
 #: ../data/download.py:101
 msgid ""
@@ -135,15 +116,10 @@ msgid ""
 "образа на SD карту в ОС Windows можно использовать Win32 Disk Imager (можно "
 "скачать с официального сайта или с данной страницы)."
 msgstr ""
-"Embedded operating system images for EyePointS series devices. The image is "
-"updated by writing to the SD card. For more information, see the user's "
-"guide. To write an image to an SD card in Windows, you can use the Win32 "
-"Disk Imager (you can download it from the official website or from this "
-"page)."
 
 #: ../data/download.py:111
 msgid "Описание библиотеки для программного управления"
-msgstr "Description of the software management library"
+msgstr ""
 
 #: ../data/download.py:114
 msgid ""
@@ -151,24 +127,20 @@ msgid ""
 "взаимодействия с измерителями ВАХ EyePoint IVM. Саму библиотеку можно "
 "скачать на этой странице."
 msgstr ""
-"Documentation for the libivm library, that can be used to interact with "
-"EyePoint IVM VAC meters. The library itself can be downloaded on this page."
 
 #: ../data/download.py:121
 msgid "Стороннее вспомогательное ПО"
-msgstr "Third-party support software"
+msgstr ""
 
 #: ../data/download.py:124
 msgid ""
 "Дополнительное стороннее программное обеспечение, которое может "
 "потребоваться при работе с устройствами EyePoint."
 msgstr ""
-"Additional third-party software that may be required when working with "
-"EyePoint devices."
 
 #: ../data/download.py:130
 msgid "Библиотека для программного управления"
-msgstr "Library for software management"
+msgstr ""
 
 #: ../data/download.py:133
 msgid ""
@@ -178,15 +150,10 @@ msgid ""
 "файлов (win32, win64, debian) и в виде исходных кодов. Документацию к "
 "библиотеке можно скачать отдельно на этой странице."
 msgstr ""
-"Cross-platform library for working with EyePoint I–V curve-meters (a "
-"signature meter used in various devices, in the EyePoint product line). The "
-"library is written in C, distributed as binary files (win32, win64, debian) "
-"and as source code. Library documentation can be downloaded separately on "
-"this page."
 
 #: ../data/download.py:143
 msgid "Примеры использования API и биндинги для Python и C#"
-msgstr "Examples of using the API and bindings for Python and C#"
+msgstr ""
 
 #: ../data/download.py:146
 msgid ""
@@ -195,38 +162,34 @@ msgid ""
 "сигнатур, который используется в различных устройствах линейки EyePoint). "
 "Также в данном архиве можно найти биндинги для языков Python и C#."
 msgstr ""
-"A set of code examples in C, C#, and Python that implement simple signature "
-"measurements using EyePoint IVM (a signature meter used in various devices, "
-"in the EyePoint product line). You can also find bindings for Python and C# "
-"in this archive."
 
 #: ../data/download.py:158
 msgid "Скачать полный комплект программного обеспечения"
-msgstr "Download full software package"
+msgstr ""
 
 #: ../data/download.py:160
 msgid "Архив со всем софтом и документацией для этого продукта"
-msgstr "Archive with all software and documentation for this product"
+msgstr ""
 
 #: ../data/download.py:172
 msgid "Версия"
-msgstr "Version"
+msgstr ""
 
 #: ../data/download.py:173
 msgid "Дата выпуска"
-msgstr "Release date"
+msgstr ""
 
 #: ../data/download.py:174
 msgid "Размер"
-msgstr "Size"
+msgstr ""
 
 #: ../data/download.py:175
 msgid "Ссылка"
-msgstr "Link"
+msgstr ""
 
 #: ../data/download.py:176
 msgid "Скачать"
-msgstr "Download"
+msgstr ""
 
 #: ../data/other.py:4
 msgid ""
@@ -239,28 +202,22 @@ msgid ""
 "используемые системы пользователя. Для работы с модулем поставляется API, "
 "которое позволяет без лишних проблем управлять каналом сигнатурного анализа."
 msgstr ""
-"<b>EyePoint</b> - systems for localizing faulty electronic components on "
-"PCB, as well as for identifying counterfeit, remarked or damaged components "
-"in BGA packages based on the analog signature analysis (ASA) method. The "
-"<b>EyePoint</b> products line includes automatic <b>(P10, B10, P10b)</b> "
-"systems, manual <b>(S1, u21, u22</b>) systems and OEM module <b> a2</b> with "
-"open API, which can be built into existing user systems."
 
 #: ../data/other.py:12
 msgid "Технические данные"
-msgstr "Specifications"
+msgstr ""
 
 #: ../data/other.py:14
 msgid "Россия, Москва, 119333<br>ул. Фотиевой, дом 5, строение 1"
-msgstr "Russia, Moscow, 119333<br>Fotievoy street 5, bldg. 1"
+msgstr ""
 
 #: ../data/other.py:16
 msgid "Подробнее"
-msgstr "More"
+msgstr ""
 
 #: ../data/other.py:18
 msgid "ООО «ЦИФ МГУ имени М.В. Ломоносова»"
-msgstr "Engineering Physics Center MSU"
+msgstr ""
 
 #: ../data/other.py:21
 msgid ""
@@ -268,29 +225,24 @@ msgid ""
 "неисправных компонентов на платах, использующего метод аналогового "
 "сигнатурного анализа и частотный диапазон до 100 кГц."
 msgstr ""
-"EyePoint - a simple and powerful equipment for localizing faulty components "
-"on PCB using the analog signature analysis method and a frequency range of "
-"up to 100 kHz."
 
 #: ../data/other.py:25
 msgid "EyePoint, диагностика электронных схем, анализ неисправностей, ЦИФ МГУ"
-msgstr "EyePoint, localizing faulty components, EPC MSU"
+msgstr ""
 
 #: ../data/other.py:27
 msgid "EyePoint. Локализаторы неисправных компонентов"
-msgstr "EyePoint. Localizers of faulty components"
+msgstr ""
 
 #: ../data/products.py:22
 msgid "EyePoint P10"
-msgstr "EyePoint P10"
+msgstr ""
 
 #: ../data/products.py:25
 msgid ""
 "Автоматическая настольная система для поиска неисправных электронных "
 "компонентов на печатных платах методом АСА."
 msgstr ""
-"Fully automatic desktop system for detection of defective electronic "
-"components on PCB by ASA method."
 
 #: ../data/products.py:29 ../data/products.py:67
 msgid ""
@@ -298,90 +250,88 @@ msgid ""
 "выводов компонентов и летающий щуп для проведения электрического "
 "тестирования методом аналогового сигнатурного анализа."
 msgstr ""
-"The system combines an automatic optical system for recognizing component "
-"leads and a flying probe for conducting electrical testing by the ASA method."
 
 #: ../data/products.py:34
 msgid "Прост в использовании"
-msgstr "Easy to use"
+msgstr ""
 
 #: ../data/products.py:35
 msgid "Снизит нагрузку на инженера"
-msgstr "Simplify the engineer's life"
+msgstr ""
 
 #: ../data/products.py:36
 msgid "Не повредит плату"
-msgstr "Don't damage the PCB"
+msgstr ""
 
 #: ../data/products.py:39 ../data/products.py:77 ../data/products.py:153
 #: ../data/products.py:185 ../data/products.py:222
 msgid "Метод тестирования: АСА"
-msgstr "Testing method: ASA"
+msgstr ""
 
 #: ../data/products.py:40 ../data/products.py:78 ../data/products.py:119
 #: ../data/products.py:223
 msgid "Диапазон частот тестирующего сигнала: 1 Гц – 100 кГц"
-msgstr "Test signal frequency range: 1 Hz - 100 kHz"
+msgstr ""
 
 #: ../data/products.py:41 ../data/products.py:79 ../data/products.py:120
 msgid "Рабочие напряжения: 1,2, 3,3, 5, 12 В"
-msgstr "Operating voltage: 1.2, 3.3, 5, 12 V"
+msgstr ""
 
 #: ../data/products.py:42 ../data/products.py:80
 msgid "Максимальный размер платы: 280x275 мм"
-msgstr "Maximum board size: 280x275 mm"
+msgstr ""
 
 #: ../data/products.py:43
 msgid "Поддержка корпусов: LQFP, SOIC, SMD, SOT, DIP и т.д"
-msgstr "Enclosure support: LQFP, SOIC, SMD, SOT, DIP, etc"
+msgstr ""
 
 #: ../data/products.py:44 ../data/products.py:83
 msgid "Построение карты тестирования до 10 см²/мин"
-msgstr "Scan speed: up to 10 cm²/ min"
+msgstr ""
 
 #: ../data/products.py:45 ../data/products.py:86
 msgid "Скорость тестирования: 100 точек в мин"
-msgstr "Testing speed: 100 points per minute"
+msgstr ""
 
 #: ../data/products.py:46 ../data/products.py:87
 msgid "Точность установки щупа: 30 мкм"
-msgstr "Probe positioning accuracy: 30 microns"
+msgstr ""
 
 #: ../data/products.py:47 ../data/products.py:88
 msgid "Время на смену платы: 30 сек"
-msgstr "Time to PCB change: 30 sec"
+msgstr ""
 
 #: ../data/products.py:48 ../data/products.py:89
 msgid "Тестирующее напряжение до +/- 12 В"
-msgstr "Test voltage: up to +/- 12 V"
+msgstr ""
 
 #: ../data/products.py:49 ../data/products.py:90
 msgid "Чувствительность по R 2 Ом - 450 кОм"
-msgstr "R sensitivity: 2 Ohm - 450 kOhm"
+msgstr ""
 
 #: ../data/products.py:50 ../data/products.py:91
 msgid "Чувствительность по C 300 пФ - 100 мкФ"
-msgstr "C sensitivity: 300 pF - 100 uF"
+msgstr ""
 
 #: ../data/products.py:51 ../data/products.py:92
 msgid "Чувствительность по L от 270 мкГн"
-msgstr "L sensitivity: from 270 μH"
+msgstr ""
 
 #: ../data/products.py:52 ../data/products.py:94
 msgid "Габариты и вес: 604х543х473 мм, 50 кг"
-msgstr "Dimensions and weight: 604х543х473 mm, 50 kg"
+msgstr ""
 
 #: ../data/products.py:53 ../data/products.py:95
 msgid "Управляющий ПК: Intel i5 2.8 ГГц, 16 Гб RAM, 256 Гб SSD"
-msgstr "PC: Intel i5 2.8 GHz, 16 GB RAM, 256 GB SSD"
+msgstr ""
 
 #: ../data/products.py:54 ../data/products.py:96
 msgid "Электропитание: ~220В, 300 Вт"
-msgstr "Power supply: ~ 220V, 300W"
+msgstr ""
 
 #: ../data/products.py:59
 msgid "EyePoint P10b"
-msgstr "EyePoint P10b"
+msgstr ""
 
 #: ../data/products.py:62
 msgid ""
@@ -389,45 +339,42 @@ msgid ""
 "электронных компонентов на печатных платах с опцией выявления контрафактных, "
 "перемаркерованных или поврежденных компонентов в BGA корпусах."
 msgstr ""
-"EyePoint P10b - fully automatic desktop system for detection of defective "
-"electronic components on PCB, counterfeit, re-marked or damaged electronic "
-"components in BGA packages."
 
 #: ../data/products.py:72
 msgid "PCB и BGA"
-msgstr "PCB and BGA"
+msgstr ""
 
 #: ../data/products.py:73
 msgid "Экономия времени на поиске до 3 раз"
-msgstr "Save search time up to 3 times"
+msgstr ""
 
 #: ../data/products.py:74
 msgid "Автоматическая проверка до 2500 выводов"
-msgstr "Max of test pins: up to 2500 pins"
+msgstr ""
 
 #: ../data/products.py:81
 msgid "Поддержка корпусов: LQFP, SOIC, SMD, SOT, DIP и т.д."
-msgstr "Enclosure support: LQFP, SOIC, SMD, SOT, DIP, etc."
+msgstr ""
 
 #: ../data/products.py:82
 msgid "Поддержка тестирования корпусов типа BGA"
-msgstr "BGA chips testing: available"
+msgstr ""
 
 #: ../data/products.py:84
 msgid "Шаг и количество выводов BGA микросхем: 1,5 - 0,4 мм, 8 - 2500 шт."
-msgstr "Pitch and number of pins of BGA chips: 1.5 - 0.4 mm, 8 - 2500 pcs."
+msgstr ""
 
 #: ../data/products.py:85
 msgid "Расположение выводов: произвольное"
-msgstr "Pins arrangement: random"
+msgstr ""
 
 #: ../data/products.py:93
 msgid "Предоставляются подложки для крепления BGA микросхем"
-msgstr "Substrates for BGA chips are provided"
+msgstr ""
 
 #: ../data/products.py:101
 msgid "EyePoint S2"
-msgstr "EyePoint S2"
+msgstr ""
 
 #: ../data/products.py:104
 msgid ""
@@ -435,8 +382,6 @@ msgid ""
 "устройство для ручного поиска неисправностей методом аналогового "
 "сигнатурного анализа."
 msgstr ""
-"Manual localizer of faulty electronic components using analog signature "
-"analysis with convenient touch screen."
 
 #: ../data/products.py:108
 msgid ""
@@ -445,66 +390,60 @@ msgid ""
 "большим удобным сенсорным экраном. Дополнительная педаль позволяет упростить "
 "управление системой."
 msgstr ""
-"EyePoint S2 - the second generation of a desktop system for manual "
-"localizing faulty electronic components on PCB. The system has a large "
-"convenient touch screen. An additional pedal will simplify the management of "
-"the system."
 
 #: ../data/products.py:114
 msgid "Простой и легкий прибор"
-msgstr "Simple and lightweight device"
+msgstr ""
 
 #: ../data/products.py:115 ../data/products.py:146 ../data/products.py:178
 msgid "Частота зондирования до 100 кГц"
-msgstr "Test signal frequency range: 1 Hz - 100 kHz"
+msgstr ""
 
 #: ../data/products.py:116
 msgid "Доступен план тестирования "
-msgstr "\"Test Plan\" mode: available "
+msgstr ""
 
 #: ../data/products.py:122
 msgid ""
 "В зависимости от диапазона измеряемых значений максимальное напряжение до 12 "
 "В, максимальный ток до 250 мкА"
 msgstr ""
-"Depending on the range of measured values, the max voltage is up to 12 V, "
-"the max current is up to 250 μA"
 
 #: ../data/products.py:125
 msgid "Габаритные размеры: 205 х 204 х 120 мм"
-msgstr "Dimensions: 205 x 204 x 120 mm"
+msgstr ""
 
 #: ../data/products.py:126
 msgid "7-ми дюймовый цветной дисплей с функцией touchscreen"
-msgstr "7 inch color display with touchscreen"
+msgstr ""
 
 #: ../data/products.py:127 ../data/products.py:155 ../data/products.py:187
 msgid "Регулируемый порог совпадения сигнатур"
-msgstr "Adjustable signature matched threshold"
+msgstr ""
 
 #: ../data/products.py:128
 msgid "Внешняя педаль для дополнительного функционала"
-msgstr "External pedal for additional functionality"
+msgstr ""
 
 #: ../data/products.py:129
 msgid "Экспорт данных в формате данных PNG на внешний Flash накопитель"
-msgstr "Export data in PNG data format to an external Flash drive"
+msgstr ""
 
 #: ../data/products.py:130 ../data/products.py:156 ../data/products.py:188
 msgid "Поддержка режима «План тестирования»"
-msgstr "\"Test Plan\" mode available"
+msgstr ""
 
 #: ../data/products.py:131
 msgid "Возможность подключения к ПК по USB (Win, Linux)"
-msgstr "Can be connected to PC (Win, Linux) via USB"
+msgstr ""
 
 #: ../data/products.py:132
 msgid "Возможность программного управления (C/C++, C#, Python)"
-msgstr "Possibility of program management: available (C/C+, C#, Python)"
+msgstr ""
 
 #: ../data/products.py:137
 msgid "EyePoint u21"
-msgstr "EyePoint u21"
+msgstr ""
 
 #: ../data/products.py:140
 msgid ""
@@ -512,9 +451,6 @@ msgid ""
 "компонентов на печатных платах методом ASA с частотой тестирующего сигнала "
 "до 100 кГц"
 msgstr ""
-"EyePoint u21 is a miniature single-channel localizer of faulty electronic "
-"components on printed circuit boards using the ASA method with a test signal "
-"frequency of up to 100 kHz"
 
 #: ../data/products.py:143
 msgid ""
@@ -523,62 +459,58 @@ msgid ""
 "моноблока и включающий корпус, плату управления и комплектующийся "
 "измерительным щупом и зажимом «Крокодил», кабелем USB для подключения к ПК."
 msgstr ""
-"EyePoint u21 is a simple, compact desktop device with software control, the "
-"youngest in the EyePoint line, delivered in the form of a monoblock and "
-"includes a housing, a control board and equipped with a measuring probe and "
-"a crocodile clip, a USB cable for connecting to a PC."
 
 #: ../data/products.py:147 ../data/products.py:179
 msgid "Миниатюрные размеры"
-msgstr "Miniature size"
+msgstr ""
 
 #: ../data/products.py:148 ../data/products.py:180
 msgid "Доступен функционал старшей модели S2"
-msgstr "All functionality of S2"
+msgstr ""
 
 #: ../data/products.py:151 ../data/products.py:183
 msgid "Диапазон тока: до 250 мкА, до 2.5 мА, до 25 мА"
-msgstr "Current sensitivity: 250 μA, 2.5 mA, 25 mA"
+msgstr ""
 
 #: ../data/products.py:152 ../data/products.py:184
 msgid "Частота пробного сигнала до 100кГц"
-msgstr "Test signal frequency range: 1 Hz - 100 kHz"
+msgstr ""
 
 #: ../data/products.py:154 ../data/products.py:186
 msgid "Напряжение пробного сигнала 1.2, 3.3, 5, 12В"
-msgstr "Operating voltages: 1.2, 3.3, 5, 12 V"
+msgstr ""
 
 #: ../data/products.py:157 ../data/products.py:189
 msgid "Интерфейс связи USB 2.0"
-msgstr "USB 2.0 communication"
+msgstr ""
 
 #: ../data/products.py:158 ../data/products.py:190
 msgid "Поддержка ОС: Windows 7/8/10 (х64/х86), Linux"
-msgstr "OS support: Windows 7/8/10 (x64/x86), Linux"
+msgstr ""
 
 #: ../data/products.py:159 ../data/products.py:191
 msgid "Возможность программного управления: C#/C++, Qt, Python"
-msgstr "Possibility of program management: available (C#/C++, Qt, Python)"
+msgstr ""
 
 #: ../data/products.py:160 ../data/products.py:192 ../data/products.py:229
 msgid "Напряжение питания: 5 В"
-msgstr "Supply voltage: 5 V"
+msgstr ""
 
 #: ../data/products.py:161 ../data/products.py:193
 msgid "Чувствительность по R: 1 Ом - 450 кОм"
-msgstr "R sensitivity: 1 Ohm - 450 kOhm"
+msgstr ""
 
 #: ../data/products.py:162 ../data/products.py:194
 msgid "Чувствительность по C: 50 пФ - 100 мкФ"
-msgstr "C sensitivity: 50 pF - 100 uF"
+msgstr ""
 
 #: ../data/products.py:163 ../data/products.py:195
 msgid "Чувствительность по L: от 1 мкГн"
-msgstr "L sensitivity: from 1 μH"
+msgstr ""
 
 #: ../data/products.py:168
 msgid "EyePoint u22"
-msgstr "EyePoint u22"
+msgstr ""
 
 #: ../data/products.py:171
 msgid ""
@@ -586,9 +518,6 @@ msgid ""
 "компонентов на печатных платах методом ASA с частотой тестирующего сигнала "
 "до 100 кГц"
 msgstr ""
-"EyePoint u22 is a miniature two-channel localizer of faulty electronic "
-"components on printed circuit boards by the ASA method with a test signal "
-"frequency of up to 100 kHz"
 
 #: ../data/products.py:174
 msgid ""
@@ -600,22 +529,15 @@ msgid ""
 "измерительными щупами и зажимами «Крокодил», кабелем USB для подключения к "
 "ПК."
 msgstr ""
-"A miniature version of the two-channel manual localizer of faulty electronic "
-"components with direct connection to a PC, with a frequency of up to 100 "
-"kHz, the EyePoint u22 is a simple, compact desktop device, with the "
-"possibility of software control, the youngest in the EyePoint line, "
-"delivered in the form of a monoblock and includes a housing, a control board "
-"and equipped with measuring probes and crocodile clips, a USB cable for "
-"connecting to a PC."
 
 #: ../data/products.py:200
 msgid "EyePoint a2"
-msgstr "EyePoint a2"
+msgstr ""
 
 #: ../data/products.py:203
 msgid ""
 "Одноканальный OEM модуль (без корпуса) аналогового сигнатурного анализа."
-msgstr "Single-channel OEM analog signature analysis module (without housing)."
+msgstr ""
 
 #: ../data/products.py:206
 msgid ""
@@ -629,111 +551,39 @@ msgid ""
 "Linux. Кроме того, модуль может использоваться совместно с готовым ПО для "
 "других устройств семейства EyePoint."
 msgstr ""
-"EyePoint a2 - OEM module designed to find defective electronic components on "
-"PCB using the Analog Signature Analysis (\"ASA\") method. The device is "
-"controlled via USB (via a virtual COM port). The module has an open API for "
-"developing your own software. The device comes with an SDK (developer kit) "
-"that includes: a library for the C programming language, bindings for Python "
-"and C#, code examples, and documentation. Windows and Linux are supported. "
-"In addition, the module can be used in conjunction with ready-made SOFTWARE "
-"for other devices in the EyePoint family."
 
 #: ../data/products.py:217
 msgid "Открытый API"
-msgstr "Open API"
+msgstr ""
 
 #: ../data/products.py:218
 msgid "Полный функционал"
-msgstr "Full functionality"
+msgstr ""
 
 #: ../data/products.py:219
 msgid "Максимально доступный"
-msgstr "Maximum available"
+msgstr ""
 
 #: ../data/products.py:224
 msgid "Рабочие напряжения: 1.2, 3.3, 5, 12 В"
-msgstr "Operating voltages: 1.2, 3.3, 5, 12 V"
+msgstr ""
 
 #: ../data/products.py:225
 msgid "Чувствительность по току: 250 мкА, 2.5 мА, 25 мА"
-msgstr "Current sensitivity: 250 μA, 2.5 mA, 25 mA"
+msgstr ""
 
 #: ../data/products.py:226
 msgid "Интерфейс подключения к ПК: USB 2.0"
-msgstr "USB 2.0 communication"
+msgstr ""
 
 #: ../data/products.py:227
 msgid "Возможность программного управления: С#/С++; Python"
-msgstr "Possibility of program management: available (C#/C++, Python)"
+msgstr ""
 
 #: ../data/products.py:228
 msgid "Габаритные размеры: 60х40х5 мм"
-msgstr "Dimensions: 60 х 40 х 5 mm"
+msgstr ""
 
 #: ../data/products.py:230
 msgid "Питание от USB разъема"
-msgstr "USB powered"
-
-#~ msgid "Диапазон частот тестирующего сигнала: 1 Гц – 1 кГц"
-#~ msgstr "Test signal frequency range: 1 Hz - 1 kHz"
-
-#~ msgid "Брошюры"
-#~ msgstr "Datasheets"
-
-#~ msgid ""
-#~ "EyePoint u2 – миниатюрная система для поиска неисправных электронных "
-#~ "компонентов на печатных платах методом аналогового сигнатурного анализа "
-#~ "(АСА). Для работы необходимо подключить EyePoint u2 к компьютеру по USB. "
-#~ "Версии: u21 – одноканальная система, u22 – двухканальная система."
-#~ msgstr ""
-#~ "EyePoint u2 is a miniature system for localizing faulty electronic "
-#~ "components on PCB using ASA method. For work you need connect EyePoint u2 "
-#~ "to the PC via USB. Versions: u21 – single-channel system, u22 – dual-"
-#~ "channel system."
-
-#~ msgid "Габаритные размеры: 175 х 90 х 40 мм"
-#~ msgstr "Dimensions: 175 х 90 х 40 mm"
-
-#~ msgid "Для остальных операционных систем драйвер не нужен."
-#~ msgstr "No driver is needed for other operating systems."
-
-#~ msgid "Софт"
-#~ msgstr "Software"
-
-#~ msgid "Документация по протоколу программного управления (API)"
-#~ msgstr "Documentation for the software management Protocol (API)"
-
-#~ msgid "Набор для разработчика (SDK)"
-#~ msgstr "Developer kit (SDK)"
-
-#~ msgid ""
-#~ "Включает в себя примеры управления устройством в исходных кодах для "
-#~ "языков Си, С#, Python 3, а также биндинги для двух последних."
-#~ msgstr ""
-#~ "Includes examples of device management in source code for C, C#, and "
-#~ "Python 3, as well as bindings for the latter two."
-
-#~ msgid ""
-#~ "Ручная версия локализатора неисправных электронных компонентов с "
-#~ "сенсорным экраном."
-#~ msgstr ""
-#~ "Manual localizer of faulty electronic components with a touch screen."
-
-#~ msgid ""
-#~ "EyePoint u2 – миниатюрная система для поиска неисправных электронных "
-#~ "компонентов на печатных платах методом аналогового сигнатурного анализа "
-#~ "АСА. Для работы необходимо подключить EyePoint u2 к компьютеру по USB и "
-#~ "начать тестирование в ручном режиме. Версии: u21 – одноканальная система, "
-#~ "u22 – двухканальная система. Для использования системы EyePoint  Вам "
-#~ "необходима последняя версия драйвера. Предыдущие версии выложены для "
-#~ "пользователей, которые не хотят переходить на новые версии. "
-#~ msgstr ""
-#~ "EyePoint u2 is a miniature system for localizing faulty electronic "
-#~ "components on PCB using ASA method. You connect EyePoint u2 to the PC via "
-#~ "USB and start testing in manual mode. Versions: u21 - single-channel "
-#~ "system, u22 - dual-channel system. You need the latest driver to use the "
-#~ "EyePoint system. Previous versions are posted for users who do not want "
-#~ "to switch to new versions. "
-
-#~ msgid "Файлы прошивок для загрузки в устройство"
-#~ msgstr "Firmware files for device"
+msgstr ""
