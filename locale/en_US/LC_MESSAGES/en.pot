@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-29 16:19+0300\n"
+"POT-Creation-Date: 2021-07-21 14:35+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,7 +27,7 @@ msgid ""
 msgstr ""
 
 #: ../data/download.py:28
-msgid "Брошюры"
+msgid "Промо"
 msgstr ""
 
 #: ../data/download.py:30
@@ -53,7 +53,7 @@ msgid ""
 msgstr ""
 
 #: ../data/download.py:49
-msgid "Программное обеспечение"
+msgid "Программное обеспечение EPLab"
 msgstr ""
 
 #: ../data/download.py:52
@@ -66,10 +66,24 @@ msgid ""
 msgstr ""
 
 #: ../data/download.py:62
-msgid "uRPC Debugger"
+msgid "Программное обеспечение EyePointS"
 msgstr ""
 
 #: ../data/download.py:65
+msgid ""
+"Пользовательское программное обеспечение, аналогичное ГУИ на устройстве "
+"EyePoint_S2, для поиска неисправностей на печатных платах с использованием "
+"аналоговых сигнатурных анализаторов EyePoint. Для работы ПО требуется Python "
+"3.6.8 (win32) с набором необходимых библиотек, драйвер, а также "
+"Распространяемые пакеты Microsoft Visual C++ для Visual Studio 2013 (win32). "
+"Всё это можно скачать на данной странице."
+msgstr ""
+
+#: ../data/download.py:74
+msgid "uRPC Debugger"
+msgstr ""
+
+#: ../data/download.py:77
 msgid ""
 "Кроссплатформенное ПО с графическим интерфейсом для отладки сигнатурных "
 "анализаторов EyePoint IVM. Данное ПО позволяет вручную вызывать команды "
@@ -78,11 +92,11 @@ msgid ""
 "кодов. Для работы на Windows требуется драйвер."
 msgstr ""
 
-#: ../data/download.py:75
+#: ../data/download.py:87
 msgid "EPCBootGUI"
 msgstr ""
 
-#: ../data/download.py:78
+#: ../data/download.py:90
 msgid ""
 "Кроссплатформенное ПО для обновления прошивок сигнатурных анализаторов "
 "EyePoint и его исходные коды. Репозиторий EPCBootGUI на GitHub: <a "
@@ -90,11 +104,11 @@ msgid ""
 "epcboot-gui</a>"
 msgstr ""
 
-#: ../data/download.py:86
+#: ../data/download.py:98
 msgid "Прошивка встроенного компьютера"
 msgstr ""
 
-#: ../data/download.py:89
+#: ../data/download.py:101
 msgid ""
 "Образы встроенной операционной системы для устройств серии EyePoint S. "
 "Обновление образа осуществляется посредством записи на SD карту. Более "
@@ -103,32 +117,32 @@ msgid ""
 "скачать с официального сайта или с данной страницы)."
 msgstr ""
 
-#: ../data/download.py:99
+#: ../data/download.py:111
 msgid "Описание библиотеки для программного управления"
 msgstr ""
 
-#: ../data/download.py:102
+#: ../data/download.py:114
 msgid ""
 "Документация к библиотеке libivm, которая может быть использована для "
 "взаимодействия с измерителями ВАХ EyePoint IVM. Саму библиотеку можно "
 "скачать на этой странице."
 msgstr ""
 
-#: ../data/download.py:109
+#: ../data/download.py:121
 msgid "Стороннее вспомогательное ПО"
 msgstr ""
 
-#: ../data/download.py:112
+#: ../data/download.py:124
 msgid ""
 "Дополнительное стороннее программное обеспечение, которое может "
 "потребоваться при работе с устройствами EyePoint."
 msgstr ""
 
-#: ../data/download.py:118
+#: ../data/download.py:130
 msgid "Библиотека для программного управления"
 msgstr ""
 
-#: ../data/download.py:121
+#: ../data/download.py:133
 msgid ""
 "Кроссплатформенная библиотека для работы с измерителями ВАХ EyePoint IVM "
 "(измеритель сигнатур, который используется в различных устройствах линейки "
@@ -137,11 +151,11 @@ msgid ""
 "библиотеке можно скачать отдельно на этой странице."
 msgstr ""
 
-#: ../data/download.py:131
+#: ../data/download.py:143
 msgid "Примеры использования API и биндинги для Python и C#"
 msgstr ""
 
-#: ../data/download.py:134
+#: ../data/download.py:146
 msgid ""
 "Комплект примеров программного кода на языках C, C# и Python, реализующего "
 "простые измерения сигнатур с использованием EyePoint IVM (измеритель "
@@ -149,31 +163,31 @@ msgid ""
 "Также в данном архиве можно найти биндинги для языков Python и C#."
 msgstr ""
 
-#: ../data/download.py:146
+#: ../data/download.py:158
 msgid "Скачать полный комплект программного обеспечения"
 msgstr ""
 
-#: ../data/download.py:148
+#: ../data/download.py:160
 msgid "Архив со всем софтом и документацией для этого продукта"
 msgstr ""
 
-#: ../data/download.py:160
+#: ../data/download.py:172
 msgid "Версия"
 msgstr ""
 
-#: ../data/download.py:161
+#: ../data/download.py:173
 msgid "Дата выпуска"
 msgstr ""
 
-#: ../data/download.py:162
+#: ../data/download.py:174
 msgid "Размер"
 msgstr ""
 
-#: ../data/download.py:163
+#: ../data/download.py:175
 msgid "Ссылка"
 msgstr ""
 
-#: ../data/download.py:164
+#: ../data/download.py:176
 msgid "Скачать"
 msgstr ""
 
@@ -255,7 +269,7 @@ msgid "Метод тестирования: АСА"
 msgstr ""
 
 #: ../data/products.py:40 ../data/products.py:78
-msgid "Диапазон частот тестирующего сигнала: 10 Гц – 1 кГц"
+msgid "Диапазон частот тестирующего сигнала: 1 Гц – 1 кГц"
 msgstr ""
 
 #: ../data/products.py:41 ../data/products.py:79 ../data/products.py:120

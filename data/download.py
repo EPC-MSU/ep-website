@@ -24,8 +24,8 @@ categories = (
         ),
     ),
     SoftwareCategory(
-        name="datasheet",
-        friendly_name=_("Брошюры"),
+        name="Promo",
+        friendly_name=_("Промо"),
         icon="brochure.png",
         description=_("Информация о продукте."),
     ),
@@ -45,12 +45,24 @@ categories = (
         ),
     ),
     SoftwareCategory(
-        name="software",
-        friendly_name=_("Программное обеспечение"),
+        name="EPLab_software",
+        friendly_name=_("Программное обеспечение EPLab"),
         icon="software.png",
         description=_(
             "Пользовательское программное обеспечение для поиска неисправностей "
             "на печатных платах с использованием аналоговых сигнатурных "
+            "анализаторов EyePoint. Для работы ПО требуется Python 3.6.8 (win32) "
+            "с набором необходимых библиотек, драйвер, а также Распространяемые "
+            "пакеты Microsoft Visual C++ для Visual Studio 2013 (win32). Всё это "
+            "можно скачать на данной странице."
+        ),
+    ),
+    SoftwareCategory(
+        name="EyePointS_software",
+        friendly_name=_("Программное обеспечение EyePointS"),
+        icon="software.png",
+        description=_(
+            "Пользовательское программное обеспечение, аналогичное ГУИ на устройстве EyePoint_S2, для поиска неисправностей на печатных платах с использованием аналоговых сигнатурных "
             "анализаторов EyePoint. Для работы ПО требуется Python 3.6.8 (win32) "
             "с набором необходимых библиотек, драйвер, а также Распространяемые "
             "пакеты Microsoft Visual C++ для Visual Studio 2013 (win32). Всё это "
