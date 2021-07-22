@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-22 17:33+0300\n"
-"PO-Revision-Date: 2021-07-22 17:33+0300\n"
+"POT-Creation-Date: 2021-07-22 18:42+0300\n"
+"PO-Revision-Date: 2021-07-22 18:42+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -314,7 +314,7 @@ msgid "Не повредит плату"
 msgstr "Don't damage the PCB"
 
 #: ../data/products.py:39 ../data/products.py:77 ../data/products.py:154
-#: ../data/products.py:187 ../data/products.py:225
+#: ../data/products.py:187 ../data/products.py:225 ../data/products.py:262
 msgid "Метод тестирования: АСА"
 msgstr "Testing method: ASA"
 
@@ -478,6 +478,7 @@ msgid "7-ми дюймовый цветной дисплей с функцией
 msgstr "7 inch color display with touchscreen"
 
 #: ../data/products.py:124 ../data/products.py:156 ../data/products.py:189
+#: ../data/products.py:266
 msgid "Регулируемый порог совпадения сигнатур"
 msgstr "Adjustable signature matched threshold"
 
@@ -498,12 +499,12 @@ msgid "Поддержка режима «План тестирования»"
 msgstr "\"Test Plan\" mode available"
 
 #: ../data/products.py:129
-msgid "Возможность подключения к ПК по USB (Win, Linux)"
-msgstr "Can be connected to PC (Win, Linux) via USB"
+msgid "Возможность подключения к ПК по USB: Win, Linux"
+msgstr "Can be connected to PC via USB: Win, Linux"
 
 #: ../data/products.py:130
-msgid "Возможность программного управления (C/C++, C#, Python)"
-msgstr "Possibility of program management: available (C/C+, C#, Python)"
+msgid "Возможность программного управления: C/C++, C#, Python"
+msgstr "Possibility of program management: available: C/C+, C#, Python"
 
 #: ../data/products.py:131
 msgid "Чувствительность по R 1 Ом - 450 кОм"
@@ -564,6 +565,7 @@ msgid "Интерфейс связи USB 2.0"
 msgstr "USB 2.0 communication"
 
 #: ../data/products.py:159 ../data/products.py:192 ../data/products.py:229
+#: ../data/products.py:267
 msgid "Поддержка ОС: Windows 7/8/10 (х64/х86), Linux"
 msgstr "OS support: Windows 7/8/10 (x64/x86), Linux"
 
@@ -688,6 +690,76 @@ msgstr "Dimensions and weight: 60х40х5 mm, 0.012 kg"
 #: ../data/products.py:237
 msgid "Питание от USB разъема"
 msgstr "USB powered"
+
+#: ../data/products.py:242
+msgid "EyePoint H10"
+msgstr "EyePoint H10"
+
+#: ../data/products.py:245
+msgid ""
+"Высокоточный локализатор поиска неисправностей на печатных платах методом "
+"сигнатурного анализа с частотой тактирующего сигнала до 12 МГц и широким "
+"диапазоном выбора напряжения и чувствительности по току."
+msgstr ""
+"High-frequency analog signature analyzer for locating faulty electronic "
+"components on printed circuit boards using the method of analog signature "
+"analysis with a test signal frequency up to 12 MHz and wide output ranges of "
+"voltages and currents."
+
+#: ../data/products.py:250
+msgid ""
+"Аналоговый сигнатурный анализатор для поиска неисправных электронных "
+"компонентов на печатных платах с частотой пробного сигнала до 12 МГц, что "
+"позволяет искать неисправности на высокочастотных платах. EyePoint H10 - "
+"простой настольный прибор, с управлением по USB, поставляемый в виде "
+"моноблока и комплектующийся измерительными щупами, тестовой платой, кабелем "
+"USB и кабелем электропитания 220В."
+msgstr ""
+"An analog signature analyzer for searching for faulty electronic components "
+"on printed circuit boards with a test signal frequency of up to 12 MHz, "
+"which allows troubleshooting on high-frequency boards. EyePoint H10 is a "
+"simple desktop device with USB control, supplied as a monoblock and equipped "
+"with measuring probes, a test board, a USB cable and a 220V power cable."
+
+#: ../data/products.py:257
+msgid "Частота тактирующего сигнала до 12 МГц"
+msgstr "Test signal frequency range: 12 MHz"
+
+#: ../data/products.py:258
+msgid "Управление по USB"
+msgstr "USB control"
+
+#: ../data/products.py:259
+msgid "Широкий диапазон напряжения"
+msgstr "Wide voltage range"
+
+#: ../data/products.py:263
+msgid ""
+"Диапазон частот тестирующего сигнала: 1, 5, 10, 50, 100, 400 Гц. 1.5, 6, 25, "
+"100, 400 кГц. 1.5, 3, 6, 12 МГц"
+msgstr ""
+"Test signal frequency range: 1, 5, 10, 50, 100, 400 Hz 1.5, 6, 25, 100, 400 "
+"kHz. 1.5, 3, 6, 12 MHz"
+
+#: ../data/products.py:265
+msgid "Рабочие напряжения: 1, 1.5, 2, 2.5, 3, 4, 4.5, 5, 6, 6.7, 7.5, 10 В"
+msgstr "Operating voltage: 1, 1.5, 2, 2.5, 3, 4, 4.5, 5, 6, 6.7, 7.5, 10 V"
+
+#: ../data/products.py:268
+msgid "Интерфейс подключения к ПК: USB"
+msgstr "PC connection interface: USB"
+
+#: ../data/products.py:269
+msgid "Возможность программного управления: C/C++, Python"
+msgstr "Possibility of program management: available: C#/C++, Python"
+
+#: ../data/products.py:270
+msgid "Габариты и вес: 137х65х110 мм, 0.7 кг"
+msgstr "Dimensions and weight: 137х65х110 mm, 0.7 kg"
+
+#: ../data/products.py:271
+msgid "Электропитание: ~220В"
+msgstr "Power supply: ~ 220V"
 
 #~ msgid ""
 #~ "В зависимости от диапазона измеряемых значений максимальное напряжение до "
