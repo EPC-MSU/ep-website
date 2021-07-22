@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-21 15:10+0300\n"
+"POT-Creation-Date: 2021-07-22 17:33+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -263,8 +263,8 @@ msgstr ""
 msgid "Не повредит плату"
 msgstr ""
 
-#: ../data/products.py:39 ../data/products.py:77 ../data/products.py:153
-#: ../data/products.py:185 ../data/products.py:222
+#: ../data/products.py:39 ../data/products.py:77 ../data/products.py:154
+#: ../data/products.py:187 ../data/products.py:225
 msgid "Метод тестирования: АСА"
 msgstr ""
 
@@ -394,7 +394,7 @@ msgstr ""
 msgid "Простой и легкий прибор"
 msgstr ""
 
-#: ../data/products.py:115 ../data/products.py:146 ../data/products.py:178
+#: ../data/products.py:115 ../data/products.py:147 ../data/products.py:180
 msgid "Частота зондирования до 100 кГц"
 msgstr ""
 
@@ -402,60 +402,74 @@ msgstr ""
 msgid "Доступен план тестирования "
 msgstr ""
 
-#: ../data/products.py:119 ../data/products.py:223
+#: ../data/products.py:119 ../data/products.py:226
 msgid "Диапазон частот тестирующего сигнала: 1 Гц – 100 кГц"
 msgstr ""
 
+#: ../data/products.py:121 ../data/products.py:152 ../data/products.py:185
+msgid "Диапазон тока: до 250 мкА, до 2.5 мА, до 25 мА"
+msgstr ""
+
 #: ../data/products.py:122
-msgid ""
-"В зависимости от диапазона измеряемых значений максимальное напряжение до 12 "
-"В, максимальный ток до 250 мкА"
+msgid "Габариты и вес: 205х204х120 мм, 2,5 кг"
 msgstr ""
 
-#: ../data/products.py:125
-msgid "Габаритные размеры: 205 х 204 х 120 мм"
-msgstr ""
-
-#: ../data/products.py:126
+#: ../data/products.py:123
 msgid "7-ми дюймовый цветной дисплей с функцией touchscreen"
 msgstr ""
 
-#: ../data/products.py:127 ../data/products.py:155 ../data/products.py:187
+#: ../data/products.py:124 ../data/products.py:156 ../data/products.py:189
 msgid "Регулируемый порог совпадения сигнатур"
 msgstr ""
 
-#: ../data/products.py:128
+#: ../data/products.py:125
 msgid "Внешняя педаль для дополнительного функционала"
 msgstr ""
 
-#: ../data/products.py:129
-msgid "Экспорт данных в формате данных PNG на внешний Flash накопитель"
+#: ../data/products.py:126
+msgid "Экспорт данных в формате .json на внешний Flash накопитель"
 msgstr ""
 
-#: ../data/products.py:130 ../data/products.py:156 ../data/products.py:188
+#: ../data/products.py:127
+msgid "Возможность сохранить screenshot экрана в формате .PNG"
+msgstr ""
+
+#: ../data/products.py:128 ../data/products.py:157 ../data/products.py:190
 msgid "Поддержка режима «План тестирования»"
 msgstr ""
 
-#: ../data/products.py:131
+#: ../data/products.py:129
 msgid "Возможность подключения к ПК по USB (Win, Linux)"
 msgstr ""
 
-#: ../data/products.py:132
+#: ../data/products.py:130
 msgid "Возможность программного управления (C/C++, C#, Python)"
 msgstr ""
 
-#: ../data/products.py:137
+#: ../data/products.py:131
+msgid "Чувствительность по R 1 Ом - 450 кОм"
+msgstr ""
+
+#: ../data/products.py:132
+msgid "Чувствительность по C 50 пФ - 100 мкФ"
+msgstr ""
+
+#: ../data/products.py:133
+msgid "Чувствительность по L от 1 мкГн"
+msgstr ""
+
+#: ../data/products.py:138
 msgid "EyePoint u21"
 msgstr ""
 
-#: ../data/products.py:140
+#: ../data/products.py:141
 msgid ""
 "EyePoint u21 – миниатюрный одноканальный локализатор неисправных электронных "
 "компонентов на печатных платах методом ASA с частотой тестирующего сигнала "
 "до 100 кГц"
 msgstr ""
 
-#: ../data/products.py:143
+#: ../data/products.py:144
 msgid ""
 "EyePoint u21 – простой, компактный настольный прибор, с возможностью "
 "программного управления, младший в линейке EyePoint, поставляемый в виде "
@@ -463,66 +477,66 @@ msgid ""
 "измерительным щупом и зажимом «Крокодил», кабелем USB для подключения к ПК."
 msgstr ""
 
-#: ../data/products.py:147 ../data/products.py:179
+#: ../data/products.py:148 ../data/products.py:181
 msgid "Миниатюрные размеры"
 msgstr ""
 
-#: ../data/products.py:148 ../data/products.py:180
+#: ../data/products.py:149 ../data/products.py:182
 msgid "Доступен функционал старшей модели S2"
 msgstr ""
 
-#: ../data/products.py:151 ../data/products.py:183
-msgid "Диапазон тока: до 250 мкА, до 2.5 мА, до 25 мА"
-msgstr ""
-
-#: ../data/products.py:152 ../data/products.py:184
+#: ../data/products.py:153 ../data/products.py:186
 msgid "Частота пробного сигнала до 100кГц"
 msgstr ""
 
-#: ../data/products.py:154 ../data/products.py:186
+#: ../data/products.py:155 ../data/products.py:188
 msgid "Напряжение пробного сигнала 1.2, 3.3, 5, 12В"
 msgstr ""
 
-#: ../data/products.py:157 ../data/products.py:189
+#: ../data/products.py:158 ../data/products.py:191
 msgid "Интерфейс связи USB 2.0"
 msgstr ""
 
-#: ../data/products.py:158 ../data/products.py:190
+#: ../data/products.py:159 ../data/products.py:192 ../data/products.py:229
 msgid "Поддержка ОС: Windows 7/8/10 (х64/х86), Linux"
 msgstr ""
 
-#: ../data/products.py:159 ../data/products.py:191
+#: ../data/products.py:160 ../data/products.py:193 ../data/products.py:231
 msgid "Возможность программного управления: C#/C++, Qt, Python"
 msgstr ""
 
-#: ../data/products.py:160 ../data/products.py:192 ../data/products.py:229
+#: ../data/products.py:161 ../data/products.py:194 ../data/products.py:233
 msgid "Напряжение питания: 5 В"
 msgstr ""
 
-#: ../data/products.py:161 ../data/products.py:193
+#: ../data/products.py:162 ../data/products.py:195 ../data/products.py:234
 msgid "Чувствительность по R: 1 Ом - 450 кОм"
 msgstr ""
 
-#: ../data/products.py:162 ../data/products.py:194
+#: ../data/products.py:163 ../data/products.py:196 ../data/products.py:235
 msgid "Чувствительность по C: 50 пФ - 100 мкФ"
 msgstr ""
 
-#: ../data/products.py:163 ../data/products.py:195
+#: ../data/products.py:164 ../data/products.py:197 ../data/products.py:236
 msgid "Чувствительность по L: от 1 мкГн"
 msgstr ""
 
-#: ../data/products.py:168
+#: ../data/products.py:165
+msgid "Габариты и вес: 100x65x27 мм, 0.4 кг"
+msgstr ""
+
+#: ../data/products.py:170
 msgid "EyePoint u22"
 msgstr ""
 
-#: ../data/products.py:171
+#: ../data/products.py:173
 msgid ""
 "EyePoint u22 – миниатюрный двухканальный локализатор неисправных электронных "
 "компонентов на печатных платах методом ASA с частотой тестирующего сигнала "
 "до 100 кГц"
 msgstr ""
 
-#: ../data/products.py:174
+#: ../data/products.py:176
 msgid ""
 "Миниатюрная версия двухканального ручного локализатора неисправных "
 "электронных компонентов с прямым подключением к ПК, частотой до 100 кГц "
@@ -533,16 +547,20 @@ msgid ""
 "ПК."
 msgstr ""
 
-#: ../data/products.py:200
-msgid "EyePoint a2"
+#: ../data/products.py:198
+msgid "Габариты и вес: 175x90x40 мм, 0.4 кг"
 msgstr ""
 
 #: ../data/products.py:203
+msgid "EyePoint a2"
+msgstr ""
+
+#: ../data/products.py:206
 msgid ""
 "Одноканальный OEM модуль (без корпуса) аналогового сигнатурного анализа."
 msgstr ""
 
-#: ../data/products.py:206
+#: ../data/products.py:209
 msgid ""
 "EyePoint a2 - ОЕМ модуль, предназначенный для поиска неисправных электронных "
 "компонентов на печатных платах методом аналогового сигнатурного анализа "
@@ -555,38 +573,34 @@ msgid ""
 "других устройств семейства EyePoint."
 msgstr ""
 
-#: ../data/products.py:217
+#: ../data/products.py:220
 msgid "Открытый API"
 msgstr ""
 
-#: ../data/products.py:218
+#: ../data/products.py:221
 msgid "Полный функционал"
 msgstr ""
 
-#: ../data/products.py:219
+#: ../data/products.py:222
 msgid "Максимально доступный"
 msgstr ""
 
-#: ../data/products.py:224
+#: ../data/products.py:227
 msgid "Рабочие напряжения: 1.2, 3.3, 5, 12 В"
 msgstr ""
 
-#: ../data/products.py:225
-msgid "Чувствительность по току: 250 мкА, 2.5 мА, 25 мА"
-msgstr ""
-
-#: ../data/products.py:226
-msgid "Интерфейс подключения к ПК: USB 2.0"
-msgstr ""
-
-#: ../data/products.py:227
-msgid "Возможность программного управления: С#/С++; Python"
-msgstr ""
-
 #: ../data/products.py:228
-msgid "Габаритные размеры: 60х40х5 мм"
+msgid "Чувствительность по току: от 25 мкА до 25 мА"
 msgstr ""
 
 #: ../data/products.py:230
+msgid "Интерфейс подключения к ПК: USB 2.0"
+msgstr ""
+
+#: ../data/products.py:232
+msgid "Габариты и вес: 60х40х5 мм, 0.012 кг"
+msgstr ""
+
+#: ../data/products.py:237
 msgid "Питание от USB разъема"
 msgstr ""
