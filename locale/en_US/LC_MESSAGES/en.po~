@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-22 18:30+0300\n"
-"PO-Revision-Date: 2021-07-22 18:41+0300\n"
+"POT-Creation-Date: 2021-07-22 18:42+0300\n"
+"PO-Revision-Date: 2021-07-22 18:42+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -499,12 +499,12 @@ msgid "Поддержка режима «План тестирования»"
 msgstr "\"Test Plan\" mode available"
 
 #: ../data/products.py:129
-msgid "Возможность подключения к ПК по USB (Win, Linux)"
-msgstr "Can be connected to PC (Win, Linux) via USB"
+msgid "Возможность подключения к ПК по USB: Win, Linux"
+msgstr "Can be connected to PC via USB: Win, Linux"
 
 #: ../data/products.py:130
-msgid "Возможность программного управления (C/C++, C#, Python)"
-msgstr "Possibility of program management: available (C/C+, C#, Python)"
+msgid "Возможность программного управления: C/C++, C#, Python"
+msgstr "Possibility of program management: available: C/C+, C#, Python"
 
 #: ../data/products.py:131
 msgid "Чувствительность по R 1 Ом - 450 кОм"

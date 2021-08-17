@@ -240,7 +240,7 @@ products = (
     Product(
         name="EyePoint_H10",
         friendly_name=_("EyePoint H10"),
-        picture="H10.jpg",
+        picture="H10.png",
         description=_(
             "Высокоточный локализатор поиска неисправностей на печатных платах "
             "методом сигнатурного анализа с частотой тактирующего сигнала до 12 МГц "
