@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-22 17:33+0300\n"
-"PO-Revision-Date: 2021-07-22 17:33+0300\n"
+"POT-Creation-Date: 2022-03-23 16:24+0300\n"
+"PO-Revision-Date: 2022-03-23 16:24+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -115,19 +115,18 @@ msgstr "EPCBootGUI"
 #: ../data/download.py:90
 msgid ""
 "Кроссплатформенное ПО для обновления прошивок сигнатурных анализаторов "
-"EyePoint и его исходные коды. Репозиторий EPCBootGUI на GitHub: <a "
-"href='https://github.com/EPC-MSU/epcboot-gui'>https://github.com/EPC-MSU/"
-"epcboot-gui</a>"
+"EyePoint и его исходные коды. Репозиторий <a href='https://github.com/EPC-"
+"MSU/epcboot-gui'>EPCBootGUI на GitHub.</a> "
 msgstr ""
 "Cross-platform software for updating eyepoint signature analyzer firmware "
-"and its source codes. EPCBootGUI repository on GitHub: <a href='https://"
-"github.com/EPC-MSU/epcboot-gui'>https://github.com/EPC-MSU/epcboot-gui</a>"
+"and its source codes. <a href='https://github.com/EPC-MSU/epcboot-"
+"gui'>EPCBootGUI repository on GitHub.</a>"
 
-#: ../data/download.py:98
+#: ../data/download.py:97
 msgid "Прошивка встроенного компьютера"
 msgstr "Firmware of the embedded computer"
 
-#: ../data/download.py:101
+#: ../data/download.py:100
 msgid ""
 "Образы встроенной операционной системы для устройств серии EyePointS. "
 "Обновление образа осуществляется посредством записи на SD карту. Более "
@@ -141,11 +140,11 @@ msgstr ""
 "Disk Imager (you can download it from the official website or from this "
 "page)."
 
-#: ../data/download.py:111
+#: ../data/download.py:110
 msgid "Описание библиотеки для программного управления"
 msgstr "Description of the software management library"
 
-#: ../data/download.py:114
+#: ../data/download.py:113
 msgid ""
 "Документация к библиотеке libivm, которая может быть использована для "
 "взаимодействия с измерителями ВАХ EyePoint IVM. Саму библиотеку можно "
@@ -154,11 +153,11 @@ msgstr ""
 "Documentation for the libivm library, that can be used to interact with "
 "EyePoint IVM VAC meters. The library itself can be downloaded on this page."
 
-#: ../data/download.py:121
+#: ../data/download.py:120
 msgid "Стороннее вспомогательное ПО"
 msgstr "Third-party support software"
 
-#: ../data/download.py:124
+#: ../data/download.py:123
 msgid ""
 "Дополнительное стороннее программное обеспечение, которое может "
 "потребоваться при работе с устройствами EyePoint."
@@ -166,11 +165,11 @@ msgstr ""
 "Additional third-party software that may be required when working with "
 "EyePoint devices."
 
-#: ../data/download.py:130
+#: ../data/download.py:129
 msgid "Библиотека для программного управления"
 msgstr "Library for software management"
 
-#: ../data/download.py:133
+#: ../data/download.py:132
 msgid ""
 "Кроссплатформенная библиотека для работы с измерителями ВАХ EyePoint IVM "
 "(измеритель сигнатур, который используется в различных устройствах линейки "
@@ -184,11 +183,11 @@ msgstr ""
 "and as source code. Library documentation can be downloaded separately on "
 "this page."
 
-#: ../data/download.py:143
+#: ../data/download.py:142
 msgid "Примеры использования API и биндинги для Python и C#"
 msgstr "Examples of using the API and bindings for Python and C#"
 
-#: ../data/download.py:146
+#: ../data/download.py:145
 msgid ""
 "Комплект примеров программного кода на языках C, C# и Python, реализующего "
 "простые измерения сигнатур с использованием EyePoint IVM (измеритель "
@@ -200,31 +199,31 @@ msgstr ""
 "in the EyePoint product line). You can also find bindings for Python and C# "
 "in this archive."
 
-#: ../data/download.py:158
+#: ../data/download.py:157
 msgid "Скачать полный комплект программного обеспечения"
 msgstr "Download full software package"
 
-#: ../data/download.py:160
+#: ../data/download.py:159
 msgid "Архив со всем софтом и документацией для этого продукта"
 msgstr "Archive with all software and documentation for this product"
 
-#: ../data/download.py:172
+#: ../data/download.py:171
 msgid "Версия"
 msgstr "Version"
 
-#: ../data/download.py:173
+#: ../data/download.py:172
 msgid "Дата выпуска"
 msgstr "Release date"
 
-#: ../data/download.py:174
+#: ../data/download.py:173
 msgid "Размер"
 msgstr "Size"
 
-#: ../data/download.py:175
+#: ../data/download.py:174
 msgid "Ссылка"
 msgstr "Link"
 
-#: ../data/download.py:176
+#: ../data/download.py:175
 msgid "Скачать"
 msgstr "Download"
 
@@ -234,35 +233,40 @@ msgid ""
 "компонентов на печатных платах, а также для выявления контрафактных, "
 "перемаркерованных или поврежденных компонентов в BGA корпусах на основе "
 "метода аналогового сигнатурного анализа (АСА). В линейке <b>EyePoint</b> "
-"есть автоматические <b>(P10, B10, P10b)</b> и ручные <b>(S1, u21, u22)</b> "
+"есть автоматические <b>(P10, B10, P10b)</b> и ручные <b>(S2, u21, u22)</b> "
 "системы, а также ОЕМ модуль <b>а2</b>, который может быть встроен в уже "
 "используемые системы пользователя. Для работы с модулем поставляется API, "
 "которое позволяет без лишних проблем управлять каналом сигнатурного анализа."
+"С практикой применения инновационного метода поиска неисправностей на платах "
+"с помощью автоматической системы тестирования EyePoint вы можете "
+"ознакомиться в этой статье <a href='https://physlab.ru/news/"
+"avtomatizirovannyie_sistiemy_poiska_nieispravnostiei_i_praktika_ikh_primienieniia'></"
+"a>. "
 msgstr ""
 "<b>EyePoint</b> - systems for localizing faulty electronic components on "
 "PCB, as well as for identifying counterfeit, remarked or damaged components "
 "in BGA packages based on the analog signature analysis (ASA) method. The "
 "<b>EyePoint</b> products line includes automatic <b>(P10, B10, P10b)</b> "
-"systems, manual <b>(S1, u21, u22</b>) systems and OEM module <b> a2</b> with "
-"open API, which can be built into existing user systems."
+"systems, manual <b>(S2, u21, u22</b>) systems and OEM module <b> a2</b> with "
+"open API, which can be built into existing user systems. "
 
-#: ../data/other.py:12
+#: ../data/other.py:16
 msgid "Технические данные"
 msgstr "Specifications"
 
-#: ../data/other.py:14
+#: ../data/other.py:18
 msgid "Россия, Москва, 119333<br>ул. Фотиевой, дом 5, строение 1"
 msgstr "Russia, Moscow, 119333<br>Fotievoy street 5, bldg. 1"
 
-#: ../data/other.py:16
+#: ../data/other.py:20
 msgid "Подробнее"
 msgstr "More"
 
-#: ../data/other.py:18
+#: ../data/other.py:22
 msgid "ООО «ЦИФ МГУ имени М.В. Ломоносова»"
 msgstr "Engineering Physics Center MSU"
 
-#: ../data/other.py:21
+#: ../data/other.py:25
 msgid ""
 "EyePoint - линейка простого и функционального оборудования для локализации "
 "неисправных компонентов на платах, использующего метод аналогового "
@@ -272,11 +276,11 @@ msgstr ""
 "on PCB using the analog signature analysis method and a frequency range of "
 "up to 100 kHz."
 
-#: ../data/other.py:25
+#: ../data/other.py:29
 msgid "EyePoint, диагностика электронных схем, анализ неисправностей, ЦИФ МГУ"
 msgstr "EyePoint, localizing faulty components, EPC MSU"
 
-#: ../data/other.py:27
+#: ../data/other.py:31
 msgid "EyePoint. Локализаторы неисправных компонентов"
 msgstr "EyePoint. Localizers of faulty components"
 
@@ -498,12 +502,12 @@ msgid "Поддержка режима «План тестирования»"
 msgstr "\"Test Plan\" mode available"
 
 #: ../data/products.py:129
-msgid "Возможность подключения к ПК по USB (Win, Linux)"
-msgstr "Can be connected to PC (Win, Linux) via USB"
+msgid "Возможность подключения к ПК по USB: Windows, Linux"
+msgstr "Can be connected to PC via USB: Windows, Linux"
 
 #: ../data/products.py:130
-msgid "Возможность программного управления (C/C++, C#, Python)"
-msgstr "Possibility of program management: available (C/C+, C#, Python)"
+msgid "Возможность программного управления: C/C++, C#, Python"
+msgstr "Possibility of program management: C/C+, C#, Python"
 
 #: ../data/products.py:131
 msgid "Чувствительность по R 1 Ом - 450 кОм"
