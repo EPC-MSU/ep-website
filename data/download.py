@@ -89,8 +89,7 @@ categories = (
         description=_(
             "Кроссплатформенное ПО для обновления прошивок сигнатурных анализаторов "
             "EyePoint и его исходные коды. "
-            "Репозиторий EPCBootGUI на GitHub: <a href='https://github.com/EPC-MSU/"
-            "epcboot-gui'>https://github.com/EPC-MSU/epcboot-gui</a>"
+            "Репозиторий <a href='https://github.com/EPC-MSU/epcboot-gui'>EPCBootGUI на GitHub.</a> " 
         ),
     ),
     SoftwareCategory(
