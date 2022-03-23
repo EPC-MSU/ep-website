@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-23 16:17+0300\n"
+"POT-Creation-Date: 2022-03-23 16:24+0300\n"
 "PO-Revision-Date: 2022-03-23 16:24+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -502,7 +502,7 @@ msgid "Поддержка режима «План тестирования»"
 msgstr "\"Test Plan\" mode available"
 
 #: ../data/products.py:129
-msgid "Возможность подключения к ПК по USB: Win, Linux"
+msgid "Возможность подключения к ПК по USB: Windows, Linux"
 msgstr "Can be connected to PC via USB: Windows, Linux"
 
 #: ../data/products.py:130
