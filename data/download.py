@@ -149,6 +149,14 @@ categories = (
             "языков Python и C#."
         ),
     ),
+    SoftwareCategory(
+        name="server",
+        friendly_name=_("Сервер"),
+        icon="software.png",
+        description=_(
+            "Локальный сервер для работы с устройством EyePoint H10. "
+        ),
+    ),
 )
 
 

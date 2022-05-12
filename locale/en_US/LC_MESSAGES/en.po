@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-12 13:55+0300\n"
-"PO-Revision-Date: 2022-05-12 14:05+0300\n"
+"POT-Creation-Date: 2022-05-12 15:48+0300\n"
+"PO-Revision-Date: 2022-05-12 15:49+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -194,31 +194,39 @@ msgstr ""
 "measurements using EyePoint IVM (a signature meter used in various devices, in the "
 "EyePoint product line). You can also find bindings for Python and C# in this archive."
 
+#: ../data/download.py:154
+msgid "Сервер"
+msgstr "Server"
+
 #: ../data/download.py:157
+msgid "Локальный сервер для работы с устройством EyePoint H10. "
+msgstr "A local server for working with the EyePoint H10 device. "
+
+#: ../data/download.py:165
 msgid "Скачать полный комплект программного обеспечения"
 msgstr "Download full software package"
 
-#: ../data/download.py:159
+#: ../data/download.py:167
 msgid "Архив со всем софтом и документацией для этого продукта"
 msgstr "Archive with all software and documentation for this product"
 
-#: ../data/download.py:171
+#: ../data/download.py:179
 msgid "Версия"
 msgstr "Version"
 
-#: ../data/download.py:172
+#: ../data/download.py:180
 msgid "Дата выпуска"
 msgstr "Release date"
 
-#: ../data/download.py:173
+#: ../data/download.py:181
 msgid "Размер"
 msgstr "Size"
 
-#: ../data/download.py:174
+#: ../data/download.py:182
 msgid "Ссылка"
 msgstr "Link"
 
-#: ../data/download.py:175
+#: ../data/download.py:183
 msgid "Скачать"
 msgstr "Download"
 
