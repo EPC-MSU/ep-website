@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-18 15:58+0300\n"
-"PO-Revision-Date: 2022-06-18 16:00+0300\n"
+"POT-Creation-Date: 2022-06-16 13:26+0300\n"
+"PO-Revision-Date: 2022-06-16 13:28+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -319,7 +319,7 @@ msgid "Не повредит плату"
 msgstr "Don't damage the PCB"
 
 #: ../data/products.py:39 ../data/products.py:77 ../data/products.py:154
-#: ../data/products.py:187 ../data/products.py:225 ../data/products.py:265
+#: ../data/products.py:187 ../data/products.py:225 ../data/products.py:264
 msgid "Метод тестирования: АСА"
 msgstr "Testing method: ASA"
 
@@ -480,7 +480,7 @@ msgid "7-ми дюймовый цветной дисплей с функцией
 msgstr "7 inch color display with touchscreen"
 
 #: ../data/products.py:124 ../data/products.py:156 ../data/products.py:189
-#: ../data/products.py:269
+#: ../data/products.py:268
 msgid "Регулируемый порог совпадения сигнатур"
 msgstr "Adjustable signature matched threshold"
 
@@ -566,7 +566,7 @@ msgid "Интерфейс связи USB 2.0"
 msgstr "USB 2.0 communication"
 
 #: ../data/products.py:159 ../data/products.py:192 ../data/products.py:229
-#: ../data/products.py:270
+#: ../data/products.py:269
 msgid "Поддержка ОС: Windows 7/8/10 (х64/х86), Linux"
 msgstr "OS support: Windows 7/8/10 (x64/x86), Linux"
 
@@ -702,34 +702,32 @@ msgstr ""
 
 #: ../data/products.py:250
 msgid ""
-"EyePoint MUX предназначен для коммутирования одного входного канала на любой из "
-"выходных каналов в заданной оператором последовательности. При помощи EP MUX можно "
-"производить быстрое тестирование краевых разъемов неисправных плат, а также "
-"проводить входной контроль микросхем при использовании специализированной оснастки "
-"для их установки. EyePoint H10 - простой настольный прибор, с управлением по USB, "
-"поставляемый в виде моноблока и комплектующийся измерительными щупами, тестовой "
-"платой, кабелем USB и кабелем электропитания 220В."
+"Локализатор неисправностей на печатных платах методом сигнатурного анализа с "
+"частотой тестирующего сигнала до 12 МГц и широким диапазоном выбора напряжения и "
+"чувствительности по току, что позволяет искать неисправности на высокочастотных "
+"платах. EyePoint H10 - простой настольный прибор, с управлением по USB, поставляемый "
+"в виде моноблока и комплектующийся измерительными щупами, тестовой платой, кабелем "
+"USB и кабелем электропитания 220В."
 msgstr ""
-"EyePoint MUX is designed to switch one input channel to any of the output channels "
-"in the sequence specified by the operator. With EP MUX, you can quickly test the "
-"edge connectors of faulty boards, as well as perform input control of the chips when "
-"using specialized equipment for their installation. EyePoint H10 is a simple desktop "
-"device with USB control, supplied as a monoblock and equipped with measuring probes, "
-"a test board, a USB cable and a 220V power cable."
+"Fault localizer on printed circuit boards by signature analysis with a frequency of "
+"the testing signal up to 12 MHz and a wide range of voltage selection and current "
+"sensitivity, which allows you to search for faults on high-frequency boards. "
+"EyePoint H10 is a simple desktop device with USB control, supplied as a monoblock "
+"and equipped with measuring probes, a test board, a USB cable and a 220V power cable."
 
-#: ../data/products.py:260
+#: ../data/products.py:259
 msgid "Частота тестирующего сигнала до 12 МГц"
 msgstr "Test signal frequency range: up to 12 MHz"
 
-#: ../data/products.py:261
+#: ../data/products.py:260
 msgid "Управление по USB"
 msgstr "USB control"
 
-#: ../data/products.py:262
+#: ../data/products.py:261
 msgid "Широкий диапазон напряжения"
 msgstr "Wide voltage range"
 
-#: ../data/products.py:266
+#: ../data/products.py:265
 msgid ""
 "Диапазон частот тестирующего сигнала: 1, 5, 10, 50, 100, 400 Гц. 1.5, 6, 25, 100, "
 "400 кГц. 1.5, 3, 6, 12 МГц"
@@ -737,23 +735,23 @@ msgstr ""
 "Test signal frequency range: 1, 5, 10, 50, 100, 400 Hz. 1.5, 6, 25, 100, 400 kHz. "
 "1.5, 3, 6, 12 MHz"
 
-#: ../data/products.py:268
+#: ../data/products.py:267
 msgid "Рабочие напряжения: 1, 1.5, 2, 2.5, 3, 4, 4.5, 5, 6, 6.7, 7.5, 10 В"
 msgstr "Operating voltage: 1, 1.5, 2, 2.5, 3, 4, 4.5, 5, 6, 6.7, 7.5, 10 V"
 
-#: ../data/products.py:271
+#: ../data/products.py:270
 msgid "Интерфейс подключения к ПК: USB"
 msgstr "PC connection interface: USB"
 
-#: ../data/products.py:272
+#: ../data/products.py:271
 msgid "Возможность программного управления: C/C++, Python"
 msgstr "Possibility of program management: C/C+, Python"
 
-#: ../data/products.py:273
+#: ../data/products.py:272
 msgid "Габариты и вес: 137х65х110 мм, 0.7 кг"
 msgstr "Dimensions and weight: 137х60х110 mm, 0.7 kg"
 
-#: ../data/products.py:274
+#: ../data/products.py:273
 msgid "Электропитание: ~220В"
 msgstr "Power supply: ~ 220V"
 
