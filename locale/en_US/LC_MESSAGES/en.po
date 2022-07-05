@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-05 17:29+0300\n"
-"PO-Revision-Date: 2022-07-05 17:29+0300\n"
+"POT-Creation-Date: 2022-07-05 17:46+0300\n"
+"PO-Revision-Date: 2022-07-05 17:47+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -780,7 +780,7 @@ msgid "Совместимость со всей линейкой приборо�
 msgstr "Compatible with the entire line of EyePoint devices"
 
 #: ../data/products.py:287
-msgid "Поддержка плана тестирования в автоматическом режиме с генерацией отчетов"
+msgid "Поддержка плана тестирования с генерацией отчетов"
 msgstr "Automatic test plan support with report generation"
 
 #: ../data/products.py:290

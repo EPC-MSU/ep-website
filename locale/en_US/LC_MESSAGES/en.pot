@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-03-23 18:01+0300\n"
+"POT-Creation-Date: 2022-07-05 17:46+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -162,31 +162,39 @@ msgid ""
 "Также в данном архиве можно найти биндинги для языков Python и C#."
 msgstr ""
 
+#: ../data/download.py:154
+msgid "Сервер"
+msgstr ""
+
 #: ../data/download.py:157
+msgid "Локальный сервер для работы с устройством EyePoint H10. "
+msgstr ""
+
+#: ../data/download.py:165
 msgid "Скачать полный комплект программного обеспечения"
 msgstr ""
 
-#: ../data/download.py:159
+#: ../data/download.py:167
 msgid "Архив со всем софтом и документацией для этого продукта"
 msgstr ""
 
-#: ../data/download.py:171
+#: ../data/download.py:179
 msgid "Версия"
 msgstr ""
 
-#: ../data/download.py:172
+#: ../data/download.py:180
 msgid "Дата выпуска"
 msgstr ""
 
-#: ../data/download.py:173
+#: ../data/download.py:181
 msgid "Размер"
 msgstr ""
 
-#: ../data/download.py:174
+#: ../data/download.py:182
 msgid "Ссылка"
 msgstr ""
 
-#: ../data/download.py:175
+#: ../data/download.py:183
 msgid "Скачать"
 msgstr ""
 
@@ -196,16 +204,15 @@ msgid ""
 "компонентов на печатных платах, а также для выявления контрафактных, "
 "перемаркерованных или поврежденных компонентов в BGA корпусах на основе "
 "метода аналогового сигнатурного анализа (АСА). В линейке <b>EyePoint</b> "
-"есть автоматические <b>(P10, B10, P10b)</b> и ручные <b>(S2, u21, u22)</b> "
-"системы, а также ОЕМ модуль <b>а2</b>, который может быть встроен в уже "
-"используемые системы пользователя. Для работы с модулем поставляется API, "
-"которое позволяет без лишних проблем управлять каналом сигнатурного "
-"анализа.                                                     С практикой "
-"применения инновационного метода поиска неисправностей на платах с помощью "
-"автоматической системы тестирования EyePoint вы можете ознакомиться в этой "
-"статье <a href='https://physlab.ru/news/"
-"avtomatizirovannyie_sistiemy_poiska_nieispravnostiei_i_praktika_ikh_primienieniia'></"
-"a>. "
+"есть автоматические <b>(P10, B10, P10b, MUX)</b> и ручные <b>(S2, u21, u22, "
+"H10)</b> системы, а также ОЕМ модуль <b>а2</b>, который может быть встроен в "
+"уже используемые системы пользователя. Для работы с модулем поставляется "
+"API, которое позволяет без лишних проблем управлять каналом сигнатурного "
+"анализа.<br><br> С практикой применения инновационного метода поиска "
+"неисправностей на платах с помощью автоматической системы тестирования "
+"EyePoint вы можете ознакомиться <a href='https://physlab.ru/news/"
+"avtomatizirovannyie_sistiemy_poiska_nieispravnostiei_i_praktika_ikh_primienieniia'>в "
+"этой статье.</a> "
 msgstr ""
 
 #: ../data/other.py:16
@@ -228,7 +235,7 @@ msgstr ""
 msgid ""
 "EyePoint - линейка простого и функционального оборудования для локализации "
 "неисправных компонентов на платах, использующего метод аналогового "
-"сигнатурного анализа и частотный диапазон до 100 кГц."
+"сигнатурного анализа и частотный диапазон до 12 МГц."
 msgstr ""
 
 #: ../data/other.py:29
@@ -269,7 +276,7 @@ msgid "Не повредит плату"
 msgstr ""
 
 #: ../data/products.py:39 ../data/products.py:77 ../data/products.py:154
-#: ../data/products.py:187 ../data/products.py:225
+#: ../data/products.py:187 ../data/products.py:225 ../data/products.py:260
 msgid "Метод тестирования: АСА"
 msgstr ""
 
@@ -424,6 +431,7 @@ msgid "7-ми дюймовый цветной дисплей с функцией
 msgstr ""
 
 #: ../data/products.py:124 ../data/products.py:156 ../data/products.py:189
+#: ../data/products.py:264
 msgid "Регулируемый порог совпадения сигнатур"
 msgstr ""
 
@@ -447,7 +455,7 @@ msgstr ""
 msgid "Возможность подключения к ПК по USB: Windows, Linux"
 msgstr ""
 
-#: ../data/products.py:130
+#: ../data/products.py:130 ../data/products.py:296
 msgid "Возможность программного управления: C/C++, C#, Python"
 msgstr ""
 
@@ -503,6 +511,7 @@ msgid "Интерфейс связи USB 2.0"
 msgstr ""
 
 #: ../data/products.py:159 ../data/products.py:192 ../data/products.py:229
+#: ../data/products.py:265
 msgid "Поддержка ОС: Windows 7/8/10 (х64/х86), Linux"
 msgstr ""
 
@@ -608,4 +617,121 @@ msgstr ""
 
 #: ../data/products.py:237
 msgid "Питание от USB разъема"
+msgstr ""
+
+#: ../data/products.py:242
+msgid "EyePoint H10"
+msgstr ""
+
+#: ../data/products.py:245
+msgid ""
+"Локализатор неисправностей на печатных платах методом сигнатурного анализа с "
+"частотой тестирующего сигнала до 12 МГц и широким диапазоном выбора "
+"напряжения и чувствительности по току."
+msgstr ""
+
+#: ../data/products.py:250
+msgid ""
+"EyePoint H10 - простой настольный прибор, с управлением по USB, поставляемый "
+"в виде моноблока и комплектующийся измерительными щупами, тестовой платой, "
+"кабелем USB и кабелем электропитания 220В."
+msgstr ""
+
+#: ../data/products.py:255
+msgid "Частота тестирующего сигнала до 12 МГц"
+msgstr ""
+
+#: ../data/products.py:256
+msgid "Управление по USB"
+msgstr ""
+
+#: ../data/products.py:257
+msgid "Широкий диапазон напряжения"
+msgstr ""
+
+#: ../data/products.py:261
+msgid ""
+"Диапазон частот тестирующего сигнала: 1, 5, 10, 50, 100, 400 Гц. 1.5, 6, 25, "
+"100, 400 кГц. 1.5, 3, 6, 12 МГц"
+msgstr ""
+
+#: ../data/products.py:263
+msgid "Рабочие напряжения: 1, 1.5, 2, 2.5, 3, 4, 4.5, 5, 6, 6.7, 7.5, 10 В"
+msgstr ""
+
+#: ../data/products.py:266
+msgid "Интерфейс подключения к ПК: USB"
+msgstr ""
+
+#: ../data/products.py:267
+msgid "Возможность программного управления: C/C++, Python"
+msgstr ""
+
+#: ../data/products.py:268
+msgid "Габариты и вес: 137х65х110 мм, 0.7 кг"
+msgstr ""
+
+#: ../data/products.py:269
+msgid "Электропитание: ~220В"
+msgstr ""
+
+#: ../data/products.py:274
+msgid "EyePoint MUX"
+msgstr ""
+
+#: ../data/products.py:277
+msgid ""
+"EyePoint MUX предназначен для коммутирования одного входного канала на любой "
+"из выходных каналов в заданной оператором последовательности. "
+msgstr ""
+
+#: ../data/products.py:281
+msgid ""
+"При помощи EP MUX можно производить быстрое тестирование краевых разъемов "
+"неисправных плат, а также проводить входной контроль микросхем при "
+"использовании специализированной оснастки для их установки. "
+msgstr ""
+
+#: ../data/products.py:285
+msgid "Скалирование модулей (до 8 штук, 512 каналов)"
+msgstr ""
+
+#: ../data/products.py:286
+msgid "Совместимость со всей линейкой приборов EyePoint"
+msgstr ""
+
+#: ../data/products.py:287
+msgid "Поддержка плана тестирования с генерацией отчетов"
+msgstr ""
+
+#: ../data/products.py:290
+msgid "Напряжение пропускаемого сигнала: ±12 В"
+msgstr ""
+
+#: ../data/products.py:291
+msgid "Максимальный ток пропускаемого сигнала: 90 мА"
+msgstr ""
+
+#: ../data/products.py:292
+msgid "Максимальная частота пропускаемого сигнала: 100 кГц"
+msgstr ""
+
+#: ../data/products.py:293
+msgid "Сопротивление канала: 11 Ом"
+msgstr ""
+
+#: ../data/products.py:294
+msgid "Ёмкость канала: 100 пФ"
+msgstr ""
+
+#: ../data/products.py:295
+msgid "Интерфейс подключения к ПК: USB Type-C"
+msgstr ""
+
+#: ../data/products.py:297
+msgid "Габариты: 130 x 75 x 17.5 мм"
+msgstr ""
+
+#: ../data/products.py:298
+msgid "Вес одной части: 115 гр"
 msgstr ""
