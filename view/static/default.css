@@ -1,112 +1,98 @@
-	html, body
-	{
-		height: 100%;
-	}
-	
-	body
-	{
-		margin: 0px;
-		padding: 0px;
-		background: #458f0b;
-		font-family: Verdana, "Geneva CY", "DejaVu Sans", sans-serif;
-		font-size: 12pt;
-		font-weight: 300;
-		color: rgba(255,255,255,0.8);
-		min-width: 1000px;
-	}
+html, body {
+	height: 100%;
+}
 
+body {
+	margin: 0px;
+	padding: 0px;
+	background: #458f0b;
+	font-family: Verdana, "Geneva CY", "DejaVu Sans", sans-serif;
+	font-size: 12pt;
+	font-weight: 300;
+	color: rgba(255,255,255,0.8);
+	min-width: 1000px;
+}
 
-	h1, h2, h3
-	{
-		margin: 0;
-		padding: 0;
-	}
+h1, h2, h3 {
+	margin: 0;
+	padding: 0;
+}
 
-	p, ol, ul
-	{
-		margin-top: 0;
-	}
+p, ol, ul {
+	margin-top: 0;
+}
 
-	ol, ul
-	{
-		padding: 0;
-		list-style: none;
-	}
+ol, ul {
+	padding: 0;
+	list-style: none;
+}
 
-	p
-	{
-		line-height: 180%;
-	}
+p {
+	line-height: 180%;
+}
 
-	.container
-	{
-		overflow: hidden;
-		margin: 0em auto;
-		width: 70%;
-		min-width: 880px;
-	}
+.container {
+	overflow: hidden;
+	margin: 0em auto;
+	width: 70%;
+	min-width: 880px;
+}
 
 /*********************************************************************************/
 /* EyePoint intro
 /*********************************************************************************/
 
-    #intro-container
-    {
-        margin-bottom: 1em;
-        margin-top: 1em;
-        display: inline-block;
-    }
+#intro-container {
+    margin-bottom: 1em;
+    margin-top: 1em;
+    display: inline-block;
+}
 
-    #intro-text
-    {
-        color: rgba(0,0,0,0.6);
-        text-align: justify;
-    }
+#intro-text {
+    color: rgba(0,0,0,0.6);
+    text-align: justify;
+}
 
-    #intro-image
-    {
-        width: 45%;
-        margin-right: 30px;
-        margin-bottom: 30px;
-        float: left;
-    }
+#intro-image {
+    width: 45%;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    float: left;
+}
 
 /*********************************************************************************/
 /* Hilight
 /*********************************************************************************/
 
-    .hilight
-    {
-        background-image: url(/static/images/highlight.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        max-width: 150px;
-        height: 99px;
-        color: rgb(132, 168, 105);
-        float: left;
-        margin: 0px 4px 0px 4px;
-        text-align: center;
-        flex-grow: 0;
-        flex-shrink: 0;
-        padding: 10px;
-        min-width: 150px
-    }
+.hilight {
+    background-image: url(/static/images/highlight.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 150px;
+    height: 99px;
+    color: rgb(132, 168, 105);
+    float: left;
+    margin: 0px 4px 0px 4px;
+    text-align: center;
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding: 10px;
+    min-width: 150px
+}
 
-    .hilight-container
-    {
-        display: flex;
-        justify-content: space-between;
-    }
+.hilight-container {
+    display: flex;
+    justify-content: space-between;
+}
 
 
 /*********************************************************************************/
 /* EyePoint parters 
 /*********************************************************************************/
-#our_partners_chipdip
-{
+#our_partners_chipdip {
 	padding: 1.5em 2em 0em 0em;
 	float: left;
 	margin-top: 1em;
@@ -116,8 +102,7 @@
 	height: 398px;*/
 }
 
-#chipdip_mail
-{
+#chipdip_mail {
 	padding: 1.5em 0em 0em 0em;
 	color: rgba(6,6,6,6);
 	margin-top: 1em;
@@ -126,16 +111,14 @@
 	
 }
 
-#chipdip_phone
-{
+#chipdip_phone {
 	color: rgba(6,6,6,6);
 	margin-top: 1em;
     margin-bottom: 1em;
 	font-size: 1.3em;	
 }
 	
-#our_partners_ostec
-{
+#our_partners_ostec {
 	padding: 1.5em 2em 0em 0em;
 	float: left;
 	margin-top: 1em;
@@ -143,8 +126,7 @@
 	/*margin-right: 30px;*/
 }
 
-#ostec_mail
-{
+#ostec_mail {
 	padding: 1.5em 0em 0em 0em;
 	color: rgba(6,6,6,6);
 	margin-top: 1em;
@@ -153,34 +135,30 @@
 	
 }
 
-#ostec_phone
-{
+#ostec_phone {
 	color: rgba(6,6,6,6);
 	margin-top: 1em;
     margin-bottom: 1em;
 	font-size: 1.3em;
 }
 
-#our_partners_image
-{
+#our_partners_image {
 	/*width: 40%;
 	height: 60px;*/
 	
 }
 
-
-.parters{
+.parters {
 	overflow: hidden;
 	margin-bottom: 2em;
 }
 
-.chipdip{
+.chipdip {
 	width: 50%;
 	float: left;
 }
 
-
-.ostec{
+.ostec {
 	width: 50%;
 	float: left;
 }
@@ -189,26 +167,24 @@
 /* EyePoint photo with comment style
 /*********************************************************************************/
 
-    .epmain
-    {
-        display:         flex;
+.epmain {
+    display:         flex;
 
-	    align-items: center;
+   align-items: center;
 
-        overflow: auto;
-        color: rgba(0,0,0,0.6);
-        margin-top: 1em;
-        margin-bottom: 1em;
-    }
+    overflow: auto;
+    color: rgba(0,0,0,0.6);
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
 
-    .epdescription
-    {
-        flex-grow: 0;
-        flex-shrink: 0;
-        text-align: justify;
-        width: 60%;
-        overflow: hidden;
-    }
+.epdescription {
+    flex-grow: 0;
+    flex-shrink: 0;
+    text-align: justify;
+    width: 60%;
+    overflow: hidden;
+}
 
 
 
@@ -217,350 +193,311 @@
 /* Image Style                                                                   */
 /*********************************************************************************/
 
-    .epimage
-    {
-        flex-grow: 0;
-        flex-shrink: 0;
-        width: 40%;
-        flex-grow: 0;
-        display: contents;
-    }
+.epimage {
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 40%;
+    flex-grow: 0;
+    display: contents;
+}
 
-    .epimage img
-    {
-        width: inherit;
-    }
+.epimage img {
+    width: inherit;
+}
 
 /*********************************************************************************/
 /* Button Style                                                                  */
 /*********************************************************************************/
 
-	.button
-	{
-		display: inline-block;
-		padding: 1em 2em 1em 2em;
-		background: #458f0b;
-		letter-spacing: 0.20em;
-		text-decoration: none;
-		text-transform: uppercase;
-		font-weight: 400;
-		font-size: 0.70em;
-		color: #FFF;
-		align: right;
-	}
+.button {
+	display: inline-block;
+	padding: 1em 2em 1em 2em;
+	background: #458f0b;
+	letter-spacing: 0.20em;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 0.70em;
+	color: #FFF;
+	align: right;
+}
 
-	.button-container
-	{
-	    text-align: right;
-	}
+.button-container {
+    text-align: right;
+}
 
-	.button:before
-	{
-		display: inline-block;
-		background: #FFC31F;
-		margin-right: 1em;
-		width: 40px;
-		height: 40px;
-		line-height: 40px;
-		border-radius: 20px;
-		text-align: center;
-		color: #272925;
-	}
+.button:before {
+	display: inline-block;
+	background: #FFC31F;
+	margin-right: 1em;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 20px;
+	text-align: center;
+	color: #272925;
+}
 
 /*********************************************************************************/
 /* Header                                                                        */
 /*********************************************************************************/
 
-	#header-wrapper
-	{
-		/*overflow: hidden;*/
-		background: #458f0b;
-		height: auto;
-	}
+#header-wrapper {
+	/*overflow: hidden;*/
+	background: #458f0b;
+	height: auto;
+}
 
-	#header
-	{
-		/*overflow: hidden;*/
-		position: relative;
-		padding: 2.5em 0em;
-	}
+#header {
+	/*overflow: hidden;*/
+	position: relative;
+	padding: 2.5em 0em;
+}
 
-	.header-lang-link
-	{
-	    display: inline-block;
-	    margin: 0px 5px 0px 5px;
-	}
+.header-lang-link {
+    display: inline-block;
+    margin: 0px 5px 0px 5px;
+}
 
-	.header-lang-icon
-	{
-	    opacity: 0.9;
-	    width: 26px;
-	    display: inline;
-	}
+.header-lang-icon {
+    opacity: 0.9;
+    width: 26px;
+    display: inline;
+}
 
 /*********************************************************************************/
 /* Horizontal line                                                               */
 /*********************************************************************************/
-    hr
-    {
-        color: rgba(132, 168, 105, 0.7);
-    }
+hr {
+    color: rgba(132, 168, 105, 0.7);
+}
 
 /*********************************************************************************/
 /* EPSystems                                                                     */
 /*********************************************************************************/
-    #epsystems
-    {
-        max-width: 600px;
-    }
+#epsystems {
+    max-width: 600px;
+}
 
 /*********************************************************************************/
 /* Logo                                                                          */
 /*********************************************************************************/
 
-	#logo
-	{
-		position: absolute;
-		top: 0.5em;
-		left: 0;
-	}
+#logo {
+	position: absolute;
+	top: 0.5em;
+	left: 0;
+}
 
-	#logo h1
-	{
-		padding: 0.20em 0.50em;
-		letter-spacing: 0.10em;
-		font-size: 2.5em;
-		font-weight: 600;
-	}
+#logo h1 {
+	padding: 0.20em 0.50em;
+	letter-spacing: 0.10em;
+	font-size: 2.5em;
+	font-weight: 600;
+}
 
-	#logo img
-	{
-	    height: 65px;
-	}
+#logo img {
+    height: 65px;
+}
 
-	#logo a
-	{
-		text-decoration: none;
-		text-transform: uppercase;
-		color: #FFF;
-	}
+#logo a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #FFF;
+}
 
 /*********************************************************************************/
 /* Menu                                                                          */
 /*********************************************************************************/
 
-    .product-link {
-        color: inherit;
-        text-decoration: none;
-    }
+.product-link {
+    color: inherit;
+    text-decoration: none;
+}
 
-	#menu
-	{
-		position: absolute;
-		top: 2em;
-		right: 0;
-	}
+#menu {
+	position: absolute;
+	top: 2em;
+	right: 0;
+}
 
-	#menu ul
-	{
-		display: inline-block;
-	}
+#menu ul {
+	display: inline-block;
+}
 
-	#menu li
-	{
-		display: block;
-		float: left;
-		text-align: center;
-	}
+#menu li {
+	display: block;
+	float: left;
+	text-align: center;
+}
 
-	#menu li a, #menu li span
-	{
-		padding: 1em 1.5em;
-		letter-spacing: 0.10em;
-		text-decoration: none;
-		text-transform: uppercase;
-		font-size: 0.90em;
-		color: #FFF;
-	}
+#menu li a, #menu li span {
+	padding: 1em 1.5em;
+	letter-spacing: 0.10em;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 0.90em;
+	color: #FFF;
+}
 
-	#menu li:hover a, #menu li.active a, #menu li.active span
-	{
-	}
+#menu li:hover a, #menu li.active a, #menu li.active span {
+	
+}
 
-	#menu .current_page_item a
-	{
-		background: #41880a;
-		border: 1px solid #3d7f0b;
-		border-radius: 20px;
-	}
+#menu .current_page_item a {
+	background: #41880a;
+	border: 1px solid #3d7f0b;
+	border-radius: 20px;
+}
 
-	#menu .icon
-	{
-	}
+#menu .icon {
+	
+}
 
 /*********************************************************************************/
 /* Page                                                                          */
 /*********************************************************************************/
 
-	#page-wrapper
-	{
-		/*overflow: hidden;*/
-		padding: 1.5em 0em 1em 0em;
-		background: #FFF;
-		min-height: 85%;
-	}
+#page-wrapper {
+	/*overflow: hidden;*/
+	padding: 1.5em 0em 1em 0em;
+	background: #FFF;
+	min-height: 85%;
+}
 
-	#page
-	{
-		text-align: left;
-	}
+#page {
+	text-align: left;
+}
 
-	#page h2
-	{
-		text-transform: uppercase;
-		font-size: 2.6em;
-		font-weight: 300;
-		color: rgba(0,0,0,0.9);
-	}
+#page h2 {
+	text-transform: uppercase;
+	font-size: 2.6em;
+	font-weight: 300;
+	color: rgba(0,0,0,0.9);
+}
 
-	#page ul
-	{
-	    display: block;
-        list-style-type: disc;
-        margin-top: 0em;
-        margin-bottom: 0 em;
-        margin-left: 0;
-        margin-right: 0;
-        padding-left: 40px;
-        text-align: left;
-        list-style: none; /* Remove default bullets */
-	}
+#page ul {
+    display: block;
+    list-style-type: disc;
+    margin-top: 0em;
+    margin-bottom: 0 em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+    text-align: left;
+    list-style: none; /* Remove default bullets */
+}
     /* Hack for green bullets https://www.w3schools.com/howto/howto_css_bullet_color.asp*/
-    #page ul li::before {
-      content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-      color: #458f0b; /* Change the color */
-      font-weight: bold; /* If you want it to be bold */
-      display: inline-block; /* Needed to add space between the bullet and the text */
-      width: 1em; /* Also needed for space (tweak if needed) */
-      margin-left: -1em; /* Also needed for space (tweak if needed) */
-    }
+#page ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #458f0b; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
 
-	.index-h3
-	{
-		font-size: 1.3em;
-		font-weight: bolder;
-		color: rgba(0,0,0,0.9);
-		text-decoration:none;
-		margin-bottom: 0.5em;
-		display: inline-block;
-	}
+.index-h3 {
+	font-size: 1.3em;
+	font-weight: bolder;
+	color: rgba(0,0,0,0.9);
+	text-decoration:none;
+	margin-bottom: 0.5em;
+	display: inline-block;
+}
 
-	.download-header-block
-	{
-	    margin-top: 1em;
-	    margin-bottom: 0.5em;
-	    display: flex;
-	    align-items: center;
-	}
+.download-header-block {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    display: flex;
+    align-items: center;
+}
 
-	.download-h3
-	{
-      font-size: 1.5em;
-	    font-weight: 300;
-	    color: rgb(132, 168, 105);
-	    margin-left: 0.5em;
-	}
+.download-h3 {
+  font-size: 1.5em;
+    font-weight: 300;
+    color: rgb(132, 168, 105);
+    margin-left: 0.5em;
+}
 
-	.download-text
-	{
-	    color: rgba(0,0,0,0.6);
-	    margin-bottom: 5px;
-	}
+.download-text {
+    color: rgba(0,0,0,0.6);
+    margin-bottom: 5px;
+}
 
-	#download-page-intro
-	{
-	    margin-top: 0px;
-	    margin-bottom: 0px;
-	    align-items: start;
-	}
+#download-page-intro {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    align-items: start;
+}
 
-	#download-sdk
-	{
-      color: rgb(132, 168, 105);
-      font-size: 1.5em;
-      font-weight: 300;
-      text-decoration: underline;
-	}
+#download-sdk {
+  color: rgb(132, 168, 105);
+  font-size: 1.5em;
+  font-weight: 300;
+  text-decoration: underline;
+}
 
-  #download-sdk:hover
-	{
-      color: #1cae5c;
-      font-size: 1.5em;
-      font-weight: 300;
-      text-decoration: underline;
-	}
+#download-sdk:hover {
+  color: #1cae5c;
+  font-size: 1.5em;
+  font-weight: 300;
+  text-decoration: underline;
+}
 
-	#page p
-	{
-		color: rgba(0,0,0,0.8);
-	}
+#page p {
+	color: rgba(0,0,0,0.8);
+}
 
 /*********************************************************************************/
 /* Footer                                                                        */
 /*********************************************************************************/
 
-	#footer
-	{
-		padding: 1em 0em 1em 0em;
-		border-top: 1px solid rgba(0,0,0,0.08);
-		display: flex;
-		justify-content: space-between;
-        font-size: 0.80em;
-	}
+#footer {
+	padding: 1em 0em 1em 0em;
+	border-top: 1px solid rgba(0,0,0,0.08);
+	display: flex;
+	justify-content: space-between;
+    font-size: 0.80em;
+}
 
-  .footer-link {
-      color: inherit;
-      text-decoration: none;
-    }
+.footer-link {
+  color: inherit;
+  text-decoration: none;
+}
 
 
 /*********************************************************************************/
 /* Icons                                                                         */
 /*********************************************************************************/
-.footer-icon
-{
+.footer-icon {
     width: 32px;
     height: 32px;
     vertical-align: middle;
 }
 
-.footer-block
-{
+.footer-block {
     flex-grow: 0;
     flex-shrink: 1;
     flex-basis: 33%;  /* because here are 3 elements in footer*/
     text-align: center;
 }
 
-#footer-epc-block
-{
+#footer-epc-block {
     margin-bottom: 0.4em;
     text-align: center;
 }
 
-.footer-multiline
-{
+.footer-multiline {
     display: inline-block;
     vertical-align: middle;
 }
 
-#footer-first-block
-{
+#footer-first-block {
     text-align: left;
 }
 
-#footer-last-block
-{
+#footer-last-block {
     text-align: right;
 }
 

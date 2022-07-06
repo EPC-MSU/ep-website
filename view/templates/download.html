@@ -14,7 +14,9 @@
 		<span>{{ tr(product.description) | safe }}</span>
         <br>
         <br>
-        <span>{{ tr(product.extended_description) | safe }}</span>
+		{% for extended_description in product.extended_description %}
+        <span>{{ tr(extended_description) | safe }}</span>
+		{% endfor %}
 		<br>
 		<br>
         <div class="hilight-container">
