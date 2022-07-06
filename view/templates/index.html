@@ -23,8 +23,9 @@
 	<div class="epdescription">
 		<a href="product/{{ product.name }}/" class="index-h3">{{ tr(product.friendly_name) }}</a>
 		<br>
-
-		<span>{{ tr(product.description) | safe }}</span>
+        {% for description in product.description %}
+		<span>{{ tr(description) | safe }}</span>
+		{% endfor %}
 
 		<br>
 		<br>
