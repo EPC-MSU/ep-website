@@ -287,7 +287,7 @@ products = (
         name="EyePoint_MUX",
         friendly_name=_("EyePoint MUX"),
         picture=[
-            _("MUX.png"),
+            _("mux_m.png"),
         ],
         description=[
             _("EyePoint MUX предназначен для коммутирования одного входного канала на любой из выходных "),

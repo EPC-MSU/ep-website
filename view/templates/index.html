@@ -18,7 +18,9 @@
 
 <div class="epmain">
 	<a href="product/{{ product.name }}/" class="epimage">
-		<img src="/static/images/{{ product.picture }}">
+		{% for picture in product.picture %}
+		<img src="/static/images/{{ picture }}">
+		{% endfor %}
 	</a>
 	<div class="epdescription">
 		<a href="product/{{ product.name }}/" class="index-h3">{{ tr(product.friendly_name) }}</a>
