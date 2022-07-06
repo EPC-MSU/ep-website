@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-05 17:46+0300\n"
-"PO-Revision-Date: 2022-07-05 17:47+0300\n"
+"POT-Creation-Date: 2022-07-06 10:39+0300\n"
+"PO-Revision-Date: 2022-07-06 10:40+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -504,7 +504,7 @@ msgstr "\"Test Plan\" mode available"
 msgid "Возможность подключения к ПК по USB: Windows, Linux"
 msgstr "Can be connected to PC via USB: Windows, Linux"
 
-#: ../data/products.py:130 ../data/products.py:296
+#: ../data/products.py:130 ../data/products.py:298
 msgid "Возможность программного управления: C/C++, C#, Python"
 msgstr "Possibility of program management: C/C+, C#, Python"
 
@@ -750,10 +750,14 @@ msgid "Электропитание: ~220В"
 msgstr "Power supply: ~ 220V"
 
 #: ../data/products.py:274
-msgid "EyePoint MUX"
-msgstr "EyePoint MUX"
+msgid "EyePoint MUX_M"
+msgstr "EyePoint MUX_M"
 
-#: ../data/products.py:277
+#: ../data/products.py:276
+msgid "EyePoint MUX_SA"
+msgstr "EyePoint MUX_SA"
+
+#: ../data/products.py:279
 msgid ""
 "EyePoint MUX предназначен для коммутирования одного входного канала на любой из "
 "выходных каналов в заданной оператором последовательности. "
@@ -761,7 +765,7 @@ msgstr ""
 "The EyePoint MUX is designed to switch one input channel to any of the 64 output "
 "channels in an operator defined sequence. "
 
-#: ../data/products.py:281
+#: ../data/products.py:283
 msgid ""
 "При помощи EP MUX можно производить быстрое тестирование краевых разъемов "
 "неисправных плат, а также проводить входной контроль микросхем при использовании "
@@ -771,47 +775,47 @@ msgstr ""
 "as to perform input inspection of microchips using specialized tooling for their "
 "installation. "
 
-#: ../data/products.py:285
+#: ../data/products.py:287
 msgid "Скалирование модулей (до 8 штук, 512 каналов)"
 msgstr "Scaling modules (up to 8 pieces, 512 channels)"
 
-#: ../data/products.py:286
+#: ../data/products.py:288
 msgid "Совместимость со всей линейкой приборов EyePoint"
 msgstr "Compatible with the entire line of EyePoint devices"
 
-#: ../data/products.py:287
+#: ../data/products.py:289
 msgid "Поддержка плана тестирования с генерацией отчетов"
 msgstr "Automatic test plan support with report generation"
 
-#: ../data/products.py:290
+#: ../data/products.py:292
 msgid "Напряжение пропускаемого сигнала: ±12 В"
 msgstr "Transmitted signal voltage: ±12V"
 
-#: ../data/products.py:291
+#: ../data/products.py:293
 msgid "Максимальный ток пропускаемого сигнала: 90 мА"
 msgstr "Maximum current of transmitted signal: 90mA"
 
-#: ../data/products.py:292
+#: ../data/products.py:294
 msgid "Максимальная частота пропускаемого сигнала: 100 кГц"
 msgstr "Maximum frequency of transmitted signal: 100 kHz"
 
-#: ../data/products.py:293
+#: ../data/products.py:295
 msgid "Сопротивление канала: 11 Ом"
 msgstr "Channel impedance: 11 Ohm"
 
-#: ../data/products.py:294
+#: ../data/products.py:296
 msgid "Ёмкость канала: 100 пФ"
 msgstr "Channel capacity: 100 pF"
 
-#: ../data/products.py:295
+#: ../data/products.py:297
 msgid "Интерфейс подключения к ПК: USB Type-C"
 msgstr "PC connection interface: USB Type-C"
 
-#: ../data/products.py:297
+#: ../data/products.py:299
 msgid "Габариты: 130 x 75 x 17.5 мм"
 msgstr "Dimensions: 130 x 75 x 17.5 mm"
 
-#: ../data/products.py:298
+#: ../data/products.py:300
 msgid "Вес одной части: 115 гр"
 msgstr "Weight of one piece: 115 g"
 
