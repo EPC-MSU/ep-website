@@ -271,10 +271,8 @@ products = (
     ),
     Product(
         name="EyePoint_MUX",
-        friendly_name=_("EyePoint MUX_M"),
+        friendly_name=_("EyePoint MUX"),
         picture="MUX.png",
-        friendly_name=_("EyePoint MUX_SA"),
-        picture="mux_sa.jpg",
         description=_(
             "EyePoint MUX предназначен для коммутирования одного входного канала на любой из выходных "
             "каналов в заданной оператором последовательности. "
