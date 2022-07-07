@@ -7,22 +7,24 @@
 <!--Product description-->
 
 <div class="epmain" id="download-page-intro">
-	<div class="epimage">
+	<div>
 		{% for picture in product.picture %}
-		<img src="/static/images/{{picture }}">
+		<div class="epimage">
+			<img src="/static/images/{{picture }}">
+		</div>
 		{% endfor %}
 	</div>
 	<div class="epdescription">
+		<!--
 		{% for description in product.description %}
-		<span>{{ tr(description) | safe }}</span>
+		<p>{{ tr(description) | safe }}</p>
 		{% endfor %}
-        <br>
-        <br>
+		-->
 		{% for extended_description in product.extended_description %}
-        <span>{{ tr(extended_description) | safe }}</span>
+		<div class="extended_description">
+        <p>{{ tr(extended_description) | safe }}</p>
+		</div>
 		{% endfor %}
-		<br>
-		<br>
         <div class="hilight-container">
             {% for hilight in product.hilights %}
                 <div class="hilight">{{ tr(hilight) }}</div>

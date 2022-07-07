@@ -184,7 +184,14 @@ p {
     overflow: hidden;
 }
 
-
+.extended_description {	
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	/*justify-content: space-around; /* vertical alignment */
+	/*align-content: center;         /* horizontal alignment */
+	height: 215px;                 /* essential for this method to work */
+}
 
 
 /*********************************************************************************/
@@ -200,7 +207,23 @@ p {
 }
 
 .epimage img {
+    width: 95%;
+	/*display: flex;*/
+	/*flex-wrap: wrap;*/
+}
+
+.epimage_index {
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 100%;
+    flex-grow: 0;
+    display: contents;
+}
+
+.epimage_index img {
     width: inherit;
+	display: flex;
+	flex-direction: column;
 }
 
 /*********************************************************************************/
