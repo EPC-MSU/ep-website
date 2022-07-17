@@ -5,36 +5,42 @@
 <h3 class="index-h3">{{ tr(product.friendly_name) }}</h3>
 
 <!--Product description-->
-
 <div class="epmain" id="download-page-intro">
 	<div>
-		{% for picture in product.picture %}
-		<div class="epimage">
-			<img src="/static/images/{{picture }}">
-		</div>
-		{% endfor %}
+    {% set count = namespace(a = 0) %}
+
+    {% if product.picture|length < 2 %}
+      <div class="epimage">
+        <img src="/static/images/{{product.picture[0] }}">
+      </div>
+    {% endif %}   
+      
+    {% if product.picture|length > 1 %}
+    		{% for picture in product.picture %}
+          {% if count.a > 0 %}
+          	<div class="epimage">
+        			<img src="/static/images/{{picture }}">
+        		</div> 
+          {% endif %}  
+          {% set count.a = count.a + 1 %}
+        {% endfor %} 
+    {% endif %}       
 	</div>
 	<div class="epdescription">
-		<!--
-		{% for description in product.description %}
-		<p>{{ tr(description) | safe }}</p>
-		{% endfor %}
-		-->
 		{% for extended_description in product.extended_description %}
 		<div class="extended_description">
         <p>{{ tr(extended_description) | safe }}</p>
 		</div>
 		{% endfor %}
-        <div class="hilight-container">
-            {% for hilight in product.hilights %}
-                <div class="hilight">{{ tr(hilight) }}</div>
-            {% endfor %}
-        </div>
+    <div class="hilight-container">
+        {% for hilight in product.hilights %}
+            <div class="hilight">{{ tr(hilight) }}</div>
+        {% endfor %}
+    </div>
 	</div>
 </div>
 
 <!--Full software kit-->
-
 {% if archive %}
 <div class="download-header-block">
     <a id="download-sdk" href="{{ archive.link }}">  {{ tr(archive_description.friendly_name) }} </a>

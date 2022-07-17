@@ -86,6 +86,7 @@ p {
 .hilight-container {
     display: flex;
     justify-content: space-between;
+    /*border: dashed red; */
 }
 
 
@@ -190,7 +191,8 @@ p {
 	flex-wrap: wrap;
 	/*justify-content: space-around; /* vertical alignment */
 	/*align-content: center;         /* horizontal alignment */
-	height: 215px;                 /* essential for this method to work */
+	height: 290px;                 /* essential for this method to work */
+	/*border: dashed green;*/
 }
 
 

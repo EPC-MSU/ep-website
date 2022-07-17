@@ -150,7 +150,7 @@ products = (
         name="EyePoint_u21",
         friendly_name=_("EyePoint u21"),
         picture=[
-            _("u21.jpg"),
+            _("u21.png"),
         ],
         description=[
             _("EyePoint u21 – миниатюрный одноканальный локализатор неисправных электронных компонентов на печатных платах методом ASA с частотой тестирующего сигнала до 100 кГц"),
@@ -185,7 +185,7 @@ products = (
         name="EyePoint_u22",
         friendly_name=_("EyePoint u22"),
         picture=[
-            _("u22.jpg"),
+            _("u22.png"),
         ],
         description=[
             _("EyePoint u22 – миниатюрный двухканальный локализатор неисправных электронных компонентов на печатных платах методом ASA с частотой тестирующего сигнала до 100 кГц"),
@@ -300,6 +300,7 @@ products = (
         name="EyePoint_MUX",
         friendly_name=_("EyePoint MUX"),
         picture=[
+        	_("mux.png"),
             _("mux_m.png"),
             _("mux_sa.png"),
         ],
