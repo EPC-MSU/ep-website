@@ -191,7 +191,7 @@ p {
 	flex-wrap: wrap;
 	/*justify-content: space-around; /* vertical alignment */
 	/*align-content: center;         /* horizontal alignment */
-	height: 290px;                 /* essential for this method to work */
+	/*height: 290px;                 /* essential for this method to work */
 	/*border: dashed green;*/
 }
 
@@ -226,6 +226,7 @@ p {
     width: inherit;
 	display: flex;
 	flex-direction: column;
+	/*border: dashed red; */
 }
 
 /*********************************************************************************/
