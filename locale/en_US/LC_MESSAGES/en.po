@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-18 16:09+0300\n"
-"PO-Revision-Date: 2022-07-18 16:17+0300\n"
+"POT-Creation-Date: 2022-07-18 18:25+0300\n"
+"PO-Revision-Date: 2022-07-18 18:27+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -819,8 +819,8 @@ msgid "Электропитание: ~220В"
 msgstr "Power supply: ~ 220V"
 
 #: ../data/products.py:301
-msgid "EyePoint MUX M"
-msgstr "EyePoint MUX M"
+msgid "EyePoint MUX_M"
+msgstr "EyePoint MUX_M"
 
 #: ../data/products.py:303
 msgid "mux_m.png"
@@ -828,10 +828,10 @@ msgstr "mux_m.png"
 
 #: ../data/products.py:306 ../data/products.py:310
 msgid ""
-"Материнская плата мультиплексора, необходимая для работы с модулями <b>Eyepoint MUX "
-"S A</b>. Позволяет подключать до 8 модулей на 64 канала. "
+"Материнская плата мультиплексора, необходимая для работы с модулями <b>Eyepoint "
+"MUX_S_A</b>. Позволяет подключать до 8 модулей на 64 канала. "
 msgstr ""
-"Multiplexer motherboard is necessary to work with <b>Eyepoint MUX S A</b> modules. "
+"Multiplexer motherboard is necessary to work with <b>Eyepoint MUX_S_A</b> modules. "
 "Allows you to connect up to 8 modules for 64 channels. "
 
 #: ../data/products.py:312 ../data/products.py:342
@@ -872,20 +872,30 @@ msgid "Вес: 115 гр"
 msgstr "Weight: 115 g"
 
 #: ../data/products.py:331
-msgid "EyePoint MUX S A"
-msgstr "EyePoint MUX S A"
+msgid "EyePoint MUX_S_A"
+msgstr "EyePoint MUX_S_A"
 
 #: ../data/products.py:333
 msgid "mux_sa.png"
 msgstr "mux_sa.png"
 
-#: ../data/products.py:336 ../data/products.py:340
+#: ../data/products.py:336
 msgid ""
 "Модуль мультиплексора на 64 канала. Позволяет зондировать каждый из 64 каналов по "
 "отношению к общему проводу (один к многим). "
 msgstr ""
 "Multiplexer module for 64 channels. Allows you to probe each of the 64 channels with "
 "respect to a common wire (one to many). "
+
+#: ../data/products.py:340
+msgid ""
+"Модуль мультиплексора на 64 канала работающий в комплекте с материнской платой "
+"мультиплексора <b>EyePoint MUX_M</b>. Позволяет зондировать каждый из 64 каналов по "
+"отношению к общему проводу (один к многим). "
+msgstr ""
+"Multiplexer module for 64 channels working with multiplexer motherboard <b>EyePoint "
+"MUX_M</b>. Allows you to probe each of the 64 channels with respect to a common wire "
+"(one to many). "
 
 #: ../data/products.py:353
 msgid "Напряжение пропускаемого сигнала: ±12 В"
