@@ -17,18 +17,20 @@
 <hr/>
 
 <div class="epmain">
-	<a href="product/{{ product.name }}/" class="epimage">
-		<img src="/static/images/{{ product.picture }}">
-	</a>
+	<a href="product/{{ product.name }}/" class="epimage_index">
+	<div>
+		<div class="epimage_index">
+			<img src="/static/images/{{ product.picture[0] }}">
+		</div>
+	</div>
 	<div class="epdescription">
 		<a href="product/{{ product.name }}/" class="index-h3">{{ tr(product.friendly_name) }}</a>
 		<br>
-
-		<span>{{ tr(product.description) | safe }}</span>
-
+        {% for description in product.description %}
+		<span>{{ tr(description) | safe }}</span>
+		{% endfor %}
 		<br>
 		<br>
-
 		<ul>
 			{% for tech in product.technical %}
 			<li>{{ tr(tech) | safe }}</li>
