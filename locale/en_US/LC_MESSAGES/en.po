@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-27 13:16+0300\n"
-"PO-Revision-Date: 2022-09-27 13:17+0300\n"
+"POT-Creation-Date: 2022-09-27 13:30+0300\n"
+"PO-Revision-Date: 2022-09-27 13:36+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -511,108 +511,123 @@ msgstr "S2.png"
 
 #: ../data/products.py:145
 msgid ""
-"Локализатор неисправных электронных компонентов с сенсорным экраном - устройство для "
-"ручного поиска неисправностей методом аналогового сигнатурного анализа."
+"Настольный локализатор неисправных электронных компонентов на печатных платах "
+"методом аналогового сигнатурного анализа с частотой тестирующего сигнала до 100 кГц. "
+"и со встроенным дисплеем. "
 msgstr ""
-"Manual localizer of faulty electronic components using analog signature analysis "
-"with convenient touch screen."
+"Locator of faulty electronic components on printed circuit boards using analog "
+"signature analysis with a test signal frequency of up to 100 kHz. "
 
-#: ../data/products.py:149
+#: ../data/products.py:148
 msgid ""
-"Локализатор неисправных электронных компонентов с сенсорным экраном - устройство для "
-"ручного поиска неисправностей методом аналогового сигнатурного анализа. <br /"
-">EyePoint S2 – второе поколение настольной системы для локализации неисправных "
-"электронных компонентов на печатных платах. Система обладает большим удобным "
-"сенсорным экраном. Дополнительная педаль позволяет упростить управление системой."
+"Настольный локализатор неисправных электронных компонентов на печатных платах "
+"методом аналогового сигнатурного анализа с частотой тестирующего сигнала до 100 кГц. "
+"и со встроенным дисплеем. <br />Локализатор неисправных электронных компонентов с "
+"сенсорным экраном - устройство для ручного поиска неисправностей методом аналогового "
+"сигнатурного анализа.EyePoint S2 – второе поколение настольной системы для "
+"локализации неисправных электронных компонентов на печатных платах. Система обладает "
+"большим удобным сенсорным экраном. Дополнительная педаль позволяет упростить "
+"управление системой. Простой и легкий прибор, частота зондирования до 100 кГц. У "
+"прибора имеется режим план тестирования, который позволяет заранее сохранить "
+"эталонную плату в базе и далее работать с такой же неисправной платой не имея "
+"эталона под рукой."
 msgstr ""
-"Manual localizer of faulty electronic components using analog signature analysis "
-"with convenient touch screen. <br />EyePoint S2 - the second generation of a desktop "
-"system for manual localizing faulty electronic components on PCB. The system has a "
-"large convenient touch screen. An additional pedal will simplify the management of "
-"the system."
+"Locator of faulty electronic components on printed circuit boards using analog "
+"signature analysis with a test signal frequency of up to 100 kHz. <br />Locator of "
+"faulty electronic components with a touch screen - a device for manual "
+"troubleshooting using the analog signature analysis method. EyePoint S2 is the "
+"second generation desktop system for locating faulty electronic components on "
+"printed circuit boards. The system has a large user-friendly touch screen. An "
+"additional foot pedal simplifies system control. Simple and lightweight instrument, "
+"probing frequency up to 100 kHz. The device has a test plan mode, which allows you "
+"to save the reference board in the database in advance and then work with the same "
+"faulty board without having a reference at hand."
 
-#: ../data/products.py:157
+#: ../data/products.py:158
 msgid "Простой и легкий прибор"
 msgstr "Simple and lightweight device"
 
-#: ../data/products.py:158 ../data/products.py:193 ../data/products.py:229
+#: ../data/products.py:159 ../data/products.py:194 ../data/products.py:230
 msgid "Частота зондирования до 100 кГц"
 msgstr "Test signal frequency range: 1 Hz - 100 kHz"
 
-#: ../data/products.py:159
+#: ../data/products.py:160
 msgid "Доступен план тестирования "
 msgstr "\"Test Plan\" mode: available "
 
-#: ../data/products.py:162 ../data/products.py:278
-msgid "Диапазон частот тестирующего сигнала: 1 Гц – 100 кГц"
+#: ../data/products.py:163 ../data/products.py:200 ../data/products.py:236
+msgid "Частота пробного сигнала до 100кГц"
 msgstr "Test signal frequency range: 1 Hz - 100 kHz"
 
-#: ../data/products.py:163
+#: ../data/products.py:164
 msgid "Рабочие напряжения: 1,2, 3,3, 5, 12 В"
 msgstr "Operating voltage: 1.2, 3.3, 5, 12 V"
 
-#: ../data/products.py:164 ../data/products.py:198 ../data/products.py:234
+#: ../data/products.py:165 ../data/products.py:199 ../data/products.py:235
 msgid "Диапазон тока: до 250 мкА, до 2.5 мА, до 25 мА"
 msgstr "Current sensitivity: 250 μA, 2.5 mA, 25 mA"
 
-#: ../data/products.py:165
-msgid "Габариты и вес: 205х204х120 мм, 2,5 кг"
-msgstr "Dimensions and weight: 205х204х120 mm, 2.5 kg"
-
 #: ../data/products.py:166
+msgid "Габариты и вес: 205х204х120 мм, 2,2 кг"
+msgstr "Dimensions and weight: 205х204х120 mm, 2.2 kg"
+
+#: ../data/products.py:167
 msgid "7-ми дюймовый цветной дисплей с функцией touchscreen"
 msgstr "7 inch color display with touchscreen"
 
-#: ../data/products.py:167 ../data/products.py:202 ../data/products.py:238
-#: ../data/products.py:321
+#: ../data/products.py:168 ../data/products.py:203 ../data/products.py:239
+#: ../data/products.py:322
 msgid "Регулируемый порог совпадения сигнатур"
 msgstr "Adjustable signature matched threshold"
 
-#: ../data/products.py:168
+#: ../data/products.py:169
 msgid "Внешняя педаль для дополнительного функционала"
 msgstr "External pedal for additional functionality"
 
-#: ../data/products.py:169
-msgid "Экспорт данных в формате .json на внешний Flash накопитель"
-msgstr "Export data in the .json format to an external Flash drive"
-
 #: ../data/products.py:170
+msgid "Экспорт данных в формате PNG, json на внешний Flash накопитель"
+msgstr "Export data in PNG, json data format to an external Flash drive"
+
+#: ../data/products.py:171
 msgid "Возможность сохранить screenshot экрана в формате .PNG"
 msgstr "The ability to save a screenshot of the screen in the .PNG format"
 
-#: ../data/products.py:171 ../data/products.py:203 ../data/products.py:239
+#: ../data/products.py:172 ../data/products.py:204 ../data/products.py:240
 msgid "Поддержка режима «План тестирования»"
-msgstr "\"Test Plan\" mode available"
+msgstr "Support for the \"Test Plan\" mode"
 
-#: ../data/products.py:172
+#: ../data/products.py:173
 msgid "Возможность подключения к ПК по USB: Windows, Linux"
 msgstr "Can be connected to PC via USB: Windows, Linux"
 
-#: ../data/products.py:173 ../data/products.py:357
+#: ../data/products.py:174 ../data/products.py:358
 msgid "Возможность программного управления: C/C++, C#, Python"
 msgstr "Possibility of program management: C/C++, C#, Python"
 
-#: ../data/products.py:174
-msgid "Чувствительность по R 1 Ом - 450 кОм"
+#: ../data/products.py:175 ../data/products.py:209 ../data/products.py:245
+#: ../data/products.py:287
+msgid "Чувствительность по R: 1 Ом - 450 кОм"
 msgstr "Sensitivity for R: 1 Ohm - 450 kOhm"
 
-#: ../data/products.py:175
-msgid "Чувствительность по C 50 пФ - 100 мкФ"
+#: ../data/products.py:176 ../data/products.py:210 ../data/products.py:246
+#: ../data/products.py:288
+msgid "Чувствительность по C: 50 пФ - 100 мкФ"
 msgstr "Sensitivity for C: 50 pF - 100 uF"
 
-#: ../data/products.py:176
-msgid "Чувствительность по L от 1 мкГн"
+#: ../data/products.py:177 ../data/products.py:211 ../data/products.py:247
+#: ../data/products.py:289
+msgid "Чувствительность по L: от 1 мкГн"
 msgstr "Sensitivity for L: from 1 μH"
 
-#: ../data/products.py:181
+#: ../data/products.py:182
 msgid "EyePoint u21"
 msgstr "EyePoint u21"
 
-#: ../data/products.py:183
+#: ../data/products.py:184
 msgid "u21.png"
 msgstr "u21.png"
 
-#: ../data/products.py:186
+#: ../data/products.py:187
 msgid ""
 "EyePoint u21 – миниатюрный одноканальный локализатор неисправных электронных "
 "компонентов на печатных платах методом ASA с частотой тестирующего сигнала до 100 кГц"
@@ -621,7 +636,7 @@ msgstr ""
 "on printed circuit boards using the ASA method with a test signal frequency of up to "
 "100 kHz"
 
-#: ../data/products.py:189
+#: ../data/products.py:190
 msgid ""
 "EyePoint u21 – миниатюрный одноканальный локализатор неисправных электронных "
 "компонентов на печатных платах методом ASA с частотой тестирующего сигнала до 100 "
@@ -639,69 +654,53 @@ msgstr ""
 "monoblock and includes a housing, a control board and equipped with measuring probes "
 "and crocodile clips, a USB cable for connecting to a PC."
 
-#: ../data/products.py:194 ../data/products.py:230
+#: ../data/products.py:195 ../data/products.py:231
 msgid "Миниатюрные размеры"
 msgstr "Miniature size"
 
-#: ../data/products.py:195 ../data/products.py:231
+#: ../data/products.py:196 ../data/products.py:232
 msgid "Доступен функционал старшей модели S2"
 msgstr "All functionality of S2"
 
-#: ../data/products.py:199 ../data/products.py:235
-msgid "Частота пробного сигнала до 100кГц"
-msgstr "Test signal frequency range: 1 Hz - 100 kHz"
-
-#: ../data/products.py:200 ../data/products.py:236 ../data/products.py:277
-#: ../data/products.py:317
+#: ../data/products.py:201 ../data/products.py:237 ../data/products.py:278
+#: ../data/products.py:318
 msgid "Метод тестирования: АСА"
 msgstr "Testing method: ASA"
 
-#: ../data/products.py:201 ../data/products.py:237
+#: ../data/products.py:202 ../data/products.py:238
 msgid "Напряжение пробного сигнала 1.2, 3.3, 5, 12В"
 msgstr "Operating voltages: 1.2, 3.3, 5, 12 V"
 
-#: ../data/products.py:204 ../data/products.py:240
+#: ../data/products.py:205 ../data/products.py:241
 msgid "Интерфейс связи USB 2.0"
 msgstr "USB 2.0 communication"
 
-#: ../data/products.py:205 ../data/products.py:241 ../data/products.py:281
-#: ../data/products.py:322
+#: ../data/products.py:206 ../data/products.py:242 ../data/products.py:282
+#: ../data/products.py:323
 msgid "Поддержка ОС: Windows 7/8/10 (х64/х86), Linux"
 msgstr "OS support: Windows 7/8/10 (x64/x86), Linux"
 
-#: ../data/products.py:206 ../data/products.py:242 ../data/products.py:283
+#: ../data/products.py:207 ../data/products.py:243 ../data/products.py:284
 msgid "Возможность программного управления: C/C++, C#, Qt, Python"
 msgstr "Possibility of program management: C/C++, C#, Qt, Python"
 
-#: ../data/products.py:207 ../data/products.py:243 ../data/products.py:285
+#: ../data/products.py:208 ../data/products.py:244 ../data/products.py:286
 msgid "Напряжение питания: 5 В"
 msgstr "Supply voltage: 5 V"
 
-#: ../data/products.py:208 ../data/products.py:244 ../data/products.py:286
-msgid "Чувствительность по R: 1 Ом - 450 кОм"
-msgstr "Sensitivity for R: 1 Ohm - 450 kOhm"
-
-#: ../data/products.py:209 ../data/products.py:245 ../data/products.py:287
-msgid "Чувствительность по C: 50 пФ - 100 мкФ"
-msgstr "Sensitivity for C: 50 pF - 100 uF"
-
-#: ../data/products.py:210 ../data/products.py:246 ../data/products.py:288
-msgid "Чувствительность по L: от 1 мкГн"
-msgstr "Sensitivity for L: from 1 μH"
-
-#: ../data/products.py:211
+#: ../data/products.py:212
 msgid "Габариты и вес: 100x65x27 мм, 0.4 кг"
 msgstr "Dimensions and weight: 100х65х27 mm, 0.4 kg"
 
-#: ../data/products.py:216
+#: ../data/products.py:217
 msgid "EyePoint u22"
 msgstr "EyePoint u22"
 
-#: ../data/products.py:218
+#: ../data/products.py:219
 msgid "u22.png"
 msgstr "u22.png"
 
-#: ../data/products.py:221
+#: ../data/products.py:222
 msgid ""
 "EyePoint u22 – миниатюрный двухканальный локализатор неисправных электронных "
 "компонентов на печатных платах методом ASA с частотой тестирующего сигнала до 100 кГц"
@@ -710,7 +709,7 @@ msgstr ""
 "printed circuit boards by the ASA method with a test signal frequency of up to 100 "
 "kHz"
 
-#: ../data/products.py:224
+#: ../data/products.py:225
 msgid ""
 "EyePoint u22 – миниатюрный двухканальный локализатор неисправных электронных "
 "компонентов на печатных платах методом ASA с частотой тестирующего сигнала до 100 "
@@ -730,23 +729,23 @@ msgstr ""
 "monoblock and includes a housing, a control board and equipped with measuring probes "
 "and crocodile clips, a USB cable for connecting to a PC."
 
-#: ../data/products.py:247
+#: ../data/products.py:248
 msgid "Габариты и вес: 175x90x40 мм, 0.4 кг"
 msgstr "Dimensions and weight: 175х90х40 mm, 0.4 kg"
 
-#: ../data/products.py:252
+#: ../data/products.py:253
 msgid "EyePoint a2"
 msgstr "EyePoint a2"
 
-#: ../data/products.py:254
+#: ../data/products.py:255
 msgid "a2.png"
 msgstr "a2.png"
 
-#: ../data/products.py:257
+#: ../data/products.py:258
 msgid "Одноканальный OEM модуль (без корпуса) аналогового сигнатурного анализа."
 msgstr "Single-channel OEM analog signature analysis module (without housing)."
 
-#: ../data/products.py:260
+#: ../data/products.py:261
 msgid ""
 "Одноканальный OEM модуль (без корпуса) аналогового сигнатурного анализа. <br /"
 ">EyePoint a2 - ОЕМ модуль, предназначенный для поиска неисправных электронных "
@@ -767,47 +766,51 @@ msgstr ""
 "documentation. Windows and Linux are supported. In addition, the module can be used "
 "in conjunction with ready-made SOFTWARE for other devices in the EyePoint family."
 
-#: ../data/products.py:272
+#: ../data/products.py:273
 msgid "Открытый API"
 msgstr "Open API"
 
-#: ../data/products.py:273
+#: ../data/products.py:274
 msgid "Полный функционал"
 msgstr "Full functionality"
 
-#: ../data/products.py:274
+#: ../data/products.py:275
 msgid "Максимально доступный"
 msgstr "Maximum available"
 
 #: ../data/products.py:279
+msgid "Диапазон частот тестирующего сигнала: 1 Гц – 100 кГц"
+msgstr "Test signal frequency range: 1 Hz - 100 kHz"
+
+#: ../data/products.py:280
 msgid "Рабочие напряжения: 1.2, 3.3, 5, 12 В"
 msgstr "Operating voltages: 1.2, 3.3, 5, 12 V"
 
-#: ../data/products.py:280
+#: ../data/products.py:281
 msgid "Чувствительность по току: от 25 мкА до 25 мА"
 msgstr "Current sensitivity: from 25 μA, to 25 mA"
 
-#: ../data/products.py:282
+#: ../data/products.py:283
 msgid "Интерфейс подключения к ПК: USB 2.0"
 msgstr "USB 2.0 communication"
 
-#: ../data/products.py:284
+#: ../data/products.py:285
 msgid "Габариты и вес: 60х40х5 мм, 0.012 кг"
 msgstr "Dimensions and weight: 60х40х5 mm, 0.012 kg"
 
-#: ../data/products.py:289
+#: ../data/products.py:290
 msgid "Питание от USB разъема"
 msgstr "USB powered"
 
-#: ../data/products.py:294
+#: ../data/products.py:295
 msgid "EyePoint H10"
 msgstr "EyePoint H10"
 
-#: ../data/products.py:296
+#: ../data/products.py:297
 msgid "H10.png"
 msgstr "H10.png"
 
-#: ../data/products.py:299
+#: ../data/products.py:300
 msgid ""
 "Локализатор неисправностей на печатных платах методом сигнатурного анализа с "
 "частотой тестирующего сигнала до 12 МГц и широким диапазоном выбора напряжения и "
@@ -817,7 +820,7 @@ msgstr ""
 "the testing signal up to 12 MHz and a wide range of voltage selection and current "
 "sensitivity."
 
-#: ../data/products.py:304
+#: ../data/products.py:305
 msgid ""
 "Локализатор неисправностей на печатных платах методом сигнатурного анализа с "
 "частотой тестирующего сигнала до 12 МГц и широким диапазоном выбора напряжения и "
@@ -834,19 +837,19 @@ msgstr ""
 "as a monoblock and equipped with measuring probes, a test board, a USB cable and a "
 "220V power cable."
 
-#: ../data/products.py:312
+#: ../data/products.py:313
 msgid "Частота тестирующего сигнала до 12 МГц"
 msgstr "Test signal frequency range: up to 12 MHz"
 
-#: ../data/products.py:313
+#: ../data/products.py:314
 msgid "Управление по USB"
 msgstr "USB control"
 
-#: ../data/products.py:314
+#: ../data/products.py:315
 msgid "Широкий диапазон напряжения"
 msgstr "Wide voltage range"
 
-#: ../data/products.py:318
+#: ../data/products.py:319
 msgid ""
 "Диапазон частот тестирующего сигнала: 1, 5, 10, 50, 100, 400 Гц. 1.5, 6, 25, 100, "
 "400 кГц. 1.5, 3, 6, 12 МГц"
@@ -854,35 +857,35 @@ msgstr ""
 "Test signal frequency range: 1, 5, 10, 50, 100, 400 Hz. 1.5, 6, 25, 100, 400 kHz. "
 "1.5, 3, 6, 12 MHz"
 
-#: ../data/products.py:320
+#: ../data/products.py:321
 msgid "Рабочие напряжения: 1, 1.5, 2, 2.5, 3, 4, 4.5, 5, 6, 6.7, 7.5, 10 В"
 msgstr "Operating voltage: 1, 1.5, 2, 2.5, 3, 4, 4.5, 5, 6, 6.7, 7.5, 10 V"
 
-#: ../data/products.py:323
+#: ../data/products.py:324
 msgid "Интерфейс подключения к ПК: USB"
 msgstr "PC connection interface: USB"
 
-#: ../data/products.py:324
+#: ../data/products.py:325
 msgid "Возможность программного управления: C/C++, Python"
 msgstr "Possibility of program management: C/C++, Python"
 
-#: ../data/products.py:325
+#: ../data/products.py:326
 msgid "Габариты и вес: 137х65х110 мм, 0.7 кг"
 msgstr "Dimensions and weight: 137х60х110 mm, 0.7 kg"
 
-#: ../data/products.py:326
+#: ../data/products.py:327
 msgid "Электропитание: ~220В"
 msgstr "Power supply: ~ 220V"
 
-#: ../data/products.py:331
+#: ../data/products.py:332
 msgid "EyePoint MUX_M"
 msgstr "EyePoint MUX_M"
 
-#: ../data/products.py:333
+#: ../data/products.py:334
 msgid "mux_m.png"
 msgstr "mux_m.png"
 
-#: ../data/products.py:336 ../data/products.py:341
+#: ../data/products.py:337 ../data/products.py:342
 msgid ""
 "Материнская плата мультиплексора, необходимая для работы с модулями <b>Eyepoint "
 "MUX_S_A</b>. Позволяет подключать до 8 модулей на 64 канала каждый (в сумме до 512 "
@@ -892,7 +895,7 @@ msgstr ""
 "Allows you to connect up to 8 modules for 64 channels each (up to 512 channels in "
 "total). It is used jointly with EyePoint signature analyzers line. "
 
-#: ../data/products.py:344
+#: ../data/products.py:345
 msgid ""
 "EyePoint MUX предназначен для коммутирования одного входного канала на любой из "
 "выходных каналов в заданной оператором последовательности. Используется совместно с "
@@ -907,39 +910,39 @@ msgstr ""
 "defective boards as well as to perform input inspection of microchips using "
 "specialized tooling for their installation. "
 
-#: ../data/products.py:351 ../data/products.py:384
+#: ../data/products.py:352 ../data/products.py:385
 msgid "Скалирование модулей (до 8 штук, 512 каналов)"
 msgstr "Scaling modules (up to 8 pieces, 512 channels)"
 
-#: ../data/products.py:352 ../data/products.py:385
+#: ../data/products.py:353 ../data/products.py:386
 msgid "Совместимость со всей линейкой приборов EyePoint"
 msgstr "Compatible with the entire line of EyePoint devices"
 
-#: ../data/products.py:353 ../data/products.py:386
+#: ../data/products.py:354 ../data/products.py:387
 msgid "Поддержка плана тестирования с генерацией отчетов"
 msgstr "Automatic test plan support with report generation"
 
-#: ../data/products.py:356
+#: ../data/products.py:357
 msgid "Интерфейс подключения к ПК: USB Type-C"
 msgstr "PC connection interface: USB Type-C"
 
-#: ../data/products.py:358 ../data/products.py:394
+#: ../data/products.py:359 ../data/products.py:395
 msgid "Габариты: 130 x 75 x 17.5 мм"
 msgstr "Dimensions: 130 x 75 x 17.5 mm"
 
-#: ../data/products.py:359 ../data/products.py:395
+#: ../data/products.py:360 ../data/products.py:396
 msgid "Вес: 115 гр"
 msgstr "Weight: 115 g"
 
-#: ../data/products.py:364
+#: ../data/products.py:365
 msgid "EyePoint MUX_S_A"
 msgstr "EyePoint MUX_S_A"
 
-#: ../data/products.py:366
+#: ../data/products.py:367
 msgid "mux_sa.png"
 msgstr "mux_sa.png"
 
-#: ../data/products.py:369 ../data/products.py:374
+#: ../data/products.py:370 ../data/products.py:375
 msgid ""
 "Модуль мультиплексора на 64 канала. Позволяет зондировать каждый из 64 каналов по "
 "отношению к общему проводу (один к многим). Используется совместно с материнской "
@@ -949,7 +952,7 @@ msgstr ""
 "respect to a common wire (one to many). It is used jointly with the motherboard "
 "<b>EyePoint MUX_M</b>. "
 
-#: ../data/products.py:377
+#: ../data/products.py:378
 msgid ""
 "EyePoint MUX предназначен для коммутирования одного входного канала на любой из "
 "выходных каналов в заданной оператором последовательности. Используется совместно с "
@@ -963,25 +966,41 @@ msgstr ""
 "of defective boards as well as to perform input inspection of microchips using "
 "specialized tooling for their installation. "
 
-#: ../data/products.py:389
+#: ../data/products.py:390
 msgid "Напряжение пропускаемого сигнала: ±12 В"
 msgstr "Transmitted signal voltage: ±12V"
 
-#: ../data/products.py:390
+#: ../data/products.py:391
 msgid "Максимальный ток пропускаемого сигнала: 90 мА"
 msgstr "Maximum current of transmitted signal: 90mA"
 
-#: ../data/products.py:391
+#: ../data/products.py:392
 msgid "Максимальная частота пропускаемого сигнала: 100 кГц"
 msgstr "Maximum frequency of transmitted signal: 100 kHz"
 
-#: ../data/products.py:392
+#: ../data/products.py:393
 msgid "Сопротивление канала: 11 Ом"
 msgstr "Channel impedance: 11 Ohm"
 
-#: ../data/products.py:393
+#: ../data/products.py:394
 msgid "Ёмкость канала: 100 пФ"
 msgstr "Channel capacity: 100 pF"
+
+#~ msgid ""
+#~ "Локализатор неисправных электронных компонентов с сенсорным экраном - устройство "
+#~ "для ручного поиска неисправностей методом аналогового сигнатурного анализа."
+#~ msgstr ""
+#~ "Manual localizer of faulty electronic components using analog signature analysis "
+#~ "with convenient touch screen."
+
+#~ msgid "Чувствительность по R 1 Ом - 450 кОм"
+#~ msgstr "Sensitivity for R: 1 Ohm - 450 kOhm"
+
+#~ msgid "Чувствительность по C 50 пФ - 100 мкФ"
+#~ msgstr "Sensitivity for C: 50 pF - 100 uF"
+
+#~ msgid "Чувствительность по L от 1 мкГн"
+#~ msgstr "Sensitivity for L: from 1 μH"
 
 #~ msgid ""
 #~ "Автоматическая система локализации неисправных электронных компонентов на "
