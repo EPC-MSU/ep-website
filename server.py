@@ -70,7 +70,7 @@ async def index(request):
 @routes.get("/{language}/")
 @aiohttp_jinja2.template("index.html")
 @base_template
-async def index(request):
+async def index_loc(request):
     # TODO: clearer names
     return {
         "intro": other_data.intro,
