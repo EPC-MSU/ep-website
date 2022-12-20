@@ -97,6 +97,7 @@ class FileManager:
     def _archive_name(cls, product: str) -> str:
         return cls._archive_name_format.format(product=product,
                                                date=date.today().strftime("%Y.%m.%d"))
+
     def __init__(self, timeout: int, directory: str, url_prefix: str):
         """
         Create file manager
@@ -154,7 +155,8 @@ class FileManager:
                     logging.debug("Update archive " + product)
                     archive_path = join_path(
                         self._directory, product, self._archive_name(
-                        product)
+                            product
+                        )
                     )
                     await self._loop.run_in_executor(
                         executor, archive, software, archive_path
