@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-23 20:12+0300\n"
-"PO-Revision-Date: 2022-12-23 20:31+0300\n"
+"POT-Creation-Date: 2023-03-31 12:16+0300\n"
+"PO-Revision-Date: 2023-03-31 12:23+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -95,37 +95,30 @@ msgstr "uRPC Debugger"
 
 #: ../data/download.py:79
 msgid ""
-"Кроссплатформенное ПО с графическим интерфейсом для отладки сигнатурных анализаторов "
-"EyePoint IVM. Данное ПО позволяет вручную вызывать команды управления. Формирование "
-"и разбор полей сложных команд осуществляется автоматически. ПО распространяется в "
-"виде бинарных файлов, и в виде исходных кодов. Для работы на Windows требуется "
-"драйвер."
+"Кроссплатформенное ПО с графическим интерфейсом для отладки устройств EyePoint. "
+"Данное ПО позволяет вручную вызывать команды управления. Формирование и разбор полей "
+"сложных команд осуществляется автоматически. ПО распространяется в виде бинарных "
+"файлов, и в виде исходных кодов. Для работы на Windows требуется драйвер."
 msgstr ""
 "Cross-platform software with a graphical interface for debugging EyePoint IVM "
-"signature analyzers. This software allows you to manually call management commands. "
-"Formation and analysis of fields of complex commands is done automatically. The "
+"signature analyzers. This software allows you to manually call control commands. The "
+"formation and analysis of fields of complex commands is done automatically. The "
 "software is distributed as binary files and as source code. To run on Windows "
 "requires a driver."
 
-#: ../data/download.py:89
+#: ../data/download.py:86
 msgid "EPCBootGUI"
 msgstr "EPCBootGUI"
 
-#: ../data/download.py:92
-msgid ""
-"Кроссплатформенное ПО для обновления прошивок сигнатурных анализаторов EyePoint и "
-"его исходные коды. Репозиторий <a href='https://github.com/EPC-MSU/epcboot-"
-"gui'>EPCBootGUI на GitHub.</a> "
-msgstr ""
-"Cross-platform software for updating eyepoint signature analyzer firmware and its "
-"source codes. <a href='https://github.com/EPC-MSU/epcboot-gui'>EPCBootGUI repository "
-"on GitHub.</a> "
+#: ../data/download.py:89
+msgid "Кроссплатформенное ПО для обновления прошивок в устройствах EyePoint. "
+msgstr "Cross-platform software for firmware updates in EyePoint devices. "
 
-#: ../data/download.py:99
+#: ../data/download.py:94
 msgid "Прошивка встроенного компьютера"
 msgstr "Firmware of the embedded computer"
 
-#: ../data/download.py:102
+#: ../data/download.py:97
 msgid ""
 "Образы встроенной операционной системы для устройств серии EyePointS. Обновление "
 "образа осуществляется посредством записи на SD карту. Более подробная информация "
@@ -138,23 +131,23 @@ msgstr ""
 "image to an SD card in Windows, you can use the Win32 Disk Imager (you can download "
 "it from the official website or from this page)."
 
-#: ../data/download.py:112
+#: ../data/download.py:107
 msgid "Описание библиотеки для программного управления"
 msgstr "Description of the software management library"
 
-#: ../data/download.py:115
+#: ../data/download.py:110
 msgid ""
-"Документация к библиотеке libivm, которая может быть использована для взаимодействия "
-"с измерителями ВАХ EyePoint IVM. Саму библиотеку можно скачать на этой странице."
+"Документация к библиотеке, которая может быть использована для взаимодействия с "
+"устройствами EyePoint. Саму библиотеку можно скачать на этой странице."
 msgstr ""
-"Documentation for the libivm library, that can be used to interact with EyePoint IVM "
-"VAC meters. The library itself can be downloaded on this page."
+"Documentation for а library that can be used to interact with EyePoint devices. The "
+"library itself can be downloaded on this page."
 
-#: ../data/download.py:122
+#: ../data/download.py:116
 msgid "Стороннее вспомогательное ПО"
 msgstr "Third-party support software"
 
-#: ../data/download.py:125
+#: ../data/download.py:119
 msgid ""
 "Дополнительное стороннее программное обеспечение, которое может потребоваться при "
 "работе с устройствами EyePoint."
@@ -162,71 +155,66 @@ msgstr ""
 "Additional third-party software that may be required when working with EyePoint "
 "devices."
 
-#: ../data/download.py:131
+#: ../data/download.py:125
 msgid "Библиотека для программного управления"
 msgstr "Library for software management"
 
-#: ../data/download.py:134
+#: ../data/download.py:128
 msgid ""
-"Кроссплатформенная библиотека для работы с измерителями ВАХ EyePoint IVM (измеритель "
-"сигнатур, который используется в различных устройствах линейки EyePoint). Библиотека "
+"Кроссплатформенная библиотека для работы с устройствами линейки EyePoint. Библиотека "
 "написана на языке C, распространяется в виде бинарных файлов (win32, win64, debian) "
 "и в виде исходных кодов. Документацию к библиотеке можно скачать отдельно на этой "
 "странице."
 msgstr ""
-"Cross-platform library for working with EyePoint I–V curve-meters (a signature meter "
-"used in various devices, in the EyePoint product line). The library is written in C, "
-"distributed as binary files (win32, win64, debian) and as source code. Library "
-"documentation can be downloaded separately on this page."
+"А сross-platform library for working with EyePoint devices. The library is written "
+"in C, distributed as binary files (win32, win64, debian) and as source codes. The "
+"library documentation can be downloaded separately on this page."
 
-#: ../data/download.py:144
+#: ../data/download.py:135
 msgid "Примеры использования API и биндинги для Python и C#"
 msgstr "Examples of using the API and bindings for Python and C#"
 
-#: ../data/download.py:147
+#: ../data/download.py:138
 msgid ""
-"Комплект примеров программного кода на языках C, C# и Python, реализующего простые "
-"измерения сигнатур с использованием EyePoint IVM (измеритель сигнатур, который "
-"используется в различных устройствах линейки EyePoint). Также в данном архиве можно "
-"найти биндинги для языков Python и C#."
+"Комплект примеров программного кода на языках C, C# и Python для устройствах линейки "
+"EyePoint. Также в данном архиве можно найти биндинги для языков Python и C#."
 msgstr ""
-"A set of code examples in C, C#, and Python that implement simple signature "
-"measurements using EyePoint IVM (a signature meter used in various devices, in the "
-"EyePoint product line). You can also find bindings for Python and C# in this archive."
+"A set of code examples in C, C# and Python for EyePoint devices. You can also find "
+"bindings for Python and C# in this archive."
 
-#: ../data/download.py:156
+#: ../data/download.py:144
 msgid "Сервер"
 msgstr "Server"
 
-#: ../data/download.py:159
+#: ../data/download.py:147
 msgid "Локальный сервер для работы с устройством EyePoint H10. "
 msgstr "A local server for working with the EyePoint H10 device. "
 
-#: ../data/download.py:167
+#: ../data/download.py:155
 msgid "Скачать полный комплект программного обеспечения"
 msgstr "Download full software package"
 
-#: ../data/download.py:169
+#: ../data/download.py:157
 msgid "Архив со всем софтом и документацией для этого продукта"
 msgstr "Archive with all software and documentation for this product"
 
-#: ../data/download.py:181
+#: ../data/download.py:169
 msgid "Версия"
 msgstr "Version"
 
-#: ../data/download.py:182
+#: ../data/download.py:170
 msgid "Дата выпуска"
 msgstr "Release date"
 
-#: ../data/download.py:183
+#: ../data/download.py:171
 msgid "Размер"
 msgstr "Size"
 
-#: ../data/download.py:184
+#: ../data/download.py:172
 msgid "Ссылка"
 msgstr "Link"
 
-#: ../data/download.py:185
+#: ../data/download.py:173
 msgid "Скачать"
 msgstr "Download"
 
@@ -971,6 +959,15 @@ msgstr "Channel impedance: 11 Ohm"
 #: ../data/products.py:441
 msgid "Ёмкость канала: 100 пФ"
 msgstr "Channel capacity: 100 pF"
+
+#~ msgid ""
+#~ "Кроссплатформенное ПО для обновления прошивок сигнатурных анализаторов EyePoint и "
+#~ "его исходные коды. Репозиторий <a href='https://github.com/EPC-MSU/epcboot-"
+#~ "gui'>EPCBootGUI на GitHub.</a> "
+#~ msgstr ""
+#~ "Cross-platform software for updating eyepoint signature analyzer firmware and its "
+#~ "source codes. <a href='https://github.com/EPC-MSU/epcboot-gui'>EPCBootGUI "
+#~ "repository on GitHub.</a> "
 
 #~ msgid ""
 #~ "Автоматическая система локализации неисправных электронных компонентов на "
