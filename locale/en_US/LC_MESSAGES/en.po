@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-21 20:36+0300\n"
-"PO-Revision-Date: 2023-04-21 20:37+0300\n"
+"POT-Creation-Date: 2023-04-21 20:52+0300\n"
+"PO-Revision-Date: 2023-04-21 20:52+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -359,8 +359,8 @@ msgid "Поддерживаемые типы корпусов: LQFP, SOIC, SMD, 
 msgstr "Supported enclosure types: LQFP, SOIC, SMD, SMT, DIP, etc."
 
 #: ../data/products.py:51 ../data/products.py:98 ../data/products.py:147
-msgid "Электропитание: ~220 В, 300 Вт"
-msgstr "Power Supply: ~220 V, 300 W"
+msgid "Электропитание: ~220 В, 300 Вт <br /><br />"
+msgstr "Power Supply: ~220 V, 300 W <br /><br />"
 
 #: ../data/products.py:53 ../data/products.py:100
 msgid "Рабочая область: 280 x 275 х 63 мм"
@@ -575,8 +575,8 @@ msgid "Доступен план тестирования"
 msgstr "Support for the «Test Plan» mode"
 
 #: ../data/products.py:194 ../data/products.py:365
-msgid "Электропитание: ~220 В, 10 Вт"
-msgstr "Power supply: ~220 V, 10 W"
+msgid "Электропитание: ~220 В, 10 Вт <br /><br />"
+msgstr "Power supply: ~220 V, 10 W <br /><br />"
 
 #: ../data/products.py:196 ../data/products.py:241 ../data/products.py:283
 #: ../data/products.py:325 ../data/products.py:367
@@ -660,8 +660,8 @@ msgid "Доступен функционал модели S2"
 msgstr "The functionality of the S2 model is available"
 
 #: ../data/products.py:239 ../data/products.py:281 ../data/products.py:323
-msgid "Напряжение питания: 5 В (от USB)"
-msgstr "Supply voltage: 5 V (via USB)"
+msgid "Напряжение питания: 5 В (от USB) <br /><br />"
+msgstr "Supply voltage: 5 V (via USB) <br /><br />"
 
 #: ../data/products.py:245
 msgid "Габариты: 100 х 65 х 27 мм"
@@ -911,8 +911,8 @@ msgid "Поддержка плана тестирования с генерац�
 msgstr "Automatic test plan support with report generation"
 
 #: ../data/products.py:402
-msgid "Электропитание: 5 В (от USB)"
-msgstr "Power supply: 5 V (viaUSB)"
+msgid "Электропитание: 5 В (от USB) <br /><br />"
+msgstr "Power supply: 5 V (viaUSB) <br /><br />"
 
 #: ../data/products.py:404
 msgid "Возможность подключить к ПК по USB Type-C (Windows, Linux)"
@@ -980,8 +980,8 @@ msgid "Сопротивление канала: 11 Ом"
 msgstr "Channel impedance: 11 Ohm"
 
 #: ../data/products.py:441
-msgid "Ёмкость канала: 100 пФ"
-msgstr "Channel capacity: 100 pF"
+msgid "Ёмкость канала: 100 пФ <br /><br />"
+msgstr "Channel capacity: 100 pF <br /><br />"
 
 #~ msgid "Диапазон тока: от 2.5 мкА до 25 мА"
 #~ msgstr "Current range: 2.5 μА - 25 mA"
