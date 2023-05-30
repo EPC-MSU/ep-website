@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-26 12:01+0300\n"
-"PO-Revision-Date: 2023-05-26 12:03+0300\n"
+"POT-Creation-Date: 2023-05-30 14:49+0300\n"
+"PO-Revision-Date: 2023-05-30 14:50+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -321,20 +321,20 @@ msgstr "Don't damage the PCB"
 #: ../data/products.py:41 ../data/products.py:86 ../data/products.py:131
 #: ../data/products.py:176 ../data/products.py:218 ../data/products.py:257
 #: ../data/products.py:296
-msgid "Напряжения пробного сигнала: 1.2, 3.3, 5, 12 В"
+msgid "Напряжение пробного сигнала: 1.2, 3.3, 5, 12 В"
 msgstr "Test signal voltages: 1.2, 3.3, 5, 12 V"
 
 #: ../data/products.py:42 ../data/products.py:87 ../data/products.py:132
-#: ../data/products.py:177 ../data/products.py:219 ../data/products.py:297
-#: ../data/products.py:406
-msgid "Диапазон частот пробного сигнала: 1, 10, 100 Гц, 1, 10, 100 кГц"
-msgstr "Frequency range of the test signal: 1, 10, 100 Hz, 1, 10, 100 kHz"
+#: ../data/products.py:177 ../data/products.py:219 ../data/products.py:258
+#: ../data/products.py:297 ../data/products.py:406
+msgid "Частота пробного сигнала: 1, 10, 100 Гц, 1, 10, 100 кГц"
+msgstr "Frequency of the test signal: 1, 10, 100 Hz, 1, 10, 100 kHz"
 
 #: ../data/products.py:43 ../data/products.py:88 ../data/products.py:133
 #: ../data/products.py:178 ../data/products.py:220 ../data/products.py:259
 #: ../data/products.py:298
-msgid "Диапазон тока: 2.5 мкА - 25 мА"
-msgstr "Current range: 2.5 μА - 25 mA"
+msgid "Диапазон тока: 25 мкА - 25 мА"
+msgstr "Current range: 25 μА - 25 mA"
 
 #: ../data/products.py:44 ../data/products.py:89 ../data/products.py:134
 #: ../data/products.py:179 ../data/products.py:221 ../data/products.py:260
@@ -706,10 +706,6 @@ msgstr ""
 msgid "Доступен функционал старшей модели S2"
 msgstr "All functionality of S2"
 
-#: ../data/products.py:258
-msgid "Частоты пробного сигнала: 1, 10, 100 Гц, 1, 10, 100 кГц"
-msgstr "Frequency range of the test signal: 1, 10, 100 Hz, 1, 10, 100 kHz"
-
 #: ../data/products.py:269
 msgid "Габариты и вес: 175 х 90 х 40 мм"
 msgstr "Dimensions and weight: 175 x 90 x 40 mm"
@@ -817,7 +813,7 @@ msgid "Широкий диапазон напряжения"
 msgstr "Wide voltage range"
 
 #: ../data/products.py:335
-msgid "Напряжения пробного сигнала: 1, 1.5, 2, 2.5, 3, 4, 4.5, 5, 6, 6.7, 7.5, 10 В"
+msgid "Напряжение пробного сигнала: 1, 1.5, 2, 2.5, 3, 4, 4.5, 5, 6, 6.7, 7.5, 10 В"
 msgstr "Test signal voltage: 1, 1.5, 2, 2.5, 3, 4, 4.5, 5, 6, 6.7, 7.5, 10 V"
 
 #: ../data/products.py:336
@@ -841,8 +837,8 @@ msgid "Чувствительность по C: 0.5 пФ - 6800 мкФ"
 msgstr "C Sensitivity: 0.5 pF - 6800 μF"
 
 #: ../data/products.py:340
-msgid "Чувствительность по L: 1 мкГн - 10 мкГн"
-msgstr "L sensitivity: 1 μH - 10 μH"
+msgid "Чувствительность по L: 0.1 мкГн - 80 мкГн"
+msgstr "L sensitivity: 0.1 μH - 80 μH"
 
 #: ../data/products.py:346
 msgid "Возможность программного управления: C/C++, Python"
@@ -980,6 +976,9 @@ msgstr "Channel impedance: 11 Ohm"
 #: ../data/products.py:409
 msgid "Ёмкость канала: 100 пФ <br /><br />"
 msgstr "Channel capacity: 100 pF <br /><br />"
+
+#~ msgid "Диапазон частот пробного сигнала: 1, 10, 100 Гц, 1, 10, 100 кГц"
+#~ msgstr "Frequency range of the test signal: 1, 10, 100 Hz, 1, 10, 100 kHz"
 
 #~ msgid "Шаг и количество выводов: 1.5 - 0.4 мм, 8 – 2500 шт."
 #~ msgstr "Step and number of pins: 1.5 - 0.4 mm, 8 – 2500 pcs."
