@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-31 13:39+0300\n"
-"PO-Revision-Date: 2023-03-31 13:40+0300\n"
+"POT-Creation-Date: 2023-09-22 16:04+0300\n"
+"PO-Revision-Date: 2023-09-22 16:06+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
-"X-Generator: Poedit 2.3.1\n"
+"X-Generator: Poedit 3.3.2\n"
 
 #: ../data/download.py:19
 msgid "Документация"
@@ -65,7 +65,7 @@ msgid ""
 "потребуется драйвер. Его можно скачать на данной странице вместе с "
 "программой."
 msgstr ""
-"Custom software for obtaining voltage and time dependencies using USBADC10 "
+"Custom software for obtaining voltage and time dependencies using usbadc10 "
 "multi-channel ADCs. For the software to work, you will need a driver. You "
 "can download it on this page along with the program."
 
@@ -81,7 +81,7 @@ msgid ""
 "виде бинарных файлов, и в виде исходных кодов. Для работы на Windows "
 "требуется драйвер."
 msgstr ""
-"Cross-platform software with a graphical interface for debugging USBADC10. "
+"Cross-platform software with a graphical interface for debugging usbadc10. "
 "This SOFTWARE allows you to manually call management commands. Formation and "
 "analysis of fields of complex commands is done automatically. The SOFTWARE "
 "is distributed as binary files and as source code. To run on Windows "
@@ -93,7 +93,7 @@ msgstr "EPCBoot GUI"
 
 #: ../data/download.py:75
 msgid "Кроссплатформенное ПО для обновления прошивок в устройствах USBADC10. "
-msgstr "Cross-platform software for firmware updates in USB ADC 10 devices. "
+msgstr "Cross-platform software for firmware updates in usbadc10 devices. "
 
 #: ../data/download.py:80
 msgid "Прошивка встроенного компьютера"
@@ -135,7 +135,7 @@ msgid ""
 "потребоваться при работе с устройствами USBADC10."
 msgstr ""
 "Additional third-party software that may be required when working with "
-"USBADC10 devices."
+"usbadc10 devices."
 
 #: ../data/download.py:112
 msgid "Библиотека для программного управления"
@@ -163,7 +163,7 @@ msgid ""
 "архиве можно найти биндинги для языков Python и C#."
 msgstr ""
 "A set of code examples in C and Python that implement simple reads of "
-"digitized data from a USBADC10 device. You can also find bindings for Python "
+"digitized data from a usbadc10 device. You can also find bindings for Python "
 "and C# in this archive."
 
 #: ../data/download.py:138
@@ -196,12 +196,12 @@ msgstr "Download"
 
 #: ../data/other.py:4
 msgid ""
-"<b>USBADC10</b> — устройство, преобразующее входной аналоговый сигнал в "
+"<b>usbadc10</b> — устройство, преобразующее входной аналоговый сигнал в "
 "дискретный код, включает в себя 10 каналов 12-битного АЦП, выведенных на "
 "разъём, микроконтроллер STM32 и USB-интерфейс, по которому подаётся питание "
 "и осуществляется считывание оцифрованных данных. "
 msgstr ""
-"<b> USBADC10</b> includes 10 channels of 12-bit ADC outputted to the "
+"<b> usbadc10</b> includes 10 channels of 12-bit ADC outputted to the "
 "connector, an STM32 microcontroller and a USB-interface through which power "
 "is supplied and the digitized data is read. "
 
@@ -219,11 +219,11 @@ msgstr "Engineering Physics Center MSU"
 
 #: ../data/other.py:18
 msgid ""
-"USBADC10 - устройство, преобразующее входной аналоговый сигнал в дискретный "
-"код.Частота преобразования USBADC10 - до 4000 отсчтетов в секунду, "
+"usbadc10 - устройство, преобразующее входной аналоговый сигнал в дискретный "
+"код.Частота преобразования usbadc10 - до 4000 отсчтетов в секунду, "
 "одновеременно по всем каналам."
 msgstr ""
-"USBADC10 is a device that converts an input analog signal into a discrete "
+"usbadc10 is a device that converts an input analog signal into a discrete "
 "code, includes 10 channels of 12-bit ADC output to the connector, an STM32 "
 "microcontroller and a USB interface that supplies power and reads digitized "
 "data."
@@ -241,8 +241,8 @@ msgid "usbadc10, аналого-цифровой преобразователь"
 msgstr "usbadc10, analog to digital converter"
 
 #: ../data/products.py:25
-msgid "USBADC10 v1.0.0"
-msgstr "USBADC10 v1.0.0"
+msgid "usbadc10 v1.0.0"
+msgstr "usbadc10 v1.0.0"
 
 #: ../data/products.py:28
 msgid " Аналого-цифровой преобразователь"
@@ -250,13 +250,13 @@ msgstr " Analog to digital converter"
 
 #: ../data/products.py:31
 msgid ""
-"Аналого-цифровой преобразователь USBADC10 имеет частоту до 4000 отсчётов в "
+"Аналого-цифровой преобразователь usbadc10 имеет частоту до 4000 отсчётов в "
 "секунду, одновременно по всем каналам. В комплекте с устройством "
 "поставляется программное обеспечение для получения измерений. ПО "
 "поддерживается ОС Windows и Linux. Все необходимое <b>программное "
 "обеспечение</b> можно найти в свободном доступе. "
 msgstr ""
-"The USBADC10 analog-to-digital converter has a frequency of up to 4000 "
+"The usbadc10 analog-to-digital converter has a frequency of up to 4000 "
 "samples per second simultaneously on all channels. The device is equipped "
 "with software for obtaining measurements. The software is supported by "
 "Windows and Linux. All the necessary <b>software</b> can be found in the "
@@ -316,20 +316,20 @@ msgid "USB Type-C"
 msgstr "USB Type-C"
 
 #: ../data/products.py:67
-msgid "Диапазон входного напряжения - 0...3,3 В"
-msgstr "Input voltage range - 0...3,3 V"
+msgid "Диапазон входного напряжения - 0 - 3.3 В"
+msgstr "Input voltage range - 0 - 3.3 V"
 
 #: ../data/products.py:68
-msgid "Разрешение - 0,8 мВ"
-msgstr "Resolution - 0,8 mV"
+msgid "Разрешение - 0.8 мВ"
+msgstr "Resolution - 0.8 mV"
 
 #: ../data/products.py:69
 msgid "Разрядность АЦП - 12-bit"
 msgstr "12-bit ADC"
 
 #: ../data/products.py:70
-msgid "Поддержка ОС: Windows 7/8/10 (х64/х86), Linux"
-msgstr "OS support: Windows 7/8/10 (x64/x86), Linux"
+msgid "Поддержка ОС: Windows, Linux"
+msgstr "OS support: Windows, Linux"
 
 #: ../data/products.py:71
 msgid "Разъем подключения - USB type C"
