@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-23 17:01+0300\n"
-"PO-Revision-Date: 2023-10-23 17:02+0300\n"
+"POT-Creation-Date: 2023-10-23 18:10+0300\n"
+"PO-Revision-Date: 2023-10-23 18:12+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -71,8 +71,8 @@ msgstr ""
 "Visual Studio 2013 (win32). You can download them on this page."
 
 #: ../data/download.py:62
-msgid "Программное обеспечение EyePointS"
-msgstr "EyePointS software for PC"
+msgid "Программное обеспечение eyepoint_s"
+msgstr "eyepoint_s software for PC"
 
 #: ../data/download.py:65
 msgid ""
@@ -420,7 +420,7 @@ msgid ""
 "неисправных электронных компонентов в BGA корпусах. "
 msgstr ""
 "Automatic system for detecting counterfeit, relabeled or defective electronic "
-"components in BGA packages. "
+"components in BGA enclosures. "
 
 #: ../data/products.py:76
 msgid ""
@@ -667,6 +667,7 @@ msgid "Доступен функционал модели S2"
 msgstr "The functionality of the S2 model is available"
 
 #: ../data/products.py:225 ../data/products.py:265 ../data/products.py:305
+#: ../data/products.py:379
 msgid "Напряжение питания: 5 В (от USB) <br /><br />"
 msgstr "Supply voltage: 5 V (via USB) <br /><br />"
 
@@ -913,10 +914,6 @@ msgstr "Suitable for testing serial products"
 msgid "Поддержка плана тестирования с генерацией отчетов"
 msgstr "Automatic test plan support with report generation"
 
-#: ../data/products.py:379
-msgid "Электропитание: 5 В (от USB) <br /><br />"
-msgstr "Power supply: 5 V (viaUSB) <br /><br />"
-
 #: ../data/products.py:381
 msgid "Возможность подключить к ПК по USB Type-C (Windows, Linux)"
 msgstr "The ability to connect to a PC via USB Type-C (Windows, Linux)"
@@ -985,6 +982,9 @@ msgstr "Channel impedance: 11 Ohm"
 #: ../data/products.py:414
 msgid "Ёмкость канала: 100 пФ <br /><br />"
 msgstr "Channel capacity: 100 pF <br /><br />"
+
+#~ msgid "Электропитание: 5 В (от USB) <br /><br />"
+#~ msgstr "Power supply: 5 V (viaUSB) <br /><br />"
 
 #~ msgid "Диапазон частот пробного сигнала: 1, 10, 100 Гц, 1, 10, 100 кГц"
 #~ msgstr "Frequency range of the test signal: 1, 10, 100 Hz, 1, 10, 100 kHz"
