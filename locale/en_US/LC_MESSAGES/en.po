@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-23 18:10+0300\n"
-"PO-Revision-Date: 2023-10-23 18:12+0300\n"
+"POT-Creation-Date: 2023-11-08 18:00+0300\n"
+"PO-Revision-Date: 2023-11-08 18:01+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -351,8 +351,8 @@ msgstr "C Sensitivity: 50 pF - 6800 μF"
 #: ../data/products.py:46 ../data/products.py:91 ../data/products.py:136
 #: ../data/products.py:181 ../data/products.py:224 ../data/products.py:264
 #: ../data/products.py:304
-msgid "Чувствительность по L: 1 - 10 мкГн"
-msgstr "L Sensitivity: 1 - 10 μH"
+msgid "Чувствительность по L: 1 мкГн - 0.01 Гн"
+msgstr "L Sensitivity: 1 μH - 0.01 H"
 
 #: ../data/products.py:47
 msgid "Поддерживаемые типы корпусов: LQFP, SOIC, SMD, SOT, DIP и т.д."
