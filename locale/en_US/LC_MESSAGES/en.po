@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-26 16:35+0300\n"
-"PO-Revision-Date: 2023-12-26 16:46+0300\n"
+"POT-Creation-Date: 2023-12-28 20:34+0300\n"
+"PO-Revision-Date: 2023-12-28 20:35+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -572,9 +572,9 @@ msgstr "Frequency range is up to 100 kHz"
 msgid "Доступен план тестирования"
 msgstr "Support for the «Test Plan» mode"
 
-#: ../data/products.py:182
-msgid "Электропитание: ~220 В, 10 Вт <br /><br />"
-msgstr "Power supply: ~220 V, 10 W <br /><br />"
+#: ../data/products.py:182 ../data/products.py:357
+msgid "Электропитание: ~220 В, 10 Вт"
+msgstr "Power supply: ~ 220 V, 10 W"
 
 #: ../data/products.py:183
 msgid "7-ми дюймовый цветной дисплей с функцией touch screen"
@@ -703,7 +703,7 @@ msgstr "u22.png"
 
 #: ../data/products.py:252
 msgid ""
-"Двухканальный локализатора неисправных электронных компонентов на печатных платах "
+"Двухканальный локализатор неисправных электронных компонентов на печатных платах "
 "методом аналогового сигнатурного анализа (АСА) с частотой тестирующего сигнала до "
 "100 кГц. "
 msgstr ""
@@ -865,10 +865,6 @@ msgstr "C Sensitivity: 0.5 pF - 6800 μF"
 msgid "Чувствительность по L: 0.1 - 80 мкГн"
 msgstr "L sensitivity: 0.1 - 80 μH"
 
-#: ../data/products.py:357
-msgid "Электропитание: ~220 В, 10 Вт"
-msgstr "Power supply: ~ 220 V, 10 W"
-
 #: ../data/products.py:360
 msgid "Габариты: 137 х 65 х 110 мм"
 msgstr "Dimensions: 137 x 65 x 110 mm"
@@ -1001,6 +997,9 @@ msgstr "Channel impedance: 11 Ohm"
 #: ../data/products.py:427
 msgid "Ёмкость канала: 100 пФ"
 msgstr "Channel capacity: 100 pF"
+
+#~ msgid "Электропитание: ~220 В, 10 Вт <br /><br />"
+#~ msgstr "Power supply: ~220 V, 10 W <br /><br />"
 
 #~ msgid "Регулируемый порог совпадения сигнатур"
 #~ msgstr "Adjustable signature matched threshold"
