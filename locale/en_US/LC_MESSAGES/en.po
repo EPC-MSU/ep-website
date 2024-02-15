@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-10 13:34+0300\n"
-"PO-Revision-Date: 2024-01-10 16:47+0300\n"
+"POT-Creation-Date: 2024-02-15 11:03+0300\n"
+"PO-Revision-Date: 2024-02-15 11:08+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -629,14 +629,14 @@ msgstr "-->The main functions of the EPLab software:<!--"
 #: ../data/products.py:198 ../data/products.py:240 ../data/products.py:282
 #: ../data/products.py:324 ../data/products.py:366
 msgid ""
-"Поддержка ОС: Windows 7 и новее, Linux (протестировано на Ubuntu18, 2020 x64, другие "
-"версии Linux по запросу)"
+"Поддержка ОС: Windows 7 SP1 и новее, Linux (протестировано на Ubuntu 18.04, 20.04;  "
+"AstraLinux - 4.15.3)"
 msgstr ""
-"Support OS: Windows 7 or later, Linux (tested on Ubuntu18, 20 x64, other versions on "
-"request)"
+"Support OS: Windows 7 SP1 and newer, Linux (tested on Ubuntu 18.04, 20.04; Astra "
+"Linux - 4.15.3)"
 
 #: ../data/products.py:199 ../data/products.py:241 ../data/products.py:283
-#: ../data/products.py:325
+#: ../data/products.py:325 ../data/products.py:395
 msgid "Возможность программного управления: C/C++, C#, Python"
 msgstr "The ability to program control: C/C++, C#, Python"
 
@@ -933,12 +933,8 @@ msgid "Поддержка плана тестирования с генерац�
 msgstr "Automatic test plan support with report generation"
 
 #: ../data/products.py:394
-msgid "Возможность подключить к ПК по USB Type-C (Windows, Linux)"
-msgstr "The ability to connect to a PC via USB Type-C (Windows, Linux)"
-
-#: ../data/products.py:395
-msgid "Возможность программного управления: (C/C++, C#, Python)"
-msgstr "The ability to program control: (C/C++, C#, Python)"
+msgid "Возможность подключить к ПК по USB Type-C"
+msgstr "The ability to connect to a PC via USB Type-C"
 
 #: ../data/products.py:396 ../data/products.py:428
 msgid "Габариты: 130 x 75 x 17.5 мм"
@@ -999,6 +995,12 @@ msgstr "Channel impedance: 11 Ohm"
 #: ../data/products.py:427
 msgid "Ёмкость канала: 100 пФ"
 msgstr "Channel capacity: 100 pF"
+
+#~ msgid "Возможность подключить к ПК по USB Type-C (Windows, Linux)"
+#~ msgstr "The ability to connect to a PC via USB Type-C (Windows, Linux)"
+
+#~ msgid "Возможность программного управления: (C/C++, C#, Python)"
+#~ msgstr "The ability to program control: (C/C++, C#, Python)"
 
 #~ msgid "Электропитание: ~220 В, 10 Вт <br /><br />"
 #~ msgstr "Power supply: ~220 V, 10 W <br /><br />"
