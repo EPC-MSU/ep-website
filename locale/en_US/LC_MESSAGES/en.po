@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-21 13:37+0300\n"
-"PO-Revision-Date: 2024-02-21 13:37+0300\n"
+"PO-Revision-Date: 2024-02-21 14:28+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -286,8 +286,8 @@ msgid ""
 "Автоматическая система локализации неисправных электронных компонентов на печатных "
 "платах. "
 msgstr ""
-"Automatic localization system for faulty electronic components on printed circuit "
-"boards. "
+"Automatic system for detecting counterfeit, re-labeled or faulty electronic "
+"components in BGA enclosures. "
 
 #: ../data/products.py:31
 msgid ""
@@ -299,12 +299,13 @@ msgid ""
 "характеристики (сигнатуры) эталонной платы и наша система EyePoint P10. Вы получите "
 "качественный результат за считанные минуты. "
 msgstr ""
-"Automatic localization system for faulty electronic components on printed circuit "
-"boards. <br />The system combines an automatic optical component pin recognition "
-"system and a flying probe for conducting electrical testing by a safe method of "
-"analog signature analysis. All you need to find faults on the test board is the "
-"removed volt–ampere characteristics (signatures) of the reference board and our "
-"EyePoint P10 system. You will get a high-quality result in a few minutes. "
+"Automatic system for detecting counterfeit, re-labeled or faulty electronic "
+"components in BGA enclosures. <br />The system combines an automatic optical "
+"component pin recognition system and a flying probe for conducting electrical "
+"testing by a safe method of analog signature analysis. All you need to find faults "
+"on the test board is the removed volt–ampere characteristics (signatures) of the "
+"reference board and our EyePoint P10 system. You will get a high-quality result in a "
+"few minutes. "
 
 #: ../data/products.py:36 ../data/products.py:81
 msgid "Прост в использовании"
@@ -433,14 +434,14 @@ msgid ""
 "микросхемы и наша система EyePoint B10. Вы получите качественный результат за "
 "считанные минуты. "
 msgstr ""
-"EyePoint P10b is an automatic localization system for faulty electronic components "
-"on printed circuit boards with the ability to detect counterfeit, re-labeled or "
-"damaged components in BGA enclosures. <br />The system combines an automatic contact "
-"recognition system for optical components and a flying probe for conducting "
-"electrical tests by a safe method of analyzing analog signatures. All you need to "
-"find faults on the test board or chip is the removed volt–ampere characteristics "
-"(signatures) of the reference board or chip and our EyePoint P10b system. You will "
-"get a high-quality result in a matter of minutes. "
+"An automatic localization system for faulty electronic components on printed circuit "
+"boards with the ability to detect counterfeit, re-labeled or damaged components in "
+"BGA enclosures. <br />The system combines an automatic contact recognition system "
+"for optical components and a flying probe for conducting electrical tests by a safe "
+"method of analyzing analog signatures. All you need to find faults on the test board "
+"or chip is the removed volt–ampere characteristics (signatures) of the reference "
+"board or chip and our EyePoint P10b system. You will get a high-quality result in a "
+"matter of minutes. "
 
 #: ../data/products.py:83
 msgid "Не повредит микросхему"
@@ -565,7 +566,7 @@ msgstr "Doesn’t require a computer"
 
 #: ../data/products.py:172 ../data/products.py:220 ../data/products.py:262
 msgid "Частота тестирующего сигнала до 100 кГц"
-msgstr "Frequency range is up to 100 kHz"
+msgstr "Frequency is up to 100 kHz"
 
 #: ../data/products.py:173
 msgid "Доступен план тестирования"
@@ -608,7 +609,7 @@ msgstr "-->The main functions of the built-in software:<!--"
 #: ../data/products.py:191 ../data/products.py:196 ../data/products.py:238
 #: ../data/products.py:280 ../data/products.py:322 ../data/products.py:364
 msgid "--><ul><li>Регулируемый порог совпадения сигнатур"
-msgstr "--><ul><li>Adjustable signature matched threshold"
+msgstr "--><ul><li>Adjustable signature matching threshold"
 
 #: ../data/products.py:192 ../data/products.py:197 ../data/products.py:239
 #: ../data/products.py:281 ../data/products.py:323 ../data/products.py:365
@@ -726,7 +727,7 @@ msgstr ""
 
 #: ../data/products.py:264
 msgid "Доступен функционал старшей модели S2"
-msgstr "All functionality of S2"
+msgstr "The functionality of the S2 model is available"
 
 #: ../data/products.py:276
 msgid "Габариты и вес: 175 х 90 х 40 мм"
@@ -779,7 +780,7 @@ msgstr "Full functionality"
 
 #: ../data/products.py:306
 msgid "Максимально доступный"
-msgstr "Maximum available"
+msgstr "Maximum affordable"
 
 #: ../data/products.py:318
 msgid "Габариты: 60 х 40 х 5 мм"
@@ -916,7 +917,7 @@ msgstr ""
 
 #: ../data/products.py:388 ../data/products.py:419
 msgid "Скалирование модулей (до 8 штук, 512 каналов)"
-msgstr "Scaling modules (up to 8 pieces, 512 channels)"
+msgstr "Scaling of modules (up to 8 pieces, 512 channels)"
 
 #: ../data/products.py:389 ../data/products.py:420
 msgid "Подходит для тестирования серийных изделий"
@@ -924,7 +925,7 @@ msgstr "Suitable for testing serial products"
 
 #: ../data/products.py:390 ../data/products.py:421
 msgid "Поддержка плана тестирования с генерацией отчетов"
-msgstr "Automatic test plan support with report generation"
+msgstr "Support for the «Test Plan» mode"
 
 #: ../data/products.py:394
 msgid "Возможность подключить к ПК по USB Type-C"
