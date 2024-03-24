@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-21 15:48+0300\n"
-"PO-Revision-Date: 2024-02-21 16:57+0300\n"
+"POT-Creation-Date: 2024-03-24 13:59+0300\n"
+"PO-Revision-Date: 2024-03-24 14:13+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
-"X-Generator: Poedit 2.3.1\n"
+"X-Generator: Poedit 3.3.2\n"
 
 #: ../data/download.py:19
 msgid "Документация"
@@ -341,7 +341,7 @@ msgstr "Current range: 25 μА - 25 mA"
 #: ../data/products.py:179 ../data/products.py:228 ../data/products.py:270
 #: ../data/products.py:312
 msgid "Чувствительность по R: 1 Ом - 10 МОм"
-msgstr "R sensitivity: 1 Ohm - 10 mOhm"
+msgstr "R Sensitivity: 1 Ohm - 10 mOhm"
 
 #: ../data/products.py:45 ../data/products.py:90 ../data/products.py:135
 #: ../data/products.py:180 ../data/products.py:229 ../data/products.py:271
@@ -507,11 +507,11 @@ msgstr "Max of test pins: up to 2500 pins"
 
 #: ../data/products.py:137
 msgid ""
-"Поддерживаемые типы корпусов: LQFP, SOIC, SMD, SOT, SOP, DIP, BGA, LGA, PGA, LCC, "
-"CSP и тд."
+"Поддерживаемые типы корпусов: LQFP, SOIC, SMD, SOT, SOP, DIP, <br /> BGA, LGA, PGA, "
+"LCC, CSP и т.д."
 msgstr ""
-"Supported enclosure types: LQFP, SOIC, SMD, SOT, SOP, DIP, BGA, LGA, PGA, LCC, CSP, "
-"etc."
+"Supported enclosure types: LQFP, SOIC, SMD, SOT, SOP, DIP, <br /> BGA, LGA, PGA, "
+"LCC, CSP, etc."
 
 #: ../data/products.py:140
 msgid "Рабочая область: 280 x 275 х 63 мм "
