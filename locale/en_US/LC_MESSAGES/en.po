@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-26 15:44+0300\n"
-"PO-Revision-Date: 2024-03-26 16:06+0300\n"
+"PO-Revision-Date: 2024-03-27 14:56+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -503,7 +503,7 @@ msgstr "Save search time up to 3 times"
 
 #: ../data/products.py:128
 msgid "Автоматическая проверка до 2500 выводов"
-msgstr "Max of test pins: up to 2500 pins"
+msgstr "Automatic verification of up to 2500 pins"
 
 #: ../data/products.py:137
 msgid ""
