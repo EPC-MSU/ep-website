@@ -62,8 +62,9 @@
         <th>{{ tr(release_date) }}</th>
         <th>{{ tr(size) }}</th>
       </tr>
-      {% for file in all_software[category.name] if not file.language or file.language == lang %}
-      <tr>
+    </tr>
+    {% for file in latest_releases[category.name] %}
+    <tr>
         <td class="td4"><a href="{{ file.link }}">{{ file.basename }}</a></td>
         <td class="td1">{{ file.version }}</td>
         <td class="td2">{{ file.date }}</td>
@@ -74,6 +75,23 @@
     </tbody>
 </table>
 
+{% if old_releases[category.name] %}
+<details>
+    <summary class="download-text">{{ tr(older_releases) }}</summary>
+    <table>
+        <tbody>
+        {% for file in old_releases[category.name]%}
+        <tr>
+            <td class="td4"><a href="{{ file.link }}">{{ file.basename }}</a></td>
+            <td class="td1">{{ file.version }}</td>
+            <td class="td2">{{ file.date }}</td>
+            <td class="td3">{{ file.size|filesizeformat }}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</details>
+{% endif %}
 
 {% endfor %}
 

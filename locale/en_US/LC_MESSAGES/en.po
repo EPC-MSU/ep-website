@@ -194,6 +194,10 @@ msgstr "Link"
 msgid "Скачать"
 msgstr "Download"
 
+#: ../data/download.py:157
+msgid "Старые версии"
+msgstr "Older releases"
+
 #: ../data/other.py:4
 msgid ""
 "<b>usbadc10</b> — устройство, преобразующее входной аналоговый сигнал в "

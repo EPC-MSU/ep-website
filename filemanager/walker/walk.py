@@ -52,12 +52,12 @@ class FileInfo:
                 file_language = language
                 break
 
-        # convert /foo/bar/spam/download/EyePointS1/firm
-        # ware to download/EyePointS1/firmware
+        # convert /foo/bar/spam/download/EyePointS1/firmware
+        # to download/EyePointS1/firmware
         path_short = join_path(*path.split(sep)[-3:])
 
         return FileInfo(
-            version,
+            LooseVersion(version),
             datetime.fromtimestamp(getmtime(path)).date(),
             getsize(path),
             urllib.quote(join_path(url_prefix, path_short)),
@@ -80,6 +80,7 @@ def _walk_software(path: str, url_prefix: str) -> List[FileInfo]:
             result.append(FileInfo.fromfile(fullpath, url_prefix))
         except ValueError:
             continue  # Ignore file with bad version (or other value errors?)
+
     return sorted(result, key=lambda f: f.version, reverse=True)
 
 
