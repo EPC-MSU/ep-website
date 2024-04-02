@@ -114,6 +114,7 @@ async def download(request):
         "version": download_data.version,
         "release_date": download_data.release_date,
         "size": download_data.size,
+        "older_releases": download_data.older_releases,
         "link": download_data.link,
         "download": download_data.download,
         "categories": download_data.categories,
