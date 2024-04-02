@@ -10,6 +10,7 @@
 * Распакуйте архив sample/download_volume.tar
 * Папку download из архива поместите в view/static/
 * Дальше соберите и запустие контейнер
+
 ```bash
 sudo apt-get update
 sudo apt-get install docker-compose
