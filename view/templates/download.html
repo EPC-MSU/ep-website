@@ -6,50 +6,50 @@
 
 <!--Product description-->
 <div class="epmain" id="download-page-intro">
-	<div>
-    {% set count = namespace(a = 0) %}
+    <div>
+        {% set count = namespace(a = 0) %}
 
-    {% if product.picture|length < 2 %}
-      <div class="epimage">
-        <img src="/static/images/{{product.picture[0] }}">
-      </div>
-    {% endif %}   
-      
-    {% if product.picture|length > 1 %}
-    		{% for picture in product.picture %}
-          {% if count.a > 0 %}
-          	<div class="epimage">
-        			<img src="/static/images/{{picture }}">
-        		</div> 
-          {% endif %}  
-          {% set count.a = count.a + 1 %}
-        {% endfor %} 
-    {% endif %}       
-	</div>
-	<div class="epdescription">
-		{% for extended_description in product.extended_description %}
-		<div class="extended_description">
-        <p>{{ tr(extended_description) | safe }}</p>
-		</div>
-		{% endfor %}
-    <div class="hilight-container">
-        {% for hilight in product.hilights %}
-            <div class="hilight">{{ tr(hilight) }}</div>
+        {% if product.picture|length < 2 %}
+        <div class="epimage">
+            <img src="/static/images/{{product.picture[0] }}">
+        </div>
+        {% endif %}
+
+        {% if product.picture|length > 1 %}
+        {% for picture in product.picture %}
+        {% if count.a > 0 %}
+        <div class="epimage">
+            <img src="/static/images/{{picture }}">
+        </div>
+        {% endif %}
+        {% set count.a = count.a + 1 %}
         {% endfor %}
+        {% endif %}
     </div>
-	</div>
+    <div class="epdescription">
+        {% for extended_description in product.extended_description %}
+        <div class="extended_description">
+            <p>{{ tr(extended_description) | safe }}</p>
+        </div>
+        {% endfor %}
+        <div class="hilight-container">
+            {% for hilight in product.hilights %}
+            <div class="hilight">{{ tr(hilight) }}</div>
+            {% endfor %}
+        </div>
+    </div>
 </div>
 
 <!--Full software kit-->
 {% if archive %}
 <div class="download-header-block">
-    <a id="download-sdk" href="{{ archive.link }}">  {{ tr(archive_description.friendly_name) }} </a>
+    <a id="download-sdk" href="{{ archive.link }}"> {{ tr(archive_description.friendly_name) }} </a>
 </div>
-    {% if archive_description.description %}
+{% if archive_description.description %}
 <div class="download-text">
     {{ tr(archive_description.description) | safe }}
 </div>
-    {% endif %}
+{% endif %}
 {% endif %}
 
 
@@ -58,36 +58,48 @@
 {% for category in categories if category.name in all_software %}
 
 <div class="download-header-block">
-  <img src="/static/ico/{{ category.icon }}">
-  <h3 class="download-h3">  {{ tr(category.friendly_name) }}</h3>
+    <img src="/static/ico/{{ category.icon }}">
+    <h3 class="download-h3"> {{ tr(category.friendly_name) }}</h3>
 </div>
-    {% if category.description %}
+{% if category.description %}
 <div class="download-text">
     {{ tr(category.description) | safe }}
 </div>
-    {% endif %}
+{% endif %}
 
 <table>
     <tbody>
-      <tr>
+    <tr>
         <th>{{ tr(link) }}</th>
         <th>{{ tr(version) }}</th>
         <th>{{ tr(release_date) }}</th>
         <th>{{ tr(size) }}</th>
-      </tr>
-      {% for file in all_software[category.name] if not file.language or file.language == lang %}
-      <tr>
+    </tr>
+    {% for file in latest_releases[category.name] if not file.language or file.language == lang %}
+    <tr>
         <td class="td4"><a href="{{ file.link }}">{{ file.basename }}</a></td>
         <td class="td1">{{ file.version }}</td>
         <td class="td2">{{ file.date }}</td>
         <td class="td3">{{ file.size|filesizeformat }}</td>
-      </tr>
-      {% endfor %}
-
+    </tr>
+    {% endfor %}
     </tbody>
 </table>
-
-
+<details>
+    <summary class="download-text">Старые версии</summary>
+    <table>
+        <tbody>
+        {% for file in old_releases[category.name] if not file.language or file.language == lang %}
+        <tr>
+            <td class="td4"><a href="{{ file.link }}">{{ file.basename }}</a></td>
+            <td class="td1">{{ file.version }}</td>
+            <td class="td2">{{ file.date }}</td>
+            <td class="td3">{{ file.size|filesizeformat }}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</details>
 {% endfor %}
 
 {% endblock %}

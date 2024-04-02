@@ -34,6 +34,50 @@ class ArchiveInfo:
         )
 
 
+def filter_latest(all_files) -> Dict[str, Dict[str, List[FileInfo]]]:
+    filtered_dict = {}
+    for product, product_software in all_files.items():
+        filtered_software = {}
+        for category, files in product_software.items():
+            if not files:
+                continue
+            filtered_files = []
+            software_names = set([file.name for file in files])
+            last_versions = {}
+            for software_name in software_names:
+                last_versions[software_name] = [file.version for file in files if file.name == software_name][0]
+
+            for file in files:
+                if last_versions[file.name] == file.version:
+                    filtered_files.append(file)
+
+            filtered_software[category] = filtered_files
+        filtered_dict[product] = filtered_software
+    return filtered_dict
+
+
+def filter_old(all_files) -> Dict[str, Dict[str, List[FileInfo]]]:
+    filtered_dict = {}
+    for product, product_software in all_files.items():
+        filtered_software = {}
+        for category, files in product_software.items():
+            if not files:
+                continue
+            filtered_files = []
+            software_names = set([file.name for file in files])
+            last_versions = {}
+            for software_name in software_names:
+                last_versions[software_name] = [file.version for file in files if file.name == software_name][0]
+
+            for file in files:
+                if last_versions[file.name] != file.version:
+                    filtered_files.append(file)
+
+            filtered_software[category] = filtered_files
+        filtered_dict[product] = filtered_software
+    return filtered_dict
+
+
 def archive(software: Dict[str, List[FileInfo]], zip_path: str):
     """
     Make archive with latest releases
@@ -53,13 +97,13 @@ def archive(software: Dict[str, List[FileInfo]], zip_path: str):
     for category, files in software.items():
         if not files:
             continue
-        products = set([file.name for file in files])
+        software_names = set([file.name for file in files])
         # Find last version for every product
         # assuming files list sorted by version decrease
         last_versions = {}
-        for product in products:
+        for software_name in software_names:
             # Take version of first product match (list sorted)
-            last_versions[product] = [file.version for file in files if file.name == product][0]
+            last_versions[software_name] = [file.version for file in files if file.name == software_name][0]
 
         for file in files:
             if last_versions[file.name] == file.version:
@@ -120,6 +164,18 @@ class FileManager:
         if not self._files:
             raise RuntimeError("Refresh procedure not started yet")
         return self._files
+
+    @property
+    def latest_releases(self) -> Dict[str, Dict[str, List[FileInfo]]]:
+        if not self._files:
+            raise RuntimeError("Refresh procedure not started yet")
+        return filter_latest(self._files)
+
+    @property
+    def old_releases(self) -> Dict[str, Dict[str, List[FileInfo]]]:
+        if not self._files:
+            raise RuntimeError("Refresh procedure not started yet")
+        return filter_old(self._files)
 
     @property
     def archives(self):
