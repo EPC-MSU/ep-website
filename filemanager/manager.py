@@ -53,13 +53,17 @@ def archive(software: Dict[str, List[FileInfo]], zip_path: str):
     for category, files in software.items():
         if not files:
             continue
-        prev_file = files[0]
-        z_file.write(prev_file.full_path, join_path(category, prev_file.basename))
+        products = set([file.name for file in files])
+        # Find last version for every product
+        # assuming files list sorted by version decrease
+        last_versions = {}
+        for product in products:
+            # Take version of first product match (list sorted)
+            last_versions[product] = [file.version for file in files if file.name == product][0]
+
         for file in files:
-            # Files ordered by version. So, we skip all older versions  with same names and platforms
-            if file.name != prev_file.name or file.platform != prev_file.platform:
+            if last_versions[file.name] == file.version:
                 z_file.write(file.full_path, join_path(category, file.basename))
-            prev_file = file
 
 
 def compare_latest_software(
@@ -176,6 +180,7 @@ class FileManager:
             try:
                 logging.debug("Refresh file list...")
                 await self._refresh()
+                logging.debug("Refresh file list done.")
             except Exception as err:
                 logging.error("Exception caught during file refresh: " + str(err))
             await asyncio.sleep(self._timeout)
