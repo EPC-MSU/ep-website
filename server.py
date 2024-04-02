@@ -102,16 +102,20 @@ async def robots(request):
 @base_template
 async def download(request):
     product = product_by_name(request.match_info["product"])
+    language = request.match_info["language"]
 
     # TODO: clearer names
     return {
         "product": product,
         "all_software": file_manager.files[product.name],
+        "latest_releases": file_manager.releases(latest=True, lang=language)[product.name],
+        "old_releases": file_manager.releases(latest=False, lang=language)[product.name],
         "archive": file_manager.archives.get(product.name),
         "archive_description": download_data.all_software,
         "version": download_data.version,
         "release_date": download_data.release_date,
         "size": download_data.size,
+        "older_releases": download_data.older_releases,
         "link": download_data.link,
         "download": download_data.download,
         "categories": download_data.categories,

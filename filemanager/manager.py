@@ -34,40 +34,71 @@ class ArchiveInfo:
         )
 
 
+def filter_files_inside_category(category_files: List[FileInfo], latest=True, lang=None) -> List[FileInfo]:
+    """
+    Filter releases.
+
+    If latest=True return like [software_name-1.0.11-debian, software_name-1.0.11-win64]
+
+    If latest=False return like [software_name-1.0.10-debian, software_name-1.0.10-win64]
+
+    :param category_files: list of files inside category
+    :param latest: Bool - select latest releases or old releases
+    :param lang: Select files only with lang argument or if file has no lang
+    :return: filtered list by latest argument condition
+    """
+
+    # Filter selected lang or if file has no lang
+    files = [file for file in category_files if lang == file.language or file.language is None]
+
+    # Find last version for every software_name, assuming files-list sorted by version decrease
+    latest_versions = {}
+    for software_name in set([file.name for file in files]):
+        latest_versions[software_name] = [file.version for file in files if file.name == software_name][0]
+
+    # Filter all files with same software_name and latest version
+    filtered_latest = []
+    filtered_old = []
+
+    for file in files:
+        # if file.name not in latest_versions.keys():
+        #     continue
+
+        if latest_versions[file.name] == file.version:
+            filtered_latest.append(file)
+        else:
+            filtered_old.append(file)
+    # Select latest-files-list or old-files-list by function argument
+    return filtered_latest if latest else filtered_old
+
+
+def filter_files(all_files, latest=True, lang=None) -> Dict[str, Dict[str, List[FileInfo]]]:
+    # Filter files for all products
+    filtered_dict = {}
+    for product, product_software in all_files.items():
+        filtered_software_files = {}
+        for category, files in product_software.items():
+            if not files:
+                continue
+            filtered_software_files[category] = filter_files_inside_category(files, latest=latest, lang=lang)
+        filtered_dict[product] = filtered_software_files
+    return filtered_dict
+
+
 def archive(software: Dict[str, List[FileInfo]], zip_path: str):
     """
     Make archive with latest releases
-    :param software: software, smth like
-    {
-        "firmware": [
-            FileInfo, FileInfo, FileInfo
-        ],
-        "debugger": [
-            FileInfo, FileInfo
-        ], etc
-    }
-    :param zip_path: path to output zip archive
-    :return:
     """
     z_file = zipfile.ZipFile(zip_path, "w")
-    for category, files in software.items():
-        if not files:
-            continue
-        products = set([file.name for file in files])
-        # Find last version for every product
-        # assuming files list sorted by version decrease
-        last_versions = {}
-        for product in products:
-            # Take version of first product match (list sorted)
-            last_versions[product] = [file.version for file in files if file.name == product][0]
 
-        for file in files:
-            if last_versions[file.name] == file.version:
-                z_file.write(file.full_path, join_path(category, file.basename))
+    for category, files in software.items():
+        selected_files = filter_files_inside_category(files, latest=True, lang='ru')
+        for file in selected_files:
+            z_file.write(file.full_path, join_path(category, file.basename))
 
 
 def compare_latest_software(
-    old: Dict[str, List[FileInfo]], new: Dict[str, List[FileInfo]]
+        old: Dict[str, List[FileInfo]], new: Dict[str, List[FileInfo]]
 ) -> bool:
     """
     Compare software files (equal\not equal)
@@ -118,14 +149,17 @@ class FileManager:
     @property
     def files(self):
         if not self._files:
-            raise RuntimeError("Refresh procedure not started yet")
+            raise RuntimeError("Refresh procedure not done yet")
         return self._files
 
     @property
     def archives(self):
         if not self._archives:
-            raise RuntimeError("Refresh procedure not started yet")
+            raise RuntimeError("Refresh procedure not done yet")
         return self._archives
+
+    def releases(self, latest=True, lang='ru') -> Dict[str, Dict[str, List[FileInfo]]]:
+        return filter_files(self.files, latest=latest, lang=lang)
 
     def start_refresh(self, loop: Optional[asyncio.AbstractEventLoop] = None):
         """
@@ -152,12 +186,12 @@ class FileManager:
                 archive_path = join_path(archive_directory, self._archive_name(product))
 
                 if (
-                    not old_files
-                    or not old_files.get(product)
-                    or not isfile(archive_path)
-                    or not compare_latest_software(
-                        old_files[product], new_files[product]
-                    )
+                        not old_files
+                        or not old_files.get(product)
+                        or not isfile(archive_path)
+                        or not compare_latest_software(
+                    old_files[product], new_files[product]
+                )
                 ):
                     logging.debug("Update archive " + product)
                     await self._loop.run_in_executor(executor, archive, software, archive_path)
