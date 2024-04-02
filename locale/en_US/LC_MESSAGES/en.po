@@ -218,6 +218,10 @@ msgstr "Link"
 msgid "Скачать"
 msgstr "Download"
 
+#: ../data/download.py:174
+msgid "Старые версии"
+msgstr "Older releases"
+
 #: ../data/other.py:4
 msgid ""
 "<b>EyePoint</b> – системы для локализации неисправных электронных компонентов на "

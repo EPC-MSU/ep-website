@@ -66,7 +66,6 @@
     {{ tr(category.description) | safe }}
 </div>
 {% endif %}
-
 <table>
     <tbody>
     <tr>
@@ -85,8 +84,9 @@
     {% endfor %}
     </tbody>
 </table>
+{% if old_releases[category.name] %}
 <details>
-    <summary class="download-text">Старые версии</summary>
+    <summary class="download-text">{{ tr(older_releases) }}</summary>
     <table>
         <tbody>
         {% for file in old_releases[category.name] if not file.language or file.language == lang %}
@@ -100,6 +100,7 @@
         </tbody>
     </table>
 </details>
-{% endfor %}
+{% endif %}
 
+{% endfor %}
 {% endblock %}

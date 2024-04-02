@@ -31,6 +31,10 @@ p {
 	line-height: 180%;
 }
 
+summary {
+    cursor: pointer;
+}
+
 .container {
 	overflow: hidden;
 	margin: 0em auto;
