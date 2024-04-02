@@ -34,7 +34,7 @@ class ArchiveInfo:
         )
 
 
-def filter_files_inside_category(files: List[FileInfo], latest=True) -> List[FileInfo]:
+def filter_files_inside_category(category_files: List[FileInfo], latest=True, lang=None) -> List[FileInfo]:
     """
     Filter releases.
 
@@ -42,20 +42,29 @@ def filter_files_inside_category(files: List[FileInfo], latest=True) -> List[Fil
 
     If latest=False return like [software_name-1.0.10-debian, software_name-1.0.10-win64]
 
-    :param files: list of files inside category
+    :param category_files: list of files inside category
     :param latest: Bool - select latest releases or old releases
+    :param lang: Select files only with lang argument or if file has no lang
     :return: filtered list by latest argument condition
     """
 
+    # Filter selected lang or if file has no lang
+    files = [file for file in category_files if lang == file.language or file.language is None]
+
     # Find last version for every software_name, assuming files-list sorted by version decrease
-    last_versions = {}
+    latest_versions = {}
     for software_name in set([file.name for file in files]):
-        last_versions[software_name] = [file.version for file in files if file.name == software_name][0]
+        latest_versions[software_name] = [file.version for file in files if file.name == software_name][0]
+
     # Filter all files with same software_name and latest version
     filtered_latest = []
     filtered_old = []
+
     for file in files:
-        if last_versions[file.name] == file.version:
+        # if file.name not in latest_versions.keys():
+        #     continue
+
+        if latest_versions[file.name] == file.version:
             filtered_latest.append(file)
         else:
             filtered_old.append(file)
@@ -63,7 +72,7 @@ def filter_files_inside_category(files: List[FileInfo], latest=True) -> List[Fil
     return filtered_latest if latest else filtered_old
 
 
-def filter_files(all_files, latest=True) -> Dict[str, Dict[str, List[FileInfo]]]:
+def filter_files(all_files, latest=True, lang=None) -> Dict[str, Dict[str, List[FileInfo]]]:
     # Filter files for all products
     filtered_dict = {}
     for product, product_software in all_files.items():
@@ -71,7 +80,7 @@ def filter_files(all_files, latest=True) -> Dict[str, Dict[str, List[FileInfo]]]
         for category, files in product_software.items():
             if not files:
                 continue
-            filtered_software_files[category] = filter_files_inside_category(files, latest=latest)
+            filtered_software_files[category] = filter_files_inside_category(files, latest=latest, lang=lang)
         filtered_dict[product] = filtered_software_files
     return filtered_dict
 
@@ -83,7 +92,7 @@ def archive(software: Dict[str, List[FileInfo]], zip_path: str):
     z_file = zipfile.ZipFile(zip_path, "w")
 
     for category, files in software.items():
-        selected_files = filter_files_inside_category(files, latest=True)
+        selected_files = filter_files_inside_category(files, latest=True, lang='ru')
         for file in selected_files:
             z_file.write(file.full_path, join_path(category, file.basename))
 
@@ -140,26 +149,17 @@ class FileManager:
     @property
     def files(self):
         if not self._files:
-            raise RuntimeError("Refresh procedure not started yet")
+            raise RuntimeError("Refresh procedure not done yet")
         return self._files
-
-    @property
-    def latest_releases(self) -> Dict[str, Dict[str, List[FileInfo]]]:
-        if not self._files:
-            raise RuntimeError("Refresh procedure not started yet")
-        return filter_files(self._files, latest=True)
-
-    @property
-    def old_releases(self) -> Dict[str, Dict[str, List[FileInfo]]]:
-        if not self._files:
-            raise RuntimeError("Refresh procedure not started yet")
-        return filter_files(self._files, latest=False)
 
     @property
     def archives(self):
         if not self._archives:
-            raise RuntimeError("Refresh procedure not started yet")
+            raise RuntimeError("Refresh procedure not done yet")
         return self._archives
+
+    def releases(self, latest=True, lang='ru') -> Dict[str, Dict[str, List[FileInfo]]]:
+        return filter_files(self.files, latest=latest, lang=lang)
 
     def start_refresh(self, loop: Optional[asyncio.AbstractEventLoop] = None):
         """
