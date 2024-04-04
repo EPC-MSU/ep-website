@@ -9,8 +9,8 @@ from translator.translator import _
 class Product:
     name: str
     friendly_name: str
-    description: str
-    extended_description: str
+    description: List[str]
+    extended_description: List[str]
     picture: List[str]
     technical: List[str]
     highlights: List[str]
@@ -20,16 +20,18 @@ products = (
     Product(
         name="USB_ADC",
         friendly_name=_("usbadc10 v1.0.0"),
-        picture=["UALab.png"],
-        description=_(
-            " Аналого-цифровой преобразователь"
-        ),
-        extended_description=_(
+        picture=[
+            _("UALab.png")
+        ],
+        description=[
+            _("Аналого-цифровой преобразователь")
+        ],
+        extended_description=[_(
             "Аналого-цифровой преобразователь usbadc10 имеет частоту до 4000 отсчётов в секунду, "
             "одновременно по всем каналам. В комплекте с устройством поставляется программное "
             "обеспечение для получения измерений. ПО поддерживается ОС Windows и Linux. Все необходимое "
             "<b>программное обеспечение</b> можно найти в свободном доступе. "
-        ),
+        )],
         highlights=[
             _("10 каналов"),
             _("кроссплатфор-"

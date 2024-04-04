@@ -13,8 +13,8 @@ import importlib
 from filemanager import FileManager
 from translator.translator import all_languages, translator
 
-# SITE_NAME = 'eyepoint'
-SITE_NAME = 'usbadc10'
+SITE_NAME = 'eyepoint'
+# SITE_NAME = 'usbadc10'
 
 # Dynamic import modules for specific site
 download_data = importlib.import_module(f'sites.{SITE_NAME}.data.download')
