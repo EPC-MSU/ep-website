@@ -8,3 +8,4 @@ notes.txt
 /view/static/download/
 *.pem
 *.pyc
+sites/

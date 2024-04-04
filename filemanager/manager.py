@@ -190,7 +190,7 @@ class FileManager:
 
                     # Remove other old archives
                     latest_archive_names = [self._archive_name(product, lang) for lang in self._languages]
-                    files = glob.glob(archive_directory + "*.zip")
+                    files = glob.glob(archive_directory + "/*.zip")
                     files_to_remove = [file for file in files if basename(file) not in latest_archive_names]
 
                     for file in files_to_remove:
