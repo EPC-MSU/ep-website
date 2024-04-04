@@ -32,9 +32,9 @@
             <p>{{ tr(extended_description) | safe }}</p>
         </div>
         {% endfor %}
-        <div class="hilight-container">
-            {% for hilight in product.hilights %}
-            <div class="hilight">{{ tr(hilight) }}</div>
+        <div class="highlight-container">
+            {% for highlight in product.highlights %}
+            <div class="highlight">{{ tr(highlight) }}</div>
             {% endfor %}
         </div>
     </div>

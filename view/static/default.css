@@ -65,10 +65,10 @@ summary {
 }
 
 /*********************************************************************************/
-/* Hilight
+/* highlight
 /*********************************************************************************/
 
-.hilight {
+.highlight {
     background-image: url(/static/images/highlight.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -87,7 +87,7 @@ summary {
     min-width: 150px
 }
 
-.hilight-container {
+.highlight-container {
     display: flex;
     justify-content: space-between;
     /*border: dashed red; */
