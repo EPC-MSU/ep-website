@@ -13,7 +13,8 @@ import importlib
 from filemanager import FileManager
 from translator.translator import all_languages, translator
 
-SITE_NAME = 'eyepoint'
+# SITE_NAME = 'eyepoint'
+SITE_NAME = 'usbadc10'
 
 # Dynamic import modules for specific site
 download_data = importlib.import_module(f'sites.{SITE_NAME}.data.download')
@@ -24,10 +25,7 @@ product_by_name = getattr(products_module, 'product_by_name')
 products = getattr(products_module, 'products')
 
 
-file_manager = FileManager(
-    600, f"sites/{SITE_NAME}/download", "/static/download"
-)  # Download page files
-
+file_manager = FileManager(600, f"sites/{SITE_NAME}/download", "/static/download")
 
 routes = web.RouteTableDef()
 
