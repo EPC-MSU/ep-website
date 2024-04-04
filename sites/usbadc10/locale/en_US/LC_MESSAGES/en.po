@@ -246,10 +246,10 @@ msgid "usbadc10 v1.0.0"
 msgstr "usbadc10 v1.0.0"
 
 #: ../data/products.py:28
-msgid " Аналого-цифровой преобразователь"
-msgstr " Analog to digital converter"
+msgid "Аналого-цифровой преобразователь"
+msgstr "Analog to digital converter"
 
-#: ../data/products.py:31
+#: ../data/products.py:30
 msgid ""
 "Аналого-цифровой преобразователь usbadc10 имеет частоту до 4000 отсчётов в "
 "секунду, одновременно по всем каналам. В комплекте с устройством "
@@ -262,47 +262,6 @@ msgstr ""
 "with software for obtaining measurements. The software is supported by "
 "Windows and Linux. All the necessary <b>software</b> can be found in the "
 "public domain. "
-
-#: ../data/products.py:38
-msgid ""
-"Центр инженерной физики МГУ имени М.В. Ломоносова (сокращенно ООО ЦИФ МГУ "
-"имени М.В. Ломоносова) занимается разработкой и продажей сложной электроники "
-"и интеллектуального программного обеспечения, наукоемкими проектами в сфере "
-"робототехники и управления движением, автоматизацией экспериментальных "
-"установок в лазерной физике и физике высоких энергий, созданием систем "
-"автоматического тестирования и диагностики печатных плат и электронных "
-"компонентов. "
-msgstr ""
-"Engineering Physics Center of Lomonosov Moscow State University (Engineering "
-"Physics Center of MSU) is engaged in the development and sale of complex "
-"electronics and intelligent software, high-tech projects in the field of "
-"robotics and motion control, automation pilot plant in laser physics and "
-"high energy physics, the creation of automated testing and diagnostics "
-"printed circuit boards and electronic components. "
-
-#: ../data/products.py:46
-msgid "<b>Сергей Запуниди</b> <br><b>Технический директор</b> "
-msgstr "<b>Sergey Zapunidi</b> <br><b>Chief technical officer</b> "
-
-#: ../data/products.py:51
-msgid ""
-"Кандидат физико-математических наук, окончил физический факультет МГУ имени "
-"М.В. Ломоносова. Эксперт в области встраиваемых систем, алгоритмов "
-"управления движением. Автор пяти курсов для технических факультетов МГУ "
-"имени М.В. Ломоносова по программированию и электронике и около двадцати "
-"статей международного уровня. Руководитель и участник многочисленных научных "
-"программ и разработок. Основанная специализация в компании: руководство "
-"производственным подразделением, выработка технических решений и внедрение  "
-"новых технологий. "
-msgstr ""
-"Candidate of Physical and Mathematical Sciences, graduated from the Faculty "
-"of Physics of Lomonosov Moscow State University. Expert in embedded systems, "
-"motion control algorithms. Author of five courses for the technical "
-"faculties of Lomonosov Moscow State University on programming and "
-"electronics and about twenty articles of international level. Head and "
-"participant of numerous scientific programs and developments. Main "
-"specialization in the company: management of the production department, "
-"development of technical solutions and introduction of new technologies. "
 
 #: ../data/products.py:61
 msgid "10 каналов"
