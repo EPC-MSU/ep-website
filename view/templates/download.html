@@ -58,7 +58,7 @@
 {% for category in categories if category.name in all_software %}
 {% if latest_releases[category.name] %}
 <div class="download-header-block">
-    <img src="/static/ico/{{ category.icon }}">
+    <img src="/static/icons/{{ category.icon }}">
     <h3 class="download-h3"> {{ tr(category.friendly_name) }}</h3>
 </div>
 {% if category.description %}

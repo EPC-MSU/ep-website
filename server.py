@@ -8,15 +8,23 @@ import aiohttp_jinja2
 import jinja2
 from aiohttp import web
 from aiohttp.web_exceptions import HTTPNotFound
+import importlib
 
-import data.download as download_data
-import data.other as other_data
-from data.products import product_by_name, products
 from filemanager import FileManager
 from translator.translator import all_languages, translator
 
+SITE_NAME = 'eyepoint'
+
+download_data = importlib.import_module(f'sites.{SITE_NAME}.data.download')
+other_data = importlib.import_module(f'sites.{SITE_NAME}.data.other')
+products_module = importlib.import_module(f'sites.{SITE_NAME}.data.products')
+
+product_by_name = getattr(products_module, 'product_by_name')
+products = getattr(products_module, 'products')
+
+
 file_manager = FileManager(
-    600, "view/static/download", "/static/download"
+    600, f"sites/{SITE_NAME}/download", "/static/download"
 )  # Download page files
 
 
@@ -77,6 +85,7 @@ async def index_loc(request):
         "products": products,
         "technical": other_data.technical,
         "more": other_data.more,
+        "site_name": SITE_NAME
     }
 
 
@@ -119,10 +128,12 @@ async def download(request):
         "link": download_data.link,
         "download": download_data.download,
         "categories": download_data.categories,
+        'site_name': SITE_NAME
     }
 
 
 routes.static("/static", "view/static")
+routes.static(f"/sites/{SITE_NAME}/images", f"sites/{SITE_NAME}/images")
 
 
 def _app_factory() -> web.Application:

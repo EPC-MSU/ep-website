@@ -121,9 +121,3 @@ def walk(path: str, url_prefix: str) -> Dict[str, Dict[str, List[FileInfo]]]:
         result[product] = _walk_product(fullpath, url_prefix)
 
     return result
-
-
-if __name__ == "__main__":
-    #  Run example
-    result = walk("../../view/static/download", "/static/download")
-    print(result)
