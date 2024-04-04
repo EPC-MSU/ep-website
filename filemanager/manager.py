@@ -3,35 +3,26 @@ import logging
 import urllib.parse as urllib
 import zipfile
 from concurrent.futures import ProcessPoolExecutor
-from dataclasses import dataclass
 from datetime import date
+import glob
 from os.path import getmtime, sep, join as join_path, basename, isfile
-from os import remove, listdir
+from os import remove
 from typing import Dict, List, Optional
 
 from filemanager.walker.walk import FileInfo, walk
 
 
-@dataclass()
 class ArchiveInfo:
-    date: date
-    link: str
-
-    @classmethod
-    def fromfile(cls, path: str, url_prefix: str) -> "ArchiveInfo":
+    def __init__(self, path: str, url_prefix: str):
         """
         :param url_prefix: url prefix, for example: /static
         :param path: path to file
-        :return: "Archive"
         """
-
         # convert /foo/bar/spam/download/EyePointS1/all.zip to EyePointS1/all.zip
         path_short = join_path(*path.split(sep)[-2:])
 
-        return ArchiveInfo(
-            date.fromtimestamp(getmtime(path)),
-            urllib.quote(join_path(url_prefix, path_short)),
-        )
+        self.date = date.fromtimestamp(getmtime(path))
+        self.link = urllib.quote(join_path(url_prefix, path_short))
 
 
 def filter_files_inside_category(category_files: List[FileInfo], latest=True, lang=None) -> List[FileInfo]:
@@ -85,14 +76,14 @@ def filter_files(all_files, latest=True, lang=None) -> Dict[str, Dict[str, List[
     return filtered_dict
 
 
-def archive(software: Dict[str, List[FileInfo]], zip_path: str):
+def archive(software: Dict[str, List[FileInfo]], zip_path: str, lang: str):
     """
     Make archive with latest releases
     """
     z_file = zipfile.ZipFile(zip_path, "w")
 
     for category, files in software.items():
-        selected_files = filter_files_inside_category(files, latest=True, lang='ru')
+        selected_files = filter_files_inside_category(files, latest=True, lang=lang)
         for file in selected_files:
             z_file.write(file.full_path, join_path(category, file.basename))
 
@@ -125,11 +116,12 @@ def compare_latest_software(
 
 
 class FileManager:
-    _archive_name_format = "{product}_Full_software_package-{date}.zip"
+    _archive_name_format = "{product}_Full_software_package-{lang}-{date}.zip"
 
     @classmethod
-    def _archive_name(cls, product: str) -> str:
+    def _archive_name(cls, product: str, language: str) -> str:
         return cls._archive_name_format.format(product=product,
+                                               lang=language,
                                                date=date.today().strftime("%Y.%m.%d"))
 
     def __init__(self, timeout: int, directory: str, url_prefix: str):
@@ -144,7 +136,8 @@ class FileManager:
         self._directory = directory
         self._files = None
         self._loop = None
-        self._archives: Dict[str, ArchiveInfo] = dict()
+        self._languages = ['ru', 'en']
+        self._archives: Dict[str, Dict[str, ArchiveInfo]] = {lang: {} for lang in self._languages}
 
     @property
     def files(self):
@@ -182,32 +175,29 @@ class FileManager:
         self._files = new_files
         with ProcessPoolExecutor() as executor:
             for product, software in new_files.items():
-                archive_directory = join_path(self._directory, product)
-                archive_path = join_path(archive_directory, self._archive_name(product))
+                for lang in self._languages:
+                    archive_directory = join_path(self._directory, product)
+                    archive_path = join_path(archive_directory, self._archive_name(product, lang))
 
-                if (
-                        not old_files
-                        or not old_files.get(product)
-                        or not isfile(archive_path)
-                        or not compare_latest_software(
-                    old_files[product], new_files[product]
-                )
-                ):
-                    logging.debug("Update archive " + product)
-                    await self._loop.run_in_executor(executor, archive, software, archive_path)
+                    # TODO: Is this check actually work?
+                    if old_files and old_files.get(product) and isfile(archive_path) and \
+                            compare_latest_software(old_files[product], new_files[product]):
+                        continue
+
+                    logging.debug(f"Update {lang.upper()} archive for '{product}'")
+                    await self._loop.run_in_executor(executor, archive, software, archive_path, lang)
+                    self._archives[lang][product] = ArchiveInfo(archive_path, self._url_prefix)
 
                     # Remove other old archives
-                    for file in listdir(archive_directory):
-                        if file.endswith(".zip"):  # archive
-                            if basename(archive_path) != file:  # old archive
-                                try:
-                                    remove(join_path(archive_directory, file))
-                                except OSError as err:
-                                    logging.error(f"Unable to remove {file} {err}")
+                    latest_archive_names = [self._archive_name(product, lang) for lang in self._languages]
+                    files = glob.glob(archive_directory + "*.zip")
+                    files_to_remove = [file for file in files if basename(file) not in latest_archive_names]
 
-                    self._archives[product] = ArchiveInfo.fromfile(
-                        archive_path, self._url_prefix
-                    )
+                    for file in files_to_remove:
+                        try:
+                            remove(join_path(archive_directory, file))
+                        except OSError as err:
+                            logging.error(f"Unable to remove {file} {err}")
 
     async def _periodic_task(self):
         while True:

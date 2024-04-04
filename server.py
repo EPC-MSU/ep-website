@@ -110,7 +110,7 @@ async def download(request):
         "all_software": file_manager.files[product.name],
         "latest_releases": file_manager.releases(latest=True, lang=language)[product.name],
         "old_releases": file_manager.releases(latest=False, lang=language)[product.name],
-        "archive": file_manager.archives.get(product.name),
+        "archive": file_manager.archives[language][product.name],
         "archive_description": download_data.all_software,
         "version": download_data.version,
         "release_date": download_data.release_date,
