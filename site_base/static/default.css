@@ -72,7 +72,7 @@ text-decoration: none;
 /*********************************************************************************/
 
 .highlight {
-    background-image: url(/static/images/highlight.png);
+    background-image: url(/static/icons/highlight.png);
     background-repeat: no-repeat;
     background-size: contain;
     display: flex;

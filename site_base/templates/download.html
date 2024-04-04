@@ -11,7 +11,7 @@
 
         {% if product.picture|length < 2 %}
         <div class="epimage">
-            <img src="/static/images/{{product.picture[0] }}">
+            <img src="/images/{{product.picture[0] }}">
         </div>
         {% endif %}
 
@@ -19,7 +19,7 @@
         {% for picture in product.picture %}
         {% if count.a > 0 %}
         <div class="epimage">
-            <img src="/static/images/{{picture }}">
+            <img src="/images/{{picture }}">
         </div>
         {% endif %}
         {% set count.a = count.a + 1 %}

@@ -9,3 +9,4 @@ notes.txt
 /sites/*/download/download_sample.zip
 *.pem
 *.pyc
+*__pycache__*

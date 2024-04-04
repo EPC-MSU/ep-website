@@ -15,6 +15,7 @@ from translator.translator import all_languages, translator
 
 SITE_NAME = 'eyepoint'
 
+# Dynamic import modules for specific site
 download_data = importlib.import_module(f'sites.{SITE_NAME}.data.download')
 other_data = importlib.import_module(f'sites.{SITE_NAME}.data.other')
 products_module = importlib.import_module(f'sites.{SITE_NAME}.data.products')
@@ -84,8 +85,7 @@ async def index_loc(request):
         "intro": other_data.intro,
         "products": products,
         "technical": other_data.technical,
-        "more": other_data.more,
-        "site_name": SITE_NAME
+        "more": other_data.more
     }
 
 
@@ -128,17 +128,16 @@ async def download(request):
         "link": download_data.link,
         "download": download_data.download,
         "categories": download_data.categories,
-        'site_name': SITE_NAME
     }
 
 
-routes.static("/static", "view/static")
-routes.static(f"/sites/{SITE_NAME}/images", f"sites/{SITE_NAME}/images")
+routes.static("/static", "site_base/static")
+routes.static("/images", f"sites/{SITE_NAME}/images")
 
 
 def _app_factory() -> web.Application:
     app = web.Application()
-    aiohttp_jinja2.setup(app, loader=jinja2.FileSystemLoader("view/templates"))
+    aiohttp_jinja2.setup(app, loader=jinja2.FileSystemLoader("site_base/templates"))
 
     app.router.add_routes(routes)
 
