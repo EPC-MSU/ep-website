@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-26 15:44+0300\n"
-"PO-Revision-Date: 2024-03-27 14:56+0300\n"
+"PO-Revision-Date: 2024-04-04 17:52+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
-"X-Generator: Poedit 2.3.1\n"
+"X-Generator: Poedit 3.4.2\n"
 
 #: ../data/download.py:19
 msgid "Документация"
@@ -71,8 +71,8 @@ msgstr ""
 "Studio 2013. You can download them on this page."
 
 #: ../data/download.py:62
-msgid "Программное обеспечение eyepoint_s"
-msgstr "eyepoint_s software for PC"
+msgid "Программное обеспечение EyePoint S"
+msgstr "EyePoint S software for PC"
 
 #: ../data/download.py:65
 msgid ""
@@ -253,8 +253,8 @@ msgid "Россия, Москва, 119333<br>ул. Фотиевой, дом 5, �
 msgstr "Russia, Moscow, 119333<br>Fotievoy street 5, bldg. 1"
 
 #: ../data/other.py:20
-msgid "Подробнее"
-msgstr "More"
+msgid "Программное обеспечение"
+msgstr "Software for PC"
 
 #: ../data/other.py:22
 msgid "ООО «ЦИФ МГУ имени М.В. Ломоносова»"
@@ -393,7 +393,7 @@ msgstr "Minimum distance between test points: 0.4 mm"
 
 #: ../data/products.py:56 ../data/products.py:101 ../data/products.py:146
 msgid "Максимальное количество точек тестирования: 2500 шт."
-msgstr "Maximum number of test points: 2500 pcs"
+msgstr "Maximum number of test points: 2500 pcs."
 
 #: ../data/products.py:57 ../data/products.py:102 ../data/products.py:147
 msgid "Расположение выводов: произвольное"

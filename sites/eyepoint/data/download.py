@@ -59,7 +59,7 @@ categories = (
     ),
     SoftwareCategory(
         name="EyePointS_software",
-        friendly_name=_("Программное обеспечение eyepoint_s"),
+        friendly_name=_("Программное обеспечение EyePoint S"),
         icon="software.png",
         description=_(
             "Пользовательское программное обеспечение, аналогичное графическому "
