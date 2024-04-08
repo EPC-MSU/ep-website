@@ -129,13 +129,13 @@ async def download(request):
     }
 
 
-routes.static("/static", "site_base/static")
+routes.static("/static", "site_engine/static")
 routes.static("/images", f"sites/{SITE_NAME}/images")
 
 
 def _app_factory() -> web.Application:
     app = web.Application()
-    aiohttp_jinja2.setup(app, loader=jinja2.FileSystemLoader("site_base/templates"))
+    aiohttp_jinja2.setup(app, loader=jinja2.FileSystemLoader("site_engine/templates"))
 
     app.router.add_routes(routes)
 

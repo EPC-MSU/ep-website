@@ -1,12 +1,10 @@
 venv
 .idea
 notes.txt
-/locale/en_US/LC_MESSAGES/en.mo
-/locale/en_US/LC_MESSAGES/en.po.orig
-/locale/en_US/LC_MESSAGES/en.po~
-/locale/en_US/LC_MESSAGES/en.pot
 /sites/*/download/
 /sites/*/download/download_sample.zip
 *.pem
 *.pyc
+*.pot
+*.po.orig
 *__pycache__*
