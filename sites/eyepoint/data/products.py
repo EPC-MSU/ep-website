@@ -1,20 +1,5 @@
-from dataclasses import dataclass
-from functools import lru_cache
-from typing import List
-
+from site_engine.specification.product import Product
 from site_engine.translator.translator import _
-
-
-@dataclass
-class Product:
-    name: str
-    friendly_name: str
-    description: List[str]
-    extended_description: List[str]
-    picture: List[str]
-    technical: List[str]
-    highlights: List[str]
-
 
 products = (
     Product(
@@ -433,11 +418,4 @@ products = (
 )
 
 assert all([" " not in p.name for p in products])
-
-
-@lru_cache(maxsize=128)
-def product_by_name(name: str) -> Product:
-    for product in products:
-        if product.name == name:
-            return product
-    raise ValueError("No such product ", name)
+assert all([isinstance(p, Product) for p in products])

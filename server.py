@@ -10,6 +10,8 @@ from aiohttp import web
 from aiohttp.web_exceptions import HTTPNotFound
 import importlib
 
+import site_engine.specification.general as general
+from site_engine.specification.product import find_product_by_name
 from site_engine.filemanager import FileManager
 from site_engine.translator.translator import all_languages, translator
 
@@ -19,10 +21,9 @@ SITE_NAME = 'eyepoint'
 # Dynamic import modules for specific site
 download_data = importlib.import_module(f'sites.{SITE_NAME}.data.download')
 other_data = importlib.import_module(f'sites.{SITE_NAME}.data.other')
-products_module = importlib.import_module(f'sites.{SITE_NAME}.data.products')
+products_data = importlib.import_module(f'sites.{SITE_NAME}.data.products')
 
-product_by_name = getattr(products_module, 'product_by_name')
-products = getattr(products_module, 'products')
+products = getattr(products_data, 'products')
 
 
 file_manager = FileManager(600, f"sites/{SITE_NAME}/download", "/static/download")
@@ -58,8 +59,8 @@ def base_template(func):
         result = await func(request)
         # TODO: clearer names
         return {
-            "address": other_data.address,
-            "epc": other_data.epc,
+            "address": general.address,
+            "epc": general.epc,
             "description": other_data.description,
             "tags": other_data.tags,
             "title": other_data.title,
@@ -82,8 +83,8 @@ async def index_loc(request):
     return {
         "intro": other_data.intro,
         "products": products,
-        "technical": other_data.technical,
-        "more": other_data.more
+        "technical": general.technical,
+        "more": general.more
     }
 
 
@@ -108,7 +109,7 @@ async def robots(request):
 @aiohttp_jinja2.template("download.html")
 @base_template
 async def download(request):
-    product = product_by_name(request.match_info["product"])
+    product = find_product_by_name(products, request.match_info["product"])
     language = request.match_info["language"]
 
     # TODO: clearer names
@@ -118,14 +119,17 @@ async def download(request):
         "latest_releases": file_manager.releases(latest=True, lang=language)[product.name],
         "old_releases": file_manager.releases(latest=False, lang=language)[product.name],
         "archive": file_manager.archives[language][product.name],
+
         "archive_description": download_data.all_software,
-        "version": download_data.version,
-        "release_date": download_data.release_date,
-        "size": download_data.size,
-        "older_releases": download_data.older_releases,
-        "link": download_data.link,
-        "download": download_data.download,
         "categories": download_data.categories,
+
+        # Text labels
+        "link": general.link,
+        "size": general.size,
+        "version": general.version,
+        "download": general.download,
+        "release_date": general.release_date,
+        "older_releases": general.older_releases,
     }
 
 

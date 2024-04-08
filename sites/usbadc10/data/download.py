@@ -1,17 +1,5 @@
-from dataclasses import dataclass
-from functools import lru_cache
-from typing import Optional
-
+from site_engine.specification.software import SoftwareCategory
 from site_engine.translator.translator import _
-
-
-@dataclass
-class SoftwareCategory:
-    name: str
-    friendly_name: str
-    icon: str
-    description: Optional[str] = None
-
 
 categories = (
     SoftwareCategory(
@@ -139,15 +127,6 @@ all_software = SoftwareCategory(
     icon="software.png",
     description=_("Архив со всем софтом и документацией для этого продукта"),
 )
-
-
-@lru_cache(maxsize=128)
-def software_category_by_name(name: str) -> SoftwareCategory:
-    for category in categories:
-        if category.name == name:
-            return category
-    return SoftwareCategory(name=name, friendly_name=name, icon="software.png")
-
 
 version = _("Версия")
 release_date = _("Дата выпуска")
