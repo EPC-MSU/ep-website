@@ -6,5 +6,6 @@ notes.txt
 *.pem
 *.pyc
 *.pot
+*.po~
 *.po.orig
 *__pycache__*

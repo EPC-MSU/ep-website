@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-23 15:58+0300\n"
-"PO-Revision-Date: 2023-10-23 15:59+0300\n"
+"POT-Creation-Date: 2024-04-08 12:48+0300\n"
+"PO-Revision-Date: 2024-04-08 12:54+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -15,38 +15,85 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
-"X-Generator: Poedit 2.3.1\n"
+"X-Generator: Poedit 3.4.2\n"
 
-#: ../data/download.py:19
+#: ../site_engine/specification/general.py:3
+#: ../sites/usbadc10/data/download.py:131
+msgid "Версия"
+msgstr "Version"
+
+#: ../site_engine/specification/general.py:4
+#: ../sites/usbadc10/data/download.py:132
+msgid "Дата выпуска"
+msgstr "Release date"
+
+#: ../site_engine/specification/general.py:5
+#: ../sites/usbadc10/data/download.py:133
+msgid "Размер"
+msgstr "Size"
+
+#: ../site_engine/specification/general.py:6
+#: ../sites/usbadc10/data/download.py:134
+msgid "Ссылка"
+msgstr "Link"
+
+#: ../site_engine/specification/general.py:7
+#: ../sites/usbadc10/data/download.py:135
+msgid "Скачать"
+msgstr "Download"
+
+#: ../site_engine/specification/general.py:8
+#: ../sites/usbadc10/data/download.py:136
+msgid "Старые версии"
+msgstr "Older releases"
+
+#: ../site_engine/specification/general.py:11
+msgid "Технические данные"
+msgstr "Specifications"
+
+#: ../site_engine/specification/general.py:12
+msgid "Россия, Москва, 119333<br>ул. Фотиевой, дом 5, строение 1"
+msgstr "Russia, Moscow, 119333<br>Fotievoy street 5, bldg. 1"
+
+#: ../site_engine/specification/general.py:13
+#: ../sites/usbadc10/data/download.py:37
+msgid "Программное обеспечение"
+msgstr "Software for PC"
+
+#: ../site_engine/specification/general.py:14
+msgid "ООО «ЦИФ МГУ имени М.В. Ломоносова»"
+msgstr "Engineering Physics Center MSU"
+
+#: ../sites/usbadc10/data/download.py:7
 msgid "Документация"
 msgstr "Documentation"
 
-#: ../data/download.py:22
+#: ../sites/usbadc10/data/download.py:10
 msgid ""
 "Руководства пользователя, паспорт продукта и другая техническая документация."
 msgstr "User manual, product passport, etc."
 
-#: ../data/download.py:28
+#: ../sites/usbadc10/data/download.py:16
 msgid "Брошюры"
 msgstr "Datasheets"
 
-#: ../data/download.py:30
+#: ../sites/usbadc10/data/download.py:18
 msgid "Информация о продукте."
 msgstr "Product documentation."
 
-#: ../data/download.py:34
+#: ../sites/usbadc10/data/download.py:22
 msgid "Драйвер"
 msgstr "Driver"
 
-#: ../data/download.py:36
+#: ../sites/usbadc10/data/download.py:24
 msgid "Драйвер для ОС Windows (для ОС Linux драйвер не нужен)."
 msgstr "Driver for Windows (Linux does not need a driver)."
 
-#: ../data/download.py:40
+#: ../sites/usbadc10/data/download.py:28
 msgid "Прошивка"
 msgstr "Firmware"
 
-#: ../data/download.py:43
+#: ../sites/usbadc10/data/download.py:31
 msgid ""
 "Обновление прошивки осуществляется с помощью кроссплатформенного ПО "
 "EPCBootGUI (ссылка на скачивание на этой странице)."
@@ -54,11 +101,7 @@ msgstr ""
 "Firmware updates are performed using EPCBootGUI cross-platform SOFTWARE "
 "(download link on this page)."
 
-#: ../data/download.py:49 ../data/other.py:13
-msgid "Программное обеспечение"
-msgstr "Software for PC"
-
-#: ../data/download.py:52
+#: ../sites/usbadc10/data/download.py:40
 msgid ""
 "Пользовательское программное обеспечение для получения зависимостей "
 "напряжения от времени с помощью многоканальных АЦП usbadc10. Для работы ПО "
@@ -69,11 +112,11 @@ msgstr ""
 "multi-channel ADCs. For the software to work, you will need a driver. You "
 "can download it on this page along with the program."
 
-#: ../data/download.py:59
+#: ../sites/usbadc10/data/download.py:47
 msgid "uRPC Debugger"
 msgstr "uRPC Debugger"
 
-#: ../data/download.py:62
+#: ../sites/usbadc10/data/download.py:50
 msgid ""
 "Кроссплатформенное ПО с графическим интерфейсом для отладки usbadc10. Данное "
 "ПО позволяет вручную вызывать команды управления. Формирование и разбор "
@@ -87,19 +130,19 @@ msgstr ""
 "is distributed as binary files and as source code. To run on Windows "
 "requires a driver."
 
-#: ../data/download.py:72
+#: ../sites/usbadc10/data/download.py:60
 msgid "EPCBoot GUI"
 msgstr "EPCBoot GUI"
 
-#: ../data/download.py:75
+#: ../sites/usbadc10/data/download.py:63
 msgid "Кроссплатформенное ПО для обновления прошивок в устройствах usbadc10. "
 msgstr "Cross-platform software for firmware updates in usbadc10 devices. "
 
-#: ../data/download.py:80
+#: ../sites/usbadc10/data/download.py:68
 msgid "Прошивка встроенного компьютера"
 msgstr "Firmware of the embedded computer"
 
-#: ../data/download.py:83
+#: ../sites/usbadc10/data/download.py:71
 msgid ""
 "Образы встроенной операционной системы для устройств серии EyePoint S. "
 "Обновление образа осуществляется посредством записи на SD карту. Более "
@@ -113,11 +156,11 @@ msgstr ""
 "Disk Imager (you can download it from the official website or from this "
 "page)."
 
-#: ../data/download.py:93
+#: ../sites/usbadc10/data/download.py:81
 msgid "Описание библиотеки для программного управления"
 msgstr "Description of the software management library"
 
-#: ../data/download.py:96
+#: ../sites/usbadc10/data/download.py:84
 msgid ""
 "Документация к библиотеке usbadc10, которая может быть использована для "
 "взаимодействия с устройством. Саму библиотеку можно скачать на этой странице."
@@ -125,11 +168,11 @@ msgstr ""
 "Documentation for the usbadc10 library that can be used to interact with the "
 "device. The library itself can be downloaded on this page."
 
-#: ../data/download.py:103
+#: ../sites/usbadc10/data/download.py:91
 msgid "Стороннее вспомогательное ПО"
 msgstr "Third-party support software"
 
-#: ../data/download.py:106
+#: ../sites/usbadc10/data/download.py:94
 msgid ""
 "Дополнительное стороннее программное обеспечение, которое может "
 "потребоваться при работе с устройствами usbadc10."
@@ -137,11 +180,11 @@ msgstr ""
 "Additional third-party software that may be required when working with "
 "usbadc10 devices."
 
-#: ../data/download.py:112
+#: ../sites/usbadc10/data/download.py:100
 msgid "Библиотека для программного управления"
 msgstr "Library for software management"
 
-#: ../data/download.py:115
+#: ../sites/usbadc10/data/download.py:103
 msgid ""
 "Кроссплатформенная библиотека для работы с многоканальным usbadc10. "
 "Библиотека написана на языке C, распространяется в виде бинарных файлов "
@@ -152,11 +195,11 @@ msgstr ""
 "is written in C, distributed as binary files (win64 and debian) and as "
 "source code. Library documentation can be downloaded separately on this page."
 
-#: ../data/download.py:124
+#: ../sites/usbadc10/data/download.py:112
 msgid "Примеры использования API и биндинги для Python и C#"
 msgstr "Examples of using the API and bindings for Python and C#"
 
-#: ../data/download.py:127
+#: ../sites/usbadc10/data/download.py:115
 msgid ""
 "Комплект примеров программного кода на языках C и Python, реализующего "
 "простые считывания оцифрованных данных с устройства usbadc10. Также в данном "
@@ -166,35 +209,21 @@ msgstr ""
 "digitized data from a usbadc10 device. You can also find bindings for Python "
 "and C# in this archive."
 
-#: ../data/download.py:138
-msgid "Полный комплект программного обеспечения"
+#: ../sites/usbadc10/data/download.py:126
+msgid "Скачать полный комплект программного обеспечения"
 msgstr "Full software package"
 
-#: ../data/download.py:140
+#: ../sites/usbadc10/data/download.py:128
 msgid "Архив со всем софтом и документацией для этого продукта"
 msgstr "Archive with all software and documentation for this product"
 
-#: ../data/download.py:152
-msgid "Версия"
-msgstr "Version"
+# msgid "EyePoint, диагностика электронных схем, анализ неисправностей, ЦИФ МГУ"
+# msgstr ""
+#: ../sites/usbadc10/data/other.py:4
+msgid "usbadc10, аналого-цифровой преобразователь"
+msgstr "usbadc10, analog to digital converter"
 
-#: ../data/download.py:153
-msgid "Дата выпуска"
-msgstr "Release date"
-
-#: ../data/download.py:154
-msgid "Размер"
-msgstr "Size"
-
-#: ../data/download.py:155
-msgid "Ссылка"
-msgstr "Link"
-
-#: ../data/download.py:156
-msgid "Скачать"
-msgstr "Download"
-
-#: ../data/other.py:4
+#: ../sites/usbadc10/data/other.py:7
 msgid ""
 "<b>usbadc10</b> — устройство, преобразующее входной аналоговый сигнал в "
 "дискретный код, включает в себя 10 каналов 12-битного АЦП, выведенных на "
@@ -206,19 +235,7 @@ msgstr ""
 "an STM32 microcontroller and a USB interface that supplies power and reads "
 "digitized data. "
 
-#: ../data/other.py:9
-msgid "Технические данные"
-msgstr "Specifications"
-
-#: ../data/other.py:11
-msgid "Россия, Москва, 119333<br>ул. Фотиевой, дом 5, строение 1"
-msgstr "Russia, Moscow, 119333<br>Fotievoy street 5, bldg. 1"
-
-#: ../data/other.py:15
-msgid "ООО «ЦИФ МГУ имени М.В. Ломоносова»"
-msgstr "Engineering Physics Center MSU"
-
-#: ../data/other.py:18
+#: ../sites/usbadc10/data/other.py:12
 msgid ""
 "usbadc10 - устройство, преобразующее входной аналоговый сигнал в дискретный "
 "код.Частота преобразования usbadc10 - до 4000 отсчтетов в секунду, "
@@ -229,27 +246,25 @@ msgstr ""
 "microcontroller and a USB interface that supplies power and reads digitized "
 "data."
 
-#: ../data/other.py:23
+#: ../sites/usbadc10/data/other.py:16
 msgid ""
 "EyePoint, usbadc10, диагностика электронных схем, анализ неисправностей, "
 "аналого-цифровой преобразователь, ЦИФ МГУ"
 msgstr "EyePoint, usbadc10, localizing faulty components, EPC MSU"
 
-# msgid "EyePoint, диагностика электронных схем, анализ неисправностей, ЦИФ МГУ"
-# msgstr ""
-#: ../data/other.py:27
-msgid "usbadc10, аналого-цифровой преобразователь"
-msgstr "usbadc10, analog to digital converter"
-
-#: ../data/products.py:25
+#: ../sites/usbadc10/data/products.py:7
 msgid "usbadc10 v1.0.0"
 msgstr "usbadc10 v1.0.0"
 
-#: ../data/products.py:28
+#: ../sites/usbadc10/data/products.py:9
+msgid "UALab.png"
+msgstr ""
+
+#: ../sites/usbadc10/data/products.py:12
 msgid "Аналого-цифровой преобразователь"
 msgstr "Analog to digital converter"
 
-#: ../data/products.py:30
+#: ../sites/usbadc10/data/products.py:15
 msgid ""
 "Аналого-цифровой преобразователь usbadc10 имеет частоту до 4000 отсчётов в "
 "секунду, одновременно по всем каналам. В комплекте с устройством "
@@ -263,43 +278,43 @@ msgstr ""
 "Windows and Linux. All the necessary <b>software</b> can be found in the "
 "public domain. "
 
-#: ../data/products.py:61
+#: ../sites/usbadc10/data/products.py:21
 msgid "10 каналов"
 msgstr "10 channels"
 
-#: ../data/products.py:62
+#: ../sites/usbadc10/data/products.py:22
 msgid "кроссплатфор-менный GUI"
 msgstr "cross-platform GUI"
 
-#: ../data/products.py:64
+#: ../sites/usbadc10/data/products.py:24
 msgid "USB Type-C"
 msgstr "USB Type-C"
 
-#: ../data/products.py:67
+#: ../sites/usbadc10/data/products.py:27
 msgid "Диапазон входного напряжения - 0 - 3.3 В"
 msgstr "Input voltage range - 0 - 3.3 V"
 
-#: ../data/products.py:68
+#: ../sites/usbadc10/data/products.py:28
 msgid "Разрешение - 0.8 мВ"
 msgstr "Resolution - 0.8 mV"
 
-#: ../data/products.py:69
+#: ../sites/usbadc10/data/products.py:29
 msgid "Разрядность АЦП - 12-bit"
 msgstr "12-bit ADC"
 
-#: ../data/products.py:70
+#: ../sites/usbadc10/data/products.py:30
 msgid "Поддержка ОС: Windows, Linux"
 msgstr "OS support: Windows, Linux"
 
-#: ../data/products.py:71
+#: ../sites/usbadc10/data/products.py:31
 msgid "Разъем подключения - USB type C"
 msgstr "Connector - USB type C"
 
-#: ../data/products.py:72
+#: ../sites/usbadc10/data/products.py:32
 msgid "Скорость передачи данных - USB Full-Speed"
 msgstr "Data transfer rate - USB Full-Speed"
 
-#: ../data/products.py:73
+#: ../sites/usbadc10/data/products.py:33
 msgid "До 4000 выборок в секунду одновременно по всем каналам"
 msgstr "Up to 4000 samples per second simultaneously on all channels"
 
