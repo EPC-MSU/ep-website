@@ -2,7 +2,7 @@ from dataclasses import dataclass
 from functools import lru_cache
 from typing import Optional
 
-from translator.translator import _
+from site_engine.translator.translator import _
 
 
 @dataclass

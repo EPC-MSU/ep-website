@@ -1,4 +1,4 @@
-from translator.translator import _
+from site_engine.translator.translator import _
 
 intro = _(
     "<b>EyePoint</b> – системы для локализации неисправных электронных компонентов на печатных платах, "

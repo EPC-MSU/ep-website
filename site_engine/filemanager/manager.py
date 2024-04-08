@@ -9,7 +9,7 @@ from os.path import getmtime, sep, join as join_path, basename, isfile
 from os import remove
 from typing import Dict, List, Optional
 
-from filemanager.walker.walk import FileInfo, walk
+from site_engine.filemanager.walker.walk import FileInfo, walk
 
 
 class ArchiveInfo:

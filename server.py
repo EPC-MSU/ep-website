@@ -10,8 +10,8 @@ from aiohttp import web
 from aiohttp.web_exceptions import HTTPNotFound
 import importlib
 
-from filemanager import FileManager
-from translator.translator import all_languages, translator
+from site_engine.filemanager import FileManager
+from site_engine.translator.translator import all_languages, translator
 
 SITE_NAME = 'eyepoint'
 # SITE_NAME = 'usbadc10'

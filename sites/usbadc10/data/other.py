@@ -1,4 +1,4 @@
-from translator.translator import _
+from site_engine.translator.translator import _
 
 intro = _(
     "<b>usbadc10</b> — устройство, преобразующее входной аналоговый сигнал в дискретный код, включает в себя "

@@ -11,7 +11,7 @@ from typing import Dict, List, Optional
 
 import imohash
 
-from translator import all_languages
+from site_engine.translator import all_languages
 
 
 @dataclass
