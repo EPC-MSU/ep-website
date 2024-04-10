@@ -15,18 +15,6 @@ from site_engine.specification.product import find_product_by_name
 from site_engine.filemanager import FileManager
 from site_engine.translator.translator import all_languages, translator
 
-SITE_NAME = 'eyepoint'
-# SITE_NAME = 'usbadc10'
-
-# Dynamic import modules for specific site
-download_data = importlib.import_module(f'sites.{SITE_NAME}.data.download')
-other_data = importlib.import_module(f'sites.{SITE_NAME}.data.other')
-products_data = importlib.import_module(f'sites.{SITE_NAME}.data.products')
-
-products = getattr(products_data, 'products')
-
-
-file_manager = FileManager(600, f"sites/{SITE_NAME}/download", "/static/download")
 
 routes = web.RouteTableDef()
 
@@ -35,7 +23,7 @@ def translatable_template(func):
     async def handler(request):
         language = request.match_info.get("language", "ru")
         try:
-            tr = translator(language)
+            tr = translator(args.site, language)
         except ValueError:  # No such language
             raise HTTPNotFound()
 
@@ -133,8 +121,7 @@ async def download(request):
     }
 
 
-routes.static("/static", "site_engine/static")
-routes.static("/images", f"sites/{SITE_NAME}/images")
+
 
 
 def _app_factory() -> web.Application:
@@ -159,15 +146,27 @@ async def main():
     file_manager.start_refresh()
 
     http_server_coro = (await _server_factory()).start()
-    asyncio.create_task(http_server_coro)
+    await asyncio.create_task(http_server_coro)
 
 
 if __name__ == "__main__":
     parser = ArgumentParser("EyePoint server")
-    # TODO: robots.txt for unstable version
-    parser.add_argument("--debug", help="Run with debug logging", action="store_true")
-    if parser.parse_args().debug:
+    parser.add_argument("--site", type=str, help="Site folder name (e.g. 'usbadc10')",  required=True)
+    parser.add_argument("--debug", action="store_true", help="Run with debug logging")
+    args = parser.parse_args()
+    if args.debug:
         logging.basicConfig(level=logging.DEBUG)
+
+    # Dynamic import modules by site name
+    download_data = importlib.import_module(f'sites.{args.site}.data.download')
+    other_data = importlib.import_module(f'sites.{args.site}.data.other')
+    products_data = importlib.import_module(f'sites.{args.site}.data.products')
+    products = getattr(products_data, 'products')
+
+    file_manager = FileManager(600, f"sites/{args.site}/download", "/static/download")
+
+    routes.static("/static", "site_engine/static")
+    routes.static("/images", f"sites/{args.site}/images")
 
     loop = asyncio.get_event_loop()
     loop.run_until_complete(main())

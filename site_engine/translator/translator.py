@@ -8,17 +8,16 @@ def _(x: str) -> str:  # dummy translator for .pot auto-generator
     return x
 
 
-_translators = {
-    "ru": _,
-    "en": gettext.translation("en", localedir="sites/eyepoint/locale", languages=["en"]).gettext,
-}
-
-
-def translator(lang: str) -> Callable[[str], str]:
+def translator(site: str, lang: str) -> Callable[[str], str]:
     if not lang:
         return _
 
     if lang not in all_languages:
         raise ValueError("No such language")
+
+    _translators = {
+        "ru": _,
+        "en": gettext.translation("en", localedir=f"sites/{site}/locale", languages=["en"]).gettext,
+    }
 
     return _translators[lang]

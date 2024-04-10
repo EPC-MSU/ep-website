@@ -204,6 +204,7 @@ class FileManager:
                 logging.debug("Refresh file list...")
                 await self._refresh()
                 logging.debug("Refresh file list done.")
+                logging.debug("Site ready on http://localhost:8080")
             except Exception as err:
                 logging.error("Exception caught during file refresh: " + str(err))
             await asyncio.sleep(self._timeout)
