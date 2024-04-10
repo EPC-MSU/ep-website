@@ -15,4 +15,3 @@ def find_software_category_by_name(categories: Tuple[SoftwareCategory], name: st
         if category.name == name:
             return category
     return SoftwareCategory(name=name, friendly_name=name, icon="software.png")
-
