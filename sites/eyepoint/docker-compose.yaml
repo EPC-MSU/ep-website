@@ -5,7 +5,7 @@ services:
   eyepoint-ep-website:
     build:
       context: ../../ # Repository directory
-      dockerfile: ./Dockerfile
+      dockerfile: ./sites/eyepoint/Dockerfile
     container_name: eyepoint-ep-website
     ports:
       - "8080:8080"

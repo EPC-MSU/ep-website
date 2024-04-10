@@ -5,7 +5,7 @@ services:
   usbadc10-ep-website:
     build:
       context: ../../ # Repository directory
-      dockerfile: ./Dockerfile
+      dockerfile: ./sites/usbadc10/Dockerfile
     container_name: usbadc10-ep-website
     ports:
       - "8080:8080"
