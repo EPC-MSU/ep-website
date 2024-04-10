@@ -1,0 +1,11 @@
+# Server example
+
+# Webserver
+services:
+  epwebserver:
+    build:
+      context: ../../ # Repository directory
+      dockerfile: ./Dockerfile
+    container_name: epwebserver
+    ports:
+      - "8080:8080"
