@@ -2,12 +2,12 @@
 
 # Webserver
 services:
-  eyepoint-ep-website:
+  usbadc10-ep-website:
     build:
       context: ../../ # Repository directory
       dockerfile: ./Dockerfile
-    container_name: eyepoint-ep-website
+    container_name: usbadc10-ep-website
     ports:
       - "8080:8080"
     volumes:
-      - ./download:/app/sites/eyepoint/download
+      - ./download:/app/sites/usbadc10/download
