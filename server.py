@@ -156,6 +156,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
     if args.debug:
         logging.basicConfig(level=logging.DEBUG)
+        logging.debug(str(args))
 
     # Dynamic import modules by site name
     download_data = importlib.import_module(f'sites.{args.site}.data.download')
