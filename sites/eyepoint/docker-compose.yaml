@@ -10,4 +10,15 @@ services:
     ports:
       - "8080:8080"
     volumes:
-      - ./download:/app/sites/eyepoint/download
+      - epwebdrive:/app/sites/eyepoint/download
+
+  epwebshare:
+    build: ../../dockershare
+    container_name: epwebshare
+    ports:
+      - "5000:22"
+    volumes:
+      - epwebdrive:/drive
+
+volumes:
+  epwebdrive:

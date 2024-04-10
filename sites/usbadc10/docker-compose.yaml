@@ -10,4 +10,15 @@ services:
     ports:
       - "8080:8080"
     volumes:
-      - ./download:/app/sites/usbadc10/download
+      - epwebdrive:/app/sites/usbadc10/download
+
+  epwebshare:
+    build: ../../dockershare
+    container_name: epwebshare
+    ports:
+      - "5000:22"
+    volumes:
+      - epwebdrive:/drive
+
+volumes:
+  epwebdrive:
