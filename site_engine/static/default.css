@@ -441,16 +441,7 @@ hr {
 /* Download all button                                                           */
 /*********************************************************************************/
 
-.download-all-block {
-    display: flex;
-    flex-direction: column;
-    background: linear-gradient(to bottom, #4ca13b 50%, rgba(67, 142, 52, 1) 50%);
-    border-radius: 1em;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-}
-
+/*
 .download-all-block {
     display: flex;
     flex-direction: column;
@@ -463,23 +454,51 @@ hr {
 .download-all-block:hover {
     display: flex;
     flex-direction: column;
-    /*background: linear-gradient(to bottom, rgba(85, 180, 66, 1) 50%, #4ca13b 50%);*/
     background: rgb(156, 206, 134);
     cursor: pointer;
 }
 
 .download-all-friendly-name {
-  /*color: rgb(102, 138, 75);*/
-  /*color: #fff;*/
   color: #555;
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-top: 0.4em;
+}
+
+.download-all-description {
+    color: #777;
+    margin-bottom: 1em;
+}
+*/
+
+/*=================================*/
+
+.download-all-block {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #4ca13b 50%, rgba(67, 142, 52, 1) 50%);
+    border-radius: 1em;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.download-all-block:hover {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, rgba(85, 180, 66, 1) 50%, #4ca13b 50%);
+    cursor: pointer;
+}
+
+.download-all-friendly-name {
+  color: #fff;
   font-size: 1.5em;
   font-weight: 300;
   margin-top: 0.4em;
 }
 
 .download-all-description {
-    /*color: #fff;*/
-    color: #777;
+    color: #fff;
     margin-bottom: 1em;
 }
 
