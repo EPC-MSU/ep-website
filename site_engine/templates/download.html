@@ -29,14 +29,18 @@
 
 <!--Full software kit-->
 {% if archive %}
-<div class="download-header-block">
-    <a id="download-sdk" href="{{ archive.link }}"> {{ tr(archive_description.friendly_name) }} </a>
+<a href="{{ archive.link }}">
+<div class="download-all-block">
+    <div class="download-all-friendly-name">
+        {{ tr(archive_description.friendly_name) }}
+    </div>
+    {% if archive_description.description %}
+        <div class="download-all-description">
+            {{ tr(archive_description.description) | safe }}
+        </div>
+    {% endif %}
 </div>
-{% if archive_description.description %}
-<div class="download-text">
-    {{ tr(archive_description.description) | safe }}
-</div>
-{% endif %}
+</a>
 {% endif %}
 
 
