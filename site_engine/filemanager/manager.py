@@ -184,7 +184,7 @@ class FileManager:
                             compare_latest_software(old_files[product], new_files[product]):
                         continue
 
-                    logging.debug(f"Update {lang.upper()} archive for '{product}'")
+                    logging.info(f"Update {lang.upper()} archive for '{product}'")
                     await self._loop.run_in_executor(executor, archive, software, archive_path, lang)
                     self._archives[lang][product] = ArchiveInfo(archive_path, self._url_prefix)
 
@@ -201,10 +201,10 @@ class FileManager:
     async def _periodic_task(self):
         while True:
             try:
-                logging.debug("Refresh file list...")
+                logging.info("Refresh file list...")
                 await self._refresh()
-                logging.debug("Refresh file list done.")
-                logging.debug("Site ready on http://localhost:8080")
+                logging.info("Refresh file list done.")
+                logging.info("Site ready on http://localhost:8080")
             except Exception as err:
                 logging.error("Exception caught during file refresh: " + str(err))
             await asyncio.sleep(self._timeout)

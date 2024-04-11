@@ -15,7 +15,7 @@ from site_engine.specification.product import find_product_by_name
 from site_engine.filemanager import FileManager
 from site_engine.translator.translator import all_languages, translator
 
-
+logging.basicConfig(level=logging.DEBUG)
 routes = web.RouteTableDef()
 
 
@@ -150,13 +150,12 @@ async def main():
 
 
 if __name__ == "__main__":
+
     parser = ArgumentParser("EyePoint server")
     parser.add_argument("--site", type=str, help="Site folder name (e.g. 'usbadc10')",  required=True)
-    parser.add_argument("--debug", action="store_true", help="Run with debug logging")
     args = parser.parse_args()
-    if args.debug:
-        logging.basicConfig(level=logging.DEBUG)
-        logging.debug(str(args))
+
+    logging.info(f"Arguments: {args}")
 
     # Dynamic import modules by site name
     download_data = importlib.import_module(f'sites.{args.site}.data.download')

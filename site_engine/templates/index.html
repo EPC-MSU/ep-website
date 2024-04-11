@@ -3,13 +3,13 @@
 {% block content %}
 
 <div id="intro-container">
-	<img id="intro-image" src="/images/main_page_top_image.png"/>
+	<img draggable="false" id="intro-image" src="/images/main_page_top_image.png"/>
 	<div id="intro-text">
 		{{ tr(intro) | safe}}
 	</div>
 </div>
 
-<img id="epsystems" src="/images/EPsystems{{lang}}.png">
+<img draggable="false" id="epsystems" src="/images/EPsystems{{lang}}.png">
 
 <div style="clear:both;"></div>
 
@@ -17,12 +17,15 @@
 <hr/>
 
 <div class="epmain">
-	<a href="product/{{ product.name }}/" class="epimage_index">
+
 	<div>
 		<div class="epimage_index">
-			<img src="/images/{{ product.picture[0] }}">
+			<a href="product/{{ product.name }}/" title="dggddg" class="epimage_index">
+				<img draggable="false" src="/images/{{ product.picture[0] }}">
+			</a>
 		</div>
 	</div>
+
 	<div class="epdescription">
 		<a href="product/{{ product.name }}/" class="index-h3">{{ tr(product.friendly_name) }}</a>
 		<br>
@@ -44,7 +47,7 @@
 
 {% endfor %}
 
-<img id="our_partners_image" src="/images/our_partners{{lang}}.jpg">
+<img draggable="false" id="our_partners_image" src="/images/our_partners{{lang}}.jpg">
 
 <div style="clear:both;"></div>
 <hr/>
@@ -52,7 +55,9 @@
 <div class="parters">
 	<div class="chipdip">
 		<div id="our_partners_chipdip">
-			<a href="https://www.chipdip.ru/"><img id="chipdip" src="/images/chipdip.jpg"></a>
+			<a href="https://www.chipdip.ru/">
+				<img draggable="false" id="chipdip" src="/images/chipdip.jpg">
+			</a>
 		</div>
 		<div id="chipdip_mail">
 			<p>sales@chipdip.ru</p>
@@ -64,7 +69,9 @@
 	</div>
 	<div class="ostec">
 		<div id="our_partners_ostec">
-			<a href="https://ostec-group.ru/"><img id="ostec" src="/images/ostec.jpg"></a>
+			<a href="https://ostec-group.ru/">
+				<img draggable="false" id="ostec" src="/images/ostec.jpg">
+			</a>
 		</div>
 		<div id="ostec_mail">
 			<p>ostecelectro@ostec-group.ru</p>
