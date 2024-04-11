@@ -7,24 +7,9 @@
 <!--Product description-->
 <div class="epmain" id="download-page-intro">
     <div>
-        {% set count = namespace(a = 0) %}
-
-        {% if product.picture|length < 2 %}
         <div class="epimage">
-            <img draggable="false" src="/images/{{product.picture[0] }}">
+            <img draggable="false" src="/images/{{product.picture[0] }}" alt="Product picture">
         </div>
-        {% endif %}
-
-        {% if product.picture|length > 1 %}
-        {% for picture in product.picture %}
-        {% if count.a > 0 %}
-        <div class="epimage">
-            <img draggable="false" src="/images/{{picture }}">
-        </div>
-        {% endif %}
-        {% set count.a = count.a + 1 %}
-        {% endfor %}
-        {% endif %}
     </div>
     <div class="epdescription">
         {% for extended_description in product.extended_description %}
@@ -34,7 +19,9 @@
         {% endfor %}
         <div class="highlight-container">
             {% for highlight in product.highlights %}
-            <div class="highlight">{{ tr(highlight) }}</div>
+            <div class="highlight">
+                {{ tr(highlight) }}
+            </div>
             {% endfor %}
         </div>
     </div>
@@ -58,7 +45,7 @@
 {% for category in categories if category.name in all_software %}
 {% if latest_releases[category.name] %}
 <div class="download-header-block">
-    <img draggable="false" src="/static/icons/{{ category.icon }}">
+    <img draggable="false" src="/static/icons/{{ category.icon }}" alt="Category icon">
     <h3 class="download-h3"> {{ tr(category.friendly_name) }}</h3>
 </div>
 {% if category.description %}
