@@ -72,7 +72,7 @@ async def index_loc(request):
         "intro": other_data.intro,
         "products": products,
         "technical": general.technical,
-        "more": general.more
+        "more_button": general.more_button
     }
 
 

@@ -123,14 +123,7 @@ categories = (
 
 all_software = SoftwareCategory(
     name="all",
-    friendly_name=_("Скачать полный комплект программного обеспечения"),
+    friendly_name=_("Комплект последних версий программного обеспечения"),
     icon="software.png",
-    description=_("Архив со всем софтом и документацией для этого продукта"),
+    description=_("Архив со всем свежим софтом и документацией для этого продукта"),
 )
-
-version = _("Версия")
-release_date = _("Дата выпуска")
-size = _("Размер")
-link = _("Ссылка")
-download = _("Скачать")
-older_releases =_('Старые версии')

@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-08 12:48+0300\n"
-"PO-Revision-Date: 2024-04-08 12:54+0300\n"
+"POT-Creation-Date: 2024-04-11 16:18+0300\n"
+"PO-Revision-Date: 2024-04-11 16:21+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -18,32 +18,26 @@ msgstr ""
 "X-Generator: Poedit 3.4.2\n"
 
 #: ../site_engine/specification/general.py:3
-#: ../sites/usbadc10/data/download.py:131
 msgid "Версия"
 msgstr "Version"
 
 #: ../site_engine/specification/general.py:4
-#: ../sites/usbadc10/data/download.py:132
 msgid "Дата выпуска"
 msgstr "Release date"
 
 #: ../site_engine/specification/general.py:5
-#: ../sites/usbadc10/data/download.py:133
 msgid "Размер"
 msgstr "Size"
 
 #: ../site_engine/specification/general.py:6
-#: ../sites/usbadc10/data/download.py:134
 msgid "Ссылка"
 msgstr "Link"
 
 #: ../site_engine/specification/general.py:7
-#: ../sites/usbadc10/data/download.py:135
 msgid "Скачать"
 msgstr "Download"
 
 #: ../site_engine/specification/general.py:8
-#: ../sites/usbadc10/data/download.py:136
 msgid "Старые версии"
 msgstr "Older releases"
 
@@ -56,9 +50,8 @@ msgid "Россия, Москва, 119333<br>ул. Фотиевой, дом 5, �
 msgstr "Russia, Moscow, 119333<br>Fotievoy street 5, bldg. 1"
 
 #: ../site_engine/specification/general.py:13
-#: ../sites/usbadc10/data/download.py:37
-msgid "Программное обеспечение"
-msgstr "Software for PC"
+msgid "Подробнее"
+msgstr "More"
 
 #: ../site_engine/specification/general.py:14
 msgid "ООО «ЦИФ МГУ имени М.В. Ломоносова»"
@@ -100,6 +93,10 @@ msgid ""
 msgstr ""
 "Firmware updates are performed using EPCBootGUI cross-platform SOFTWARE "
 "(download link on this page)."
+
+#: ../sites/usbadc10/data/download.py:37
+msgid "Программное обеспечение"
+msgstr "Software for PC"
 
 #: ../sites/usbadc10/data/download.py:40
 msgid ""
@@ -210,12 +207,12 @@ msgstr ""
 "and C# in this archive."
 
 #: ../sites/usbadc10/data/download.py:126
-msgid "Скачать полный комплект программного обеспечения"
-msgstr "Full software package"
+msgid "Комплект последних версий программного обеспечения"
+msgstr "Latest software package"
 
 #: ../sites/usbadc10/data/download.py:128
-msgid "Архив со всем софтом и документацией для этого продукта"
-msgstr "Archive with all software and documentation for this product"
+msgid "Архив со всем свежим софтом и документацией для этого продукта"
+msgstr "Archive with all latest software and documentation for this product"
 
 # msgid "EyePoint, диагностика электронных схем, анализ неисправностей, ЦИФ МГУ"
 # msgstr ""
@@ -353,9 +350,6 @@ msgstr "Up to 4000 samples per second simultaneously on all channels"
 #~ "PC software for obtaining voltage-time dependences using multichannel ADC "
 #~ "USBADC10. You will need a driver to run the software. You can download it "
 #~ "on this page along with the program."
-
-#~ msgid "Подробнее"
-#~ msgstr "More"
 
 #~ msgid ""
 #~ "EyePoint - линейка простого и функционального оборудования для "
