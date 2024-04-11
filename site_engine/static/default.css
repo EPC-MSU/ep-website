@@ -257,6 +257,10 @@ text-decoration: none;
     text-align: right;
 }
 
+.button:hover{
+    background: #4d9e0d;
+}
+
 .button:before {
 	display: inline-block;
 	background: #FFC31F;
@@ -441,52 +445,19 @@ hr {
 /* Download all button                                                           */
 /*********************************************************************************/
 
-/*
-.download-all-block {
-    display: flex;
-    flex-direction: column;
-    background: rgb(186, 226, 154);
-    border-radius: 1em;
-    align-items: center;
-    justify-content: center;
-}
-
-.download-all-block:hover {
-    display: flex;
-    flex-direction: column;
-    background: rgb(156, 206, 134);
-    cursor: pointer;
-}
-
-.download-all-friendly-name {
-  color: #555;
-  font-size: 1.5em;
-  font-weight: 600;
-  margin-top: 0.4em;
-}
-
-.download-all-description {
-    color: #777;
-    margin-bottom: 1em;
-}
-*/
-
-/*=================================*/
 .download-all-block {
     display: flex;
     flex-direction: row;
     color: #666;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin-top: 1em;
-    background: rgb(186, 226, 154);
-    border-radius: 15px;
+    margin-bottom: 1.5em;
 }
 
 .download-all-button {
     display: flex;
-    border-radius: 15px;
-    padding: 0em 2em 0em 2em;
-    flex-direction: column;
+    padding: 0em 1.6em 0em 1.4em;
+    flex-direction: row;
     background: linear-gradient(to bottom, #4ca13b 50%, rgba(67, 142, 52, 1) 50%);
     align-items: center;
     justify-content: center;
@@ -503,7 +474,7 @@ hr {
 }
 
 .download-all-text {
-    padding: 0.8em 0em 1em 1em;
+    padding: 0.1em 0em 0.1em 0.8em;
     color: #444;
     display: flex;
     justify-content: space-evenly;
@@ -514,13 +485,6 @@ hr {
   font-size: 1.5em;
   font-weight: 300;
 }
-
-/*
-.download-all-description {
-    margin-bottom: 1em;
-    margin-top: 0.2em;
-}
-*/
 
 /*********************************************************************************/
 /* Software download links                                                       */
