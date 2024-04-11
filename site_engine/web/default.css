@@ -9,7 +9,6 @@ body {
 	font-family: Verdana, "Geneva CY", "DejaVu Sans", sans-serif;
 	font-size: 12pt;
 	font-weight: 300;
-	color: rgba(255,255,255,0.8);
 	min-width: 1000px;
 }
 
@@ -34,6 +33,7 @@ p {
 summary {
     cursor: pointer;
 }
+
 a {
 text-decoration: none;
 }
@@ -100,75 +100,18 @@ text-decoration: none;
 /*********************************************************************************/
 /* EyePoint parters 
 /*********************************************************************************/
-#our_partners_chipdip {
-	padding: 1.5em 2em 0em 0em;
-	float: left;
-	margin-top: 1em;
-    margin-bottom: 1em;
-	overflow: auto;
-	/*width: 215px;
-	height: 398px;*/
+
+.partners {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-#chipdip_mail {
-	padding: 1.5em 0em 0em 0em;
-	color: rgba(6,6,6,6);
-	margin-top: 1em;
-    margin-bottom: 1em;
-	font-size: 1.3em;
-	
-}
-
-#chipdip_phone {
-	color: rgba(6,6,6,6);
-	margin-top: 1em;
-    margin-bottom: 1em;
-	font-size: 1.3em;	
-}
-	
-#our_partners_ostec {
-	padding: 1.5em 2em 0em 0em;
-	float: left;
-	margin-top: 1em;
-    margin-bottom: 1em;
-	/*margin-right: 30px;*/
-}
-
-#ostec_mail {
-	padding: 1.5em 0em 0em 0em;
-	color: rgba(6,6,6,6);
-	margin-top: 1em;
-    margin-bottom: 1em;
-	font-size: 1.3em;
-	
-}
-
-#ostec_phone {
-	color: rgba(6,6,6,6);
-	margin-top: 1em;
-    margin-bottom: 1em;
-	font-size: 1.3em;
-}
-
-#our_partners_image {
-	/*width: 40%;
-	height: 60px;*/
-	
-}
-
-.parters {
-	overflow: hidden;
-	margin-bottom: 2em;
-}
-
-.chipdip {
-	width: 50%;
-	float: left;
-}
-
-.ostec {
-	width: 50%;
-	float: left;
+.partner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 /*********************************************************************************/
@@ -366,17 +309,13 @@ hr {
 	text-align: center;
 }
 
-#menu li a, #menu li span {
+#menu li a, #menu li {
 	padding: 1em 1.5em;
 	letter-spacing: 0.10em;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-size: 0.90em;
 	color: #FFF;
-}
-
-#menu li:hover a, #menu li.active a, #menu li.active span {
-	
 }
 
 #menu .current_page_item a {
@@ -531,15 +470,6 @@ hr {
     font-size: 0.80em;
 }
 
-.footer-link {
-  color: inherit;
-  text-decoration: none;
-}
-
-
-/*********************************************************************************/
-/* Icons                                                                         */
-/*********************************************************************************/
 .footer-icon {
     width: 32px;
     height: 32px;
@@ -559,7 +489,8 @@ hr {
     padding-bottom: 1em;
 }
 
-.footer-multiline {
+.footer-text {
+    color: #fff;
     display: inline-block;
     vertical-align: middle;
 }
