@@ -480,6 +480,7 @@ hr {
     border-radius: 1em;
     align-items: center;
     justify-content: center;
+    margin-top: 1em;
     color: #fff;
 }
 
@@ -494,12 +495,14 @@ hr {
   color: #fff;
   font-size: 1.5em;
   font-weight: 300;
-  margin-top: 0.4em;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
 }
 
 .download-all-description {
     color: #fff;
     margin-bottom: 1em;
+    margin-top: 0.2em;
 }
 
 /*********************************************************************************/
