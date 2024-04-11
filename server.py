@@ -163,10 +163,10 @@ if __name__ == "__main__":
     products_data = importlib.import_module(f'sites.{args.site}.data.products')
     products = getattr(products_data, 'products')
 
-    file_manager = FileManager(600, f"sites/{args.site}/download", "/download/")
+    file_manager = FileManager(600, f"sites/{args.site}/download", "/static/download/")
 
-    routes.static("/static", "site_engine/static")
-    routes.static("/download", f"sites/{args.site}/download")
+    routes.static("/web", "site_engine/web")
+    routes.static("/static/download", f"sites/{args.site}/download")
     routes.static("/images", f"sites/{args.site}/images")
 
     loop = asyncio.get_event_loop()
