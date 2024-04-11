@@ -28,19 +28,25 @@
 </div>
 
 <!--Full software kit-->
+
+
+
 {% if archive %}
-<a href="{{ archive.link }}">
 <div class="download-all-block">
-    <div class="download-all-friendly-name">
-        {{ tr(archive_description.friendly_name) }}
-    </div>
-    {% if archive_description.description %}
-        <div class="download-all-description">
-            {{ tr(archive_description.description) | safe }}
+    <div class="download-all-text">
+        <div class="download-all-friendly-name">
+            {{ tr(archive_description.friendly_name) }}
         </div>
-    {% endif %}
+        {% if archive_description.description %}
+            <div class="download-all-description">
+                {{ tr(archive_description.description) | safe }}
+            </div>
+        {% endif %}
+    </div>
+    <a class="download-all-button" href="{{ archive.link }}">
+        <div class="download-all-button-text">{{ tr("Скачать") }}</div>
+    </a>
 </div>
-</a>
 {% endif %}
 
 

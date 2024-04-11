@@ -472,38 +472,55 @@ hr {
 */
 
 /*=================================*/
-
 .download-all-block {
     display: flex;
+    flex-direction: row;
+    color: #666;
+    justify-content: space-between;
+    margin-top: 1em;
+    background: rgb(186, 226, 154);
+    border-radius: 15px;
+}
+
+.download-all-button {
+    display: flex;
+    border-radius: 15px;
+    padding: 0em 2em 0em 2em;
     flex-direction: column;
     background: linear-gradient(to bottom, #4ca13b 50%, rgba(67, 142, 52, 1) 50%);
-    border-radius: 1em;
     align-items: center;
     justify-content: center;
-    margin-top: 1em;
+}
+
+.download-all-button:hover {
+    cursor: pointer;
+    background: linear-gradient(to bottom, rgba(85, 180, 66, 1) 50%, #4ca13b 50%);
+}
+
+.download-all-button-text{
+    font-size: 1.5em;
     color: #fff;
 }
 
-.download-all-block:hover {
+.download-all-text {
+    padding: 0.8em 0em 1em 1em;
+    color: #444;
     display: flex;
+    justify-content: space-evenly;
     flex-direction: column;
-    background: linear-gradient(to bottom, rgba(85, 180, 66, 1) 50%, #4ca13b 50%);
-    cursor: pointer;
 }
 
 .download-all-friendly-name {
-  color: #fff;
   font-size: 1.5em;
   font-weight: 300;
-  margin-top: 0.2em;
-  margin-bottom: 0.2em;
 }
 
+/*
 .download-all-description {
-    color: #fff;
     margin-bottom: 1em;
     margin-top: 0.2em;
 }
+*/
 
 /*********************************************************************************/
 /* Software download links                                                       */
