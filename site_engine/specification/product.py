@@ -5,10 +5,10 @@ from typing import List, Tuple
 @dataclass
 class Product:
     name: str
+    picture: str
     friendly_name: str
     description: List[str]
     extended_description: List[str]
-    picture: List[str]
     technical: List[str]
     highlights: List[str]
 
