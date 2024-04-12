@@ -21,7 +21,7 @@ categories = (
     SoftwareCategory(
         name="driver",
         friendly_name=_("Драйвер"),
-        icon="driver.png",
+        icon="software.png",
         description=_("Драйвера для ОС Windows (для ОС Linux драйвер не нужен)."),
     ),
     SoftwareCategory(
@@ -36,7 +36,7 @@ categories = (
     SoftwareCategory(
         name="EPLab_software",
         friendly_name=_("Программное обеспечение EPLab"),
-        icon="software.png",
+        icon="app.png",
         description=_(
             "Пользовательское программное обеспечение для поиска неисправностей "
             "на печатных платах с использованием аналоговых сигнатурных "
@@ -63,7 +63,7 @@ categories = (
     SoftwareCategory(
         name="debugger",
         friendly_name=_("uRPC Debugger"),
-        icon="software.png",
+        icon="app.png",
         description=_(
             "Кроссплатформенное ПО с графическим интерфейсом для отладки устройств EyePoint. "
             "Данное ПО позволяет вручную вызывать команды управления. Формирование и разбор полей сложных команд осуществляется автоматически. "
@@ -73,7 +73,7 @@ categories = (
     SoftwareCategory(
         name="epcboot",
         friendly_name=_("EPCBootGUI"),
-        icon="software.png",
+        icon="app.png",
         description=_(
             "Кроссплатформенное ПО для обновления прошивок в устройствах EyePoint. "
         ),
@@ -94,7 +94,7 @@ categories = (
     SoftwareCategory(
         name="library_doc",
         friendly_name=_("Описание библиотеки для программного управления"),
-        icon="software.png",
+        icon="doc.png",
         description=_(
             "Документация к библиотеке, которая может быть использована для "
             "взаимодействия с устройствами EyePoint. Саму библиотеку можно скачать на этой странице."
@@ -112,7 +112,7 @@ categories = (
     SoftwareCategory(
         name="library",
         friendly_name=_("Библиотека для программного управления"),
-        icon="software.png",
+        icon="books.png",
         description=_(
             "Кроссплатформенная библиотека для работы с устройствами линейки EyePoint. "
             "Библиотека написана на языке C, распространяется в виде бинарных файлов (win32, win64, debian) и в "
@@ -122,7 +122,7 @@ categories = (
     SoftwareCategory(
         name="examples_and_bindings",
         friendly_name=_("Примеры использования API и биндинги для Python и C#"),
-        icon="software.png",
+        icon="python.png",
         description=_(
             "Комплект примеров программного кода на языках C, C# и Python для устройствах линейки EyePoint. "
             "Также в данном архиве можно найти биндинги для языков Python и C#."
