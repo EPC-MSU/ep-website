@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-11 16:18+0300\n"
-"PO-Revision-Date: 2024-04-11 16:21+0300\n"
+"POT-Creation-Date: 2024-04-12 20:27+0300\n"
+"PO-Revision-Date: 2024-04-12 20:30+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -41,21 +41,25 @@ msgstr "Download"
 msgid "Старые версии"
 msgstr "Older releases"
 
-#: ../site_engine/specification/general.py:11
+#: ../site_engine/specification/general.py:10
 msgid "Технические данные"
 msgstr "Specifications"
 
-#: ../site_engine/specification/general.py:12
+#: ../site_engine/specification/general.py:11
 msgid "Россия, Москва, 119333<br>ул. Фотиевой, дом 5, строение 1"
 msgstr "Russia, Moscow, 119333<br>Fotievoy street 5, bldg. 1"
 
-#: ../site_engine/specification/general.py:13
+#: ../site_engine/specification/general.py:12
 msgid "Подробнее"
 msgstr "More"
 
-#: ../site_engine/specification/general.py:14
+#: ../site_engine/specification/general.py:13
 msgid "ООО «ЦИФ МГУ имени М.В. Ломоносова»"
 msgstr "Engineering Physics Center MSU"
+
+#: ../site_engine/specification/general.py:15
+msgid "Наши партнёры"
+msgstr "Our partners"
 
 #: ../sites/eyepoint/data/download.py:8
 msgid "Документация"
@@ -265,6 +269,10 @@ msgstr ""
 "into existing user systems. "
 
 #: ../sites/eyepoint/data/other.py:19
+msgid "Линейка оборудования EyePoint"
+msgstr "EyePoint systems"
+
+#: ../sites/eyepoint/data/other.py:22
 msgid ""
 "EyePoint - линейка простого и функционального оборудования для локализации "
 "неисправных компонентов на платах, использующего метод аналогового сигнатурного "
@@ -273,19 +281,15 @@ msgstr ""
 "EyePoint - a simple and powerful equipment for localizing faulty components on PCB "
 "using the analog signature analysis method and a frequency range of up to 12 MHz."
 
-#: ../sites/eyepoint/data/other.py:23
+#: ../sites/eyepoint/data/other.py:26
 msgid "EyePoint, диагностика электронных схем, анализ неисправностей, ЦИФ МГУ"
 msgstr "EyePoint, localizing faulty components, EPC MSU"
 
-#: ../sites/eyepoint/data/products.py:7
+#: ../sites/eyepoint/data/products.py:8
 msgid "EyePoint P10"
 msgstr "EyePoint P10"
 
-#: ../sites/eyepoint/data/products.py:9
-msgid "P10.png"
-msgstr "P10.png"
-
-#: ../sites/eyepoint/data/products.py:12
+#: ../sites/eyepoint/data/products.py:10
 msgid ""
 "Автоматическая система локализации неисправных электронных компонентов на печатных "
 "платах. "
@@ -293,7 +297,7 @@ msgstr ""
 "Automatic system for detecting counterfeit, re-labeled or faulty electronic "
 "components in BGA enclosures. "
 
-#: ../sites/eyepoint/data/products.py:16
+#: ../sites/eyepoint/data/products.py:14
 msgid ""
 "Автоматическая система локализации неисправных электронных компонентов на печатных "
 "платах. <br />Система сочетает в себе автоматическую оптическую систему "
@@ -311,130 +315,126 @@ msgstr ""
 "reference board and our EyePoint P10 system. You will get a high-quality result in a "
 "few minutes. "
 
-#: ../sites/eyepoint/data/products.py:21 ../sites/eyepoint/data/products.py:66
+#: ../sites/eyepoint/data/products.py:19 ../sites/eyepoint/data/products.py:62
 msgid "Прост в использовании"
 msgstr "Easy to use"
 
-#: ../sites/eyepoint/data/products.py:22 ../sites/eyepoint/data/products.py:67
+#: ../sites/eyepoint/data/products.py:20 ../sites/eyepoint/data/products.py:63
 msgid "Снижает нагрузку на инженера"
 msgstr "Reduces the engineer's workload"
 
-#: ../sites/eyepoint/data/products.py:23
+#: ../sites/eyepoint/data/products.py:21
 msgid "Не повредит плату"
 msgstr "Does not damage the PCB"
 
-#: ../sites/eyepoint/data/products.py:26 ../sites/eyepoint/data/products.py:71
-#: ../sites/eyepoint/data/products.py:116 ../sites/eyepoint/data/products.py:161
-#: ../sites/eyepoint/data/products.py:210 ../sites/eyepoint/data/products.py:252
-#: ../sites/eyepoint/data/products.py:294
+#: ../sites/eyepoint/data/products.py:24 ../sites/eyepoint/data/products.py:67
+#: ../sites/eyepoint/data/products.py:110 ../sites/eyepoint/data/products.py:153
+#: ../sites/eyepoint/data/products.py:200 ../sites/eyepoint/data/products.py:240
+#: ../sites/eyepoint/data/products.py:280
 msgid "Напряжение пробного сигнала: 1.2, 3.3, 5, 12 В"
 msgstr "Test signal voltages: 1.2, 3.3, 5, 12 V"
 
-#: ../sites/eyepoint/data/products.py:27 ../sites/eyepoint/data/products.py:72
-#: ../sites/eyepoint/data/products.py:117 ../sites/eyepoint/data/products.py:162
-#: ../sites/eyepoint/data/products.py:211 ../sites/eyepoint/data/products.py:253
-#: ../sites/eyepoint/data/products.py:295 ../sites/eyepoint/data/products.py:410
+#: ../sites/eyepoint/data/products.py:25 ../sites/eyepoint/data/products.py:68
+#: ../sites/eyepoint/data/products.py:111 ../sites/eyepoint/data/products.py:154
+#: ../sites/eyepoint/data/products.py:201 ../sites/eyepoint/data/products.py:241
+#: ../sites/eyepoint/data/products.py:281 ../sites/eyepoint/data/products.py:390
 msgid "Частота пробного сигнала: 1, 10, 100 Гц, 1, 10, 100 кГц"
 msgstr "Frequency of the test signal: 1, 10, 100 Hz, 1, 10, 100 kHz"
 
-#: ../sites/eyepoint/data/products.py:28 ../sites/eyepoint/data/products.py:73
-#: ../sites/eyepoint/data/products.py:118 ../sites/eyepoint/data/products.py:163
-#: ../sites/eyepoint/data/products.py:212 ../sites/eyepoint/data/products.py:254
-#: ../sites/eyepoint/data/products.py:296
+#: ../sites/eyepoint/data/products.py:26 ../sites/eyepoint/data/products.py:69
+#: ../sites/eyepoint/data/products.py:112 ../sites/eyepoint/data/products.py:155
+#: ../sites/eyepoint/data/products.py:202 ../sites/eyepoint/data/products.py:242
+#: ../sites/eyepoint/data/products.py:282
 msgid "Диапазон тока: 25 мкА - 25 мА"
 msgstr "Current range: 25 μА - 25 mA"
 
-#: ../sites/eyepoint/data/products.py:29 ../sites/eyepoint/data/products.py:74
-#: ../sites/eyepoint/data/products.py:119 ../sites/eyepoint/data/products.py:164
-#: ../sites/eyepoint/data/products.py:213 ../sites/eyepoint/data/products.py:255
-#: ../sites/eyepoint/data/products.py:297
+#: ../sites/eyepoint/data/products.py:27 ../sites/eyepoint/data/products.py:70
+#: ../sites/eyepoint/data/products.py:113 ../sites/eyepoint/data/products.py:156
+#: ../sites/eyepoint/data/products.py:203 ../sites/eyepoint/data/products.py:243
+#: ../sites/eyepoint/data/products.py:283
 msgid "Чувствительность по R: 1 Ом - 10 МОм"
 msgstr "R Sensitivity: 1 Ohm - 10 mOhm"
 
-#: ../sites/eyepoint/data/products.py:30 ../sites/eyepoint/data/products.py:75
-#: ../sites/eyepoint/data/products.py:120 ../sites/eyepoint/data/products.py:165
-#: ../sites/eyepoint/data/products.py:214 ../sites/eyepoint/data/products.py:256
-#: ../sites/eyepoint/data/products.py:298
+#: ../sites/eyepoint/data/products.py:28 ../sites/eyepoint/data/products.py:71
+#: ../sites/eyepoint/data/products.py:114 ../sites/eyepoint/data/products.py:157
+#: ../sites/eyepoint/data/products.py:204 ../sites/eyepoint/data/products.py:244
+#: ../sites/eyepoint/data/products.py:284
 msgid "Чувствительность по C: 50 пФ - 6800 мкФ"
 msgstr "C Sensitivity: 50 pF - 6800 μF"
 
-#: ../sites/eyepoint/data/products.py:31 ../sites/eyepoint/data/products.py:76
-#: ../sites/eyepoint/data/products.py:121 ../sites/eyepoint/data/products.py:166
-#: ../sites/eyepoint/data/products.py:215 ../sites/eyepoint/data/products.py:257
-#: ../sites/eyepoint/data/products.py:299
+#: ../sites/eyepoint/data/products.py:29 ../sites/eyepoint/data/products.py:72
+#: ../sites/eyepoint/data/products.py:115 ../sites/eyepoint/data/products.py:158
+#: ../sites/eyepoint/data/products.py:205 ../sites/eyepoint/data/products.py:245
+#: ../sites/eyepoint/data/products.py:285
 msgid "Чувствительность по L: 1 мкГн - 0.01 Гн"
 msgstr "L Sensitivity: 1 μH - 0.01 H"
 
-#: ../sites/eyepoint/data/products.py:32
+#: ../sites/eyepoint/data/products.py:30
 msgid "Поддерживаемые типы корпусов: LQFP, SOIC, SMD, SOT, DIP и т.д."
 msgstr "Supported enclosure types: LQFP, SOIC, SMD, SMT, DIP, etc."
 
-#: ../sites/eyepoint/data/products.py:33 ../sites/eyepoint/data/products.py:78
-#: ../sites/eyepoint/data/products.py:123
+#: ../sites/eyepoint/data/products.py:31 ../sites/eyepoint/data/products.py:74
+#: ../sites/eyepoint/data/products.py:117
 msgid "Электропитание: ~220 В, 300 Вт <br /><br />"
 msgstr "Power Supply: ~220 V, 300 W <br /><br />"
 
-#: ../sites/eyepoint/data/products.py:35 ../sites/eyepoint/data/products.py:80
+#: ../sites/eyepoint/data/products.py:33 ../sites/eyepoint/data/products.py:76
 msgid "Рабочая область: 280 x 275 х 63 мм"
 msgstr "Working area: 280 x 275 x 63 mm"
 
-#: ../sites/eyepoint/data/products.py:36 ../sites/eyepoint/data/products.py:81
-#: ../sites/eyepoint/data/products.py:126
+#: ../sites/eyepoint/data/products.py:34 ../sites/eyepoint/data/products.py:77
+#: ../sites/eyepoint/data/products.py:120
 msgid "Скорость построения карты тестирования: до 10 см²/мин"
 msgstr "Speed of building a test map: up to 10 cm²/min"
 
-#: ../sites/eyepoint/data/products.py:37 ../sites/eyepoint/data/products.py:82
-#: ../sites/eyepoint/data/products.py:127
+#: ../sites/eyepoint/data/products.py:35 ../sites/eyepoint/data/products.py:78
+#: ../sites/eyepoint/data/products.py:121
 msgid "Скорость тестирования: до 100 точек/мин"
 msgstr "Testing speed: up to 100 points/min"
 
-#: ../sites/eyepoint/data/products.py:38 ../sites/eyepoint/data/products.py:83
-#: ../sites/eyepoint/data/products.py:128
+#: ../sites/eyepoint/data/products.py:36 ../sites/eyepoint/data/products.py:79
+#: ../sites/eyepoint/data/products.py:122
 msgid "Точность установки щупа: 30 мкм"
 msgstr "Accuracy of setting the probe: 30 µm"
 
-#: ../sites/eyepoint/data/products.py:39
+#: ../sites/eyepoint/data/products.py:37
 msgid "Время на смену платы: 30 сек"
 msgstr "Time to change the board: 30 sec"
 
-#: ../sites/eyepoint/data/products.py:40 ../sites/eyepoint/data/products.py:85
-#: ../sites/eyepoint/data/products.py:130
+#: ../sites/eyepoint/data/products.py:38 ../sites/eyepoint/data/products.py:81
+#: ../sites/eyepoint/data/products.py:124
 msgid "Минимальное расстояние между точками тестирования: 0.4 мм"
 msgstr "Minimum distance between test points: 0.4 mm"
 
-#: ../sites/eyepoint/data/products.py:41 ../sites/eyepoint/data/products.py:86
-#: ../sites/eyepoint/data/products.py:131
+#: ../sites/eyepoint/data/products.py:39 ../sites/eyepoint/data/products.py:82
+#: ../sites/eyepoint/data/products.py:125
 msgid "Максимальное количество точек тестирования: 2500 шт."
 msgstr "Maximum number of test points: 2500 pcs."
 
-#: ../sites/eyepoint/data/products.py:42 ../sites/eyepoint/data/products.py:87
-#: ../sites/eyepoint/data/products.py:132
+#: ../sites/eyepoint/data/products.py:40 ../sites/eyepoint/data/products.py:83
+#: ../sites/eyepoint/data/products.py:126
 msgid "Расположение выводов: произвольное"
 msgstr "Pin location: arbitrary"
 
-#: ../sites/eyepoint/data/products.py:43 ../sites/eyepoint/data/products.py:88
-#: ../sites/eyepoint/data/products.py:133
+#: ../sites/eyepoint/data/products.py:41 ../sites/eyepoint/data/products.py:84
+#: ../sites/eyepoint/data/products.py:127
 msgid "Управляющий ПК с комплектом ПО"
 msgstr "Control PC with software package"
 
-#: ../sites/eyepoint/data/products.py:44 ../sites/eyepoint/data/products.py:89
+#: ../sites/eyepoint/data/products.py:42 ../sites/eyepoint/data/products.py:85
 msgid "Габариты: 604 х 543 х 473 мм"
 msgstr "Dimensions: 604 x 543 x 473 mm"
 
-#: ../sites/eyepoint/data/products.py:45 ../sites/eyepoint/data/products.py:90
-#: ../sites/eyepoint/data/products.py:135
+#: ../sites/eyepoint/data/products.py:43 ../sites/eyepoint/data/products.py:86
+#: ../sites/eyepoint/data/products.py:129
 msgid "Вес: 50 кг"
 msgstr "Weight: 50 kg"
 
-#: ../sites/eyepoint/data/products.py:50
+#: ../sites/eyepoint/data/products.py:49
 msgid "EyePoint B10"
 msgstr "EyePoint B10"
 
 #: ../sites/eyepoint/data/products.py:52
-msgid "B10.png"
-msgstr "B10.png"
-
-#: ../sites/eyepoint/data/products.py:56
 msgid ""
 "Автоматическая система для обнаружения контрафактных, перемаркированных или "
 "неисправных электронных компонентов в BGA-корпусах. "
@@ -442,7 +442,7 @@ msgstr ""
 "Automatic system for detecting counterfeit, re-labeled or faulty electronic "
 "components in BGA enclosures. "
 
-#: ../sites/eyepoint/data/products.py:61
+#: ../sites/eyepoint/data/products.py:57
 msgid ""
 "Автоматическая система для обнаружения контрафактных, перемаркированных или "
 "неисправных электронных компонентов в BGA-корпусах. <br />Система сочетает в себе "
@@ -461,27 +461,23 @@ msgstr ""
 "reference chips and our EyePoint B10 system. You will get a high-quality result in a "
 "few minutes. "
 
-#: ../sites/eyepoint/data/products.py:68
+#: ../sites/eyepoint/data/products.py:64
 msgid "Не повредит микросхему"
 msgstr "Does not damage the PCB"
 
-#: ../sites/eyepoint/data/products.py:77
+#: ../sites/eyepoint/data/products.py:73
 msgid "Поддерживаемые типы корпусов: BGA, LGA, PGA, LCC, CSP"
 msgstr "Supported enclosure types: BGA, LGA, PGA, LCC, CSP"
 
-#: ../sites/eyepoint/data/products.py:84
+#: ../sites/eyepoint/data/products.py:80
 msgid "Время на смену образца: 10 сек"
 msgstr "Time to change the sample: 10 sec"
 
-#: ../sites/eyepoint/data/products.py:95
+#: ../sites/eyepoint/data/products.py:91
 msgid "EyePoint P10b"
 msgstr "EyePoint P10b"
 
-#: ../sites/eyepoint/data/products.py:97
-msgid "P10b.png"
-msgstr "P10b.png"
-
-#: ../sites/eyepoint/data/products.py:101
+#: ../sites/eyepoint/data/products.py:95
 msgid ""
 "Aвтоматическая система локализации неисправных электронных компонентов на печатных "
 "платах с опцией выявления контрафактных, перемаркированных или поврежденных "
@@ -491,7 +487,7 @@ msgstr ""
 "boards with the ability to detect counterfeit, re-labeled or damaged components in "
 "BGA enclosures. "
 
-#: ../sites/eyepoint/data/products.py:106
+#: ../sites/eyepoint/data/products.py:100
 msgid ""
 "Aвтоматическая система локализации неисправных электронных компонентов на печатных "
 "платах с опцией выявления контрафактных, перемаркированных или поврежденных "
@@ -512,19 +508,19 @@ msgstr ""
 "board or chip and our EyePoint P10b system. You will get a high-quality result in a "
 "matter of minutes. "
 
-#: ../sites/eyepoint/data/products.py:111
+#: ../sites/eyepoint/data/products.py:105
 msgid "PCB и BGA"
 msgstr "PCB and BGA"
 
-#: ../sites/eyepoint/data/products.py:112
+#: ../sites/eyepoint/data/products.py:106
 msgid "Экономия времени на поиске до 3 раз"
 msgstr "Save search time up to 3 times"
 
-#: ../sites/eyepoint/data/products.py:113
+#: ../sites/eyepoint/data/products.py:107
 msgid "Автоматическая проверка до 2500 выводов"
 msgstr "Automatic verification of up to 2500 pins"
 
-#: ../sites/eyepoint/data/products.py:122
+#: ../sites/eyepoint/data/products.py:116
 msgid ""
 "Поддерживаемые типы корпусов: LQFP, SOIC, SMD, SOT, SOP, DIP, <br /> BGA, LGA, PGA, "
 "LCC, CSP и т.д."
@@ -532,27 +528,23 @@ msgstr ""
 "Supported enclosure types: LQFP, SOIC, SMD, SOT, SOP, DIP, <br /> BGA, LGA, PGA, "
 "LCC, CSP, etc."
 
-#: ../sites/eyepoint/data/products.py:125
+#: ../sites/eyepoint/data/products.py:119
 msgid "Рабочая область: 280 x 275 х 63 мм "
 msgstr "Working area: 280 x 275 x 63 mm "
 
-#: ../sites/eyepoint/data/products.py:129
+#: ../sites/eyepoint/data/products.py:123
 msgid "Время на смену образца: 30 сек"
 msgstr "Time to change the sample: 30 sec"
 
-#: ../sites/eyepoint/data/products.py:134
+#: ../sites/eyepoint/data/products.py:128
 msgid "Габариты: 604 х 543 х 473 мм "
 msgstr "Dimensions: 604 x 543 x 473 mm "
 
-#: ../sites/eyepoint/data/products.py:140
+#: ../sites/eyepoint/data/products.py:134
 msgid "EyePoint S2"
 msgstr "EyePoint S2"
 
-#: ../sites/eyepoint/data/products.py:142
-msgid "S2.png"
-msgstr "S2.png"
-
-#: ../sites/eyepoint/data/products.py:146
+#: ../sites/eyepoint/data/products.py:138
 msgid ""
 "Aвтономный (не требует наличия компьютера) двухканальный настольный локализатор "
 "неисправных электронных компонентов на печатных платах методом аналогового "
@@ -562,7 +554,7 @@ msgstr ""
 "electronic components on printed circuit boards by analog signature analysis (ASA) "
 "with a frequency of the testing signal up to 100 kHz. "
 
-#: ../sites/eyepoint/data/products.py:151
+#: ../sites/eyepoint/data/products.py:143
 msgid ""
 "Aвтономный (не требует наличия компьютера) двухканальный настольный локализатор "
 "неисправных электронных компонентов на печатных платах методом аналогового "
@@ -579,81 +571,81 @@ msgstr ""
 "The device has a test plan mode, which allows you to save the reference board in "
 "advance, and then work with the same faulty board without having a standard at hand. "
 
-#: ../sites/eyepoint/data/products.py:156
+#: ../sites/eyepoint/data/products.py:148
 msgid "Не требует наличия компьютера"
 msgstr "Doesn’t require a computer"
 
-#: ../sites/eyepoint/data/products.py:157 ../sites/eyepoint/data/products.py:205
-#: ../sites/eyepoint/data/products.py:247
+#: ../sites/eyepoint/data/products.py:149 ../sites/eyepoint/data/products.py:195
+#: ../sites/eyepoint/data/products.py:235
 msgid "Частота тестирующего сигнала до 100 кГц"
 msgstr "Frequency is up to 100 kHz"
 
-#: ../sites/eyepoint/data/products.py:158
+#: ../sites/eyepoint/data/products.py:150
 msgid "Доступен план тестирования"
 msgstr "Support for the «Test Plan» mode"
 
-#: ../sites/eyepoint/data/products.py:167 ../sites/eyepoint/data/products.py:342
+#: ../sites/eyepoint/data/products.py:159 ../sites/eyepoint/data/products.py:326
 msgid "Электропитание: ~220 В, 10 Вт"
 msgstr "Power supply: ~ 220 V, 10 W"
 
-#: ../sites/eyepoint/data/products.py:168
+#: ../sites/eyepoint/data/products.py:160
 msgid "7-ми дюймовый цветной дисплей с функцией touch screen"
 msgstr "7-inch color display with touch screen function"
 
-#: ../sites/eyepoint/data/products.py:169
+#: ../sites/eyepoint/data/products.py:161
 msgid "Внешняя педаль для дополнительного функционала"
 msgstr "External pedal for additional functionality"
 
-#: ../sites/eyepoint/data/products.py:170 ../sites/eyepoint/data/products.py:217
-#: ../sites/eyepoint/data/products.py:259 ../sites/eyepoint/data/products.py:301
-#: ../sites/eyepoint/data/products.py:343
+#: ../sites/eyepoint/data/products.py:162 ../sites/eyepoint/data/products.py:207
+#: ../sites/eyepoint/data/products.py:247 ../sites/eyepoint/data/products.py:287
+#: ../sites/eyepoint/data/products.py:327
 msgid "Возможность подключить к ПК по USB 2.0"
 msgstr "The ability to connect to a PC via USB 2.0"
 
-#: ../sites/eyepoint/data/products.py:171 ../sites/eyepoint/data/products.py:218
-#: ../sites/eyepoint/data/products.py:260 ../sites/eyepoint/data/products.py:302
-#: ../sites/eyepoint/data/products.py:344
+#: ../sites/eyepoint/data/products.py:163 ../sites/eyepoint/data/products.py:208
+#: ../sites/eyepoint/data/products.py:248 ../sites/eyepoint/data/products.py:288
+#: ../sites/eyepoint/data/products.py:328
 msgid "Совместимость с программным обеспечением EPLab"
 msgstr "Compatibility with EPLab software"
 
-#: ../sites/eyepoint/data/products.py:172
+#: ../sites/eyepoint/data/products.py:164
 msgid "Габариты: 205 х 204 х 120 мм"
 msgstr "Dimensions: 205 x 204 x 120 mm"
 
-#: ../sites/eyepoint/data/products.py:173
+#: ../sites/eyepoint/data/products.py:165
 msgid "Вес: 2.2 кг </li></ul><!--"
 msgstr "Weight: 2.2 kg </li></ul><!--"
 
-#: ../sites/eyepoint/data/products.py:175
+#: ../sites/eyepoint/data/products.py:167
 msgid "-->Основные функции встроенного ПО:<!--"
 msgstr "-->The main functions of the built-in software:<!--"
 
-#: ../sites/eyepoint/data/products.py:176 ../sites/eyepoint/data/products.py:181
-#: ../sites/eyepoint/data/products.py:223 ../sites/eyepoint/data/products.py:265
-#: ../sites/eyepoint/data/products.py:307 ../sites/eyepoint/data/products.py:349
+#: ../sites/eyepoint/data/products.py:168 ../sites/eyepoint/data/products.py:173
+#: ../sites/eyepoint/data/products.py:213 ../sites/eyepoint/data/products.py:253
+#: ../sites/eyepoint/data/products.py:293 ../sites/eyepoint/data/products.py:333
 msgid "--><ul><li>Регулируемый порог совпадения сигнатур"
 msgstr "--><ul><li>Adjustable signature matching threshold"
 
-#: ../sites/eyepoint/data/products.py:177 ../sites/eyepoint/data/products.py:182
-#: ../sites/eyepoint/data/products.py:224 ../sites/eyepoint/data/products.py:266
-#: ../sites/eyepoint/data/products.py:308 ../sites/eyepoint/data/products.py:350
+#: ../sites/eyepoint/data/products.py:169 ../sites/eyepoint/data/products.py:174
+#: ../sites/eyepoint/data/products.py:214 ../sites/eyepoint/data/products.py:254
+#: ../sites/eyepoint/data/products.py:294 ../sites/eyepoint/data/products.py:334
 msgid "Поддержка режима «План тестирования»"
 msgstr "Support for the \"Test Plan\" mode"
 
-#: ../sites/eyepoint/data/products.py:178
+#: ../sites/eyepoint/data/products.py:170
 msgid ""
 "Экспорт данных в формате .png и .json на внешний USB-Flash-накопитель </li></ul><!--"
 msgstr "Export data in .png and .json to an external USB flash drive </li></ul><!--"
 
-#: ../sites/eyepoint/data/products.py:180 ../sites/eyepoint/data/products.py:222
-#: ../sites/eyepoint/data/products.py:264 ../sites/eyepoint/data/products.py:306
-#: ../sites/eyepoint/data/products.py:348
+#: ../sites/eyepoint/data/products.py:172 ../sites/eyepoint/data/products.py:212
+#: ../sites/eyepoint/data/products.py:252 ../sites/eyepoint/data/products.py:292
+#: ../sites/eyepoint/data/products.py:332
 msgid "-->Основные функции ПО EPLab:<!--"
 msgstr "-->The main functions of the EPLab software:<!--"
 
-#: ../sites/eyepoint/data/products.py:183 ../sites/eyepoint/data/products.py:225
-#: ../sites/eyepoint/data/products.py:267 ../sites/eyepoint/data/products.py:309
-#: ../sites/eyepoint/data/products.py:351 ../sites/eyepoint/data/products.py:380
+#: ../sites/eyepoint/data/products.py:175 ../sites/eyepoint/data/products.py:215
+#: ../sites/eyepoint/data/products.py:255 ../sites/eyepoint/data/products.py:295
+#: ../sites/eyepoint/data/products.py:335 ../sites/eyepoint/data/products.py:362
 msgid ""
 "Поддержка ОС: Windows 7 SP1 и новее, Linux (протестировано на Ubuntu 18.04, 20.04; "
 "AstraLinux - 4.15.3)"
@@ -661,21 +653,17 @@ msgstr ""
 "Support OS: Windows 7 SP1 and newer, Linux (tested on Ubuntu 18.04, 20.04; Astra "
 "Linux - 4.15.3)"
 
-#: ../sites/eyepoint/data/products.py:184 ../sites/eyepoint/data/products.py:226
-#: ../sites/eyepoint/data/products.py:268 ../sites/eyepoint/data/products.py:310
-#: ../sites/eyepoint/data/products.py:381
+#: ../sites/eyepoint/data/products.py:176 ../sites/eyepoint/data/products.py:216
+#: ../sites/eyepoint/data/products.py:256 ../sites/eyepoint/data/products.py:296
+#: ../sites/eyepoint/data/products.py:363
 msgid "Возможность программного управления: C/C++, C#, Python"
 msgstr "The ability to program control: C/C++, C#, Python"
 
-#: ../sites/eyepoint/data/products.py:189
+#: ../sites/eyepoint/data/products.py:181
 msgid "EyePoint u21"
 msgstr "EyePoint u21"
 
-#: ../sites/eyepoint/data/products.py:191
-msgid "u21.png"
-msgstr "u21.png"
-
-#: ../sites/eyepoint/data/products.py:195
+#: ../sites/eyepoint/data/products.py:185
 msgid ""
 "Одноканальный локализатор неисправных электронных компонентов на печатных платах "
 "методом аналогового сигнатурного анализа (АСА) с частотой тестирующего сигнала до "
@@ -685,7 +673,7 @@ msgstr ""
 "by analog signature analysis (ASA) with a frequency of the testing signal up to 100 "
 "kHz. "
 
-#: ../sites/eyepoint/data/products.py:200
+#: ../sites/eyepoint/data/products.py:190
 msgid ""
 "Одноканальный локализатор неисправных электронных компонентов на печатных платах "
 "методом аналогового сигнатурного анализа (АСА) с частотой тестирующего сигнала до "
@@ -699,36 +687,32 @@ msgstr ""
 "control, complete with a measuring probe, a USB flash drive with a software package, "
 "a USB cable for connecting to a PC. "
 
-#: ../sites/eyepoint/data/products.py:206 ../sites/eyepoint/data/products.py:248
+#: ../sites/eyepoint/data/products.py:196 ../sites/eyepoint/data/products.py:236
 msgid "Миниатюрные размеры"
 msgstr "Miniature size"
 
-#: ../sites/eyepoint/data/products.py:207
+#: ../sites/eyepoint/data/products.py:197
 msgid "Доступен функционал модели S2"
 msgstr "The functionality of the S2 model is available"
 
-#: ../sites/eyepoint/data/products.py:216 ../sites/eyepoint/data/products.py:258
-#: ../sites/eyepoint/data/products.py:300 ../sites/eyepoint/data/products.py:378
+#: ../sites/eyepoint/data/products.py:206 ../sites/eyepoint/data/products.py:246
+#: ../sites/eyepoint/data/products.py:286 ../sites/eyepoint/data/products.py:360
 msgid "Напряжение питания: 5 В (от USB)"
 msgstr "Supply voltage: 5 V (via USB)"
 
-#: ../sites/eyepoint/data/products.py:219
+#: ../sites/eyepoint/data/products.py:209
 msgid "Габариты: 100 х 65 х 27 мм"
 msgstr "Dimensions: 100 x 65 x 27 mm"
 
-#: ../sites/eyepoint/data/products.py:220 ../sites/eyepoint/data/products.py:262
+#: ../sites/eyepoint/data/products.py:210 ../sites/eyepoint/data/products.py:250
 msgid "Вес: 0.4 кг </li></ul><!--"
 msgstr "Weight: 0.4 kg </li></ul><!--"
 
-#: ../sites/eyepoint/data/products.py:231
+#: ../sites/eyepoint/data/products.py:221
 msgid "EyePoint u22"
 msgstr "EyePoint u22"
 
-#: ../sites/eyepoint/data/products.py:233
-msgid "u22.png"
-msgstr "u22.png"
-
-#: ../sites/eyepoint/data/products.py:237
+#: ../sites/eyepoint/data/products.py:225
 msgid ""
 "Двухканальный локализатор неисправных электронных компонентов на печатных платах "
 "методом аналогового сигнатурного анализа (АСА) с частотой тестирующего сигнала до "
@@ -738,7 +722,7 @@ msgstr ""
 "analog signature analysis (ASA) with a frequency of the testing signal up to 100 "
 "kHz. "
 
-#: ../sites/eyepoint/data/products.py:242
+#: ../sites/eyepoint/data/products.py:230
 msgid ""
 "Двухканальный локализатора неисправных электронных компонентов на печатных платах "
 "методом аналогового сигнатурного анализа (АСА) с частотой тестирующего сигнала до "
@@ -752,23 +736,19 @@ msgstr ""
 "control, complete with a set of measuring probes, a USB flash drive with a software "
 "package, a USB cable for connecting to a PC. "
 
-#: ../sites/eyepoint/data/products.py:249
+#: ../sites/eyepoint/data/products.py:237
 msgid "Доступен функционал старшей модели S2"
 msgstr "The functionality of the S2 model is available"
 
-#: ../sites/eyepoint/data/products.py:261
+#: ../sites/eyepoint/data/products.py:249
 msgid "Габариты и вес: 175 х 90 х 40 мм"
 msgstr "Dimensions and weight: 175 x 90 x 40 mm"
 
-#: ../sites/eyepoint/data/products.py:273
+#: ../sites/eyepoint/data/products.py:261
 msgid "EyePoint a2"
 msgstr "EyePoint a2"
 
-#: ../sites/eyepoint/data/products.py:275
-msgid "a2.png"
-msgstr "a2.png"
-
-#: ../sites/eyepoint/data/products.py:279
+#: ../sites/eyepoint/data/products.py:265
 msgid ""
 "Одноканальный ОЕМ-модуль без корпуса, предназначенный для поиска неисправных "
 "электронных компонентов на печатных платах методом аналогового сигнатурного анализа "
@@ -777,7 +757,7 @@ msgstr ""
 "A single-channel OEM module without case designed to search for faulty electronic "
 "components on printed circuit boards by analog signature analysis (ASA). "
 
-#: ../sites/eyepoint/data/products.py:284
+#: ../sites/eyepoint/data/products.py:270
 msgid ""
 "Одноканальный ОЕМ-модуль без корпуса, предназначенный для поиска неисправных "
 "электронных компонентов на печатных платах методом аналогового сигнатурного анализа "
@@ -797,35 +777,31 @@ msgstr ""
 "documentation. In addition, the module can be used in conjunction with ready-made "
 "software for other EyePoint family devices. "
 
-#: ../sites/eyepoint/data/products.py:289
+#: ../sites/eyepoint/data/products.py:275
 msgid "Открытый API"
 msgstr "Open API"
 
-#: ../sites/eyepoint/data/products.py:290
+#: ../sites/eyepoint/data/products.py:276
 msgid "Полный функционал"
 msgstr "Full functionality"
 
-#: ../sites/eyepoint/data/products.py:291
+#: ../sites/eyepoint/data/products.py:277
 msgid "Максимально доступный"
 msgstr "Maximum affordable"
 
-#: ../sites/eyepoint/data/products.py:303
+#: ../sites/eyepoint/data/products.py:289
 msgid "Габариты: 60 х 40 х 5 мм"
 msgstr "Dimensions: 60 x 40 x 5 mm"
 
-#: ../sites/eyepoint/data/products.py:304
+#: ../sites/eyepoint/data/products.py:290
 msgid "Вес: 0.012 кг </li></ul><!--"
 msgstr "Weight: 0.012 kg </li></ul><!--"
 
-#: ../sites/eyepoint/data/products.py:315
+#: ../sites/eyepoint/data/products.py:301
 msgid "EyePoint H10"
 msgstr "EyePoint H10"
 
-#: ../sites/eyepoint/data/products.py:317
-msgid "H10.png"
-msgstr "H10.png"
-
-#: ../sites/eyepoint/data/products.py:321
+#: ../sites/eyepoint/data/products.py:305
 msgid ""
 "Высокочастотный одноканальный локализатор неисправных электронных компонентов на "
 "печатных платах методом аналогового сигнатурного анализа (АСА) с частотой "
@@ -836,7 +812,7 @@ msgstr ""
 "circuit boards using analog signature analysis (ASA) with a test signal frequency of "
 "up to 12 MHz and a wide range of voltage and current sensitivity selection. "
 
-#: ../sites/eyepoint/data/products.py:326
+#: ../sites/eyepoint/data/products.py:310
 msgid ""
 "Высокочастотный одноканальный локализатор неисправных электронных компонентов на "
 "печатных платах методом аналогового сигнатурного анализа (АСА) с частотой "
@@ -852,23 +828,23 @@ msgstr ""
 "probes, a USB flash drive with a software package, a USB cable and a 220 V power "
 "cable. "
 
-#: ../sites/eyepoint/data/products.py:331
+#: ../sites/eyepoint/data/products.py:315
 msgid "Частота тестирующего сигнала до 12 МГц"
 msgstr "Frequency is up to 12 MHz"
 
-#: ../sites/eyepoint/data/products.py:332
+#: ../sites/eyepoint/data/products.py:316
 msgid "Управление по USB"
 msgstr "USB control"
 
-#: ../sites/eyepoint/data/products.py:333
+#: ../sites/eyepoint/data/products.py:317
 msgid "Широкий диапазон напряжения"
 msgstr "Wide voltage range"
 
-#: ../sites/eyepoint/data/products.py:336
+#: ../sites/eyepoint/data/products.py:320
 msgid "Напряжение пробного сигнала: 1, 1.5, 2, 2.5, 3, 4, 4.5, 5, 6, 6.7, 7.5, 10 В"
 msgstr "Test signal voltage: 1, 1.5, 2, 2.5, 3, 4, 4.5, 5, 6, 6.7, 7.5, 10 V"
 
-#: ../sites/eyepoint/data/products.py:337
+#: ../sites/eyepoint/data/products.py:321
 msgid ""
 "Частота пробного сигнала: 1, 5, 10, 50, 100, 400 Гц, 1.5, 6, 25, 100, 400 кГц, 1.5, "
 "3, 6, 12 МГц"
@@ -876,43 +852,39 @@ msgstr ""
 "Frequency range of the test signal: 1, 5, 10, 50, 100, 400 Hz, 1.5, 6, 25, 100, 400 "
 "kHz, 1.5, 3, 6, 12 MHz"
 
-#: ../sites/eyepoint/data/products.py:338
+#: ../sites/eyepoint/data/products.py:322
 msgid "Диапазон тока: 0.5 мкА - 90 мА"
 msgstr "Current range: 0.5 μА - 90 mA"
 
-#: ../sites/eyepoint/data/products.py:339
+#: ../sites/eyepoint/data/products.py:323
 msgid "Чувствительность по R: 1 Ом - 100 кОм"
 msgstr "R Sensitivity: 1 Ohm - 100 kOhm"
 
-#: ../sites/eyepoint/data/products.py:340
+#: ../sites/eyepoint/data/products.py:324
 msgid "Чувствительность по C: 0.5 пФ - 6800 мкФ"
 msgstr "C Sensitivity: 0.5 pF - 6800 μF"
 
-#: ../sites/eyepoint/data/products.py:341
+#: ../sites/eyepoint/data/products.py:325
 msgid "Чувствительность по L: 0.1 - 80 мкГн"
 msgstr "L sensitivity: 0.1 - 80 μH"
 
-#: ../sites/eyepoint/data/products.py:345
+#: ../sites/eyepoint/data/products.py:329
 msgid "Габариты: 137 х 65 х 110 мм"
 msgstr "Dimensions: 137 x 65 x 110 mm"
 
-#: ../sites/eyepoint/data/products.py:346
+#: ../sites/eyepoint/data/products.py:330
 msgid "Вес: 0.7 кг </li></ul><!--"
 msgstr "Weight: 0.4 kg </li></ul><!--"
 
-#: ../sites/eyepoint/data/products.py:352
+#: ../sites/eyepoint/data/products.py:336
 msgid "Возможность программного управления: C/C++, Python"
 msgstr "The ability to program control: C/C++, Python"
 
-#: ../sites/eyepoint/data/products.py:357
+#: ../sites/eyepoint/data/products.py:341
 msgid "EyePoint MUX_M"
 msgstr "EyePoint MUX_M"
 
-#: ../sites/eyepoint/data/products.py:359
-msgid "mux_m.png"
-msgstr "mux_m.png"
-
-#: ../sites/eyepoint/data/products.py:363
+#: ../sites/eyepoint/data/products.py:345
 msgid ""
 "Основной блок мультиплексора, необходимый для работы с модулями Eyepoint MUX_S_A. "
 "Позволяет подключать до 8 модулей на 64 канала каждый (в сумме до 512 каналов). "
@@ -923,7 +895,7 @@ msgstr ""
 "total). It is used in conjunction with manual signature analyzers of the EyePoint "
 "line. "
 
-#: ../sites/eyepoint/data/products.py:368
+#: ../sites/eyepoint/data/products.py:350
 msgid ""
 "Основной блок мультиплексора, необходимый для работы с модулями Eyepoint MUX_S_A. "
 "Позволяет подключать до 8 модулей на 64 канала каждый (в сумме до 512 каналов). "
@@ -943,39 +915,35 @@ msgstr ""
 "perform input control of chips when using specialized equipment for their "
 "installation. "
 
-#: ../sites/eyepoint/data/products.py:373 ../sites/eyepoint/data/products.py:404
+#: ../sites/eyepoint/data/products.py:355 ../sites/eyepoint/data/products.py:384
 msgid "Скалирование модулей (до 8 штук, 512 каналов)"
 msgstr "Scaling of modules (up to 8 pieces, 512 channels)"
 
-#: ../sites/eyepoint/data/products.py:374 ../sites/eyepoint/data/products.py:405
+#: ../sites/eyepoint/data/products.py:356 ../sites/eyepoint/data/products.py:385
 msgid "Подходит для тестирования серийных изделий"
 msgstr "Suitable for testing serial products"
 
-#: ../sites/eyepoint/data/products.py:375 ../sites/eyepoint/data/products.py:406
+#: ../sites/eyepoint/data/products.py:357 ../sites/eyepoint/data/products.py:386
 msgid "Поддержка плана тестирования с генерацией отчетов"
 msgstr "Support for the «Test Plan» mode"
 
-#: ../sites/eyepoint/data/products.py:379
+#: ../sites/eyepoint/data/products.py:361
 msgid "Возможность подключить к ПК по USB Type-C"
 msgstr "The ability to connect to a PC via USB Type-C"
 
-#: ../sites/eyepoint/data/products.py:382 ../sites/eyepoint/data/products.py:414
+#: ../sites/eyepoint/data/products.py:364 ../sites/eyepoint/data/products.py:394
 msgid "Габариты: 130 x 75 x 17.5 мм"
 msgstr "Dimensions: 130 x 75 x 17.5 mm"
 
-#: ../sites/eyepoint/data/products.py:383 ../sites/eyepoint/data/products.py:415
+#: ../sites/eyepoint/data/products.py:365 ../sites/eyepoint/data/products.py:395
 msgid "Вес: 0.115 кг"
 msgstr "Weight: 0.115 kg"
 
-#: ../sites/eyepoint/data/products.py:388
+#: ../sites/eyepoint/data/products.py:370
 msgid "EyePoint MUX_S_A"
 msgstr "EyePoint MUX_S_A"
 
-#: ../sites/eyepoint/data/products.py:390
-msgid "mux_sa.png"
-msgstr "mux_sa.png"
-
-#: ../sites/eyepoint/data/products.py:394
+#: ../sites/eyepoint/data/products.py:374
 msgid ""
 "Модуль мультиплексора на 64 канала. Позволяет зондировать каждый из 64 каналов по "
 "отношению к общему проводу (один ко многим).  Используется совместно с основным "
@@ -985,7 +953,7 @@ msgstr ""
 "relation to a common wire (one to many). Used in conjunction with the main EyePoint "
 "MUX_M unit. "
 
-#: ../sites/eyepoint/data/products.py:399
+#: ../sites/eyepoint/data/products.py:379
 msgid ""
 "Модуль мультиплексора на 64 канала. Позволяет зондировать каждый из 64 каналов по "
 "отношению к общему проводу (один ко многим).  Используется совместно с основным "
@@ -1003,21 +971,51 @@ msgstr ""
 "as perform input control of chips when using specialized equipment for their "
 "installation. "
 
-#: ../sites/eyepoint/data/products.py:409
+#: ../sites/eyepoint/data/products.py:389
 msgid "Диапазон напряжения пробного сигнала: 0.1 - 12 В"
 msgstr "Test signal voltage range: 0.1 - 12 V"
 
-#: ../sites/eyepoint/data/products.py:411
+#: ../sites/eyepoint/data/products.py:391
 msgid "Диапазон тока пропускаемого сигнала: 1 мкА - 90 мА"
 msgstr "The current range of the transmitted signal: 1 µA - 90 mA"
 
-#: ../sites/eyepoint/data/products.py:412
+#: ../sites/eyepoint/data/products.py:392
 msgid "Сопротивление канала: 11 Ом"
 msgstr "Channel impedance: 11 Ohm"
 
-#: ../sites/eyepoint/data/products.py:413
+#: ../sites/eyepoint/data/products.py:393
 msgid "Ёмкость канала: 100 пФ"
 msgstr "Channel capacity: 100 pF"
+
+#~ msgid "P10.png"
+#~ msgstr "P10.png"
+
+#~ msgid "B10.png"
+#~ msgstr "B10.png"
+
+#~ msgid "P10b.png"
+#~ msgstr "P10b.png"
+
+#~ msgid "S2.png"
+#~ msgstr "S2.png"
+
+#~ msgid "u21.png"
+#~ msgstr "u21.png"
+
+#~ msgid "u22.png"
+#~ msgstr "u22.png"
+
+#~ msgid "a2.png"
+#~ msgstr "a2.png"
+
+#~ msgid "H10.png"
+#~ msgstr "H10.png"
+
+#~ msgid "mux_m.png"
+#~ msgstr "mux_m.png"
+
+#~ msgid "mux_sa.png"
+#~ msgstr "mux_sa.png"
 
 #~ msgid "Программное обеспечение"
 #~ msgstr "Software for PC"

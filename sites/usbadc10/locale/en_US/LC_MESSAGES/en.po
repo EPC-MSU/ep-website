@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-11 16:18+0300\n"
-"PO-Revision-Date: 2024-04-11 16:21+0300\n"
+"POT-Creation-Date: 2024-04-12 20:27+0300\n"
+"PO-Revision-Date: 2024-04-12 20:30+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -41,21 +41,25 @@ msgstr "Download"
 msgid "Старые версии"
 msgstr "Older releases"
 
-#: ../site_engine/specification/general.py:11
+#: ../site_engine/specification/general.py:10
 msgid "Технические данные"
 msgstr "Specifications"
 
-#: ../site_engine/specification/general.py:12
+#: ../site_engine/specification/general.py:11
 msgid "Россия, Москва, 119333<br>ул. Фотиевой, дом 5, строение 1"
 msgstr "Russia, Moscow, 119333<br>Fotievoy street 5, bldg. 1"
 
-#: ../site_engine/specification/general.py:13
+#: ../site_engine/specification/general.py:12
 msgid "Подробнее"
 msgstr "More"
 
-#: ../site_engine/specification/general.py:14
+#: ../site_engine/specification/general.py:13
 msgid "ООО «ЦИФ МГУ имени М.В. Ломоносова»"
 msgstr "Engineering Physics Center MSU"
+
+#: ../site_engine/specification/general.py:15
+msgid "Наши партнёры"
+msgstr "Our partners"
 
 #: ../sites/usbadc10/data/download.py:7
 msgid "Документация"
@@ -233,6 +237,10 @@ msgstr ""
 "digitized data. "
 
 #: ../sites/usbadc10/data/other.py:12
+msgid "Технические характеристики"
+msgstr "Specifications"
+
+#: ../sites/usbadc10/data/other.py:15
 msgid ""
 "usbadc10 - устройство, преобразующее входной аналоговый сигнал в дискретный "
 "код.Частота преобразования usbadc10 - до 4000 отсчтетов в секунду, "
@@ -243,7 +251,7 @@ msgstr ""
 "microcontroller and a USB interface that supplies power and reads digitized "
 "data."
 
-#: ../sites/usbadc10/data/other.py:16
+#: ../sites/usbadc10/data/other.py:19
 msgid ""
 "EyePoint, usbadc10, диагностика электронных схем, анализ неисправностей, "
 "аналого-цифровой преобразователь, ЦИФ МГУ"
@@ -253,15 +261,11 @@ msgstr "EyePoint, usbadc10, localizing faulty components, EPC MSU"
 msgid "usbadc10 v1.0.0"
 msgstr "usbadc10 v1.0.0"
 
-#: ../sites/usbadc10/data/products.py:9
-msgid "UALab.png"
-msgstr ""
-
-#: ../sites/usbadc10/data/products.py:12
+#: ../sites/usbadc10/data/products.py:10
 msgid "Аналого-цифровой преобразователь"
 msgstr "Analog to digital converter"
 
-#: ../sites/usbadc10/data/products.py:15
+#: ../sites/usbadc10/data/products.py:13
 msgid ""
 "Аналого-цифровой преобразователь usbadc10 имеет частоту до 4000 отсчётов в "
 "секунду, одновременно по всем каналам. В комплекте с устройством "
@@ -275,43 +279,43 @@ msgstr ""
 "Windows and Linux. All the necessary <b>software</b> can be found in the "
 "public domain. "
 
-#: ../sites/usbadc10/data/products.py:21
+#: ../sites/usbadc10/data/products.py:19
 msgid "10 каналов"
 msgstr "10 channels"
 
-#: ../sites/usbadc10/data/products.py:22
+#: ../sites/usbadc10/data/products.py:20
 msgid "кроссплатфор-менный GUI"
 msgstr "cross-platform GUI"
 
-#: ../sites/usbadc10/data/products.py:24
+#: ../sites/usbadc10/data/products.py:22
 msgid "USB Type-C"
 msgstr "USB Type-C"
 
-#: ../sites/usbadc10/data/products.py:27
+#: ../sites/usbadc10/data/products.py:25
 msgid "Диапазон входного напряжения - 0 - 3.3 В"
 msgstr "Input voltage range - 0 - 3.3 V"
 
-#: ../sites/usbadc10/data/products.py:28
+#: ../sites/usbadc10/data/products.py:26
 msgid "Разрешение - 0.8 мВ"
 msgstr "Resolution - 0.8 mV"
 
-#: ../sites/usbadc10/data/products.py:29
+#: ../sites/usbadc10/data/products.py:27
 msgid "Разрядность АЦП - 12-bit"
 msgstr "12-bit ADC"
 
-#: ../sites/usbadc10/data/products.py:30
+#: ../sites/usbadc10/data/products.py:28
 msgid "Поддержка ОС: Windows, Linux"
 msgstr "OS support: Windows, Linux"
 
-#: ../sites/usbadc10/data/products.py:31
+#: ../sites/usbadc10/data/products.py:29
 msgid "Разъем подключения - USB type C"
 msgstr "Connector - USB type C"
 
-#: ../sites/usbadc10/data/products.py:32
+#: ../sites/usbadc10/data/products.py:30
 msgid "Скорость передачи данных - USB Full-Speed"
 msgstr "Data transfer rate - USB Full-Speed"
 
-#: ../sites/usbadc10/data/products.py:33
+#: ../sites/usbadc10/data/products.py:31
 msgid "До 4000 выборок в секунду одновременно по всем каналам"
 msgstr "Up to 4000 samples per second simultaneously on all channels"
 

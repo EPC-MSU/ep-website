@@ -45,6 +45,16 @@ text-decoration: none;
 	min-width: 880px;
 }
 
+@font-face {
+    font-family: 'AA Futured';
+    src: url('aafutured.ttf') format('truetype');
+}
+
+.sections_headers{
+    font-family: AA Futured;
+    font-size: 2.5em;
+}
+
 /*********************************************************************************/
 /* EyePoint intro
 /*********************************************************************************/

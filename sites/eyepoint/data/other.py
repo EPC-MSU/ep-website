@@ -15,6 +15,9 @@ intro = _(
     "<a href='https://physlab.ru/news/avtomatizirovannyie_sistiemy_poiska_nieispravnostiei_i_"
     "praktika_ikh_primienieniia'>в этой статье.</a> "
 )
+main_section_title = _(
+    "Линейка оборудования EyePoint"
+)
 description = _(
     "EyePoint - линейка простого и функционального оборудования для локализации неисправных компонентов "
     "на платах, использующего метод аналогового сигнатурного анализа и частотный диапазон до 12 МГц."

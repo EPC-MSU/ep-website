@@ -70,9 +70,11 @@ async def index_loc(request):
     # TODO: clearer names
     return {
         "intro": other_data.intro,
+        "main_section_title": other_data.main_section_title,
         "products": products,
         "technical": general.technical,
-        "more_button": general.more_button
+        "more_button": general.more_button,
+        "our_partners": general.our_partners
     }
 
 
