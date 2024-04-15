@@ -424,14 +424,18 @@ hr {
 
 .download-all-text {
     padding: 0.1em 0em 0.1em 0.8em;
-    color: #444;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
 }
 
 .download-all-friendly-name {
-  font-size: 1.4em;
+  font-size: 1.2em;
+  font-weight: 300;
+}
+
+.download-all-description {
+  font-size: 1.2em;
   font-weight: 300;
 }
 

@@ -236,11 +236,11 @@ msgstr "A local server for working with the EyePoint H10 device. "
 
 #: ../sites/eyepoint/data/download.py:144
 msgid "Комплект последних версий программного обеспечения"
-msgstr "Latest software package"
+msgstr "Latest software and documentation"
 
 #: ../sites/eyepoint/data/download.py:146
-msgid "Архив со всем свежим софтом и документацией для этого продукта"
-msgstr "Archive with all latest software and documentation for this product"
+msgid "и документации для этого продукта"
+msgstr "package for this product"
 
 #: ../sites/eyepoint/data/other.py:4
 msgid "EyePoint. Локализаторы неисправных компонентов"
