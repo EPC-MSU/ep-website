@@ -5,7 +5,7 @@ categories = (
     SoftwareCategory(
         name="documentation",
         friendly_name=_("Документация"),
-        icon="doc.png",
+        icon="description.svg",
         description=_(
             "Руководства пользователя, паспорт продукта и другая "
             "техническая документация."
@@ -14,19 +14,19 @@ categories = (
     SoftwareCategory(
         name="datasheet",
         friendly_name=_("Брошюры"),
-        icon="brochure.png",
+        icon="description.svg",
         description=_("Информация о продукте."),
     ),
     SoftwareCategory(
         name="driver",
         friendly_name=_("Драйвер"),
-        icon="driver.png",
+        icon="gear_two.svg",
         description=_("Драйвер для ОС Windows (для ОС Linux драйвер не нужен)."),
     ),
     SoftwareCategory(
         name="firmware",
         friendly_name=_("Прошивка"),
-        icon="firmware.png",
+        icon="memory.svg",
         description=_(
             "Обновление прошивки осуществляется с помощью кроссплатформенного "
             "ПО EPCBootGUI (ссылка на скачивание на этой странице)."
@@ -35,7 +35,7 @@ categories = (
     SoftwareCategory(
         name="software",
         friendly_name=_("Программное обеспечение"),
-        icon="software.png",
+        icon="browse_activity.svg",
         description=_(
             "Пользовательское программное обеспечение для получения зависимостей "
             "напряжения от времени с помощью многоканальных АЦП usbadc10. "
@@ -45,7 +45,7 @@ categories = (
     SoftwareCategory(
         name="debugger",
         friendly_name=_("uRPC Debugger"),
-        icon="software.png",
+        icon="browse_activity.svg",
         description=_(
             "Кроссплатформенное ПО с графическим интерфейсом для отладки "
             "usbadc10. Данное ПО позволяет "
@@ -58,7 +58,7 @@ categories = (
     SoftwareCategory(
         name="epcboot",
         friendly_name=_("EPCBoot GUI"),
-        icon="software.png",
+        icon="display_settings.svg",
         description=_(
             "Кроссплатформенное ПО для обновления прошивок в устройствах usbadc10. "
         ),
@@ -66,7 +66,7 @@ categories = (
     SoftwareCategory(
         name="image",
         friendly_name=_("Прошивка встроенного компьютера"),
-        icon="software.png",
+        icon="deployed_code.svg",
         description=_(
             "Образы встроенной операционной системы для устройств серии EyePoint S. "
             "Обновление образа осуществляется посредством записи на SD карту. "
@@ -79,7 +79,7 @@ categories = (
     SoftwareCategory(
         name="library_doc",
         friendly_name=_("Описание библиотеки для программного управления"),
-        icon="software.png",
+        icon="description.svg",
         description=_(
             "Документация к библиотеке usbadc10, которая может быть использована для "
             "взаимодействия с устройством. Саму библиотеку можно "
@@ -89,7 +89,7 @@ categories = (
     SoftwareCategory(
         name="supporting_software",
         friendly_name=_("Стороннее вспомогательное ПО"),
-        icon="software.png",
+        icon="widgets.svg",
         description=_(
             "Дополнительное стороннее программное обеспечение, "
             "которое может потребоваться при работе с устройствами usbadc10."
@@ -98,7 +98,7 @@ categories = (
     SoftwareCategory(
         name="library",
         friendly_name=_("Библиотека для программного управления"),
-        icon="software.png",
+        icon="library.svg",
         description=_(
             "Кроссплатформенная библиотека для работы с многоканальным usbadc10. "
             "Библиотека написана на языке C, "
@@ -110,7 +110,7 @@ categories = (
     SoftwareCategory(
         name="examples_and_bindings",
         friendly_name=_("Примеры использования API и биндинги " "для Python и C#"),
-        icon="software.png",
+        icon="code_blocks.svg",
         description=_(
             "Комплект примеров программного кода на языках C и Python, "
             "реализующего простые считывания оцифрованных данных с устройства usbadc10. "
@@ -124,6 +124,6 @@ categories = (
 all_software = SoftwareCategory(
     name="all",
     friendly_name=_("Комплект последних версий программного обеспечения"),
-    icon="software.png",
+    icon="_",
     description=_("Архив со всем свежим софтом и документацией для этого продукта"),
 )
