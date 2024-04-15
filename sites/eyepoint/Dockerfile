@@ -14,4 +14,4 @@ RUN pip install --upgrade pip && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 EXPOSE 8080
-CMD python server.py --debug --site=eyepoint
+CMD python server.py --site=eyepoint
