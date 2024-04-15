@@ -67,7 +67,12 @@ async def index(request):
 @aiohttp_jinja2.template("index.html")
 @base_template
 async def index_loc(request):
-    # TODO: clearer names
+    # ===== Redirect to product if only one product
+    # ===== this is Zap feature from https://ximc.ru/issues/95910#note-12
+    if len(products) == 1:
+        language = request.match_info["language"]
+        raise web.HTTPFound(location=f"/{language}/product/{products[0].name}/")
+
     return {
         "intro": other_data.intro,
         "main_section_title": other_data.main_section_title,
