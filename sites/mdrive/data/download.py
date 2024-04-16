@@ -9,8 +9,7 @@ categories = (
         icon="browse_activity.svg",
         description=_(
             "Убедитесь, что все контроллеры отключены от компьютера. "
-            "Запустите программу установки mDrive_Direct_Control."
-            "Информация по установке помещена в разделе "
+            "Информация по установке размещена в разделе "
             "<a href=\"https://doc.mdrive.tech/ru/mdrive/8SMCn-USB/mDrive_Direct_Control_application_Users_guide/mDrive_Direct_Control_installation.html\">Установка mDrive_Direct_Control.</a>"
         ),
     ),
@@ -66,7 +65,7 @@ categories = (
                       "автоматически при установке программного обеспечения mDrive_Direct_Control. Этот файл вы "
                       "можете найти в папке "
                       "`C:\\ Program Files\\mDrive_Direct_Control\\Driver` после установки программы "
-                      "mDrive_Direct_Control. Также указанный файл можно скачать ниже"),
+                      "mDrive_Direct_Control. Также указанный файл можно скачать ниже:"),
     ),
     SoftwareCategory(
         name="revealer",
