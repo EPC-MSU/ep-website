@@ -46,23 +46,6 @@ products = (
               "Delphi, Java, LabWindows, Matlab, VB.NET"),
         ],
     ),
-Product(
-        name="mDrive",
-        picture="main_page_favicon.png",
-        friendly_name=_("Debug product"),
-        description=[
-            _("Debug"),
-        ],
-        extended_description=[
-            _("Debug"),
-        ],
-        highlights=[
-            _("Debug"),
-        ],
-        technical=[
-            _("Debug"),
-        ],
-    ),
 )
 
 assert all([" " not in p.name for p in products])
