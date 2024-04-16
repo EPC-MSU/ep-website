@@ -8,7 +8,10 @@ categories = (
         friendly_name=_("mDrive Direct Control"),
         icon="browse_activity.svg",
         description=_(
-            "Программа mDrive_Direct_Control"
+            "Убедитесь, что все контроллеры отключены от компьютера. "
+            "Запустите программу установки mDrive_Direct_Control."
+            "Информация по установке помещена в разделе "
+            "<a href=\"https://doc.mdrive.tech/ru/mdrive/8SMCn-USB/mDrive_Direct_Control_application_Users_guide/mDrive_Direct_Control_installation.html\">Установка mDrive_Direct_Control.</a>"
         ),
     ),
     SoftwareCategory(
@@ -37,22 +40,14 @@ categories = (
         description=_(
             "1. Скачайте файл с нужной версией прошивки. "
             "<br>2. Запустите mDrive_Direct_Control "
-            "<br>3. Рекомендуется на всякий случай сохранить конфигурационный файл mDrive_Direct_Control перед обновлением "
-            "прошивки."
-            "<br>4. Откройте “Settings…” -> на вкладке “About device” нажмите кнопку “Update from file” и выберите новый "
-            "файл прошивки."
+            "<br>3. Рекомендуется на всякий случай сохранить конфигурационный "
+            "файл mDrive_Direct_Control перед обновлением прошивки."
+            "<br>4. Откройте “Settings…” -> на вкладке “About device” нажмите "
+            "кнопку “Update from file” и выберите новый файл прошивки."
             "<br>5. Не беспокойтесь, если программа mDrive_Direct_Control не отвечает. Подождите пока прошивка будет "
             "успешно обновлена. Обычно это занимает около 10-15 секунд."
             "<br>6. Если настройки изменились, то загрузите сохранённый конфигурационый файл и сохраните его в "
             "энергонезависимую память контроллера с помощью кнопки “Save settings to flash”."
-        ),
-    ),
-    SoftwareCategory(
-        name="examples_and_bindings",
-        friendly_name=_("Примеры для LabView"),
-        icon="code_blocks.svg",
-        description=_(
-            "Примеры использования контроллера в среде LabView (для Windows) можно скачать по ссылке: labview-2.14.17-Labview_12.0.7z"
         ),
     ),
     SoftwareCategory(
@@ -65,11 +60,12 @@ categories = (
     ),
     SoftwareCategory(
         name="inf",
-        friendly_name=_("Драйвер"),
+        friendly_name=_("Драйвера"),
         icon="gear_two.svg",
         description=_("Драйвера контроллеру не требуются, но в среде Windows требуется inf-файл. Он устанавливается "
                       "автоматически при установке программного обеспечения mDrive_Direct_Control. Этот файл вы "
-                      "можете найти в папке C:\Program Files\mDrive_Direct_Control\Driver после установки программы "
+                      "можете найти в папке "
+                      "`C:\\ Program Files\\mDrive_Direct_Control\\Driver` после установки программы "
                       "mDrive_Direct_Control. Также указанный файл можно скачать ниже"),
     ),
     SoftwareCategory(
