@@ -48,31 +48,6 @@ products = (
               "Delphi, Java, LabWindows, Matlab, VB.NET"),
         ],
     ),
-    Product(
-        name="ggg",
-        picture="favicon.png",
-        friendly_name=_("MDrive"),
-        description=[
-            _("description"),
-        ],
-        extended_description=[
-            _(
-                "extended_description"
-            ),
-        ],
-        highlights=[
-            _("Прост в использовании"),
-            _("Снижает нагрузку на инженера"),
-            _("Не повредит плату"),
-        ],
-        technical=[
-            _("Напряжение пробного сигнала: 1.2, 3.3, 5, 12 В"),
-            _("Частота пробного сигнала: 1, 10, 100 Гц, 1, 10, 100 кГц"),
-            _("Диапазон тока: 25 мкА - 25 мА"),
-            _("Чувствительность по R: 1 Ом - 10 МОм"),
-            _("Чувствительность по C: 50 пФ - 6800 мкФ"),
-        ],
-    )
 )
 
 assert all([" " not in p.name for p in products])
