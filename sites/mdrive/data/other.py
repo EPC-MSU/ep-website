@@ -1,7 +1,7 @@
 from site_engine.translator.translator import _
 
 title = _(
-    "mDrive"
+    "ПО mDrive"
 )
 intro = _(
     "mDrive - Контроллер для шагового и BLDC двигателя, позволяющий с высокой скоростью и точностью управлять "
