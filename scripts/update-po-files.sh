@@ -12,8 +12,6 @@ xgettext -d en -o ../sites/usbadc10/locale/en_US/LC_MESSAGES/en.pot \
   --from-code=utf-8
 msgmerge ../sites/usbadc10/locale/en_US/LC_MESSAGES/en.po ../sites/usbadc10/locale/en_US/LC_MESSAGES/en.pot --update
 
-pause
-
 # general + mdrive
 xgettext -d en -o ../sites/mdrive/locale/en_US/LC_MESSAGES/en.pot \
   ../site_engine/specification/general.py \
