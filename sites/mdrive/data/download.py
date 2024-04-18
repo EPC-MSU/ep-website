@@ -9,8 +9,7 @@ categories = (
         icon="browse_activity.svg",
         description=_(
             "Убедитесь, что все контроллеры отключены от компьютера. "
-            "Информация по установке размещена в разделе "
-            "<a href=\"https://doc.mdrive.tech/ru/mdrive/8SMCn-USB/mDrive_Direct_Control_application_Users_guide/mDrive_Direct_Control_installation.html\">Установка mDrive_Direct_Control.</a>"
+            "Информация по установке размещена в документации в разделе 'Установка mDrive Direct Control'"
         ),
     ),
     SoftwareCategory(
@@ -18,7 +17,8 @@ categories = (
         friendly_name=_("Документация"),
         icon="description.svg",
         description=_(
-            "Документация"
+            "Руководство пользователя: Техническое описание устройства, "
+            "руководство по программе mDrive Direct Control, программирование и др."
         ),
     ),
     SoftwareCategory(
@@ -26,10 +26,9 @@ categories = (
         friendly_name=_("Комплект разработчика"),
         icon="gear_two.svg",
         description=_(
-            "С описанием комплекта разработчика можно ознакомиться в разделе `Руководство по программированию' или в "
-            "папке /docs-ru/index.html указанного выше архива. Библиотека находится в /ximc-2.14.20 "
-            "Примеры находятся в /examples-2.14.20 "
-            "PDF-версия руководства по программированию может быть скачана отсюда."
+            "С описанием комплекта разработчика можно ознакомиться в папке ximc/docs-ru/index.html "
+            "указанного ниже архива. PDF-версия руководства по программированию может быть скачана также отсюда. "
+            "Примеры находятся в examples"
         ),
     ),
     SoftwareCategory(
@@ -64,7 +63,7 @@ categories = (
         description=_("Драйвера контроллеру не требуются, но в среде Windows требуется inf-файл. Он устанавливается "
                       "автоматически при установке программного обеспечения mDrive_Direct_Control. Этот файл вы "
                       "можете найти в папке "
-                      "`C:\\ Program Files\\mDrive_Direct_Control\\Driver` после установки программы "
+                      "C:\\Program Files\\mDrive_Direct_Control\\Driver после установки программы "
                       "mDrive_Direct_Control. Также указанный файл можно скачать ниже:"),
     ),
     SoftwareCategory(
