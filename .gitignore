@@ -3,6 +3,7 @@ venv
 notes.txt
 /sites/*/download/
 /sites/*/download/download_sample.zip
+/view/*
 *.pem
 *.pyc
 *.pot
