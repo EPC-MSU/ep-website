@@ -8,8 +8,8 @@ from os.path import join as join_path
 from os.path import sep
 from re import findall
 from typing import Dict, List, Optional
-
-import imohash
+from hashlib import sha1
+import os
 
 from site_engine.translator import all_languages
 
@@ -18,14 +18,21 @@ from site_engine.translator import all_languages
 class FileInfo:
     version: LooseVersion
     date: date
+    utc_time: str
+    sha1: str
     size: int
     link: str
     basename: str
     full_path: str
-    code: str
     platform: str
     name: str
     language: Optional[str] = None
+
+    def __eq__(self, other):
+        return self.sha1 == other.sha1 and self.full_path == other.full_path
+
+    def __hash__(self):
+        return int(self.sha1, 16)  # str hash to int
 
     @classmethod
     def fromfile(cls, path: str, url_prefix: str) -> "FileInfo":
@@ -56,14 +63,22 @@ class FileInfo:
         # to download/EyePointS1/firmware
         path_short = join_path(*path.split(sep)[-3:])
 
+        file = open(path, "rb")
+
+        sha1_hash = str(sha1(file.read()).hexdigest())
+        utc_time = str(int(os.stat(path).st_mtime))
+
+        file.close()
+
         return FileInfo(
             LooseVersion(version),
             datetime.fromtimestamp(getmtime(path)).date(),
+            utc_time,
+            sha1_hash,
             getsize(path),
             urllib.quote(join_path(url_prefix, path_short)),
             file_name,
             path,
-            imohash.hashfile(path),
             platform,
             name,
             language=file_language,

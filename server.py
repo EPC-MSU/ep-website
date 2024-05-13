@@ -83,6 +83,16 @@ async def index_loc(request):
     }
 
 
+@routes.get("/products.xml")
+async def products_xml(request):
+    with open('products.xml') as f:
+        data = f.read()
+    content = data.replace('{{ domain }}', f'{request.scheme}://{request.host}')
+    with open('products.xml', 'w') as f:
+        f.write(content)
+    return web.FileResponse('products.xml')
+
+
 @routes.get("/robots.txt")
 async def robots(request):
     content = dedent(
@@ -126,9 +136,6 @@ async def download(request):
         "release_date": general.release_date,
         "older_releases": general.older_releases,
     }
-
-
-
 
 
 def _app_factory() -> web.Application:

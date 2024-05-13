@@ -6,3 +6,4 @@ csscompressor
 htmlmin
 jinja2
 imohash
+lxml

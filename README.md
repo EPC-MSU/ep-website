@@ -20,7 +20,7 @@
 * Установить все необходимые пакеты и запустить:
 ```shell
 python -m pip install -r requirements.txt
-python server.py --site <sitename>
+python server.py --site=<sitename>
 ```
 Сайт появится на localhost:8080
 
