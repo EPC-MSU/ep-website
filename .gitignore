@@ -3,9 +3,11 @@ venv
 notes.txt
 /sites/*/download/
 /sites/*/download/download_sample.zip
+/view/*
 *.pem
 *.pyc
 *.pot
 *.po~
 *.po.orig
 *__pycache__*
+products.xml

@@ -10,6 +10,7 @@ from os import remove
 from typing import Dict, List, Optional
 
 from site_engine.filemanager.walker.walk import FileInfo, walk
+from site_engine.filemanager.walker.products_xml import generate_products_xml
 
 
 class ArchiveInfo:
@@ -173,6 +174,9 @@ class FileManager:
         new_files = walk(self._directory, self._url_prefix)
         old_files = self._files
         self._files = new_files
+
+        generate_products_xml(new_files)
+
         with ProcessPoolExecutor() as executor:
             for product, software in new_files.items():
                 for lang in self._languages:
@@ -200,11 +204,11 @@ class FileManager:
 
     async def _periodic_task(self):
         while True:
-            try:
-                logging.info("Refresh file list...")
-                await self._refresh()
-                logging.info("Refresh file list done.")
-                logging.info("Site ready on http://localhost:8080")
-            except Exception as err:
-                logging.error("Exception caught during file refresh: " + str(err))
+            # try:
+            logging.info("Refresh file list...")
+            await self._refresh()
+            logging.info("Refresh file list done.")
+            logging.info("Site ready on http://localhost:8080")
+            # except Exception as err:
+            #     logging.error("Exception caught during file refresh: " + str(err))
             await asyncio.sleep(self._timeout)

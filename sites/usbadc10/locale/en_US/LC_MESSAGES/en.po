@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-12 20:27+0300\n"
-"PO-Revision-Date: 2024-04-18 11:59+0300\n"
+"POT-Creation-Date: 2024-04-25 16:28+0300\n"
+"PO-Revision-Date: 2024-04-25 16:30+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
-"X-Generator: Poedit 3.4.2\n"
+"X-Generator: Poedit 2.3.1\n"
 
 #: ../site_engine/specification/general.py:3
 msgid "Версия"
@@ -105,7 +105,7 @@ msgstr "Software for PC"
 #: ../sites/usbadc10/data/download.py:40
 msgid ""
 "Пользовательское программное обеспечение для получения зависимостей "
-"напряжения от времени с помощью многоканальных АЦП usbadc10. Для работы ПО "
+"напряжения от времени с помощью многоканального АЦП usbadc10. Для работы ПО "
 "потребуется драйвер. Его можно скачать на данной странице вместе с "
 "программой."
 msgstr ""
@@ -258,8 +258,8 @@ msgid ""
 msgstr "EyePoint, usbadc10, localizing faulty components, EPC MSU"
 
 #: ../sites/usbadc10/data/products.py:7
-msgid "usbadc10 v1.0.0"
-msgstr "usbadc10 v1.0.0"
+msgid "usbadc10 v1.1.1"
+msgstr "usbadc10 v1.1.1"
 
 #: ../sites/usbadc10/data/products.py:10
 msgid "Аналого-цифровой преобразователь"
@@ -269,15 +269,13 @@ msgstr "Analog to digital converter"
 msgid ""
 "Аналого-цифровой преобразователь usbadc10 имеет частоту до 4000 отсчётов в "
 "секунду, одновременно по всем каналам. В комплекте с устройством "
-"поставляется программное обеспечение для получения измерений. ПО "
-"поддерживается ОС Windows и Linux. Все необходимое <b>программное "
-"обеспечение</b> можно найти в свободном доступе. "
+"поставляется программное обеспечение для получения измерений. Поддерживаются "
+"ОС Windows 7 SP1 и новее, Linux (протестировано на Ubuntu 18.04, 20.04 "
 msgstr ""
 "The usbadc10 analog-to-digital converter has a frequency of up to 4000 "
 "samples per second simultaneously on all channels. The device is equipped "
-"with software for obtaining measurements. The software is supported by "
-"Windows and Linux. All the necessary <b>software</b> can be found in the "
-"public domain. "
+"with software for obtaining measurements.  Support Windows 7 SP1 and newer, "
+"Linux (tested on Ubuntu 18.04, 20.04) "
 
 #: ../sites/usbadc10/data/products.py:19
 msgid "10 каналов"
@@ -287,34 +285,34 @@ msgstr "10 channels"
 msgid "кроссплатфор-менный GUI"
 msgstr "cross-platform GUI"
 
-#: ../sites/usbadc10/data/products.py:22
+#: ../sites/usbadc10/data/products.py:21
 msgid "USB Type-C"
 msgstr "USB Type-C"
 
-#: ../sites/usbadc10/data/products.py:25
+#: ../sites/usbadc10/data/products.py:24
 msgid "Диапазон входного напряжения - 0 - 3.3 В"
 msgstr "Input voltage range - 0 - 3.3 V"
 
-#: ../sites/usbadc10/data/products.py:26
+#: ../sites/usbadc10/data/products.py:25
 msgid "Разрешение - 0.8 мВ"
 msgstr "Resolution - 0.8 mV"
 
-#: ../sites/usbadc10/data/products.py:27
+#: ../sites/usbadc10/data/products.py:26
 msgid "Разрядность АЦП - 12-bit"
 msgstr "12-bit ADC"
 
-#: ../sites/usbadc10/data/products.py:28
+#: ../sites/usbadc10/data/products.py:27
 msgid "Поддержка ОС: Windows, Linux"
 msgstr "OS support: Windows, Linux"
 
-#: ../sites/usbadc10/data/products.py:29
+#: ../sites/usbadc10/data/products.py:28
 msgid "Разъем подключения - USB type C"
 msgstr "Connector - USB type C"
 
-#: ../sites/usbadc10/data/products.py:30
+#: ../sites/usbadc10/data/products.py:29
 msgid "Скорость передачи данных - USB Full-Speed"
 msgstr "Data transfer rate - USB Full-Speed"
 
-#: ../sites/usbadc10/data/products.py:31
+#: ../sites/usbadc10/data/products.py:30
 msgid "До 4000 выборок в секунду одновременно по всем каналам"
 msgstr "Up to 4000 samples per second simultaneously on all channels"
