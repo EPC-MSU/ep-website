@@ -10,7 +10,7 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-COPY authorized_keys /root/.ssh/
+COPY dockershare/authorized_keys /root/.ssh/
 
 EXPOSE 22
 
