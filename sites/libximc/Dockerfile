@@ -8,5 +8,5 @@ RUN apt-get update && \
     echo $TZ > /etc/timezone && \
     dpkg-reconfigure -f noninteractive tzdata
 
-COPY conf/default.conf /etc/nginx/conf.d/
+COPY sites/libximc/conf/default.conf /etc/nginx/conf.d/
 
