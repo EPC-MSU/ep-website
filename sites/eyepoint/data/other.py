@@ -25,3 +25,11 @@ description = _(
 tags = _(
     "EyePoint, диагностика электронных схем, анализ неисправностей, ЦИФ МГУ"
 )
+
+footer_address = _("Россия, Москва, 119333<br>ул. Фотиевой, дом 5, строение 1")
+footer_address_link = "https://physlab.ru/contacts"
+footer_org_name = _("ООО «ЦИФ МГУ имени М.В. Ломоносова»")
+footer_link = "https://physlab.ru/"
+footer_link_text = "physlab.ru"
+footer_phone = "+7(499)343-56-24"
+footer_mail = "info@physlab.ru"
