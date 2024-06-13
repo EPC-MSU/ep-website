@@ -17,3 +17,11 @@ description = _(
 tags = _(
     "mDrive"
 )
+
+footer_address = _("Юридический адрес: Москва, <br> вн.тер.г. городской округ Троицк, г Троицк,<br> ул Лесная, д. 4Б, помещ. 1, ком. 65,66")
+footer_address_link = ""
+footer_org_name = _("ООО \"СТЭЛМ\"")
+footer_link = "https://mdrive.tech"
+footer_link_text = "mdrive.tech"
+footer_phone = ""
+footer_mail = "info@stelm.ru"

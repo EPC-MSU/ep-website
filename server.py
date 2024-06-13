@@ -47,8 +47,15 @@ def base_template(func):
         result = await func(request)
         # TODO: clearer names
         return {
-            "address": general.address,
-            "epc": general.epc,
+            "footer_address": other_data.footer_address,
+            "footer_address_link": other_data.footer_address_link,
+            "footer_org_name": other_data.footer_org_name,
+            "footer_link": other_data.footer_link,
+            "footer_link_text": other_data.footer_link_text,
+            "footer_phone": other_data.footer_phone,
+            "footer_mail": other_data.footer_mail,
+
+
             "description": other_data.description,
             "tags": other_data.tags,
             "title": other_data.title,
