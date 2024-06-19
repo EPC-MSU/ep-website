@@ -18,5 +18,3 @@ xgettext -d en -o ../sites/mdrive/locale/en_US/LC_MESSAGES/en.pot \
   ../sites/mdrive/data/download.py ../sites/mdrive/data/other.py ../sites/mdrive/data/products.py \
   --from-code=utf-8
 msgmerge ../sites/mdrive/locale/en_US/LC_MESSAGES/en.po ../sites/mdrive/locale/en_US/LC_MESSAGES/en.pot --update
-
-pause
