@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-18 11:50+0300\n"
-"PO-Revision-Date: 2024-04-18 11:58+0300\n"
+"POT-Creation-Date: 2024-06-25 12:49+0300\n"
+"PO-Revision-Date: 2024-06-25 13:05+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
-"X-Generator: Poedit 3.4.2\n"
+"X-Generator: Poedit 3.4.3\n"
 
 #: ../site_engine/specification/general.py:3
 msgid "Версия"
@@ -41,23 +41,15 @@ msgstr "Download"
 msgid "Старые версии"
 msgstr "Older releases"
 
-#: ../site_engine/specification/general.py:10
+#: ../site_engine/specification/general.py:9
 msgid "Технические данные"
 msgstr "Specifications"
 
-#: ../site_engine/specification/general.py:11
-msgid "Россия, Москва, 119333<br>ул. Фотиевой, дом 5, строение 1"
-msgstr "Russia, Moscow, 119333<br>Fotievoy street 5, bldg. 1"
-
-#: ../site_engine/specification/general.py:12
+#: ../site_engine/specification/general.py:10
 msgid "Подробнее"
 msgstr "More"
 
-#: ../site_engine/specification/general.py:13
-msgid "ООО «ЦИФ МГУ имени М.В. Ломоносова»"
-msgstr "Engineering Physics Center MSU"
-
-#: ../site_engine/specification/general.py:15
+#: ../site_engine/specification/general.py:11
 msgid "Наши партнёры"
 msgstr "Our partners"
 
@@ -67,22 +59,25 @@ msgstr "mDrive Direct Control"
 
 #: ../sites/mdrive/data/download.py:11
 msgid ""
-"Убедитесь, что все контроллеры отключены от компьютера. Информация по установке "
-"размещена в документации в разделе 'Установка mDrive Direct Control'"
+"Программа с удобным графическим интерфейсом пользователя, предназначенная "
+"для управления позиционерами, диагностики моторов, настройки двигателей и "
+"др. Информация по установке размещена в руководстве пользователя в главе "
+"'5.6 Установка mDrive Direct Control'"
 msgstr ""
-"Disconnect all controllers from the PC. Installation manual can be found in "
-"documentation under the section 'mDrive Direct Control installation'"
+"A program with a convenient GUI designed to control positioners, diagnose "
+"motors, configure motors, etc. Installation information is located in the "
+"user manual in chapter '5.6 mDrive Direct Control installation'"
 
-#: ../sites/mdrive/data/download.py:17
-msgid "Документация"
-msgstr "Documentation"
+#: ../sites/mdrive/data/download.py:18
+msgid "Руководство пользователя"
+msgstr "User manual"
 
-#: ../sites/mdrive/data/download.py:20
+#: ../sites/mdrive/data/download.py:21
 msgid ""
-"Руководство пользователя: Техническое описание устройства, руководство по программе "
-"mDrive Direct Control, программирование и др."
+"Техническое описание устройства, руководство по программе mDrive Direct "
+"Control, программирование и др."
 msgstr ""
-"User Manual: Technical specification, mDrive Direct Control application User's guide, "
+"Technical specification, mDrive Direct Control application User's guide, "
 "programming, etc."
 
 #: ../sites/mdrive/data/download.py:26
@@ -91,13 +86,14 @@ msgstr "Developer kit"
 
 #: ../sites/mdrive/data/download.py:29
 msgid ""
-"С описанием комплекта разработчика можно ознакомиться в папке ximc/docs-ru/index.html "
-"указанного ниже архива. PDF-версия руководства по программированию может быть скачана "
-"также отсюда. Примеры находятся в examples"
+"С описанием комплекта разработчика можно ознакомиться в папке ximc/docs-ru/"
+"html/index.html указанного ниже архива. PDF-версия руководства по "
+"программированию может быть скачана также отсюда. Примеры находятся в "
+"examples"
 msgstr ""
-"The description of the developer kit can be found in the ximc/docs-en/index.html folder "
-"of the archive below. A PDF version of the programming guide can also be downloaded "
-"from here. Examples can be found in examples"
+"The description of the developer kit can be found in the ximc/docs-en/html/"
+"index.html folder of the archive below. A PDF version of the programming "
+"guide can also be downloaded from here. Examples can be found in examples"
 
 #: ../sites/mdrive/data/download.py:36
 msgid "Прошивка контроллера"
@@ -105,22 +101,25 @@ msgstr "Controller firmware"
 
 #: ../sites/mdrive/data/download.py:39
 msgid ""
-"1. Скачайте файл с нужной версией прошивки. <br>2. Запустите mDrive_Direct_Control "
-"<br>3. Рекомендуется на всякий случай сохранить конфигурационный файл "
-"mDrive_Direct_Control перед обновлением прошивки.<br>4. Откройте “Settings…” -> на "
-"вкладке “About device” нажмите кнопку “Update from file” и выберите новый файл прошивки."
-"<br>5. Не беспокойтесь, если программа mDrive_Direct_Control не отвечает. Подождите "
-"пока прошивка будет успешно обновлена. Обычно это занимает около 10-15 секунд.<br>6. "
-"Если настройки изменились, то загрузите сохранённый конфигурационый файл и сохраните "
-"его в энергонезависимую память контроллера с помощью кнопки “Save settings to flash”."
+"1. Скачайте файл с нужной версией прошивки. <br>2. Запустите "
+"mDrive_Direct_Control <br>3. Рекомендуется на всякий случай сохранить "
+"конфигурационный файл mDrive_Direct_Control перед обновлением прошивки."
+"<br>4. Откройте 'Settings…' -> на вкладке 'About device' нажмите кнопку "
+"'Update from file' и выберите новый файл прошивки.<br>5. Не беспокойтесь, "
+"если программа mDrive_Direct_Control не отвечает. Подождите пока прошивка "
+"будет успешно обновлена. Обычно это занимает около 10-15 секунд.<br>6. Если "
+"настройки изменились, то загрузите сохранённый конфигурационный файл и "
+"сохраните его в энергонезависимую память контроллера с помощью кнопки 'Save "
+"settings to flash'."
 msgstr ""
-"1. Download firmware file.<br>2.Open mDrive_Direct_Control<br>3.It is recommended to "
-"make a backup of your mDrive_Direct_Control configuration file before firmware update."
-"<br>4.Open “Settings…” -> “About device” tab, press “Update from file” button, select "
-"new firmware file and press “Open”.<br>5. mDrive_Direct_Control might stop responding "
-"for a while. Please wait while firmware is being uploaded, it should take about 10-15 "
-"seconds.<br>6. If settings have changed then load your configuration file and save it "
-"to the controller flash memory by pressing “Save settings to flash” button."
+"1. Download firmware file.<br>2.Open mDrive_Direct_Control<br>3.It is "
+"recommended to make a backup of your mDrive_Direct_Control configuration "
+"file before firmware update.<br>4.Open 'Settings…' -> 'About device' tab, "
+"press 'Update from file' button, select new firmware file and press 'Open'."
+"<br>5. mDrive_Direct_Control might stop responding for a while. Please wait "
+"while firmware is being uploaded, it should take about 10-15 seconds.<br>6. "
+"If settings have changed then load your configuration file and save it to "
+"the controller flash memory by pressing 'Save settings to flash' button."
 
 #: ../sites/mdrive/data/download.py:53
 msgid "Примеры для LabView (Windows)"
@@ -137,26 +136,27 @@ msgstr "Drivers"
 #: ../sites/mdrive/data/download.py:63
 msgid ""
 "Драйвера контроллеру не требуются, но в среде Windows требуется inf-файл. Он "
-"устанавливается автоматически при установке программного обеспечения "
-"mDrive_Direct_Control. Этот файл вы можете найти в папке C:\\Program "
-"Files\\mDrive_Direct_Control\\Driver после установки программы mDrive_Direct_Control. "
-"Также указанный файл можно скачать ниже:"
+"устанавливается автоматически при установке программного обеспечения mDrive "
+"Direct Control. Этот файл вы можете найти в папке C:\\Program Files"
+"\\mDrive_Direct_Control\\Driver после установки программы "
+"mDrive_Direct_Control. Также указанный файл можно скачать ниже."
 msgstr ""
-"On Windows controller doesn't need additional drivers, however you need an inf-file for "
-"the controller to be recognized by the operating system. It will be automatically "
-"installed with mDrive_Direct_Control. It can be found in C:\\Program "
-"Files\\mDrive_Direct_Control\\Driver after installation. Also you may download it below:"
+"On Windows controller doesn't need additional drivers, however you need an "
+"inf-file for the controller to be recognized by the operating system. It "
+"will be automatically installed with mDrive_Direct_Control. It can be found "
+"in C:\\Program Files\\mDrive_Direct_Control\\Driver after installation. Also "
+"you may download it below."
 
 #: ../sites/mdrive/data/download.py:71
-msgid "REVEALER"
-msgstr "REVEALER"
+msgid "Revealer"
+msgstr "Revealer"
 
 #: ../sites/mdrive/data/download.py:74
 msgid ""
-"«Revealer» предназначен для автоматического обнаружения устройств, подключенных к вашей "
-"локальной сети."
+"Утилита для автоматического обнаружения устройств mDrive, подключенных к "
+"вашей локальной сети."
 msgstr ""
-"\"Revealer\" is designed to automatically detect devices connected to your local "
+"A utility for automatically detecting mDrive devices connected to your local "
 "network."
 
 #: ../sites/mdrive/data/download.py:82
@@ -173,11 +173,11 @@ msgstr "mDrive software"
 
 #: ../sites/mdrive/data/other.py:7 ../sites/mdrive/data/other.py:14
 msgid ""
-"mDrive - Контроллер для шагового и BLDC двигателя, позволяющий с высокой скоростью и "
-"точностью управлять движениями."
+"mDrive - Контроллер для шагового и BLDC двигателя, позволяющий с высокой "
+"скоростью и точностью управлять движениями."
 msgstr ""
-"mDrive - Controller for stepper and BLDC motors, allowing you to control movements with "
-"high speed and accuracy."
+"mDrive - Controller for stepper and BLDC motors, allowing you to control "
+"movements with high speed and accuracy."
 
 #: ../sites/mdrive/data/other.py:11
 msgid "Программное обеспеченье для mDrive"
@@ -187,13 +187,25 @@ msgstr "Software for mDrive"
 msgid "mDrive"
 msgstr "mDrive"
 
+#: ../sites/mdrive/data/other.py:21
+msgid ""
+"Юридический адрес: Москва, <br> вн.тер.г. городской округ Троицк, г Троицк,"
+"<br> ул Лесная, д. 4Б, помещ. 1, ком. 65,66"
+msgstr ""
+"Legal address: Москва, <br> вн.тер.г. городской округ Троицк, г Троицк,<br> "
+"ул Лесная, д. 4Б, помещ. 1, ком. 65,66"
+
+#: ../sites/mdrive/data/other.py:23
+msgid "ООО \"СТЭЛМ\""
+msgstr "ООО \"СТЭЛМ\""
+
 #: ../sites/mdrive/data/products.py:10 ../sites/mdrive/data/products.py:14
 msgid ""
-"Контроллер для шагового и BLDC двигателя, позволяющий с высокой скоростью и точностью "
-"управлять движениями."
+"Контроллер для шагового и BLDC двигателя, позволяющий с высокой скоростью и "
+"точностью управлять движениями."
 msgstr ""
-"Controller for stepper and BLDC motors, allowing you to control movements with high "
-"speed and accuracy."
+"Controller for stepper and BLDC motors, allowing you to control movements "
+"with high speed and accuracy."
 
 #: ../sites/mdrive/data/products.py:18 ../sites/mdrive/data/products.py:23
 msgid "Количество осей: 1 - 3"
@@ -237,21 +249,22 @@ msgstr "Number of digital inputs/outputs: 3 inputs, 1 output (EXTIO)"
 
 #: ../sites/mdrive/data/products.py:31
 msgid ""
-"Система синхронизации: внутренняя (общая для всех осей, для возможности создания "
-"связанного движения по траектории) и внешняя (индивидуальная для каждой оси)"
+"Система синхронизации: внутренняя (общая для всех осей, для возможности "
+"создания связанного движения по траектории) и внешняя (индивидуальная для "
+"каждой оси)"
 msgstr ""
-"Synchronization supply system: internal (common to all axes, for the possibility of "
-"creating a connected motion along the trajectory) and external (individual for each "
-"axis)"
+"Synchronization supply system: internal (common to all axes, for the "
+"possibility of creating a connected motion along the trajectory) and "
+"external (individual for each axis)"
 
 #: ../sites/mdrive/data/products.py:33
 msgid ""
-"Возможность задавать напряжение: от 5 до 24 В для выходов EXTIO, SYNC, EMBRAKE (зависит "
-"от напряжения, поданного на EXT REF SUPPLY)"
+"Возможность задавать напряжение: от 5 до 24 В для выходов EXTIO, SYNC, "
+"EMBRAKE (зависит от напряжения, поданного на EXT REF SUPPLY)"
 msgstr ""
-"Possibility to set the voltage of the output signals according to the user’s purposes: "
-"from 5 to 24 V for EXTIO, SYNC, EMBRAKE outputs (depends on the voltage applied to EXT "
-"REF SUPPLY)"
+"Possibility to set the voltage of the output signals according to the user’s "
+"purposes: from 5 to 24 V for EXTIO, SYNC, EMBRAKE outputs (depends on the "
+"voltage applied to EXT REF SUPPLY)"
 
 #: ../sites/mdrive/data/products.py:35
 msgid "Подключение к ПК: через USB или Ethernet"
@@ -263,19 +276,19 @@ msgstr "Controller dimensions: 155 x 112 x 59 mm"
 
 #: ../sites/mdrive/data/products.py:37
 msgid ""
-"Вес контроллера:<br>Одноосный контроллер: 0.533 кг<br>Двухосный контроллер: 0.603 "
-"кг<br>Трехосный контроллер: 0.669 кг"
+"Вес контроллера:<br>Одноосный контроллер: 0.533 кг<br>Двухосный контроллер: "
+"0.603 кг<br>Трехосный контроллер: 0.669 кг"
 msgstr ""
-"Controller weights:<br>One-axis controller 533 g<br>Two-axis controller 603 g<br>Three-"
-"axis controller 669 g"
+"Controller weights:<br>One-axis controller 533 g<br>Two-axis controller 603 "
+"g<br>Three-axis controller 669 g"
 
 #: ../sites/mdrive/data/products.py:41
 msgid ""
-"Совместимость с типами ОС: Windows (7, 8, 10, 11), Linux , MacOS Sierra и новее для "
-"Intel и Apple Silicon (с использованием Rosetta 2)"
+"Совместимость с типами ОС: Windows (7, 8, 10, 11), Linux , MacOS Sierra и "
+"новее для Intel и Apple Silicon (с использованием Rosetta 2)"
 msgstr ""
-"Compatibility with OS types: Windows (XP SP3, Vista, 7, 8, 10, 11), Linux, Mac OS for "
-"intel, including\n"
+"Compatibility with OS types: Windows (XP SP3, Vista, 7, 8, 10, 11), Linux, "
+"Mac OS for intel, including\n"
 "64-bit versions and Apple Silicon (using Rosetta 2)"
 
 #: ../sites/mdrive/data/products.py:43
@@ -284,10 +297,32 @@ msgstr "A user-friendly graphical interface: mDrive Direct Control"
 
 #: ../sites/mdrive/data/products.py:44
 msgid ""
-"Возможность программного управления: контроллер поставляется с кросс-платформенной "
-"библиотекой и примерами, которые позволяют быстро начать программирование с "
-"использованием C/C++, C#, Python, Delphi, Java, LabView, Matlab, VB.NET"
+"Возможность программного управления: контроллер поставляется с кросс-"
+"платформенной библиотекой и примерами, которые позволяют быстро начать "
+"программирование с использованием C/C++, C#, Python, Delphi, Java, LabView, "
+"Matlab, VB.NET"
 msgstr ""
-"Programming language supports: the controller comes with a cross-platform library and "
-"examples that allow you to quickly start programming using C/C++, C#, Python Delphi, "
-"Java, LabView, Matlab, VB.NET"
+"Programming language supports: the controller comes with a cross-platform "
+"library and examples that allow you to quickly start programming using C/C+"
+"+, C#, Python Delphi, Java, LabView, Matlab, VB.NET"
+
+#~ msgid ""
+#~ "Убедитесь, что все контроллеры отключены от компьютера. Информация по "
+#~ "установке размещена в разделе документации ниже в главе '5.6 Установка "
+#~ "mDrive Direct Control'"
+#~ msgstr ""
+#~ "Disconnect all controllers from the PC. Installation manual can be found "
+#~ "in documentation section at chapter '5.6 mDrive Direct Control "
+#~ "installation'"
+
+#~ msgid "Документация"
+#~ msgstr "Documentation"
+
+#~ msgid "REVEALER"
+#~ msgstr "REVEALER"
+
+#~ msgid "Россия, Москва, 119333<br>ул. Фотиевой, дом 5, строение 1"
+#~ msgstr "Russia, Moscow, 119333<br>Fotievoy street 5, bldg. 1"
+
+#~ msgid "ООО «ЦИФ МГУ имени М.В. Ломоносова»"
+#~ msgstr "Engineering Physics Center MSU"
