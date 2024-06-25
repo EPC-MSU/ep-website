@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-25 16:28+0300\n"
+"POT-Creation-Date: 2024-06-19 12:55+0300\n"
 "PO-Revision-Date: 2024-04-25 16:30+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -41,23 +41,15 @@ msgstr "Download"
 msgid "Старые версии"
 msgstr "Older releases"
 
-#: ../site_engine/specification/general.py:10
+#: ../site_engine/specification/general.py:9
 msgid "Технические данные"
 msgstr "Specifications"
 
-#: ../site_engine/specification/general.py:11
-msgid "Россия, Москва, 119333<br>ул. Фотиевой, дом 5, строение 1"
-msgstr "Russia, Moscow, 119333<br>Fotievoy street 5, bldg. 1"
-
-#: ../site_engine/specification/general.py:12
+#: ../site_engine/specification/general.py:10
 msgid "Подробнее"
 msgstr "More"
 
-#: ../site_engine/specification/general.py:13
-msgid "ООО «ЦИФ МГУ имени М.В. Ломоносова»"
-msgstr "Engineering Physics Center MSU"
-
-#: ../site_engine/specification/general.py:15
+#: ../site_engine/specification/general.py:11
 msgid "Наши партнёры"
 msgstr "Our partners"
 
@@ -256,6 +248,14 @@ msgid ""
 "EyePoint, usbadc10, диагностика электронных схем, анализ неисправностей, "
 "аналого-цифровой преобразователь, ЦИФ МГУ"
 msgstr "EyePoint, usbadc10, localizing faulty components, EPC MSU"
+
+#: ../sites/usbadc10/data/other.py:23
+msgid "Россия, Москва, 119333<br>ул. Фотиевой, дом 5, строение 1"
+msgstr "Russia, Moscow, 119333<br>Fotievoy street 5, bldg. 1"
+
+#: ../sites/usbadc10/data/other.py:25
+msgid "ООО «ЦИФ МГУ имени М.В. Ломоносова»"
+msgstr "Engineering Physics Center MSU"
 
 #: ../sites/usbadc10/data/products.py:7
 msgid "usbadc10 v1.1.1"
