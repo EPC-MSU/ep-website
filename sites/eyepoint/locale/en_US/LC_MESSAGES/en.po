@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-19 12:55+0300\n"
-"PO-Revision-Date: 2024-04-25 11:12+0300\n"
+"POT-Creation-Date: 2024-07-01 10:43+0300\n"
+"PO-Revision-Date: 2024-07-01 11:57+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -303,8 +303,8 @@ msgid ""
 "Автоматическая система локализации неисправных электронных компонентов на "
 "печатных платах. "
 msgstr ""
-"Automatic system for detecting counterfeit, re-labeled or faulty electronic "
-"components in BGA enclosures. "
+"Automatic localization system for faulty electronic components on printed circuit "
+"boards. "
 
 #: ../sites/eyepoint/data/products.py:14
 msgid ""
@@ -317,13 +317,12 @@ msgid ""
 "система EyePoint P10. Вы получите качественный результат за считанные "
 "минуты. "
 msgstr ""
-"Automatic system for detecting counterfeit, re-labeled or faulty electronic "
-"components in BGA enclosures. <br />The system combines an automatic optical "
-"component pin recognition system and a flying probe for conducting "
-"electrical testing by a safe method of analog signature analysis. All you "
-"need to find faults on the test board is the removed volt–ampere "
-"characteristics (signatures) of the reference board and our EyePoint P10 "
-"system. You will get a high-quality result in a few minutes. "
+"Automatic localization system for faulty electronic components on printed circuit "
+"boards. <br />The system combines an automatic optical component pin recognition "
+"system and a flying probe for conducting electrical testing by a safe method of "
+"analog signature analysis. All you need to find faults on the test board is the "
+"removed volt–ampere characteristics (signatures) of the reference board and our "
+"EyePoint P10 system. You will get a high-quality result in a few minutes. "
 
 #: ../sites/eyepoint/data/products.py:19 ../sites/eyepoint/data/products.py:62
 msgid "Прост в использовании"
@@ -394,7 +393,7 @@ msgstr "L Sensitivity: 1 μH - 0.01 H"
 
 #: ../sites/eyepoint/data/products.py:30
 msgid "Поддерживаемые типы корпусов: LQFP, SOIC, SMD, SOT, DIP и т.д."
-msgstr "Supported enclosure types: LQFP, SOIC, SMD, SMT, DIP, etc."
+msgstr "Supported enclosure types: LQFP, SOIC, SMD, SOT, DIP, etc."
 
 #: ../sites/eyepoint/data/products.py:31 ../sites/eyepoint/data/products.py:74
 #: ../sites/eyepoint/data/products.py:117
@@ -418,7 +417,7 @@ msgstr "Testing speed: up to 100 points/min"
 #: ../sites/eyepoint/data/products.py:36 ../sites/eyepoint/data/products.py:79
 #: ../sites/eyepoint/data/products.py:122
 msgid "Точность установки щупа: 30 мкм"
-msgstr "Accuracy of setting the probe: 30 µm"
+msgstr "Probe installation accuracy: 30 µm"
 
 #: ../sites/eyepoint/data/products.py:37
 msgid "Время на смену платы: 30 сек"
@@ -462,8 +461,8 @@ msgid ""
 "Автоматическая система для обнаружения контрафактных, перемаркированных или "
 "неисправных электронных компонентов в BGA-корпусах. "
 msgstr ""
-"Automatic system for detecting counterfeit, re-labeled or faulty electronic "
-"components in BGA enclosures. "
+"Automatic localization system for faulty electronic components on printed circuit "
+"boards.  "
 
 #: ../sites/eyepoint/data/products.py:57
 msgid ""
@@ -476,13 +475,12 @@ msgid ""
 "характеристики (сигнатуры) эталонной микросхемы и наша система EyePoint B10. "
 "Вы получите качественный результат за считанные минуты. "
 msgstr ""
-"Automatic system for detecting counterfeit, re-labeled or faulty electronic "
-"components in BGA enclosures. <br /> The system combines an automatic "
-"optical component pin recognition system and a flying probe for conducting "
-"electrical testing by a safe method of analog signature analysis. All you "
-"need to find faults on the test chips is the removed volt–ampere "
-"characteristics (signatures) of the reference chips and our EyePoint B10 "
-"system. You will get a high-quality result in a few minutes. "
+"Automatic localization system for faulty electronic components on printed circuit "
+"boards. <br /> The system combines an automatic optical component pin recognition "
+"system and a flying probe for conducting electrical testing by a safe method of "
+"analog signature analysis. All you need to find faults on the test chips is the "
+"removed volt–ampere characteristics (signatures) of the reference chips and our "
+"EyePoint B10 system. You will get a high-quality result in a few minutes. "
 
 #: ../sites/eyepoint/data/products.py:64
 msgid "Не повредит микросхему"
@@ -494,7 +492,7 @@ msgstr "Supported enclosure types: BGA, LGA, PGA, LCC, CSP"
 
 #: ../sites/eyepoint/data/products.py:80
 msgid "Время на смену образца: 10 сек"
-msgstr "Time to change the sample: 10 sec"
+msgstr "Sample change time: 10 sec"
 
 #: ../sites/eyepoint/data/products.py:91
 msgid "EyePoint P10b"
@@ -538,7 +536,7 @@ msgstr "PCB and BGA"
 
 #: ../sites/eyepoint/data/products.py:106
 msgid "Экономия времени на поиске до 3 раз"
-msgstr "Save search time up to 3 times"
+msgstr "Save time on searching up to 3 times"
 
 #: ../sites/eyepoint/data/products.py:107
 msgid "Автоматическая проверка до 2500 выводов"
@@ -558,7 +556,7 @@ msgstr "Working area: 280 x 275 x 63 mm "
 
 #: ../sites/eyepoint/data/products.py:123
 msgid "Время на смену образца: 30 сек"
-msgstr "Time to change the sample: 30 sec"
+msgstr "Sample change time: 30 sec"
 
 #: ../sites/eyepoint/data/products.py:128
 msgid "Габариты: 604 х 543 х 473 мм "
@@ -673,15 +671,11 @@ msgstr "Support for the \"Test Plan\" mode"
 
 #: ../sites/eyepoint/data/products.py:170
 msgid ""
-"Экспорт данных в формате .png и .json на внешний USB-Flash-накопитель </li></"
-"ul><!--"
-msgstr ""
-"Export data in .png and .json to an external USB flash drive </li></ul><!--"
+"Экспорт данных в формате .png и .json на внешний USB-флеш-накопитель </li></ul><!--"
+msgstr "Export data in .png and .json to an external USB flash drive </li></ul><!--"
 
-#: ../sites/eyepoint/data/products.py:172
-#: ../sites/eyepoint/data/products.py:212
-#: ../sites/eyepoint/data/products.py:252
-#: ../sites/eyepoint/data/products.py:292
+#: ../sites/eyepoint/data/products.py:172 ../sites/eyepoint/data/products.py:212
+#: ../sites/eyepoint/data/products.py:252 ../sites/eyepoint/data/products.py:292
 #: ../sites/eyepoint/data/products.py:332
 msgid "-->Основные функции ПО EPLab:<!--"
 msgstr "-->The main functions of the EPLab software:<!--"
@@ -741,7 +735,7 @@ msgstr ""
 msgid "Миниатюрные размеры"
 msgstr "Miniature size"
 
-#: ../sites/eyepoint/data/products.py:197
+#: ../sites/eyepoint/data/products.py:197 ../sites/eyepoint/data/products.py:237
 msgid "Доступен функционал модели S2"
 msgstr "The functionality of the S2 model is available"
 
@@ -777,12 +771,11 @@ msgstr ""
 
 #: ../sites/eyepoint/data/products.py:230
 msgid ""
-"Двухканальный локализатора неисправных электронных компонентов на печатных "
-"платах методом аналогового сигнатурного анализа (АСА) с частотой "
-"тестирующего сигнала до 100 кГц. <br />EyePoint u22 – компактный настольный "
-"прибор с возможностью программного управления, комплектующийся набором "
-"измерительных щупов, USB-флеш-накопителем с комплектом программного "
-"обеспечения, кабелем USB для подключения к ПК. "
+"Двухканальный локализатор неисправных электронных компонентов на печатных платах "
+"методом аналогового сигнатурного анализа (АСА) с частотой тестирующего сигнала до "
+"100 кГц. <br />EyePoint u22 – компактный настольный прибор с возможностью "
+"программного управления, комплектующийся набором измерительных щупов, USB-флеш-"
+"накопителем с комплектом программного обеспечения, кабелем USB для подключения к ПК. "
 msgstr ""
 "A two-channel localizer of faulty electronic components on printed circuit "
 "boards by analog signature analysis (ASA) with a frequency of the testing "
@@ -790,10 +783,6 @@ msgstr ""
 "the possibility of software control, complete with a set of measuring "
 "probes, a USB flash drive with a software package, a USB cable for "
 "connecting to a PC. "
-
-#: ../sites/eyepoint/data/products.py:237
-msgid "Доступен функционал старшей модели S2"
-msgstr "The functionality of the S2 model is available"
 
 #: ../sites/eyepoint/data/products.py:249
 msgid "Габариты и вес: 175 х 90 х 40 мм"
@@ -910,8 +899,8 @@ msgid ""
 "Частота пробного сигнала: 1, 5, 10, 50, 100, 400 Гц, 1.5, 6, 25, 100, 400 "
 "кГц, 1.5, 3, 6, 12 МГц"
 msgstr ""
-"Frequency range of the test signal: 1, 5, 10, 50, 100, 400 Hz, 1.5, 6, 25, "
-"100, 400 kHz, 1.5, 3, 6, 12 MHz"
+"Frequency of the test signal: 1, 5, 10, 50, 100, 400 Hz, 1.5, 6, 25, 100, 400 kHz, "
+"1.5, 3, 6, 12 MHz"
 
 #: ../sites/eyepoint/data/products.py:322
 msgid "Диапазон тока: 0.5 мкА - 90 мА"
@@ -927,7 +916,7 @@ msgstr "C Sensitivity: 0.5 pF - 6800 μF"
 
 #: ../sites/eyepoint/data/products.py:325
 msgid "Чувствительность по L: 0.1 - 80 мкГн"
-msgstr "L sensitivity: 0.1 - 80 μH"
+msgstr "L Sensitivity: 0.1 - 80 μH"
 
 #: ../sites/eyepoint/data/products.py:329
 msgid "Габариты: 137 х 65 х 110 мм"
@@ -935,7 +924,7 @@ msgstr "Dimensions: 137 x 65 x 110 mm"
 
 #: ../sites/eyepoint/data/products.py:330
 msgid "Вес: 0.7 кг </li></ul><!--"
-msgstr "Weight: 0.4 kg </li></ul><!--"
+msgstr "Weight: 0.7 kg </li></ul><!--"
 
 #: ../sites/eyepoint/data/products.py:336
 msgid "Возможность программного управления: C/C++, Python"
@@ -1013,9 +1002,9 @@ msgstr "EyePoint MUX_S_A"
 
 #: ../sites/eyepoint/data/products.py:374
 msgid ""
-"Модуль мультиплексора на 64 канала. Позволяет зондировать каждый из 64 "
-"каналов по отношению к общему проводу (один ко многим).  Используется "
-"совместно с основным блоком EyePoint_MUX_M. "
+"Модуль мультиплексора на 64 канала. Позволяет зондировать каждый из 64 каналов по "
+"отношению к общему проводу (один ко многим).  Используется совместно с основным "
+"блоком EyePoint MUX_M. "
 msgstr ""
 "A 64-channel multiplexer module. Allows you to probe each of the 64 channels "
 "in relation to a common wire (one to many). Used in conjunction with the "
@@ -1023,22 +1012,21 @@ msgstr ""
 
 #: ../sites/eyepoint/data/products.py:379
 msgid ""
-"Модуль мультиплексора на 64 канала. Позволяет зондировать каждый из 64 "
-"каналов по отношению к общему проводу (один ко многим).  Используется "
-"совместно с основным блоком EyePoint_MUX_M. Мультиплексор EyePoint MUX "
-"предназначен для коммутирования одного входного канала на любой из выходных "
-"каналов в заданной оператором последовательности. При помощи EyePoint MUX "
-"можно производить быстрое тестирование краевых разъемов неисправных плат, а "
-"также проводить входной контроль микросхем при использовании "
-"специализированной оснастки для их установки. "
+"Модуль мультиплексора на 64 канала. Позволяет зондировать каждый из 64 каналов по "
+"отношению к общему проводу (один ко многим).  Используется совместно с основным "
+"блоком EyePoint MUX_M. Мультиплексор EyePoint MUX предназначен для коммутирования "
+"одного входного канала на любой из выходных каналов в заданной оператором "
+"последовательности. При помощи EyePoint MUX можно производить быстрое тестирование "
+"краевых разъемов неисправных плат, а также проводить входной контроль микросхем при "
+"использовании специализированной оснастки для их установки. "
 msgstr ""
-"A 64-channel multiplexer module. Allows you to probe each of the 64 channels "
-"in relation to a common wire (one to many). Used in conjunction with the "
-"main EyePoint MUX_M unit. <br />Multiplexer EyePoint MUX is designed to "
-"switch one input channel to any of the output channels in a sequence "
-"specified by the operator. With the help of EyePoint MUX, you can quickly "
-"test the edge connectors of faulty boards, as well as perform input control "
-"of chips when using specialized equipment for their installation. "
+"A 64-channel multiplexer module. Allows you to probe each of the 64 channels in "
+"relation to a common wire (one to many). Used in conjunction with the main EyePoint "
+"MUX_M unit. <br />Multiplexer EyePoint MUX is designed to switch one input channel "
+"to any of the output channels in a sequence specified by the operator. With the help "
+"of EyePoint MUX, you can quickly test the edge connectors of faulty boards, as well "
+"as perform input control of chips when using specialized equipment for their "
+"installation. "
 
 #: ../sites/eyepoint/data/products.py:389
 msgid "Диапазон напряжения пробного сигнала: 0.1 - 12 В"
@@ -1055,3 +1043,6 @@ msgstr "Channel impedance: 11 Ohm"
 #: ../sites/eyepoint/data/products.py:393
 msgid "Ёмкость канала: 100 пФ"
 msgstr "Channel capacity: 100 pF"
+
+#~ msgid "Доступен функционал старшей модели S2"
+#~ msgstr "The functionality of the S2 model is available"
