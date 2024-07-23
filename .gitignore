@@ -10,3 +10,4 @@ notes.txt
 *.po~
 *.po.orig
 *__pycache__*
+products.xml
