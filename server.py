@@ -15,7 +15,12 @@ from site_engine.specification.product import find_product_by_name
 from site_engine.filemanager import FileManager
 from site_engine.translator.translator import all_languages, translator
 
-logging.basicConfig(level=logging.DEBUG)
+
+logging.basicConfig(
+    format='%(asctime)s %(name)s %(levelname)s: %(message)s',
+    level=logging.DEBUG,
+    datefmt='%Y-%m-%d %H:%M:%S'
+)
 routes = web.RouteTableDef()
 
 
@@ -185,7 +190,7 @@ if __name__ == "__main__":
     products_data = importlib.import_module(f'sites.{args.site}.data.products')
     products = getattr(products_data, 'products')
 
-    file_manager = FileManager(600, f"sites/{args.site}/download", "/static/download/")
+    file_manager = FileManager(120, f"sites/{args.site}/download", "/static/download/")
 
     routes.static("/web", "site_engine/web")
     routes.static("/static/download", f"sites/{args.site}/download")
