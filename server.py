@@ -177,6 +177,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     logging.info(f"Arguments: {args}")
+    logging.info("Site will be available after archives update at http://localhost:8080")
 
     # Dynamic import modules by site name
     download_data = importlib.import_module(f'sites.{args.site}.data.download')

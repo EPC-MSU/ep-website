@@ -1,5 +1,6 @@
 import asyncio
 import logging
+import time
 import urllib.parse as urllib
 import zipfile
 from concurrent.futures import ProcessPoolExecutor
@@ -171,8 +172,8 @@ class FileManager:
         Update files structure
         :return:
         """
-        new_files = walk(self._directory, self._url_prefix)
         old_files = self._files
+        new_files = walk(self._directory, self._url_prefix)
         self._files = new_files
 
         generate_products_xml(new_files)
@@ -204,11 +205,8 @@ class FileManager:
 
     async def _periodic_task(self):
         while True:
-            # try:
-            logging.info("Refresh file list...")
+            logging.info("Update archives...")
+            t = time.time()
             await self._refresh()
-            logging.info("Refresh file list done.")
-            logging.info("Site ready on http://localhost:8080")
-            # except Exception as err:
-            #     logging.error("Exception caught during file refresh: " + str(err))
+            logging.info(f"Update archives completed in {time.time()-t:.3f} seconds")
             await asyncio.sleep(self._timeout)
