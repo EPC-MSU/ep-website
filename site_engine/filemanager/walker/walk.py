@@ -29,10 +29,7 @@ class FileInfo:
     language: Optional[str] = None
 
     def __eq__(self, other):
-        return self.sha1 == other.sha1 and self.full_path == other.full_path
-
-    def __hash__(self):
-        return int(self.sha1, 16)  # str hash to int
+        return self.full_path == other.full_path and self.date == other.date and self.utc_time == other.utc_time
 
     @classmethod
     def fromfile(cls, path: str, url_prefix: str) -> "FileInfo":
@@ -63,12 +60,16 @@ class FileInfo:
         # to download/EyePointS1/firmware
         path_short = join_path(*path.split(sep)[-3:])
 
-        file = open(path, "rb")
+        # Calculate hash only for firmwares. Hash need in products.xml
+        # Calculate hash for all files is unnecessary and takes about 40 sec for eyepoint site
+        if file_name.endswith('.cod'):
+            file = open(path, "rb")
+            sha1_hash = str(sha1(file.read()).hexdigest())
+            file.close()
+        else:
+            sha1_hash = 'hash_not_needed'
 
-        sha1_hash = str(sha1(file.read()).hexdigest())
         utc_time = str(int(os.stat(path).st_mtime))
-
-        file.close()
 
         return FileInfo(
             LooseVersion(version),

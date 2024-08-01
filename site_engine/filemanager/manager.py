@@ -1,11 +1,11 @@
 import asyncio
 import logging
+import time
 import urllib.parse as urllib
 import zipfile
-from concurrent.futures import ProcessPoolExecutor
 from datetime import date
 import glob
-from os.path import getmtime, sep, join as join_path, basename, isfile
+from os.path import getmtime, sep, join as join_path, basename
 from os import remove
 from typing import Dict, List, Optional
 
@@ -89,33 +89,6 @@ def archive(software: Dict[str, List[FileInfo]], zip_path: str, lang: str):
             z_file.write(file.full_path, join_path(category, file.basename))
 
 
-def compare_latest_software(
-        old: Dict[str, List[FileInfo]], new: Dict[str, List[FileInfo]]
-) -> bool:
-    """
-    Compare software files (equal\not equal)
-    :param old: old structure
-    :param new: new structure
-    :return: bool (equal\not equal)
-    """
-    if old.keys() != new.keys():
-        return False  # New software category was added
-
-    for category in old.keys():
-        # There were no files in this category and now there are no files either
-        if not new[category] and not old[category]:
-            continue
-
-        # Files in this category appeared or disappeared
-        if not new[category] or not old[category]:
-            return False
-
-        if new[category][0] != old[category][0]:
-            return False  # Last file was updated
-
-    return True
-
-
 class FileManager:
     _archive_name_format = "{product}_Full_software_package-{lang}-{date}.zip"
 
@@ -171,44 +144,39 @@ class FileManager:
         Update files structure
         :return:
         """
-        new_files = walk(self._directory, self._url_prefix)
         old_files = self._files
+        new_files = walk(self._directory, self._url_prefix)
         self._files = new_files
+
+        if new_files == old_files:  # Compare Dict[str: Dict[str: List[FileInfo]]]. FileInfo has __eq__, so it's ok.
+            logging.info("Original files not changed. Not needed to update archives. If archive lost, update any file")
+            return
 
         generate_products_xml(new_files)
 
-        with ProcessPoolExecutor() as executor:
-            for product, software in new_files.items():
-                for lang in self._languages:
-                    archive_directory = join_path(self._directory, product)
-                    archive_path = join_path(archive_directory, self._archive_name(product, lang))
+        for product, software in new_files.items():
+            for lang in self._languages:
+                archive_directory = join_path(self._directory, product)
+                archive_path = join_path(archive_directory, self._archive_name(product, lang))
 
-                    # TODO: Is this check actually work?
-                    if old_files and old_files.get(product) and isfile(archive_path) and \
-                            compare_latest_software(old_files[product], new_files[product]):
-                        continue
+                logging.info(f"Update {lang.upper()} archive for '{product}'")
+                archive(software, archive_path, lang)
+                self._archives[lang][product] = ArchiveInfo(archive_path, self._url_prefix)
 
-                    logging.info(f"Update {lang.upper()} archive for '{product}'")
-                    await self._loop.run_in_executor(executor, archive, software, archive_path, lang)
-                    self._archives[lang][product] = ArchiveInfo(archive_path, self._url_prefix)
-
-                    # Remove other old archives
-                    latest_archive_names = [self._archive_name(product, lang) for lang in self._languages]
-                    files = glob.glob(archive_directory + "/*.zip")
-                    files_to_remove = [file for file in files if basename(file) not in latest_archive_names]
-                    for file in files_to_remove:
-                        try:
-                            remove(file)
-                        except OSError as err:
-                            logging.error(f"Unable to remove {file} {err}")
+                # Remove other old archives
+                latest_archive_names = [self._archive_name(product, lang) for lang in self._languages]
+                files = glob.glob(archive_directory + "/*.zip")
+                files_to_remove = [file for file in files if basename(file) not in latest_archive_names]
+                for file in files_to_remove:
+                    try:
+                        remove(file)
+                    except OSError as err:
+                        logging.error(f"Unable to remove {file} {err}")
 
     async def _periodic_task(self):
         while True:
-            # try:
-            logging.info("Refresh file list...")
+            logging.info("Update archives...")
+            t = time.time()
             await self._refresh()
-            logging.info("Refresh file list done.")
-            logging.info("Site ready on http://localhost:8080")
-            # except Exception as err:
-            #     logging.error("Exception caught during file refresh: " + str(err))
+            logging.info(f"Update archives completed in {time.time()-t:.3f} seconds")
             await asyncio.sleep(self._timeout)
