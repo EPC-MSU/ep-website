@@ -60,7 +60,7 @@ def _check_possibility_to_create_products_xml(walk_files):
         logging.error('Empty products files dict')
         return False
     if len(walk_files.keys()) > 1:
-        logging.warning('Unable to generate products.xml: Found firmwares for more then one product')
+        logging.info('Unable to generate products.xml: Found firmwares for more then one product')
         return False
 
     return True

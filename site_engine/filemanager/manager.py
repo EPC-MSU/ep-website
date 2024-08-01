@@ -148,7 +148,7 @@ class FileManager:
         new_files = walk(self._directory, self._url_prefix)
         self._files = new_files
 
-        if new_files == old_files:
+        if new_files == old_files:  # Compare Dict[str: Dict[str: List[FileInfo]]]. FileInfo has __eq__, so it's ok.
             logging.info("Original files not changed. Not needed to update archives. If archive lost, update any file")
             return
 
