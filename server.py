@@ -196,6 +196,6 @@ if __name__ == "__main__":
     routes.static("/static/download", f"sites/{args.site}/download")
     routes.static("/images", f"sites/{args.site}/images")
 
-    loop = asyncio.get_event_loop()
+    loop = asyncio.new_event_loop()
     loop.run_until_complete(main())
     loop.run_forever()
