@@ -3,6 +3,7 @@ import logging
 import posixpath
 from argparse import ArgumentParser
 from textwrap import dedent
+from asyncio.base_events import BaseEventLoop
 
 import aiohttp_jinja2
 import jinja2
@@ -175,6 +176,14 @@ async def main():
     await asyncio.create_task(http_server_coro)
 
 
+def exc_handler(self: BaseEventLoop, context: dict) -> None:
+    # There are fix for false-positive error in asyncio
+    if "Task exception was never retrieved" not in context.get("message"):
+        BaseEventLoop.default_exception_handler(self, context)
+    else:
+        logging.info("Task exception was never retrieved")
+
+
 if __name__ == "__main__":
 
     parser = ArgumentParser("EyePoint server")
@@ -196,6 +205,7 @@ if __name__ == "__main__":
     routes.static("/static/download", f"sites/{args.site}/download")
     routes.static("/images", f"sites/{args.site}/images")
 
-    loop = asyncio.new_event_loop()
+    loop = asyncio.get_event_loop()
+    loop.set_exception_handler(exc_handler)
     loop.run_until_complete(main())
     loop.run_forever()

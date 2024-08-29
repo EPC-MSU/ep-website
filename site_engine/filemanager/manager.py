@@ -8,9 +8,18 @@ import glob
 from os.path import getmtime, sep, join as join_path, basename
 from os import remove
 from typing import Dict, List, Optional
+from asyncio.base_events import BaseEventLoop
 
 from site_engine.filemanager.walker.walk import FileInfo, walk
 from site_engine.filemanager.walker.products_xml import generate_products_xml
+
+
+def exc_handler(self: BaseEventLoop, context: dict) -> None:
+    # There are fix for false-positive error in asyncio
+    if "Task exception was never retrieved" not in context.get("message"):
+        BaseEventLoop.default_exception_handler(self, context)
+    else:
+        logging.info("Task exception was never retrieved")
 
 
 class ArchiveInfo:
@@ -134,6 +143,7 @@ class FileManager:
         :return:
         """
         _loop = loop or asyncio.get_event_loop()
+        _loop.set_exception_handler(exc_handler)
         if self._loop:
             raise RuntimeError("Already started")
         self._loop: asyncio.AbstractEventLoop = _loop
