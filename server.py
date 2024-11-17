@@ -59,6 +59,7 @@ def base_template(func):
             "footer_link_text": other_data.footer_link_text,
             "footer_phone": other_data.footer_phone,
             "footer_mail": other_data.footer_mail,
+            "footer_tg":other_data.footer_tg,
 
 
             "description": other_data.description,
