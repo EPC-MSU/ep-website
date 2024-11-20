@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-28 11:39+0300\n"
-"PO-Revision-Date: 2024-08-28 11:40+0300\n"
+"POT-Creation-Date: 2024-11-20 10:02+0500\n"
+"PO-Revision-Date: 2024-11-20 10:04+0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
-"X-Generator: Poedit 2.3.1\n"
+"X-Generator: Poedit 3.1.1\n"
 
 #: ../site_engine/specification/general.py:3
 msgid "Версия"
@@ -256,6 +256,10 @@ msgstr "Russia, Moscow, 119333<br>Fotievoy street 5, bldg. 1"
 #: ../sites/usbadc10/data/other.py:25
 msgid "ООО «ЦИФ МГУ имени М.В. Ломоносова»"
 msgstr "Engineering Physics Center MSU"
+
+#: ../sites/usbadc10/data/other.py:31
+msgid "Техподдержка"
+msgstr "Support"
 
 #: ../sites/usbadc10/data/products.py:7
 msgid "usbadc10 v1.1.1"

@@ -26,3 +26,4 @@ footer_link_text = "mdrive.tech"
 footer_phone = ""
 footer_mail = "info@stelm.ru"
 footer_tg = "https://t.me/mDrive_support_bot"
+footer_tg_text = _("Техподдержка")
