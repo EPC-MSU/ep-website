@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-31 12:03+0300\n"
-"PO-Revision-Date: 2024-07-31 12:20+0300\n"
+"POT-Creation-Date: 2024-11-20 10:02+0500\n"
+"PO-Revision-Date: 2024-11-20 10:04+0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
-"X-Generator: Poedit 2.3.1\n"
+"X-Generator: Poedit 3.1.1\n"
 
 #: ../site_engine/specification/general.py:3
 msgid "Версия"
@@ -192,6 +192,10 @@ msgstr ""
 #: ../sites/mdrive/data/other.py:23
 msgid "ООО \"СТЭЛМ\""
 msgstr "ООО \"СТЭЛМ\""
+
+#: ../sites/mdrive/data/other.py:29
+msgid "Техподдержка"
+msgstr "Support"
 
 #: ../sites/mdrive/data/products.py:10 ../sites/mdrive/data/products.py:14
 msgid ""
