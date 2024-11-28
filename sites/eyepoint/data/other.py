@@ -32,4 +32,6 @@ footer_org_name = _("ООО «ЦИФ МГУ имени М.В. Ломоносов
 footer_link = "https://physlab.ru/"
 footer_link_text = "physlab.ru"
 footer_phone = "+7(499)343-56-24"
-footer_mail = "info@physlab.ru"
+footer_mail = "eyepoint@physlab.ru"
+footer_tg = "https://t.me/EyePoint_support_bot"
+footer_tg_text = _("Техподдержка")

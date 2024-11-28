@@ -11,3 +11,4 @@ notes.txt
 *.po.orig
 *__pycache__*
 products.xml
+.DS_Store

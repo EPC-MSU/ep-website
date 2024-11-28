@@ -59,6 +59,8 @@ def base_template(func):
             "footer_link_text": other_data.footer_link_text,
             "footer_phone": other_data.footer_phone,
             "footer_mail": other_data.footer_mail,
+            "footer_tg": other_data.footer_tg,
+            "footer_tg_text": other_data.footer_tg_text,
 
 
             "description": other_data.description,
@@ -196,6 +198,6 @@ if __name__ == "__main__":
     routes.static("/static/download", f"sites/{args.site}/download")
     routes.static("/images", f"sites/{args.site}/images")
 
-    loop = asyncio.get_event_loop()
+    loop = asyncio.new_event_loop()
     loop.run_until_complete(main())
     loop.run_forever()

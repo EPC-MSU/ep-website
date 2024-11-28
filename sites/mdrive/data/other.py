@@ -24,4 +24,6 @@ footer_org_name = _("ООО \"СТЭЛМ\"")
 footer_link = "https://mdrive.tech"
 footer_link_text = "mdrive.tech"
 footer_phone = ""
-footer_mail = "info@stelm.ru"
+footer_mail = "support@mdrive.tech"
+footer_tg = "https://t.me/mDrive_support_bot"
+footer_tg_text = _("Техподдержка")

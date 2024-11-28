@@ -71,10 +71,18 @@
 		</div>
 		{% endif %}
 		{% if footer_mail | length > 0 %}
-		<div class="footer-block" id="footer-last-block">
+		<div class="footer-block">
 			<a href="mailto:{{ footer_mail }}">
 				<svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path fill="#fff" d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
 				<span class="footer-text">{{ footer_mail }}</span>
+			</a>
+		</div>
+		{% endif %}
+		{% if footer_tg | length > 0 %}
+		<div class="footer-block" id="footer-last-block">
+			<a href="{{ footer_tg }}">
+				<img class="footer-icon" src="/images/tgicon.svg" height="32" viewBox="0 -960 960 960" width="32" alt="Logo" />
+				<span class="footer-text">{{ tr(footer_tg_text) | safe }}</span>
 			</a>
 		</div>
 		{% endif %}
