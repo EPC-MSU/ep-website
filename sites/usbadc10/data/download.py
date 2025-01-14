@@ -3,34 +3,10 @@ from site_engine.translator.translator import _
 
 categories = (
     SoftwareCategory(
-        name="documentation",
-        friendly_name=_("Документация"),
-        icon="description.svg",
-        description=_(
-            "Руководства пользователя, паспорт продукта и другая "
-            "техническая документация."
-        ),
-    ),
-    SoftwareCategory(
-        name="datasheet",
-        friendly_name=_("Брошюры"),
-        icon="description.svg",
-        description=_("Информация о продукте."),
-    ),
-    SoftwareCategory(
         name="driver",
         friendly_name=_("Драйвер"),
         icon="gear_two.svg",
         description=_("Драйвер для ОС Windows (для ОС Linux драйвер не нужен)."),
-    ),
-    SoftwareCategory(
-        name="firmware",
-        friendly_name=_("Прошивка"),
-        icon="memory.svg",
-        description=_(
-            "Обновление прошивки осуществляется с помощью кроссплатформенного "
-            "ПО EPCBootGUI (ссылка на скачивание на этой странице)."
-        ),
     ),
     SoftwareCategory(
         name="software",
@@ -51,6 +27,37 @@ categories = (
             "Для работы ПО на Windows требуется установить драйвер."
         ),
     ),
+        SoftwareCategory(
+        name="library",
+        friendly_name=_("Библиотека для программного управления"),
+        icon="library.svg",
+        description=_(
+            "Кроссплатформенная библиотека для работы с многоканальным usbadc10. "
+            "Библиотека написана на языке C, "
+            "распространяется в виде бинарных файлов (win64 и debian) и в "
+            "виде исходных кодов. Документацию к библиотеке можно скачать отдельно "
+            "на этой странице."
+        ),
+    ),
+    SoftwareCategory(
+        name="library_doc",
+        friendly_name=_("Описание библиотеки для программного управления"),
+        icon="description.svg",
+        description=_(
+            "Документация к библиотеке usbadc10, которая может быть использована для "
+            "взаимодействия с устройством. Саму библиотеку можно "
+            "скачать на этой странице."
+        ),
+    ),
+    SoftwareCategory(
+        name="firmware",
+        friendly_name=_("Прошивка"),
+        icon="memory.svg",
+        description=_(
+            "Обновление прошивки осуществляется с помощью кроссплатформенного "
+            "ПО EPCBootGUI (ссылка на скачивание на этой странице)."
+        ),
+    ),
     SoftwareCategory(
         name="epcboot",
         friendly_name=_("EPCBoot GUI"),
@@ -58,6 +65,32 @@ categories = (
         description=_(
             "Удобное кроссплатформенное ПО EPCBootGUI для обновления прошивок в устройствах usbadc10."
         ),
+    ),
+    SoftwareCategory(
+        name="examples_and_bindings",
+        friendly_name=_("Примеры использования API и биндинги " "для Python и C#"),
+        icon="code_blocks.svg",
+        description=_(
+            "Комплект примеров программного кода на языках C и Python, "
+            "реализующего простые считывания оцифрованных данных с устройства usbadc10. "
+            "Также в данном архиве можно найти биндинги для "
+            "языков Python и C#."
+        ),
+    ),
+    SoftwareCategory(
+        name="documentation",
+        friendly_name=_("Документация"),
+        icon="description.svg",
+        description=_(
+            "Руководства пользователя, паспорт продукта и другая "
+            "техническая документация."
+        ),
+    ),
+    SoftwareCategory(
+        name="datasheet",
+        friendly_name=_("Брошюры"),
+        icon="description.svg",
+        description=_("Информация о продукте."),
     ),
     SoftwareCategory(
         name="image",
@@ -73,45 +106,12 @@ categories = (
         ),
     ),
     SoftwareCategory(
-        name="library_doc",
-        friendly_name=_("Описание библиотеки для программного управления"),
-        icon="description.svg",
-        description=_(
-            "Документация к библиотеке usbadc10, которая может быть использована для "
-            "взаимодействия с устройством. Саму библиотеку можно "
-            "скачать на этой странице."
-        ),
-    ),
-    SoftwareCategory(
         name="supporting_software",
         friendly_name=_("Стороннее вспомогательное ПО"),
         icon="widgets.svg",
         description=_(
             "Дополнительное стороннее программное обеспечение, "
             "которое может потребоваться при работе с устройствами usbadc10."
-        ),
-    ),
-    SoftwareCategory(
-        name="library",
-        friendly_name=_("Библиотека для программного управления"),
-        icon="library.svg",
-        description=_(
-            "Кроссплатформенная библиотека для работы с многоканальным usbadc10. "
-            "Библиотека написана на языке C, "
-            "распространяется в виде бинарных файлов (win64 и debian) и в "
-            "виде исходных кодов. Документацию к библиотеке можно скачать отдельно "
-            "на этой странице."
-        ),
-    ),
-    SoftwareCategory(
-        name="examples_and_bindings",
-        friendly_name=_("Примеры использования API и биндинги " "для Python и C#"),
-        icon="code_blocks.svg",
-        description=_(
-            "Комплект примеров программного кода на языках C и Python, "
-            "реализующего простые считывания оцифрованных данных с устройства usbadc10. "
-            "Также в данном архиве можно найти биндинги для "
-            "языков Python и C#."
         ),
     ),
 )
