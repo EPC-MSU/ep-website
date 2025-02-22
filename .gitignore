@@ -12,3 +12,5 @@ notes.txt
 *__pycache__*
 products.xml
 .DS_Store
+docker-compose.yaml
+
