@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-20 10:02+0500\n"
-"PO-Revision-Date: 2024-11-20 10:04+0500\n"
+"POT-Creation-Date: 2025-01-14 16:31+0300\n"
+"PO-Revision-Date: 2025-01-14 16:36+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
-"X-Generator: Poedit 3.1.1\n"
+"X-Generator: Poedit 2.3.1\n"
 
 #: ../site_engine/specification/general.py:3
 msgid "Версия"
@@ -111,31 +111,35 @@ msgstr "uRPC Debugger"
 
 #: ../sites/usbadc10/data/download.py:50
 msgid ""
-"Кроссплатформенное ПО с графическим интерфейсом для отладки usbadc10. Данное "
-"ПО позволяет вручную вызывать команды управления. Формирование и разбор "
-"полей сложных команд осуществляется автоматически. ПО распространяется в "
-"виде бинарных файлов, и в виде исходных кодов. Для работы на Windows "
-"требуется драйвер."
+"Кроссплатформенное ПО uRPC Debugger с графическим интерфейсом для отладки "
+"usbadc10. Позволяет вручную отправлять команды управления. Формирование и "
+"разбор сложных команд выполняется автоматически. ПО распространяется в виде "
+"бинарных файлов, и в виде исходных кодов. Для работы ПО на Windows требуется "
+"установить драйвер."
 msgstr ""
-"Cross-platform software with a graphical interface for debugging usbadc10. "
-"This SOFTWARE allows you to manually call management commands. Formation and "
-"analysis of fields of complex commands is done automatically. The SOFTWARE "
-"is distributed as binary files and as source code. To run on Windows "
-"requires a driver."
+"Cross-platform software uRPC Debugger with a graphical interface for "
+"debugging usbadc10. Allows you to manually send control commands. Formation "
+"and analysis of fields of complex commands is done automatically. The "
+"software is distributed as binary files and as source code. To run on "
+"Windows requires a driver."
 
-#: ../sites/usbadc10/data/download.py:60
+#: ../sites/usbadc10/data/download.py:56
 msgid "EPCBoot GUI"
 msgstr "EPCBoot GUI"
 
-#: ../sites/usbadc10/data/download.py:63
-msgid "Кроссплатформенное ПО для обновления прошивок в устройствах usbadc10. "
-msgstr "Cross-platform software for firmware updates in usbadc10 devices. "
+#: ../sites/usbadc10/data/download.py:59
+msgid ""
+"Удобное кроссплатформенное ПО EPCBootGUI для обновления прошивок в "
+"устройствах usbadc10."
+msgstr ""
+"Convenient EPCBootGUI cross-platform software for firmware updates in "
+"usbadc10 devices."
 
-#: ../sites/usbadc10/data/download.py:68
+#: ../sites/usbadc10/data/download.py:64
 msgid "Прошивка встроенного компьютера"
 msgstr "Firmware of the embedded computer"
 
-#: ../sites/usbadc10/data/download.py:71
+#: ../sites/usbadc10/data/download.py:67
 msgid ""
 "Образы встроенной операционной системы для устройств серии EyePoint S. "
 "Обновление образа осуществляется посредством записи на SD карту. Более "
@@ -149,11 +153,11 @@ msgstr ""
 "Disk Imager (you can download it from the official website or from this "
 "page)."
 
-#: ../sites/usbadc10/data/download.py:81
+#: ../sites/usbadc10/data/download.py:77
 msgid "Описание библиотеки для программного управления"
 msgstr "Description of the software management library"
 
-#: ../sites/usbadc10/data/download.py:84
+#: ../sites/usbadc10/data/download.py:80
 msgid ""
 "Документация к библиотеке usbadc10, которая может быть использована для "
 "взаимодействия с устройством. Саму библиотеку можно скачать на этой странице."
@@ -161,11 +165,11 @@ msgstr ""
 "Documentation for the usbadc10 library that can be used to interact with the "
 "device. The library itself can be downloaded on this page."
 
-#: ../sites/usbadc10/data/download.py:91
+#: ../sites/usbadc10/data/download.py:87
 msgid "Стороннее вспомогательное ПО"
 msgstr "Third-party support software"
 
-#: ../sites/usbadc10/data/download.py:94
+#: ../sites/usbadc10/data/download.py:90
 msgid ""
 "Дополнительное стороннее программное обеспечение, которое может "
 "потребоваться при работе с устройствами usbadc10."
@@ -173,11 +177,11 @@ msgstr ""
 "Additional third-party software that may be required when working with "
 "usbadc10 devices."
 
-#: ../sites/usbadc10/data/download.py:100
+#: ../sites/usbadc10/data/download.py:96
 msgid "Библиотека для программного управления"
 msgstr "Library for software management"
 
-#: ../sites/usbadc10/data/download.py:103
+#: ../sites/usbadc10/data/download.py:99
 msgid ""
 "Кроссплатформенная библиотека для работы с многоканальным usbadc10. "
 "Библиотека написана на языке C, распространяется в виде бинарных файлов "
@@ -188,11 +192,11 @@ msgstr ""
 "is written in C, distributed as binary files (win64 and debian) and as "
 "source code. Library documentation can be downloaded separately on this page."
 
-#: ../sites/usbadc10/data/download.py:112
+#: ../sites/usbadc10/data/download.py:108
 msgid "Примеры использования API и биндинги для Python и C#"
 msgstr "Examples of using the API and bindings for Python and C#"
 
-#: ../sites/usbadc10/data/download.py:115
+#: ../sites/usbadc10/data/download.py:111
 msgid ""
 "Комплект примеров программного кода на языках C и Python, реализующего "
 "простые считывания оцифрованных данных с устройства usbadc10. Также в данном "
@@ -202,19 +206,19 @@ msgstr ""
 "digitized data from a usbadc10 device. You can also find bindings for Python "
 "and C# in this archive."
 
-#: ../sites/usbadc10/data/download.py:126
+#: ../sites/usbadc10/data/download.py:122
 msgid "Комплект последних версий программного обеспечения"
 msgstr "Latest software and documentation"
 
-#: ../sites/usbadc10/data/download.py:128
+#: ../sites/usbadc10/data/download.py:124
 msgid "и документации для этого продукта"
 msgstr "package for this product"
 
 # msgid "EyePoint, диагностика электронных схем, анализ неисправностей, ЦИФ МГУ"
 # msgstr ""
 #: ../sites/usbadc10/data/other.py:4
-msgid "usbadc10, аналого-цифровой преобразователь"
-msgstr "usbadc10, analog to digital converter"
+msgid "usbadc10 — 10-канальный аналого-цифровой преобразователь с USB"
+msgstr "usbadc10 is a 10-channel analog-to-digital converter with USB"
 
 #: ../sites/usbadc10/data/other.py:7
 msgid ""
@@ -234,32 +238,32 @@ msgstr "Specifications"
 
 #: ../sites/usbadc10/data/other.py:15
 msgid ""
-"usbadc10 - устройство, преобразующее входной аналоговый сигнал в дискретный "
-"код.Частота преобразования usbadc10 - до 4000 отсчтетов в секунду, "
-"одновеременно по всем каналам."
+"usbadc10 — компактный и доступный 10-канальный аналого-цифровой "
+"преобразователь, обеспечивающий до 4000 измерений в секунду. Идеально "
+"подходит для инженеров, студентов и научных исследований. "
 msgstr ""
-"usbadc10 is a device that converts an input analog signal into a discrete "
-"code, includes 10 channels of 12-bit ADC output to the connector, an STM32 "
-"microcontroller and a USB interface that supplies power and reads digitized "
-"data."
+"The usbadc10 is a compact and affordable 10-channel analog-to-digital "
+"converter that provides up to 4000 measurements per second. Ideal for "
+"engineers, students and scientific research. "
 
 #: ../sites/usbadc10/data/other.py:19
 msgid ""
-"EyePoint, usbadc10, диагностика электронных схем, анализ неисправностей, "
-"аналого-цифровой преобразователь, ЦИФ МГУ"
-msgstr "EyePoint, usbadc10, localizing faulty components, EPC MSU"
+"USB ADC, аналого-цифровой преобразователь, 10-канальный 12-битный АЦП, "
+"высокоскоростной АЦП, открытый исходный код, научные исследования, измерение "
+"аналоговых сигналов, автоматические системы контроля и управления, "
+"устройство обработки и отображения информации"
+msgstr ""
+"USB ADC, analog-to-digital converter, 10-channel 12-bit ADC, high-speed ADC, "
+"open source, scientific research, measurement of analog signals, automatic "
+"monitoring and control systems, information processing and display device"
 
-#: ../sites/usbadc10/data/other.py:23
+#: ../sites/usbadc10/data/other.py:22
 msgid "Россия, Москва, 119333<br>ул. Фотиевой, дом 5, строение 1"
 msgstr "Russia, Moscow, 119333<br>Fotievoy street 5, bldg. 1"
 
-#: ../sites/usbadc10/data/other.py:25
+#: ../sites/usbadc10/data/other.py:24
 msgid "ООО «ЦИФ МГУ имени М.В. Ломоносова»"
 msgstr "Engineering Physics Center MSU"
-
-#: ../sites/usbadc10/data/other.py:31
-msgid "Техподдержка"
-msgstr "Support"
 
 #: ../sites/usbadc10/data/products.py:7
 msgid "usbadc10 v1.1.1"
@@ -269,54 +273,116 @@ msgstr "usbadc10 v1.1.1"
 msgid "Аналого-цифровой преобразователь"
 msgstr "Analog to digital converter"
 
-#: ../sites/usbadc10/data/products.py:13
+#: ../sites/usbadc10/data/products.py:14
 msgid ""
-"Аналого-цифровой преобразователь usbadc10 имеет частоту до 4000 отсчётов в "
-"секунду, одновременно по всем каналам. В комплекте с устройством "
-"поставляется программное обеспечение для получения измерений. Поддерживаются "
-"ОС Windows 7 SP1 и новее, Linux (протестировано на Ubuntu 18.04, 20.04)"
+"usbadc10 — устройство, преобразующее входной аналоговый сигнал в дискретный "
+"код. Данный вид устройств широко применяется в автоматических системах "
+"контроля и управления, устройствах обработки и отображения информации и т.д. "
+"usbadc10 включает в себя 10 каналов 12-битного АЦП, выведенных на разъём, "
+"микроконтроллер STM32 и USB-интерфейс, по которому подаётся питание и "
+"осуществляется считывание оцифрованных данных. Имеет частоту до 4000 "
+"отсчётов в секунду, одновременно по всем каналам, но может работать и со "
+"значительно меньшей скоростью. Диапазон входных напряжений до 3.3В легко "
+"расширяется самостоятельно с помощью применения резисторных делителей "
+"напряжения. <br /><br />В комплекте с устройством поставляется интуитивно "
+"понятное программное обеспечение для получения измерений, которое можно "
+"найти в свободном доступе на нашем сайте. С помощью графического интерфейса "
+"можно строить графики, задавать частоту считывания, сохранять историю "
+"измерений в CSV файл. Это позволяет решать задачи отслеживания разряда "
+"аккумуляторов, положения потенциометрических датчиков поворота, джойстиков, "
+"изменения температур и многих других аналоговых сигналов, поступающих с "
+"датчиков. <br /><br />usbadc10 подходит для встраиваемых применений и имеет "
+"библиотеки управления через языки программирования C/C++, С#, Python. Это "
+"позволяет встроить измеритель в своё программное обеспечение. Для Python "
+"пакет usbadc10 можно удобно установить через pip с помощью команды <code>pip "
+"install usbadc10</code> "
 msgstr ""
-"The usbadc10 analog-to-digital converter has a frequency of up to 4000 "
-"samples per second simultaneously on all channels. The device is equipped "
-"with software for obtaining measurements. Support Windows 7 SP1 and newer, "
-"Linux (tested on Ubuntu 18.04, 20.04)"
+"usbadc10 is a device that converts an analog input signal into a discrete "
+"code. This type of device is widely used in automatic monitoring and control "
+"systems, information processing and display devices, etc. usbadc10 includes "
+"10 channels of a 12-bit ADC output to the connector, an STM32 "
+"microcontroller and a USB interface that supplies power and reads digitized "
+"data. It has a frequency of up to 4000 samples per second, simultaneously on "
+"all channels, but it can also work at a significantly lower speed. The input "
+"voltage range up to 3.3V is easily expanded independently by using resistor "
+"voltage dividers. <br /><br />The device comes with intuitive measurement "
+"software, which is freely available on our website. Using the graphical "
+"interface, you can create graphs, set the reading frequency, and save the "
+"measurement history to a CSV file. This allows you to solve the tasks of "
+"tracking battery discharge, the position of potentiometric rotation sensors, "
+"joysticks, temperature changes and many other analog signals coming from "
+"sensors. <br /><br />usbadc10 is suitable for embedded applications and has "
+"control libraries via the programming languages C/C++, C#, Python. This "
+"allows you to integrate the meter into your software. For Python, the "
+"usbadc10 package can be conveniently installed via pip using the <code>pip "
+"install usbadc10</code> command."
 
-#: ../sites/usbadc10/data/products.py:19
+#: ../sites/usbadc10/data/products.py:22
 msgid "10 каналов"
 msgstr "10 channels"
 
-#: ../sites/usbadc10/data/products.py:20
+#: ../sites/usbadc10/data/products.py:23
 msgid "кроссплатфор-менный GUI"
 msgstr "cross-platform GUI"
 
-#: ../sites/usbadc10/data/products.py:21
+#: ../sites/usbadc10/data/products.py:24
 msgid "USB Type-C"
 msgstr "USB Type-C"
 
-#: ../sites/usbadc10/data/products.py:24
+#: ../sites/usbadc10/data/products.py:27
 msgid "Диапазон входного напряжения - 0 - 3.3 В"
 msgstr "Input voltage range - 0 - 3.3 V"
 
-#: ../sites/usbadc10/data/products.py:25
+#: ../sites/usbadc10/data/products.py:28
 msgid "Разрешение - 0.8 мВ"
 msgstr "Resolution - 0.8 mV"
 
-#: ../sites/usbadc10/data/products.py:26
+#: ../sites/usbadc10/data/products.py:29
 msgid "Разрядность АЦП - 12-bit"
 msgstr "12-bit ADC"
 
-#: ../sites/usbadc10/data/products.py:27
+#: ../sites/usbadc10/data/products.py:30
 msgid "Поддержка ОС: Windows, Linux"
 msgstr "OS support: Windows, Linux"
 
-#: ../sites/usbadc10/data/products.py:28
+#: ../sites/usbadc10/data/products.py:31
 msgid "Разъем подключения - USB type C"
 msgstr "Connector - USB type C"
 
-#: ../sites/usbadc10/data/products.py:29
+#: ../sites/usbadc10/data/products.py:32
 msgid "Скорость передачи данных - USB Full-Speed"
 msgstr "Data transfer rate - USB Full-Speed"
 
-#: ../sites/usbadc10/data/products.py:30
+#: ../sites/usbadc10/data/products.py:33
 msgid "До 4000 выборок в секунду одновременно по всем каналам"
 msgstr "Up to 4000 samples per second simultaneously on all channels"
+
+#~ msgid ""
+#~ "usbadc10 - устройство, преобразующее входной аналоговый сигнал в "
+#~ "дискретный код.Частота преобразования usbadc10 - до 4000 отсчтетов в "
+#~ "секунду, одновеременно по всем каналам."
+#~ msgstr ""
+#~ "usbadc10 is a device that converts an input analog signal into a discrete "
+#~ "code, includes 10 channels of 12-bit ADC output to the connector, an "
+#~ "STM32 microcontroller and a USB interface that supplies power and reads "
+#~ "digitized data."
+
+#~ msgid ""
+#~ "EyePoint, usbadc10, диагностика электронных схем, анализ неисправностей, "
+#~ "аналого-цифровой преобразователь, ЦИФ МГУ"
+#~ msgstr "EyePoint, usbadc10, localizing faulty components, EPC MSU"
+
+#~ msgid "Техподдержка"
+#~ msgstr "Support"
+
+#~ msgid ""
+#~ "Аналого-цифровой преобразователь usbadc10 имеет частоту до 4000 отсчётов "
+#~ "в секунду, одновременно по всем каналам. В комплекте с устройством "
+#~ "поставляется программное обеспечение для получения измерений. "
+#~ "Поддерживаются ОС Windows 7 SP1 и новее, Linux (протестировано на Ubuntu "
+#~ "18.04, 20.04)"
+#~ msgstr ""
+#~ "The usbadc10 analog-to-digital converter has a frequency of up to 4000 "
+#~ "samples per second simultaneously on all channels. The device is equipped "
+#~ "with software for obtaining measurements. Support Windows 7 SP1 and "
+#~ "newer, Linux (tested on Ubuntu 18.04, 20.04)"
