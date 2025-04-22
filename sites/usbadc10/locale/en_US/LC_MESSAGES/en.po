@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-14 16:31+0300\n"
-"PO-Revision-Date: 2025-01-14 16:36+0300\n"
+"POT-Creation-Date: 2025-04-22 14:10+0300\n"
+"PO-Revision-Date: 2025-04-22 14:14+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -54,47 +54,18 @@ msgid "Наши партнёры"
 msgstr "Our partners"
 
 #: ../sites/usbadc10/data/download.py:7
-msgid "Документация"
-msgstr "Documentation"
-
-#: ../sites/usbadc10/data/download.py:10
-msgid ""
-"Руководства пользователя, паспорт продукта и другая техническая документация."
-msgstr "User manual, product passport, etc."
-
-#: ../sites/usbadc10/data/download.py:16
-msgid "Брошюры"
-msgstr "Datasheets"
-
-#: ../sites/usbadc10/data/download.py:18
-msgid "Информация о продукте."
-msgstr "Product documentation."
-
-#: ../sites/usbadc10/data/download.py:22
 msgid "Драйвер"
 msgstr "Driver"
 
-#: ../sites/usbadc10/data/download.py:24
+#: ../sites/usbadc10/data/download.py:9
 msgid "Драйвер для ОС Windows (для ОС Linux драйвер не нужен)."
 msgstr "Driver for Windows (Linux does not need a driver)."
 
-#: ../sites/usbadc10/data/download.py:28
-msgid "Прошивка"
-msgstr "Firmware"
-
-#: ../sites/usbadc10/data/download.py:31
-msgid ""
-"Обновление прошивки осуществляется с помощью кроссплатформенного ПО "
-"EPCBootGUI (ссылка на скачивание на этой странице)."
-msgstr ""
-"Firmware updates are performed using EPCBootGUI cross-platform SOFTWARE "
-"(download link on this page)."
-
-#: ../sites/usbadc10/data/download.py:37
+#: ../sites/usbadc10/data/download.py:13
 msgid "Программное обеспечение"
 msgstr "Software for PC"
 
-#: ../sites/usbadc10/data/download.py:40
+#: ../sites/usbadc10/data/download.py:16
 msgid ""
 "Пользовательское программное обеспечение для получения зависимостей "
 "напряжения от времени с помощью многоканального АЦП usbadc10. Для работы ПО "
@@ -105,11 +76,11 @@ msgstr ""
 "multi-channel ADCs. For the software to work, you will need a driver. You "
 "can download it on this page along with the program."
 
-#: ../sites/usbadc10/data/download.py:47
+#: ../sites/usbadc10/data/download.py:23
 msgid "uRPC Debugger"
 msgstr "uRPC Debugger"
 
-#: ../sites/usbadc10/data/download.py:50
+#: ../sites/usbadc10/data/download.py:26
 msgid ""
 "Кроссплатформенное ПО uRPC Debugger с графическим интерфейсом для отладки "
 "usbadc10. Позволяет вручную отправлять команды управления. Формирование и "
@@ -123,11 +94,55 @@ msgstr ""
 "software is distributed as binary files and as source code. To run on "
 "Windows requires a driver."
 
-#: ../sites/usbadc10/data/download.py:56
+#: ../sites/usbadc10/data/download.py:32
+msgid "Библиотека для программного управления"
+msgstr "Library for software management"
+
+#: ../sites/usbadc10/data/download.py:35
+msgid ""
+"Кроссплатформенная библиотека для работы с многоканальным usbadc10. "
+"Библиотека написана на языке C, распространяется в виде бинарных файлов "
+"(win64 и debian) и в виде исходных кодов. Также доступна <a href='https://"
+"pypi.org/project/usbadc10/'>установка Python-обёртки через PyPI</a> "
+"командой: <code>pip install usbadc10</code> <br>Документацию к библиотеке "
+"можно скачать отдельно на этой странице."
+msgstr ""
+"Cross-platform library for working with multi-channel usbadc10. The library "
+"is written in C, distributed as binary files (win64 and debian) and as "
+"source code. You can also <a href='https://pypi.org/project/"
+"usbadc10/'>install the Python wrapper via PyPI</a> using the command: "
+"<code>pip install usbadc10</code><br>Library documentation can be downloaded "
+"separately on this page."
+
+#: ../sites/usbadc10/data/download.py:44
+msgid "Описание библиотеки для программного управления"
+msgstr "Description of the software management library"
+
+#: ../sites/usbadc10/data/download.py:47
+msgid ""
+"Документация к библиотеке usbadc10, которая может быть использована для "
+"взаимодействия с устройством. Саму библиотеку можно скачать на этой странице."
+msgstr ""
+"Documentation for the usbadc10 library that can be used to interact with the "
+"device. The library itself can be downloaded on this page."
+
+#: ../sites/usbadc10/data/download.py:54
+msgid "Прошивка"
+msgstr "Firmware"
+
+#: ../sites/usbadc10/data/download.py:57
+msgid ""
+"Обновление прошивки осуществляется с помощью кроссплатформенного ПО "
+"EPCBootGUI (ссылка на скачивание на этой странице)."
+msgstr ""
+"Firmware updates are performed using EPCBootGUI cross-platform SOFTWARE "
+"(download link on this page)."
+
+#: ../sites/usbadc10/data/download.py:63
 msgid "EPCBoot GUI"
 msgstr "EPCBoot GUI"
 
-#: ../sites/usbadc10/data/download.py:59
+#: ../sites/usbadc10/data/download.py:66
 msgid ""
 "Удобное кроссплатформенное ПО EPCBootGUI для обновления прошивок в "
 "устройствах usbadc10."
@@ -135,11 +150,42 @@ msgstr ""
 "Convenient EPCBootGUI cross-platform software for firmware updates in "
 "usbadc10 devices."
 
-#: ../sites/usbadc10/data/download.py:64
+#: ../sites/usbadc10/data/download.py:71
+msgid "Примеры использования API и биндинги для Python и C#"
+msgstr "Examples of using the API and bindings for Python and C#"
+
+#: ../sites/usbadc10/data/download.py:74
+msgid ""
+"Комплект примеров программного кода на языках C и Python, реализующего "
+"простые считывания оцифрованных данных с устройства usbadc10. Также в данном "
+"архиве можно найти биндинги для языков Python и C#."
+msgstr ""
+"A set of code examples in C and Python that implement simple reads of "
+"digitized data from a usbadc10 device. You can also find bindings for Python "
+"and C# in this archive."
+
+#: ../sites/usbadc10/data/download.py:82
+msgid "Документация"
+msgstr "Documentation"
+
+#: ../sites/usbadc10/data/download.py:85
+msgid ""
+"Руководства пользователя, паспорт продукта и другая техническая документация."
+msgstr "User manual, product passport, etc."
+
+#: ../sites/usbadc10/data/download.py:91
+msgid "Брошюры"
+msgstr "Datasheets"
+
+#: ../sites/usbadc10/data/download.py:93
+msgid "Информация о продукте."
+msgstr "Product documentation."
+
+#: ../sites/usbadc10/data/download.py:97
 msgid "Прошивка встроенного компьютера"
 msgstr "Firmware of the embedded computer"
 
-#: ../sites/usbadc10/data/download.py:67
+#: ../sites/usbadc10/data/download.py:100
 msgid ""
 "Образы встроенной операционной системы для устройств серии EyePoint S. "
 "Обновление образа осуществляется посредством записи на SD карту. Более "
@@ -153,58 +199,17 @@ msgstr ""
 "Disk Imager (you can download it from the official website or from this "
 "page)."
 
-#: ../sites/usbadc10/data/download.py:77
-msgid "Описание библиотеки для программного управления"
-msgstr "Description of the software management library"
-
-#: ../sites/usbadc10/data/download.py:80
-msgid ""
-"Документация к библиотеке usbadc10, которая может быть использована для "
-"взаимодействия с устройством. Саму библиотеку можно скачать на этой странице."
-msgstr ""
-"Documentation for the usbadc10 library that can be used to interact with the "
-"device. The library itself can be downloaded on this page."
-
-#: ../sites/usbadc10/data/download.py:87
+#: ../sites/usbadc10/data/download.py:110
 msgid "Стороннее вспомогательное ПО"
 msgstr "Third-party support software"
 
-#: ../sites/usbadc10/data/download.py:90
+#: ../sites/usbadc10/data/download.py:113
 msgid ""
 "Дополнительное стороннее программное обеспечение, которое может "
 "потребоваться при работе с устройствами usbadc10."
 msgstr ""
 "Additional third-party software that may be required when working with "
 "usbadc10 devices."
-
-#: ../sites/usbadc10/data/download.py:96
-msgid "Библиотека для программного управления"
-msgstr "Library for software management"
-
-#: ../sites/usbadc10/data/download.py:99
-msgid ""
-"Кроссплатформенная библиотека для работы с многоканальным usbadc10. "
-"Библиотека написана на языке C, распространяется в виде бинарных файлов "
-"(win64 и debian) и в виде исходных кодов. Документацию к библиотеке можно "
-"скачать отдельно на этой странице."
-msgstr ""
-"Cross-platform library for working with multi-channel usbadc10. The library "
-"is written in C, distributed as binary files (win64 and debian) and as "
-"source code. Library documentation can be downloaded separately on this page."
-
-#: ../sites/usbadc10/data/download.py:108
-msgid "Примеры использования API и биндинги для Python и C#"
-msgstr "Examples of using the API and bindings for Python and C#"
-
-#: ../sites/usbadc10/data/download.py:111
-msgid ""
-"Комплект примеров программного кода на языках C и Python, реализующего "
-"простые считывания оцифрованных данных с устройства usbadc10. Также в данном "
-"архиве можно найти биндинги для языков Python и C#."
-msgstr ""
-"A set of code examples in C and Python that implement simple reads of "
-"digitized data from a usbadc10 device. You can also find bindings for Python "
-"and C# in this archive."
 
 #: ../sites/usbadc10/data/download.py:122
 msgid "Комплект последних версий программного обеспечения"

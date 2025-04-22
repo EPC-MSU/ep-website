@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-20 09:38+0500\n"
-"PO-Revision-Date: 2024-11-20 10:03+0500\n"
+"POT-Creation-Date: 2025-04-22 14:10+0300\n"
+"PO-Revision-Date: 2025-04-22 14:14+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
-"X-Generator: Poedit 3.1.1\n"
+"X-Generator: Poedit 2.3.1\n"
 
 #: ../site_engine/specification/general.py:3
 msgid "Версия"
@@ -218,18 +218,21 @@ msgstr "Library for software management"
 msgid ""
 "Кроссплатформенная библиотека для работы с устройствами линейки EyePoint. Библиотека "
 "написана на языке C, распространяется в виде бинарных файлов (win32, win64, debian) "
-"и в виде исходных кодов. Документацию к библиотеке можно скачать отдельно на этой "
-"странице."
+"и в виде исходных кодов. Также доступна <a href='https://pypi.org/project/"
+"ivm/'>установка Python-обёртки через PyPI</a> командой: <code>pip install ivm</code> "
+"<br>Документацию к библиотеке можно скачать отдельно на этой странице."
 msgstr ""
 "А сross-platform library for working with EyePoint devices. The library is written "
-"in C, distributed as binary files (win32, win64, debian) and as source codes. The "
-"library documentation can be downloaded separately on this page."
+"in C, distributed as binary files (win32, win64, debian) and as source codes. You "
+"can also <a href='https://pypi.org/project/ivm/'>install the Python wrapper via "
+"PyPI</a> using the command: <code>pip install ivm</code><br>The library "
+"documentation can be downloaded separately on this page."
 
-#: ../sites/eyepoint/data/download.py:125
+#: ../sites/eyepoint/data/download.py:127
 msgid "Примеры использования API и биндинги для Python и C#"
 msgstr "Examples of using the API and bindings for Python and C#"
 
-#: ../sites/eyepoint/data/download.py:128
+#: ../sites/eyepoint/data/download.py:130
 msgid ""
 "Комплект примеров программного кода на языках C, C# и Python для устройств линейки "
 "EyePoint. Также в данном архиве можно найти биндинги для языков Python и C#."
@@ -237,19 +240,19 @@ msgstr ""
 "A set of code examples in C, C# and Python for EyePoint devices. Bindings for Python "
 "and C# languages can also be found in this archive."
 
-#: ../sites/eyepoint/data/download.py:134
+#: ../sites/eyepoint/data/download.py:136
 msgid "Сервер"
 msgstr "Server"
 
-#: ../sites/eyepoint/data/download.py:137
+#: ../sites/eyepoint/data/download.py:139
 msgid "Локальный сервер для работы с устройством EyePoint H10. "
 msgstr "A local server for working with the EyePoint H10 device. "
 
-#: ../sites/eyepoint/data/download.py:145
+#: ../sites/eyepoint/data/download.py:147
 msgid "Комплект последних версий программного обеспечения"
 msgstr "Latest software and documentation"
 
-#: ../sites/eyepoint/data/download.py:147
+#: ../sites/eyepoint/data/download.py:149
 msgid "и документации для этого продукта"
 msgstr "package for this product"
 
