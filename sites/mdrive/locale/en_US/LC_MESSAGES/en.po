@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-22 18:09+0300\n"
-"PO-Revision-Date: 2025-04-22 18:11+0300\n"
+"POT-Creation-Date: 2025-04-23 18:12+0300\n"
+"PO-Revision-Date: 2025-04-23 18:12+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -101,7 +101,8 @@ msgid ""
 "<em>examples</em>.<h5>Ищите версию для arm64?</h5>Официально архитектура "
 "arm64 пока не поддерживается. Но мы уже работаем над её поддержкой. Для "
 "архитектуры arm64 доступна рабочая сборка (только для Linux). Архив "
-"<em>libximc-2.14.17-arm64.zip</em> можно найти на этой странице."
+"<em>libximc-2.14.17-arm64.zip</em> можно найти ниже в блоке <em>Комплект "
+"разработчика</em> > <em>Старые версии</em>."
 msgstr ""
 "The description of the developer kit can be found in the <em>ximc/doc-en/"
 "html/index.html</em> folder of the archive below. A PDF version of the "
@@ -109,13 +110,14 @@ msgstr ""
 "examples. <h5>Looking for an arm64 version?</h5>Officially, arm64 is not yet "
 "supported. However, we are already working on adding support for this "
 "architecture. You can use the working build (only for Linux). The archive "
-"<em>libximc-2.14.17-arm64.zip</em> is available on this page."
+"<em>libximc-2.14.17-arm64.zip</em> you can find it below in the "
+"<em>Development Kit</em> > <em>Older releases block</em>."
 
-#: ../sites/mdrive/data/download.py:41
+#: ../sites/mdrive/data/download.py:42
 msgid "Прошивка контроллера"
 msgstr "Controller firmware"
 
-#: ../sites/mdrive/data/download.py:44
+#: ../sites/mdrive/data/download.py:45
 msgid ""
 "Информация по обновлению прошивки содержится в руководстве пользователя, в "
 "главе 5.3.13"
@@ -123,19 +125,19 @@ msgstr ""
 "Information on updating the firmware is provided in the user manual, in "
 "chapter 5.3.13"
 
-#: ../sites/mdrive/data/download.py:49
+#: ../sites/mdrive/data/download.py:50
 msgid "Примеры для LabView (Windows)"
 msgstr "LabView examples (Windows)"
 
-#: ../sites/mdrive/data/download.py:52
+#: ../sites/mdrive/data/download.py:53
 msgid "Примеры использования контроллера в среде LabView (для Windows)"
 msgstr "Controller usage examples in LabView (Windows)"
 
-#: ../sites/mdrive/data/download.py:57
+#: ../sites/mdrive/data/download.py:58
 msgid "Драйвера"
 msgstr "Drivers"
 
-#: ../sites/mdrive/data/download.py:59
+#: ../sites/mdrive/data/download.py:60
 msgid ""
 "Драйвер для ОС Windows (для Linux и macOS драйвер не нужен). Драйвер "
 "устанавливается автоматически при установке программного обеспечения mDrive "
@@ -145,11 +147,11 @@ msgstr ""
 "installed automatically when installing the mDrive_Direct_Control software. "
 "You can also download the specified file below."
 
-#: ../sites/mdrive/data/download.py:65
+#: ../sites/mdrive/data/download.py:66
 msgid "Revealer"
 msgstr "Revealer"
 
-#: ../sites/mdrive/data/download.py:68
+#: ../sites/mdrive/data/download.py:69
 msgid ""
 "Утилита для автоматического обнаружения устройств mDrive, подключенных к "
 "вашей локальной сети. Поддерживаются 64-битные версии Windows/Linux/мacOS. "
@@ -161,11 +163,11 @@ msgstr ""
 "version has been tested on Ubuntu, but it will work on many other popular "
 "distributions as well."
 
-#: ../sites/mdrive/data/download.py:78
+#: ../sites/mdrive/data/download.py:79
 msgid "Комплект последних версий программного обеспечения"
 msgstr "Latest software and documentation"
 
-#: ../sites/mdrive/data/download.py:80
+#: ../sites/mdrive/data/download.py:81
 msgid "и документации для этого продукта"
 msgstr "package for this product"
 
