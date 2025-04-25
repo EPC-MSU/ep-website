@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-23 18:04+0300\n"
-"PO-Revision-Date: 2025-04-23 18:11+0300\n"
+"POT-Creation-Date: 2025-04-25 19:22+0300\n"
+"PO-Revision-Date: 2025-04-25 19:22+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -218,43 +218,43 @@ msgstr "Library for software management"
 msgid ""
 "Кроссплатформенная библиотека для работы с устройствами линейки EyePoint. Библиотека "
 "написана на языке C, распространяется в виде бинарных файлов (win32, win64, debian) "
-"и в виде исходных кодов. Свежую версию библиотеки для Python можно установить через "
-"пакетный менеджер pip: <code>pip install ivm</code> (<a href='https://pypi.org/"
-"project/ivm/'>страница библиотеки на pypi</a>)<br>Документацию к библиотеке можно "
-"скачать отдельно на этой странице."
+"и в виде исходных кодов. <br>Документацию к библиотеке можно скачать отдельно на "
+"этой странице."
 msgstr ""
 "А сross-platform library for working with EyePoint devices. The library is written "
-"in C, distributed as binary files (win32, win64, debian) and as source codes. The "
-"latest version of the library for Python can be installed via the pip package "
-"manager: <code>pip install ivm</code> (<a href='https://pypi.org/project/"
-"ivm/'>library page on PyPI</a>)<br>The library documentation can be downloaded "
-"separately on this page."
+"in C, distributed as binary files (win32, win64, debian) and as source codes. "
+"<br>The library documentation can be downloaded separately on this page."
 
-#: ../sites/eyepoint/data/download.py:127
+#: ../sites/eyepoint/data/download.py:126
 msgid "Примеры использования API и биндинги для Python и C#"
 msgstr "Examples of using the API and bindings for Python and C#"
 
-#: ../sites/eyepoint/data/download.py:130
+#: ../sites/eyepoint/data/download.py:129
 msgid ""
-"Комплект примеров программного кода на языках C, C# и Python для устройств линейки "
-"EyePoint. Также в данном архиве можно найти биндинги для языков Python и C#."
+"Комплект примеров программного кода на языках Python, C и C# для устройств линейки "
+"EyePoint. Свежую версию библиотеки для Python можно установить через пакетный "
+"менеджер pip: <code>pip install ivm</code> (<a href='https://pypi.org/project/"
+"ivm/'>страница библиотеки на PyPi</a>). <br>Также в приложенных архивах можно найти "
+"биндинги для языков Python, C и C#."
 msgstr ""
-"A set of code examples in C, C# and Python for EyePoint devices. Bindings for Python "
-"and C# languages can also be found in this archive."
+"A set of code examples in Python, C and C# for EyePoint devices. The latest version "
+"of the library for Python can be installed via the pip package manager: <code>pip "
+"install ivm</code> (<a href='https://pypi.org/project/ivm/'>library page on PyPI</"
+"a>.)<br>You can also find bindings for Python, C and C# in the provided archives."
 
-#: ../sites/eyepoint/data/download.py:136
+#: ../sites/eyepoint/data/download.py:137
 msgid "Сервер"
 msgstr "Server"
 
-#: ../sites/eyepoint/data/download.py:139
+#: ../sites/eyepoint/data/download.py:140
 msgid "Локальный сервер для работы с устройством EyePoint H10. "
 msgstr "A local server for working with the EyePoint H10 device. "
 
-#: ../sites/eyepoint/data/download.py:147
+#: ../sites/eyepoint/data/download.py:148
 msgid "Комплект последних версий программного обеспечения"
 msgstr "Latest software and documentation"
 
-#: ../sites/eyepoint/data/download.py:149
+#: ../sites/eyepoint/data/download.py:150
 msgid "и документации для этого продукта"
 msgstr "package for this product"
 
@@ -1009,6 +1009,14 @@ msgstr "Channel impedance: 11 Ohm"
 #: ../sites/eyepoint/data/products.py:393
 msgid "Ёмкость канала: 100 пФ"
 msgstr "Channel capacity: 100 pF"
+
+#~ msgid ""
+#~ "Комплект примеров программного кода на языках C, C# и Python для устройств "
+#~ "линейки EyePoint. Также в данном архиве можно найти биндинги для языков Python и "
+#~ "C#."
+#~ msgstr ""
+#~ "A set of code examples in C, C# and Python for EyePoint devices. Bindings for "
+#~ "Python and C# languages can also be found in this archive."
 
 #~ msgid ""
 #~ "Пользовательское программное обеспечение, аналогичное графическому интерфейсу на "

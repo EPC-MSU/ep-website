@@ -2,13 +2,12 @@
 # Copyright (C) YEAR ORGANIZATION
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#: ../sites/usbadc10/data/other.py:30
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-23 18:12+0300\n"
-"PO-Revision-Date: 2025-04-23 18:11+0300\n"
+"POT-Creation-Date: 2025-04-25 19:27+0300\n"
+"PO-Revision-Date: 2025-04-25 19:27+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -103,24 +102,19 @@ msgstr "Library for software management"
 msgid ""
 "Кроссплатформенная библиотека для работы с многоканальным usbadc10. "
 "Библиотека написана на языке C, распространяется в виде бинарных файлов "
-"(win64 и debian) и в виде исходных кодов. Свежую версию библиотеки для "
-"Python можно установить через пакетный менеджер pip:</a> <code>pip install "
-"usbadc10</code> (<a href='https://pypi.org/project/usbadc10/'>страница "
-"библиотеки на pypi</a>)<br>Документацию к библиотеке можно скачать отдельно "
-"на этой странице."
+"(win64 и debian) и в виде исходных кодов. <br>Документацию к библиотеке "
+"можно скачать отдельно на этой странице."
 msgstr ""
 "Cross-platform library for working with multi-channel usbadc10. The library "
 "is written in C, distributed as binary files (win64 and debian) and as "
-"source code. The latest version of the library for Python can be installed "
-"via the pip package manager: <code>pip install usbadc10</code> (<a "
-"href='https://pypi.org/project/usbadc10/'>library page on PyPI</"
-"a>)<br>Library documentation can be downloaded separately on this page."
+"source code. <br>Library documentation can be downloaded separately on this "
+"page."
 
-#: ../sites/usbadc10/data/download.py:44
+#: ../sites/usbadc10/data/download.py:43
 msgid "Описание библиотеки для программного управления"
 msgstr "Description of the software management library"
 
-#: ../sites/usbadc10/data/download.py:47
+#: ../sites/usbadc10/data/download.py:46
 msgid ""
 "Документация к библиотеке usbadc10, которая может быть использована для "
 "взаимодействия с устройством. Саму библиотеку можно скачать на этой странице."
@@ -128,11 +122,11 @@ msgstr ""
 "Documentation for the usbadc10 library that can be used to interact with the "
 "device. The library itself can be downloaded on this page."
 
-#: ../sites/usbadc10/data/download.py:54
+#: ../sites/usbadc10/data/download.py:53
 msgid "Прошивка"
 msgstr "Firmware"
 
-#: ../sites/usbadc10/data/download.py:57
+#: ../sites/usbadc10/data/download.py:56
 msgid ""
 "Обновление прошивки осуществляется с помощью кроссплатформенного ПО "
 "EPCBootGUI (ссылка на скачивание на этой странице)."
@@ -140,11 +134,11 @@ msgstr ""
 "Firmware updates are performed using EPCBootGUI cross-platform SOFTWARE "
 "(download link on this page)."
 
-#: ../sites/usbadc10/data/download.py:63
+#: ../sites/usbadc10/data/download.py:62
 msgid "EPCBoot GUI"
 msgstr "EPCBoot GUI"
 
-#: ../sites/usbadc10/data/download.py:66
+#: ../sites/usbadc10/data/download.py:65
 msgid ""
 "Удобное кроссплатформенное ПО EPCBootGUI для обновления прошивок в "
 "устройствах usbadc10."
@@ -152,19 +146,24 @@ msgstr ""
 "Convenient EPCBootGUI cross-platform software for firmware updates in "
 "usbadc10 devices."
 
-#: ../sites/usbadc10/data/download.py:71
+#: ../sites/usbadc10/data/download.py:70
 msgid "Примеры использования API и биндинги для Python и C#"
 msgstr "Examples of using the API and bindings for Python and C#"
 
-#: ../sites/usbadc10/data/download.py:74
+#: ../sites/usbadc10/data/download.py:73
 msgid ""
 "Комплект примеров программного кода на языках C и Python, реализующего "
-"простые считывания оцифрованных данных с устройства usbadc10. Также в данном "
-"архиве можно найти биндинги для языков Python и C#."
+"простые считывания оцифрованных данных с устройства usbadc10. Свежую версию "
+"библиотеки для Python можно установить через пакетный менеджер pip: "
+"<code>pip install usbadc10</code> (<a href='https://pypi.org/project/"
+"usbadc10/'>страница библиотеки на PyPi</a>). <br>Также в данном архиве можно "
+"найти биндинги для языков Python и C#."
 msgstr ""
 "A set of code examples in C and Python that implement simple reads of "
-"digitized data from a usbadc10 device. You can also find bindings for Python "
-"and C# in this archive."
+"digitized data from a usbadc10 device. You can also install the Python "
+"wrapper via PyPI using the command: <code>pip install usbadc10</code> (<a "
+"href='https://pypi.org/project/usbadc10/'>library page on PyPI</a>). <br>You "
+"can also find bindings for Python and C# in this archive."
 
 #: ../sites/usbadc10/data/download.py:82
 msgid "Документация"
