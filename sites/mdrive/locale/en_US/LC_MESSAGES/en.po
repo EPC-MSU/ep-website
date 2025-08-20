@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-20 10:02+0500\n"
-"PO-Revision-Date: 2024-11-20 10:04+0500\n"
+"POT-Creation-Date: 2025-04-23 18:12+0300\n"
+"PO-Revision-Date: 2025-04-23 18:12+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
-"X-Generator: Poedit 3.1.1\n"
+"X-Generator: Poedit 2.3.1\n"
 
 #: ../site_engine/specification/general.py:3
 msgid "Версия"
@@ -61,20 +61,21 @@ msgstr "mDrive Direct Control"
 msgid ""
 "Главная программа, предназначенная для управления позиционерами, диагностики "
 "моторов, настройки двигателей и др. Информация по установке размещена в "
-"руководстве пользователя в главе '5.6 Установка mDrive Direct Control'. "
-"Поддерживаются Windows/Linux/macOS. Для работы на Windows скачайте файл с "
-"суффиксом 'win32_win64'. Для работы на Macintosh скачайте файл с суффиксом "
-"'osx64'. Пользователям Linux подойдёт standalone версия с суффиксом 'x86_64."
-"AppImage'. Для старых 32-битных Linux нужен суффикс 'ia32.AppImage'."
+"руководстве пользователя в главе <em>'5.6 Установка mDrive Direct Control'</"
+"em>. Поддерживаются Windows/Linux/macOS. Для работы на Windows скачайте файл "
+"с суффиксом <em>'win32_win64'</em>. Для работы на Macintosh скачайте файл с "
+"суффиксом <em>'osx64'</em>. Пользователям Linux подойдёт standalone версия с "
+"суффиксом <em>'x86_64.AppImage'</em>. Для старых 32-битных Linux нужен "
+"суффикс <em>'ia32.AppImage'</em>."
 msgstr ""
 "The main program designed to control positioners, diagnose motors, adjust "
 "them, and so on. Installation information is available in the user manual in "
-"the chapter '5.6 mDrive Direct Control installation'. Windows/Linux/macOS "
-"are supported. To work on Windows, download the file with the suffix "
-"'win32_win64'. To work on the Macintosh, download the file with the suffix "
-"'osx64'. The standalone version with the suffix 'x86_64.AppImage' is "
-"suitable for Linux users. Older 32-bit versions of Linux require the suffix "
-"'ia32.AppImage'."
+"the chapter <em>'5.6 mDrive Direct Control installation'</em>. Windows/Linux/"
+"macOS are supported. To work on Windows, download the file with the suffix "
+"<em>'win32_win64'</em>. To work on the Macintosh, download the file with the "
+"suffix <em>'osx64'</em>. The standalone version with the suffix <em>'x86_64."
+"AppImage'</em> is suitable for Linux users. Older 32-bit versions of Linux "
+"require the suffix <em>'ia32.AppImage'</em>."
 
 #: ../sites/mdrive/data/download.py:20
 msgid "Руководство пользователя"
@@ -94,20 +95,29 @@ msgstr "Developer kit"
 
 #: ../sites/mdrive/data/download.py:31
 msgid ""
-"С описанием комплекта разработчика можно ознакомиться в папке ximc/doc-ru/"
-"html/index.html указанного ниже архива. PDF-версия руководства по "
-"программированию может быть скачана также отсюда. Примеры находятся в "
-"examples"
+"С описанием комплекта разработчика можно ознакомиться в папке <em>ximc/doc-"
+"ru/html/index.html</em> указанного ниже архива. PDF-версия руководства по "
+"программированию может быть скачана также отсюда. Примеры находятся в папке "
+"<em>examples</em>.<h5>Ищите версию для arm64?</h5>Официально архитектура "
+"arm64 пока не поддерживается. Но мы уже работаем над её поддержкой. Для "
+"архитектуры arm64 доступна рабочая сборка (только для Linux). Архив "
+"<em>libximc-2.14.17-arm64.zip</em> можно найти ниже в блоке <em>Комплект "
+"разработчика</em> > <em>Старые версии</em>."
 msgstr ""
-"The description of the developer kit can be found in the ximc/doc-en/html/"
-"index.html folder of the archive below. A PDF version of the programming "
-"guide can also be downloaded from here. Examples can be found in examples"
+"The description of the developer kit can be found in the <em>ximc/doc-en/"
+"html/index.html</em> folder of the archive below. A PDF version of the "
+"programming guide can also be downloaded from here. Examples can be found in "
+"examples. <h5>Looking for an arm64 version?</h5>Officially, arm64 is not yet "
+"supported. However, we are already working on adding support for this "
+"architecture. You can use the working build (only for Linux). The archive "
+"<em>libximc-2.14.17-arm64.zip</em> you can find it below in the "
+"<em>Development Kit</em> > <em>Older releases block</em>."
 
-#: ../sites/mdrive/data/download.py:38
+#: ../sites/mdrive/data/download.py:42
 msgid "Прошивка контроллера"
 msgstr "Controller firmware"
 
-#: ../sites/mdrive/data/download.py:41
+#: ../sites/mdrive/data/download.py:45
 msgid ""
 "Информация по обновлению прошивки содержится в руководстве пользователя, в "
 "главе 5.3.13"
@@ -115,19 +125,19 @@ msgstr ""
 "Information on updating the firmware is provided in the user manual, in "
 "chapter 5.3.13"
 
-#: ../sites/mdrive/data/download.py:46
+#: ../sites/mdrive/data/download.py:50
 msgid "Примеры для LabView (Windows)"
 msgstr "LabView examples (Windows)"
 
-#: ../sites/mdrive/data/download.py:49
+#: ../sites/mdrive/data/download.py:53
 msgid "Примеры использования контроллера в среде LabView (для Windows)"
 msgstr "Controller usage examples in LabView (Windows)"
 
-#: ../sites/mdrive/data/download.py:54
+#: ../sites/mdrive/data/download.py:58
 msgid "Драйвера"
 msgstr "Drivers"
 
-#: ../sites/mdrive/data/download.py:56
+#: ../sites/mdrive/data/download.py:60
 msgid ""
 "Драйвер для ОС Windows (для Linux и macOS драйвер не нужен). Драйвер "
 "устанавливается автоматически при установке программного обеспечения mDrive "
@@ -137,11 +147,11 @@ msgstr ""
 "installed automatically when installing the mDrive_Direct_Control software. "
 "You can also download the specified file below."
 
-#: ../sites/mdrive/data/download.py:62
+#: ../sites/mdrive/data/download.py:66
 msgid "Revealer"
 msgstr "Revealer"
 
-#: ../sites/mdrive/data/download.py:65
+#: ../sites/mdrive/data/download.py:69
 msgid ""
 "Утилита для автоматического обнаружения устройств mDrive, подключенных к "
 "вашей локальной сети. Поддерживаются 64-битные версии Windows/Linux/мacOS. "
@@ -153,11 +163,11 @@ msgstr ""
 "version has been tested on Ubuntu, but it will work on many other popular "
 "distributions as well."
 
-#: ../sites/mdrive/data/download.py:75
+#: ../sites/mdrive/data/download.py:79
 msgid "Комплект последних версий программного обеспечения"
 msgstr "Latest software and documentation"
 
-#: ../sites/mdrive/data/download.py:77
+#: ../sites/mdrive/data/download.py:81
 msgid "и документации для этого продукта"
 msgstr "package for this product"
 
