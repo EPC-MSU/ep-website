@@ -12,5 +12,5 @@ RUN pip install --upgrade pip && \
     apt-get clean && rm -rf /var/cache/apt/* && rm -rf /var/lib/apt/lists/* && rm -rf /tmp/* && rm -rf /var/tmp/*
 
 EXPOSE 8080
-CMD python server.py --site=eyepoint
+CMD python server.py --site=usbadc10
 
