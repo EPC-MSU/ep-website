@@ -13,3 +13,4 @@ RUN pip install --upgrade pip && \
 
 EXPOSE 8080
 CMD python server.py --site=mdrive
+
