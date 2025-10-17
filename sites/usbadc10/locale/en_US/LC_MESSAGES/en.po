@@ -2,13 +2,12 @@
 # Copyright (C) YEAR ORGANIZATION
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#: ../sites/usbadc10/data/other.py:30
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-11 16:12+0400\n"
-"PO-Revision-Date: 2025-04-25 19:27+0300\n"
+"POT-Creation-Date: 2025-10-17 20:20+0400\n"
+"PO-Revision-Date: 2025-10-17 20:21+0400\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -16,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
-"X-Generator: Poedit 2.3.1\n"
+"X-Generator: Poedit 3.3.2\n"
 
 #: ../site_engine/specification/general.py:3
 msgid "Версия"
@@ -213,11 +212,23 @@ msgstr ""
 "Additional third-party software that may be required when working with "
 "usbadc10 devices."
 
+#: ../sites/usbadc10/data/download.py:119
+msgid "3D модель"
+msgstr "3D model"
+
 #: ../sites/usbadc10/data/download.py:122
+msgid ""
+"Здесь вы можете скачать актуальные 3D-модели контроллеров для проектирования "
+"и визуализации. Модели предоставлены в распространённых форматах .step"
+msgstr ""
+"Here you can download up-to-date 3D models of the controllers for design and "
+"visualization purposes. The models are provided in the common .step format"
+
+#: ../sites/usbadc10/data/download.py:131
 msgid "Комплект последних версий программного обеспечения"
 msgstr "Latest software and documentation"
 
-#: ../sites/usbadc10/data/download.py:124
+#: ../sites/usbadc10/data/download.py:133
 msgid "и документации для этого продукта"
 msgstr "package for this product"
 
@@ -363,6 +374,12 @@ msgstr "Data transfer rate - USB Full-Speed"
 #: ../sites/usbadc10/data/products.py:33
 msgid "До 4000 выборок в секунду одновременно по всем каналам"
 msgstr "Up to 4000 samples per second simultaneously on all channels"
+
+#~ msgid "В этом разделе вы можете найти 3D модель чего-то там."
+#~ msgstr ""
+#~ "Here you can download up-to-date 3D models of the controllers for design "
+#~ "and visualization purposes. The models are provided in the common .step "
+#~ "format."
 
 #~ msgid ""
 #~ "usbadc10 - устройство, преобразующее входной аналоговый сигнал в "

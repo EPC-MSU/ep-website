@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-11 16:12+0400\n"
-"PO-Revision-Date: 2025-04-23 18:12+0300\n"
+"POT-Creation-Date: 2025-10-17 20:16+0400\n"
+"PO-Revision-Date: 2025-10-17 20:18+0400\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
-"X-Generator: Poedit 2.3.1\n"
+"X-Generator: Poedit 3.3.2\n"
 
 #: ../site_engine/specification/general.py:3
 msgid "Версия"
@@ -94,7 +94,6 @@ msgid "Комплект разработчика"
 msgstr "Developer kit"
 
 #: ../sites/mdrive/data/download.py:31
-#, fuzzy
 msgid ""
 "С описанием комплекта разработчика можно ознакомиться в папке <em>ximc/doc-"
 "ru/html/index.html</em> указанного ниже архива. PDF-версия руководства по "
@@ -108,7 +107,7 @@ msgstr ""
 "The description of the developer kit can be found in the <em>ximc/doc-en/"
 "html/index.html</em> folder of the archive below. A PDF version of the "
 "programming guide can also be downloaded from here. Examples can be found in "
-"examples. <h5>Looking for an arm64 version?</h5>Officially, arm64 is not yet "
+"examples. <h4>Looking for an arm64 version?</h4>Officially, arm64 is not yet "
 "supported. However, we are already working on adding support for this "
 "architecture. You can use the working build (only for Linux). The archive "
 "<em>libximc-2.14.17-arm64.zip</em> you can find it below in the "
@@ -164,11 +163,23 @@ msgstr ""
 "version has been tested on Ubuntu, but it will work on many other popular "
 "distributions as well."
 
+#: ../sites/mdrive/data/download.py:76
+msgid "3D модель"
+msgstr "3D model"
+
 #: ../sites/mdrive/data/download.py:79
+msgid ""
+"Здесь вы можете скачать актуальные 3D-модели контроллеров для проектирования "
+"и визуализации. Модели предоставлены в распространённых форматах .step"
+msgstr ""
+"Here you can download up-to-date 3D models of the controllers for design and "
+"visualization purposes. The models are provided in the common .step format"
+
+#: ../sites/mdrive/data/download.py:88
 msgid "Комплект последних версий программного обеспечения"
 msgstr "Latest software and documentation"
 
-#: ../sites/mdrive/data/download.py:81
+#: ../sites/mdrive/data/download.py:90
 msgid "и документации для этого продукта"
 msgstr "package for this product"
 

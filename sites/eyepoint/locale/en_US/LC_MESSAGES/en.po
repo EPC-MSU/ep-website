@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-22 18:11+0400\n"
-"PO-Revision-Date: 2025-09-22 18:13+0400\n"
+"POT-Creation-Date: 2025-10-17 20:20+0400\n"
+"PO-Revision-Date: 2025-10-17 20:21+0400\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -247,18 +247,30 @@ msgstr ""
 "a>.)<br>You can also find bindings for Python, C and C# in the provided archives."
 
 #: ../sites/eyepoint/data/download.py:137
+msgid "3D модель"
+msgstr "3D model"
+
+#: ../sites/eyepoint/data/download.py:140
+msgid ""
+"Здесь вы можете скачать актуальные 3D-модели контроллеров для проектирования и "
+"визуализации. Модели предоставлены в распространённых форматах .step"
+msgstr ""
+"Here you can download up-to-date 3D models of the controllers for design and "
+"visualization purposes. The models are provided in the common .step format"
+
+#: ../sites/eyepoint/data/download.py:146
 msgid "Сервер"
 msgstr "Server"
 
-#: ../sites/eyepoint/data/download.py:140
+#: ../sites/eyepoint/data/download.py:149
 msgid "Локальный сервер для работы с устройством EyePoint H10. "
 msgstr "A local server for working with the EyePoint H10 device. "
 
-#: ../sites/eyepoint/data/download.py:148
+#: ../sites/eyepoint/data/download.py:157
 msgid "Комплект последних версий программного обеспечения"
 msgstr "Latest software and documentation"
 
-#: ../sites/eyepoint/data/download.py:150
+#: ../sites/eyepoint/data/download.py:159
 msgid "и документации для этого продукта"
 msgstr "package for this product"
 
@@ -1084,6 +1096,11 @@ msgstr "Channel impedance: 11 Ohm"
 #: ../sites/eyepoint/data/products.py:480
 msgid "Ёмкость канала: 100 пФ"
 msgstr "Channel capacity: 100 pF"
+
+#~ msgid "В этом разделе вы можете найти 3D модель чего-то там."
+#~ msgstr ""
+#~ "Here you can download up-to-date 3D models of the controllers for design and "
+#~ "visualization purposes. The models are provided in the common .step format"
 
 #~ msgid ""
 #~ "Комплект примеров программного кода на языках C, C# и Python для устройств "

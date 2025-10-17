@@ -133,6 +133,15 @@ categories = (
         ),
     ),
     SoftwareCategory(
+        name="3D_models",
+        friendly_name=_("3D модель"),
+        icon="browse_activity.svg",
+        description=_(
+            "Здесь вы можете скачать актуальные 3D-модели контроллеров для проектирования и визуализации. "
+            "Модели предоставлены в распространённых форматах .step"
+        ),
+    ),
+    SoftwareCategory(
         name="server",
         friendly_name=_("Сервер"),
         icon="dns.svg",
