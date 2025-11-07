@@ -6,7 +6,6 @@ FROM python:3.7-slim-bookworm
 RUN apt-get update && \
     apt-get install -y openssh-server && \
     mkdir /var/run/sshd && \
-    mkdir /root/.ssh && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
