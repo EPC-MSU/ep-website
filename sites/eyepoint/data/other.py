@@ -26,7 +26,7 @@ tags = _(
     "EyePoint, диагностика электронных схем, анализ неисправностей, ЦИФ МГУ"
 )
 
-footer_address = _("Россия, Москва, 119333<br>ул. Фотиевой, дом 5, строение 1")
+footer_address = _("Россия, Москва, 119331<br>просп. Вернадского 21, корп. 3")
 footer_address_link = "https://physlab.ru/contacts"
 footer_org_name = _("ООО «ЦИФ МГУ имени М.В. Ломоносова»")
 footer_link = "https://physlab.ru/"
