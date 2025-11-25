@@ -2,13 +2,12 @@
 # Copyright (C) YEAR ORGANIZATION
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#: ../sites/usbadc10/data/other.py:30
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-07 19:46+0400\n"
-"PO-Revision-Date: 2025-11-07 19:38+0400\n"
+"POT-Creation-Date: 2025-11-25 13:47+0400\n"
+"PO-Revision-Date: 2025-11-25 13:47+0400\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -277,8 +276,8 @@ msgstr ""
 "monitoring and control systems, information processing and display device"
 
 #: ../sites/usbadc10/data/other.py:22
-msgid "Россия, Москва, 119333<br>ул. Фотиевой, дом 5, строение 1"
-msgstr "Russia, Moscow, 119333<br>Fotievoy street 5, bldg. 1"
+msgid "Россия, Москва, 119331<br>просп. Вернадского 21, корп. 3"
+msgstr "Russia, Moscow, 119331<br>Prospekt Vernadskogo 21, bldg. 3"
 
 #: ../sites/usbadc10/data/other.py:24
 msgid "ООО «ЦИФ МГУ имени М.В. Ломоносова»"
