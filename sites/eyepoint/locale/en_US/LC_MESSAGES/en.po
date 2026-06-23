@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-25 13:47+0400\n"
-"PO-Revision-Date: 2025-11-25 13:47+0400\n"
+"POT-Creation-Date: 2026-06-23 13:22+0400\n"
+"PO-Revision-Date: 2026-06-23 13:32+0400\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -281,7 +281,7 @@ msgstr "EyePoint. Localizers of faulty components"
 #: ../sites/eyepoint/data/other.py:7
 msgid ""
 "<b>EyePoint</b> – системы для локализации неисправных электронных компонентов на "
-"печатных платах, а также для выявления контрафактных, перемаркерованных или "
+"печатных платах, а также для выявления контрафактных, перемаркированных или "
 "поврежденных компонентов в BGA-корпусах на основе метода аналогового сигнатурного "
 "анализа (АСА). В линейке <b>EyePoint</b> есть автоматические <b>(P10, B10, P10b, "
 "MUX)</b> и ручные <b>(S2, S3, u21, u22, u32, H10)</b> системы, а также ОЕМ-модуль "
@@ -400,7 +400,7 @@ msgstr "Current range: 25 μА - 25 mA"
 #: ../sites/eyepoint/data/products.py:291 ../sites/eyepoint/data/products.py:331
 #: ../sites/eyepoint/data/products.py:372
 msgid "Чувствительность по R: 1 Ом - 10 МОм"
-msgstr "R Sensitivity: 1 Ohm - 10 mOhm"
+msgstr "R Sensitivity: 1 Ohm - 10 MOhm"
 
 #: ../sites/eyepoint/data/products.py:28 ../sites/eyepoint/data/products.py:71
 #: ../sites/eyepoint/data/products.py:114 ../sites/eyepoint/data/products.py:157
@@ -785,7 +785,7 @@ msgstr "Miniature size"
 
 #: ../sites/eyepoint/data/products.py:245 ../sites/eyepoint/data/products.py:285
 msgid "Доступен функционал модели S2"
-msgstr "The functionality of the S2 model is available"
+msgstr "All S2 features available"
 
 #: ../sites/eyepoint/data/products.py:254 ../sites/eyepoint/data/products.py:294
 #: ../sites/eyepoint/data/products.py:334 ../sites/eyepoint/data/products.py:375
@@ -831,8 +831,8 @@ msgstr ""
 "package, a USB cable for connecting to a PC. "
 
 #: ../sites/eyepoint/data/products.py:297
-msgid "Габариты и вес: 175 х 90 х 40 мм"
-msgstr "Dimensions and weight: 175 x 90 x 40 mm"
+msgid "Габариты: 175 х 90 х 40 мм"
+msgstr "Dimensions: 175 x 90 x 40 mm"
 
 #: ../sites/eyepoint/data/products.py:309
 msgid "EyePoint u32"
@@ -843,7 +843,7 @@ msgid ""
 "Двухканальный локализатор неисправных электронных компонентов на печатных платах "
 "методом аналогового сигнатурного анализа (АСА) с частотой тестирующего сигнала до "
 "100 кГц. В отличие от предыдущей модели, u32 комплектуется новыми эргономичными "
-"измерительными щупами с кнопокой, которые позволяют зафиксировать ВАХ без "
+"измерительными щупами с кнопкой, которые позволяют зафиксировать ВАХ без "
 "использования клавиатуры и панели инструментов."
 msgstr ""
 "A two-channel localizer of faulty electronic components on printed circuit boards by "
@@ -857,7 +857,7 @@ msgid ""
 "Двухканальный локализатор неисправных электронных компонентов на печатных платах "
 "методом аналогового сигнатурного анализа (АСА) с частотой тестирующего сигнала до "
 "100 кГц. В отличие от предыдущей модели, u32 комплектуется новыми эргономичными "
-"измерительными щупами с кнопокой, которые позволяют зафиксировать ВАХ без "
+"измерительными щупами с кнопкой, которые позволяют зафиксировать ВАХ без "
 "использования клавиатуры и панели инструментов. <br />EyePoint u32 – компактный "
 "настольный прибор с возможностью программного управления, комплектующийся набором "
 "измерительных щупов, USB-флеш-накопителем с комплектом программного обеспечения, "
@@ -876,8 +876,8 @@ msgid "Доступен функционал модели S2/S3"
 msgstr "The functionality of the S2/S3 model is available"
 
 #: ../sites/eyepoint/data/products.py:338
-msgid "Габариты и вес: 112 х 90 х 30 мм"
-msgstr "Dimensions and weight: 112 x 90 x 30 mm"
+msgid "Габариты: 112 х 90 х 30 мм"
+msgstr "Dimensions: 112 x 90 x 30 mm"
 
 #: ../sites/eyepoint/data/products.py:350
 msgid "EyePoint a2"
@@ -922,7 +922,7 @@ msgstr "Full functionality"
 
 #: ../sites/eyepoint/data/products.py:366
 msgid "Максимально доступный"
-msgstr "Maximum affordable"
+msgstr "Most affordable"
 
 #: ../sites/eyepoint/data/products.py:378
 msgid "Габариты: 60 х 40 х 5 мм"
@@ -973,7 +973,7 @@ msgstr "USB control"
 
 #: ../sites/eyepoint/data/products.py:406
 msgid "Широкий диапазон напряжения"
-msgstr "Wide voltage range"
+msgstr "Wide voltage and frequency range"
 
 #: ../sites/eyepoint/data/products.py:409
 msgid "Напряжение пробного сигнала: 1, 1.5, 2, 2.5, 3, 4, 4.5, 5, 6, 6.7, 7.5, 10 В"
