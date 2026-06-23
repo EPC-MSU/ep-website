@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-21 20:16+0400\n"
-"PO-Revision-Date: 2025-10-21 20:17+0400\n"
+"POT-Creation-Date: 2026-06-23 14:04+0400\n"
+"PO-Revision-Date: 2026-06-23 14:09+0400\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -232,8 +232,8 @@ msgid "Количество осей: 1 - 3"
 msgstr "Axis: 1-3"
 
 #: ../sites/mdrive/data/products.py:19
-msgid "Три режима деления шага"
-msgstr "3 step modes"
+msgid "Режим деления шага: полношаговый, 1/2, 1/8, 1/256"
+msgstr "Microstepping mode: Full step, 1/2 step, 1/8 step, 1/256 step"
 
 #: ../sites/mdrive/data/products.py:20
 msgid "Скорость: до 15000 полных шагов/сек"
@@ -325,6 +325,9 @@ msgstr ""
 "Programming language supports: the controller comes with a cross-platform "
 "library and examples that allow you to quickly start programming using C/C+"
 "+, C#, Python Delphi, Java, LabView, Matlab, VB.NET"
+
+#~ msgid "Три режима деления шага"
+#~ msgstr "3 step modes"
 
 #~ msgid ""
 #~ "Программа с удобным графическим интерфейсом пользователя, предназначенная "
