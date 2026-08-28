@@ -22,7 +22,7 @@ categories = (
         name="driver",
         friendly_name=_("Драйвер"),
         icon="gear_two.svg",
-        description=_("Драйвера для ОС Windows (для ОС Linux драйвер не нужен)."),
+        description=_("Драйвер для ОС Windows (для Linux и macOS драйвер не нужен)."),
     ),
     SoftwareCategory(
         name="firmware",
@@ -116,7 +116,7 @@ categories = (
         icon="library.svg",
         description=_(
             "Кроссплатформенная библиотека для работы с устройствами линейки EyePoint. "
-            "Библиотека написана на языке C, распространяется в виде бинарных файлов (win32, win64, debian) и в "
+            "Библиотека написана на языке C, распространяется в виде бинарных файлов (win32, win64, debian, darwin) и в "
             "виде исходных кодов. <br>"
             "Документацию к библиотеке можно скачать отдельно на этой странице."
         ),
