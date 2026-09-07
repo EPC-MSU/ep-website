@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-23 14:04+0400\n"
-"PO-Revision-Date: 2026-06-23 14:09+0400\n"
+"POT-Creation-Date: 2026-09-03 19:47+0400\n"
+"PO-Revision-Date: 2026-09-03 19:48+0400\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -98,26 +98,18 @@ msgid ""
 "С описанием комплекта разработчика можно ознакомиться в папке <em>ximc/doc-"
 "ru/html/index.html</em> указанного ниже архива. PDF-версия руководства по "
 "программированию может быть скачана также отсюда. Примеры находятся в папке "
-"<em>examples</em>.<h4>Ищете версию для arm64?</h4>Официально архитектура "
-"arm64 пока не поддерживается. Но мы уже работаем над её поддержкой. Для "
-"архитектуры arm64 доступна рабочая сборка (только для Linux). Архив "
-"<em>libximc-2.14.17-arm64.zip</em> можно найти ниже в блоке <em>Комплект "
-"разработчика</em> > <em>Старые версии</em>."
+"<em>examples</em>."
 msgstr ""
 "The description of the developer kit can be found in the <em>ximc/doc-en/"
 "html/index.html</em> folder of the archive below. A PDF version of the "
 "programming guide can also be downloaded from here. Examples can be found in "
-"examples. <h4>Looking for an arm64 version?</h4>Officially, arm64 is not yet "
-"supported. However, we are already working on adding support for this "
-"architecture. You can use the working build (only for Linux). The archive "
-"<em>libximc-2.14.17-arm64.zip</em> you can find it below in the "
-"<em>Development Kit</em> > <em>Older releases block</em>."
+"<em>examples</em>."
 
-#: ../sites/mdrive/data/download.py:42
+#: ../sites/mdrive/data/download.py:38
 msgid "Прошивка контроллера"
 msgstr "Controller firmware"
 
-#: ../sites/mdrive/data/download.py:45
+#: ../sites/mdrive/data/download.py:41
 msgid ""
 "Информация по обновлению прошивки содержится в руководстве пользователя, в "
 "главе 5.3.13"
@@ -125,19 +117,19 @@ msgstr ""
 "Information on updating the firmware is provided in the user manual, in "
 "chapter 5.3.13"
 
-#: ../sites/mdrive/data/download.py:50
+#: ../sites/mdrive/data/download.py:46
 msgid "Примеры для LabView (Windows)"
 msgstr "LabView examples (Windows)"
 
-#: ../sites/mdrive/data/download.py:53
+#: ../sites/mdrive/data/download.py:49
 msgid "Примеры использования контроллера в среде LabView (для Windows)"
 msgstr "Controller usage examples in LabView (Windows)"
 
-#: ../sites/mdrive/data/download.py:58
+#: ../sites/mdrive/data/download.py:54
 msgid "Драйвера"
 msgstr "Drivers"
 
-#: ../sites/mdrive/data/download.py:60
+#: ../sites/mdrive/data/download.py:56
 msgid ""
 "Драйвер для ОС Windows (для Linux и macOS драйвер не нужен). Драйвер "
 "устанавливается автоматически при установке программного обеспечения mDrive "
@@ -147,11 +139,11 @@ msgstr ""
 "installed automatically when installing the mDrive_Direct_Control software. "
 "You can also download the specified file below."
 
-#: ../sites/mdrive/data/download.py:66
+#: ../sites/mdrive/data/download.py:62
 msgid "Revealer"
 msgstr "Revealer"
 
-#: ../sites/mdrive/data/download.py:69
+#: ../sites/mdrive/data/download.py:65
 msgid ""
 "Утилита для автоматического обнаружения устройств mDrive, подключенных к "
 "вашей локальной сети. Поддерживаются 64-битные версии Windows/Linux/мacOS. "
@@ -163,11 +155,11 @@ msgstr ""
 "version has been tested on Ubuntu, but it will work on many other popular "
 "distributions as well."
 
-#: ../sites/mdrive/data/download.py:76
+#: ../sites/mdrive/data/download.py:72
 msgid "3D модель"
 msgstr "3D model"
 
-#: ../sites/mdrive/data/download.py:79
+#: ../sites/mdrive/data/download.py:75
 msgid ""
 "Здесь вы можете скачать актуальные 3D-модели контроллеров для проектирования "
 "и визуализации. Модели предоставлены в распространенном .step формате"
@@ -175,11 +167,11 @@ msgstr ""
 "Here you can download up-to-date 3D models of the controllers for design and "
 "visualization purposes. The models are provided in the common .step format"
 
-#: ../sites/mdrive/data/download.py:88
+#: ../sites/mdrive/data/download.py:84
 msgid "Комплект последних версий программного обеспечения"
 msgstr "Latest software and documentation"
 
-#: ../sites/mdrive/data/download.py:90
+#: ../sites/mdrive/data/download.py:86
 msgid "и документации для этого продукта"
 msgstr "package for this product"
 
