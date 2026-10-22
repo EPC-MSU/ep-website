@@ -2,9 +2,57 @@
 
 {% block content %}
 
-<h3 class="index-h3">{{ tr(product.friendly_name) }}</h3>
-
 <!--Product description-->
+{% if product.name == "mDrive" %}
+<div class="epmain" id="download-page-intro">
+    <div>
+        <div class="epimage">
+            <img draggable="false" src="/images/{{ product.picture }}" alt="Product picture">
+        </div>
+    </div>
+    <div class="epdescription">
+        <h3 class="index-h3"><strong>{{ tr(intro_products[0].friendly_name) }}</strong></h3>
+        {% for extended_description in product.extended_description %}
+        <div class="extended_description">
+            <p>{{ tr(extended_description) | safe }}</p>
+        </div>
+        {% endfor %}
+        <div class="highlight-container">
+            {% for highlight in product.highlights %}
+            <div class="highlight">
+                {{ tr(highlight) }}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{% for variant in intro_products[1:] %}
+<div class="epmain" id="mdrive-variant-{{ loop.index }}">
+    <div style="width: 603px;">
+        <div class="epimage">
+            <img draggable="false" src="/images/{{ variant.picture }}" alt="Product picture">
+        </div>
+    </div>
+    <div class="epdescription">
+        <h3 class="index-h3"><strong>{{ tr(variant.friendly_name) }}</strong></h3>
+        {% for extended_description in variant.extended_description %}
+        <div class="extended_description">
+            <p>{{ tr(extended_description) | safe }}</p>
+        </div>
+        {% endfor %}
+        <div class="highlight-container">
+            {% for highlight in variant.highlights %}
+            <div class="highlight">
+                {{ tr(highlight) }}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endfor %}
+{% else %}
+<h3 class="index-h3">{{ tr(product.friendly_name) }}</h3>
 <div class="epmain" id="download-page-intro">
     <div>
         <div class="epimage">
@@ -26,6 +74,7 @@
         </div>
     </div>
 </div>
+{% endif %}
 
 <!--Full software kit-->
 
