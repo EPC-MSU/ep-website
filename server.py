@@ -134,6 +134,7 @@ async def download(request):
     # TODO: clearer names
     return {
         "product": product,
+        "intro_products": getattr(products_data, "product_variants", {}).get(product.name, (product,)),
         "all_software": file_manager.files[product.name],
         "latest_releases": file_manager.releases(latest=True, lang=language)[product.name],
         "old_releases": file_manager.releases(latest=False, lang=language)[product.name],

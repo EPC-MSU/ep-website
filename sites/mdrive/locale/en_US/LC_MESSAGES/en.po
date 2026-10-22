@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-03 19:47+0400\n"
+"POT-Creation-Date: 2026-10-22 13:00+0400\n"
 "PO-Revision-Date: 2026-09-03 19:48+0400\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -191,7 +191,7 @@ msgstr ""
 msgid "Программное обеспеченье для mDrive"
 msgstr "Software for mDrive"
 
-#: ../sites/mdrive/data/other.py:18 ../sites/mdrive/data/products.py:8
+#: ../sites/mdrive/data/other.py:18 ../sites/mdrive/data/products.py:10
 msgid "mDrive"
 msgstr "mDrive"
 
@@ -211,7 +211,7 @@ msgstr "ООО \"СТЭЛМ\""
 msgid "Техподдержка"
 msgstr "Support"
 
-#: ../sites/mdrive/data/products.py:10 ../sites/mdrive/data/products.py:14
+#: ../sites/mdrive/data/products.py:12 ../sites/mdrive/data/products.py:16
 msgid ""
 "Контроллер для шагового и BLDC двигателя, позволяющий с высокой скоростью и "
 "точностью управлять движениями."
@@ -219,47 +219,47 @@ msgstr ""
 "Controller for stepper and BLDC motors, allowing you to control movements "
 "with high speed and accuracy."
 
-#: ../sites/mdrive/data/products.py:18 ../sites/mdrive/data/products.py:23
+#: ../sites/mdrive/data/products.py:20 ../sites/mdrive/data/products.py:25
 msgid "Количество осей: 1 - 3"
 msgstr "Axis: 1-3"
 
-#: ../sites/mdrive/data/products.py:19
+#: ../sites/mdrive/data/products.py:21
 msgid "Режим деления шага: полношаговый, 1/2, 1/8, 1/256"
 msgstr "Microstepping mode: Full step, 1/2 step, 1/8 step, 1/256 step"
 
-#: ../sites/mdrive/data/products.py:20
+#: ../sites/mdrive/data/products.py:22 ../sites/mdrive/data/products.py:70
 msgid "Скорость: до 15000 полных шагов/сек"
 msgstr "Speed: up to 15000 full steps per second"
 
-#: ../sites/mdrive/data/products.py:24
+#: ../sites/mdrive/data/products.py:26
 msgid "Система питания: единая на все 3 оси"
 msgstr "Power supply system: unified for all 3 axes"
 
-#: ../sites/mdrive/data/products.py:25
+#: ../sites/mdrive/data/products.py:27
 msgid "Поддерживаемые типы двигателей: биполярный шаговый, BLDC"
 msgstr "Supported engine types: bipolar stepper, BLDC"
 
-#: ../sites/mdrive/data/products.py:26
+#: ../sites/mdrive/data/products.py:28
 msgid "Номинальный ток в обмотке шагового/BLDC двигателя: до 3 А"
 msgstr "Rated current in the winding of the stepper motor/BLDC: up to 3 A"
 
-#: ../sites/mdrive/data/products.py:27
+#: ../sites/mdrive/data/products.py:29
 msgid "Режим деления шага: полношаговый, 1/2, 1/256"
 msgstr "Step modes: full-step, 1/2, 1/256"
 
-#: ../sites/mdrive/data/products.py:28
+#: ../sites/mdrive/data/products.py:30
 msgid "Максимальная скорость: до 15 000 полных шагов/сек"
 msgstr "Maximum speed: up to 15 000 full steps per second"
 
-#: ../sites/mdrive/data/products.py:29
+#: ../sites/mdrive/data/products.py:31
 msgid "Диапазон напряжения питания: 12 - 48 В"
 msgstr "Supply voltage range: 12 - 48 V"
 
-#: ../sites/mdrive/data/products.py:30
+#: ../sites/mdrive/data/products.py:32
 msgid "Количество цифровых входов/выходов: 3 входа, 1 выход (EXTIO)"
 msgstr "Number of digital inputs/outputs: 3 inputs, 1 output (EXTIO)"
 
-#: ../sites/mdrive/data/products.py:31
+#: ../sites/mdrive/data/products.py:33
 msgid ""
 "Система синхронизации: внутренняя (общая для всех осей, для возможности "
 "создания связанного движения по траектории) и внешняя (индивидуальная для "
@@ -269,7 +269,7 @@ msgstr ""
 "possibility of creating a connected motion along the trajectory) and "
 "external (individual for each axis)"
 
-#: ../sites/mdrive/data/products.py:33
+#: ../sites/mdrive/data/products.py:35
 msgid ""
 "Возможность задавать напряжение: от 5 до 24 В для выходов EXTIO, SYNC, "
 "EMBRAKE (зависит от напряжения, поданного на EXT REF SUPPLY)"
@@ -278,15 +278,15 @@ msgstr ""
 "purposes: from 5 to 24 V for EXTIO, SYNC, EMBRAKE outputs (depends on the "
 "voltage applied to EXT REF SUPPLY)"
 
-#: ../sites/mdrive/data/products.py:35
+#: ../sites/mdrive/data/products.py:37
 msgid "Подключение к ПК: через USB или Ethernet"
 msgstr "Connecting to a PC: via USB or Ethernet"
 
-#: ../sites/mdrive/data/products.py:36
+#: ../sites/mdrive/data/products.py:38
 msgid "Габариты контроллера: 155 х 112 х 59 мм"
 msgstr "Controller dimensions: 155 x 112 x 59 mm"
 
-#: ../sites/mdrive/data/products.py:37
+#: ../sites/mdrive/data/products.py:39
 msgid ""
 "Вес контроллера:<br>Одноосный контроллер: 0.533 кг<br>Двухосный контроллер: "
 "0.603 кг<br>Трехосный контроллер: 0.669 кг"
@@ -294,7 +294,7 @@ msgstr ""
 "Controller weights:<br>One-axis controller 533 g<br>Two-axis controller 603 "
 "g<br>Three-axis controller 669 g"
 
-#: ../sites/mdrive/data/products.py:41
+#: ../sites/mdrive/data/products.py:43
 msgid ""
 "Совместимость с типами ОС: Windows (7, 8, 10, 11), Linux , MacOS Sierra и "
 "новее для Intel и Apple Silicon (с использованием Rosetta 2)"
@@ -303,11 +303,11 @@ msgstr ""
 "Mac OS for intel, including\n"
 "64-bit versions and Apple Silicon (using Rosetta 2)"
 
-#: ../sites/mdrive/data/products.py:43
+#: ../sites/mdrive/data/products.py:45
 msgid "Графический интерфейс: mDrive Direct Control"
 msgstr "A user-friendly graphical interface: mDrive Direct Control"
 
-#: ../sites/mdrive/data/products.py:44
+#: ../sites/mdrive/data/products.py:46
 msgid ""
 "Возможность программного управления: контроллер поставляется с кросс-"
 "платформенной библиотекой и примерами, которые позволяют быстро начать "
@@ -317,6 +317,24 @@ msgstr ""
 "Programming language supports: the controller comes with a cross-platform "
 "library and examples that allow you to quickly start programming using C/C+"
 "+, C#, Python Delphi, Java, LabView, Matlab, VB.NET"
+
+#: ../sites/mdrive/data/products.py:65 ../sites/mdrive/data/products.py:66
+msgid ""
+"Компактный контроллер для управления биполярными шаговыми и BLDC-двигателями "
+"с высокой скоростью и точностью позиционирования. Импульсный ток в обмотке "
+"до 5 А позволяет кратковременно увеличить момент при движении под нагрузкой."
+msgstr ""
+"Compact controller for bipolar stepper and BLDC motors, providing high-speed "
+"motion and precise positioning. A winding pulse current of up to 5 A allows "
+"a brief increase in torque when moving under load."
+
+#: ../sites/mdrive/data/products.py:68
+msgid "Количество осей: 1 или 2"
+msgstr "Axis: 1 or 2"
+
+#: ../sites/mdrive/data/products.py:69
+msgid "Ток в обмотке: до 3 А, импульсный - до 5 А"
+msgstr "Winding current: up to 3 A, pulse current up to 5 A"
 
 #~ msgid "Три режима деления шага"
 #~ msgstr "3 step modes"
@@ -380,3 +398,6 @@ msgstr ""
 
 #~ msgid "ООО «ЦИФ МГУ имени М.В. Ломоносова»"
 #~ msgstr "Engineering Physics Center MSU"
+
+#~ msgid "Скорость: до 15 000 полных шагов/сек"
+#~ msgstr "Speed: up to 15,000 full steps/s"

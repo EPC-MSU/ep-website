@@ -455,7 +455,7 @@ hr {
     margin-bottom: 5px;
 }
 
-#download-page-intro {
+.download-page-intro {
     margin-top: 0px;
     margin-bottom: 0px;
     align-items: start;
@@ -556,4 +556,24 @@ td, th {
 
 tr:nth-child(even) {
   background-color: rgb(186, 226, 154);
+}
+
+/* Product variants on a shared download page. */
+.product-variant .product-variant-title {
+    color: #292929;
+    font-size: 1.75em;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: left;
+    margin: 0 0 16px;
+}
+
+.product-variant + .product-variant {
+    border-top: 1px solid #e2e2e2;
+    margin-top: 32px;
+    padding-top: 32px;
+}
+
+.product-variant {
+    margin-bottom: 24px;
 }

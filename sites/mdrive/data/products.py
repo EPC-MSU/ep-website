@@ -1,3 +1,5 @@
+from dataclasses import replace
+
 from site_engine.specification.product import Product
 from site_engine.translator.translator import _
 
@@ -50,3 +52,23 @@ products = (
 
 assert all([" " not in p.name for p in products])
 assert all([isinstance(p, Product) for p in products])
+
+
+# Both variants share the existing mDrive downloads.
+product_variants = {
+    "mDrive": (
+        replace(products[0], friendly_name="mDrive 3A"),
+        replace(
+            products[0],
+            friendly_name="mDrive 5A",
+            picture="mDrive-5A.png",
+            description=[_("Компактный контроллер для управления биполярными шаговыми и BLDC-двигателями с высокой скоростью и точностью позиционирования. Импульсный ток в обмотке до 5 А позволяет кратковременно увеличить момент при движении под нагрузкой.")],
+            extended_description=[_("Компактный контроллер для управления биполярными шаговыми и BLDC-двигателями с высокой скоростью и точностью позиционирования. Импульсный ток в обмотке до 5 А позволяет кратковременно увеличить момент при движении под нагрузкой.")],
+            highlights=[
+                _("Количество осей: 1 или 2"),
+                _("Ток в обмотке: до 3 А, импульсный - до 5 А"),
+                products[0].highlights[2],
+            ],
+        ),
+    ),
+}
